@@ -1,0 +1,29 @@
+.container{
+    max-height: max-content; 
+    min-width: 1200px;
+    box-sizing: border-box;
+}
+.KouchAccor{
+    background-color: #FAFAFA;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+.KouchAccor__accordionPart{
+    width: 65%;
+    margin: 250px auto;
+    
+}
+.KouchAccor__cardPart{
+    width: 25%;
+    margin: 250px auto;
+}
+
+@media screen and (min-width:1200px) {
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+}
