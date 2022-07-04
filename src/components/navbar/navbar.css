@@ -1,0 +1,54 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MainNavLi{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+.MainNavLi li{
+    margin: 20px 20px;
+    list-style-type: none;
+    height: 20px;
+}
+.NumberNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 28px;
+    margin-top: 40px;
+}
+.NumberNav h2, p {
+    margin: 0px;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 95%;
+    /* or 15px */
+    
+    text-align: right;
+    text-transform: uppercase;
+    
+    color: #0F0F0F;
+}
+
+.Navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    margin: 0 auto;
+
+}
+
+@media screen and (min-width: 1200px) {
+    .Navbar{
+        max-width: 1200px;
+    }
+    
+}
