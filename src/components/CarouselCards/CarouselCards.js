@@ -111,7 +111,7 @@ function CarouselCards() {
                     </Box>
 
                 </div>
-            </Carousel>;
+            </Carousel>
 
         </div>
     )
