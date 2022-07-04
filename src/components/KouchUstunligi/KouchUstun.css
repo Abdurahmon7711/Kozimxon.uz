@@ -1,12 +1,81 @@
 .Card{
-    border: 2px solid red;
-    width: 380px;
-    height: 267px;
+
+    width: 300px;
+    padding: 30px;
+    position: relative;
+  
+}
+.Cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.iconCard{
+    z-index: 2;
+}
+#empty{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #F7F7F7 !important;
+    z-index: -5;
+}
+.KouchUstunligi{
+    display: flex;
+    flex-direction: column;
+}
+.TopCards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.TopCardsText{
+    font-family: 'SF Pro', 'sans-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    width: 298px;
+    height: 68px;
+    color: #0F0F0F;
+}
+.LinkRoyhat{
+    height: 22px;
+    color: #28468C;
+    text-decoration-line: underline;
+}
+.CardFirstText{
+    font-family: 'SF Pro','sans-serif';
+font-style: normal;
+font-weight: 510;
+font-size: 20px;
+line-height: 130%;
+width: 300px;
+height: 52px;
+/* or 26px */
+z-index: 15;
+
+
+color: #0F0F0F;
+}
+.CardSecondText{
+    
+font-family: 'SF Pro', 'sans-serif';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+/* or 25px */
+
+
+color: #828282;
 }
 @media screen and (min-width: 1200px) {
     .KouchUstunligi{
         max-width: 1200px;
-        margin: 50px auto;
+        margin: 32px auto;
     }
     
 }

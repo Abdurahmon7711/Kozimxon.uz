@@ -8,7 +8,7 @@
     height: 68px;
 }
 .LinkRoyhat{
-    width: 166px;
+    /* width: 166px; */
     height: 22px;
 }
 .Videoss{
@@ -16,8 +16,10 @@
     justify-content: space-between;
 }
 .firstVideo{
-    width: 700px;
+    width: 790px;
     height: 444px;
+    margin-left: 20px auto;
+    border: 1px solid #28468C;
 }
 .NavVideos{
     height: 444px;
@@ -62,32 +64,48 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
+    text-decoration-line: underline;
 
     /* or 25px */
 
-color: #28468C;
+    color: #828282;
+}
+.videosName .VideosText{
+    color: #28468C !important;
+    text-decoration-line: underline;
 }
 .FonVideos{
     background: #FAFAFA;
+    width: 1400px !important;
+    padding-right: 200px;
     
 
+
 }
+.VideosBlock{
+    padding-left: 100px;
+    padding-top: 28px;
+    padding-bottom: 120px;
+}
+
+
 @media screen and (min-width: 1200px) {
     .VideosBlock{
-        max-width: 1000px;
-        margin: 0 auto;
-        background: #FAFAFA;
-    }
-    .FonVideos{
         max-width: 1200px;
         margin: 0 auto;
+        background: #FAFAFA;
+        padding-left: 100px;
     }
-    
-}
-@media screen and (min-width: 1400px) {
-    .fonVideos{
-        width: 1400px;
-        background-color: #FAFAFA ;
+    .FonVideos{
+        width: 1600px;
+        margin: 0 auto;
+        margin-left: 80px;
+        
+        
+    }
+    .BigVideoTab{
+        max-width: 1600px;
+        margin: 0 auto;
     }
     
 }

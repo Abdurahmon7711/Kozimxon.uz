@@ -1,6 +1,7 @@
 import * as React from 'react';
 import "./KouchAccor.css";
 import { styled } from '@mui/material/styles';
+import { Link } from '@mui/material';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
@@ -51,40 +52,6 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 
-const bull = (
-    <Box
-        component="span"
-        sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-    >
-        •
-    </Box>
-);
-
-const card = (
-    <React.Fragment>
-        <CardContent>
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                Word of the Day
-            </Typography>
-            <Typography variant="h5" component="div">
-                be{bull}nev{bull}o{bull}lent
-            </Typography>
-            <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                adjective
-            </Typography>
-            <Typography variant="body2">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
-            </Typography>
-        </CardContent>
-        <CardActions>
-            <Button size="small">Learn More</Button>
-        </CardActions>
-    </React.Fragment>
-);
-
-
 function KouchAccor() {
 
 
@@ -104,10 +71,16 @@ function KouchAccor() {
                 <div className='KouchAccor__accordionPart'>
                     <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                            <Typography>Collapsible Group Item #1</Typography>
+                            <Typography className='accordion__title' >01 — HR tizimini yaratish</Typography>
                         </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography>
+                        <AccordionDetails className='accordionInner'>
+                            <Typography className='innerAcc__text' >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                                malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
+                                sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                                sit amet blandit leo lobortis eget.
+                            </Typography>
+                            <Typography className='innerAcc__text' >
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                                 malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
                                 sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -117,7 +90,7 @@ function KouchAccor() {
                     </Accordion>
                     <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                            <Typography>Collapsible Group Item #2</Typography>
+                            <Typography className='accordion__title' >02 — Islom moliyasi asoslari</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -130,7 +103,7 @@ function KouchAccor() {
                     </Accordion>
                     <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                            <Typography>Collapsible Group Item #3</Typography>
+                            <Typography className='accordion__title' >03 — Biznesda baraka omillari</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -143,7 +116,7 @@ function KouchAccor() {
                     </Accordion>
                     <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-                            <Typography>Collapsible Group Item #4</Typography>
+                            <Typography className='accordion__title' >04 — Muvaffaqqiyatli sherekchilik asosolari </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -156,7 +129,7 @@ function KouchAccor() {
                     </Accordion>
                     <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                         <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
-                            <Typography>Collapsible Group Item #5</Typography>
+                            <Typography className='accordion__title' >05 — Qadriyatlarga asoslangan liderlik</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -169,7 +142,7 @@ function KouchAccor() {
                     </Accordion>
                     <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
                         <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
-                            <Typography>Collapsible Group Item #6</Typography>
+                            <Typography className='accordion__title' >06 — Xalqaro standardlarga javob beruvchi xizmat ko‘rsatish</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -182,7 +155,7 @@ function KouchAccor() {
                     </Accordion>
                     <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
                         <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
-                            <Typography>Collapsible Group Item #7</Typography>
+                            <Typography className='accordion__title' >07 — Yaponiyaning samaradorlikni oshiruvchi TQM va KAIZEN sistemasi</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -195,7 +168,7 @@ function KouchAccor() {
                     </Accordion>
                     <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
                         <AccordionSummary aria-controls="panel8d-content" id="panel8d-header">
-                            <Typography>Collapsible Group Item #8</Typography>
+                            <Typography className='accordion__title' >08 — Qadriyatlarga asoslangan shaxsiy rivojlanish</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -207,13 +180,41 @@ function KouchAccor() {
                         </AccordionDetails>
                     </Accordion>
                 </div>
-                <div className='KouchAccor__cardPart'>
+                <div className='KouchAccor__cardPart KouchAccor__cardPartBl '>
 
                     <Box sx={{ minWidth: 275 }}>
-                        <Card variant="outlined">{card}</Card>
+                        <Card className='Kouch__card' variant="outlined">
+                            <React.Fragment>
+                                <CardContent>
+                                    <Typography className="Kouch__cardTitle" variant="h5" component="div">
+                                        Kurs o‘quv dasturining elektor PDF
+                                    </Typography>
+                                    <Typography sx={{ fontSize: 14 }} className="Kouch__cardContent" color="text.secondary" gutterBottom>
+                                        Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.
+                                    </Typography>
+                                </CardContent>
+                                <CardActions>
+                                    <Link to="#" className='Kouch__cardLink'>PDF yuklab olish → </Link>
+                                </CardActions>
+                            </React.Fragment>
+                        </Card>
                     </Box>
                     <Box sx={{ minWidth: 275 }}>
-                        <Card variant="outlined">{card}</Card>
+                        <Card className='Kouch__card' variant="outlined">
+                            <React.Fragment>
+                                <CardContent>
+                                    <Typography className="Kouch__cardTitle" variant="h5" component="div">
+                                        Kouching dasturimizda o‘qish uchun ro‘yxatdan o‘ting!
+                                    </Typography>
+                                    <Typography sx={{ fontSize: 14 }} className="Kouch__cardContent" color="text.secondary" gutterBottom>
+                                        Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.
+                                    </Typography>
+                                </CardContent>
+                                <CardActions>
+                                    <Link to="#" className='Kouch__cardLink' >Ro‘yxatdan o‘tish →</Link>
+                                </CardActions>
+                            </React.Fragment>
+                        </Card>
                     </Box>
                 </div>
             </div>

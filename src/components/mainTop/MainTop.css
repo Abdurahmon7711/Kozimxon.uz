@@ -16,7 +16,7 @@
 }
 .TopTextBlock h2 {
     position: absolute;
-    font-family: 'SF Pro', sans-serif;
+    font-family: 'SF Pro', 'sans-serif';
   font-style: normal;
   font-weight: 700;
   font-size: 50px;

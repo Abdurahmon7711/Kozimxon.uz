@@ -1,0 +1,37 @@
+.footerForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.footerItem{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content: center;
+    margin: 20px 50px;
+}
+.footerItem p{
+    position: relative;
+    margin-top: 10px;
+}
+
+.footerItem input{
+    height: 65px;
+    width: 246px;
+}
+.footerbtn{
+    height: 65px;
+    width: 246px;
+    margin-top: 10px;
+    background-color: #28468C;
+    color: #FFF;
+}
+
+@media screen and (min-width:1200px) {
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+}

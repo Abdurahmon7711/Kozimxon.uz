@@ -1,0 +1,46 @@
+.WhoBlock{
+    display: flex;
+    flex-direction: column;
+}
+.WhoBlockText{
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    width: 525px;
+    height: 88px;
+    color: #0F0F0F;
+}
+.WhoBlockBlocks{
+    display: flex;
+}
+.WhoBLockCards{
+    display: flex;
+    flex-wrap: wrap;
+}
+#BlockCard{
+    margin-top: 20px;
+    width: 350px;
+    height: 160px;
+}
+.WhoLeftBlocks{
+    height: 565px;;
+}
+#btnRoyhat{
+    margin-top: 20px;
+}
+#CardSecondBlock{
+    width: 309px;
+}
+.WhoBlockBlocks{
+    margin-top: 40px;
+}
+
+@media screen and (min-width:1200px) {
+    .WhoBlock{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+}
