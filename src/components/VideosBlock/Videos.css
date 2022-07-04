@@ -1,0 +1,93 @@
+.KouchLavhalar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.VideoLavhalar{
+    width: 298px;
+    height: 68px;
+}
+.LinkRoyhat{
+    width: 166px;
+    height: 22px;
+}
+.Videoss{
+    display: flex;
+    justify-content: space-between;
+}
+.firstVideo{
+    width: 700px;
+    height: 444px;
+}
+.NavVideos{
+    height: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.videosName{
+    width: 380px !important;
+    height: 90px !important;
+    display: flex;
+    /* justify-content: space-between; */
+    text-align: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    border: none;
+    width: 360px;
+    padding: 20px ;
+
+}
+.videosName2{
+    height: 65px;
+    width: 380px !important;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    border: none;
+    width: 360px;
+    padding: 20px;
+
+}
+.VideosText{
+    margin-left: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+
+    /* or 25px */
+
+color: #28468C;
+}
+.FonVideos{
+    background: #FAFAFA;
+    
+
+}
+@media screen and (min-width: 1200px) {
+    .VideosBlock{
+        max-width: 1000px;
+        margin: 0 auto;
+        background: #FAFAFA;
+    }
+    .FonVideos{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+}
+@media screen and (min-width: 1400px) {
+    .fonVideos{
+        width: 1400px;
+        background-color: #FAFAFA ;
+    }
+    
+}

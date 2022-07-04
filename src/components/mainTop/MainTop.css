@@ -16,7 +16,7 @@
 }
 .TopTextBlock h2 {
     position: absolute;
-  font-family: "SF Pro";
+    font-family: 'SF Pro', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -49,11 +49,49 @@
     width: 124px !important;
     height: 38px !important;
 }
-    
+.bir{
+    color: #28468C;
+}
+.CarouselLow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.CarouselLowText{
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #828282;
+}
+.firstCarousel{
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    color: #28468C;
+}
+.allCarousel{
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #AFAFAF;
+}
 
 @media screen and (min-width: 1200px) {
   .MainTopBlock {
     max-width: 1200px;
     margin: 70px auto;
   }
+}
+@media screen and (max-width: 1200px) {
+    .FirstImgCarousel{
+        width: 100%;
+    }
+    
 }

@@ -1,0 +1,12 @@
+.Card{
+    border: 2px solid red;
+    width: 380px;
+    height: 267px;
+}
+@media screen and (min-width: 1200px) {
+    .KouchUstunligi{
+        max-width: 1200px;
+        margin: 50px auto;
+    }
+    
+}

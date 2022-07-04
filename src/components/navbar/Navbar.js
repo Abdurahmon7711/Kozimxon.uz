@@ -20,7 +20,7 @@ function Navbar() {
 
       <div className='NumberNav'>
         <h2>+998 33 383 73 13</h2>
-        <p>KURSGA YOZILISH UCHUN</p>
+        <p className='kursgaYozilish'>KURSGA YOZILISH UCHUN</p>
       </div>
     </div>
   )

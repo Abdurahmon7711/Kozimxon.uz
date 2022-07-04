@@ -1,0 +1,50 @@
+.KouchDasturiBlock{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.KouchDasturiMini{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.KouchDText{
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    width: 298px;
+}
+.KouchMiniBlocks{
+    display: flex;
+    margin-top: 0px;
+    width: 380px;
+}
+.DasturImg{
+    width: 49px;
+    height: 49px;
+}
+.DasturText{
+    margin-left: 27px;
+    margin-top: 0px;
+    width: 290px;
+    font-family: 'SF Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+
+
+color: #828282;
+}
+
+@media screen and (min-width: 1200px) {
+    .KouchDasturiBlock{
+        max-width: 1200px;
+        margin: 70px auto;
+    }
+    
+    
+}

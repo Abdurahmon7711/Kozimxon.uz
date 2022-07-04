@@ -1,3 +1,7 @@
+
+*{
+    font-family: 'SF Pro', sans-serif !important;
+}
 .logo{
     display: flex;
     justify-content: center;
@@ -21,14 +25,15 @@
     align-items: center;
     height: 28px;
     margin-top: 40px;
+    width: 154px;
 }
-.NumberNav h2, p {
+.NumberNav h2 {
     margin: 0px;
     font-family: 'SF Pro';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 95%;
+    line-height: 15.2px;
     /* or 15px */
     
     text-align: right;
@@ -40,10 +45,21 @@
 .Navbar{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100px;
     margin: 0 auto;
 
+}
+.kursgaYozilish{
+    color: #28468C;
+    font-size: 10px;
+    margin: 0px;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 95%;
+    text-align: right;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 1200px) {

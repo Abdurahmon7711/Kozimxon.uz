@@ -1,0 +1,26 @@
+/* 
+#vertical-tabpanel-1, #vertical-tabpanel-2, #vertical-tabpanel-3, #vertical-tabpanel-4, #vertical-tabpanel-5{
+    width: 790px !important;
+    height: 444px;
+}
+.KouchLavhalar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.VideoLavhalar{
+    width: 298px;
+    height: 68px;
+}
+.LinkRoyhat{
+    width: 166px;
+    height: 22px;
+}
+
+@media screen and (min-width: 1200px) {
+    .VideoTabs{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+} */
