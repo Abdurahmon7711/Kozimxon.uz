@@ -87,9 +87,15 @@
     padding-top: 28px;
     padding-bottom: 120px;
 }
+.blueVidLink{
+    color: #28468C;
+}
 
+/* .react-multi-carousel-list{
+    width: 100vw;
+} */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
     .VideosBlock{
         max-width: 1200px;
         margin: 0 auto;

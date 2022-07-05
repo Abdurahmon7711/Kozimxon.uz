@@ -16,7 +16,7 @@
 }
 .TopTextBlock h2 {
     position: absolute;
-    font-family: 'SF Pro', 'sans-serif';
+    font-family: 'SF Pro', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -83,15 +83,12 @@
     color: #AFAFAF;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .MainTopBlock {
     max-width: 1200px;
     margin: 70px auto;
   }
-}
-@media screen and (max-width: 1200px) {
-    .FirstImgCarousel{
-        width: 100%;
-    }
-    
+  .FirstImgCarousel{
+      width: 100%;
+  }
 }

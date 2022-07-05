@@ -40,7 +40,7 @@
 color: #828282;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
     .KouchDasturiBlock{
         max-width: 1200px;
         margin: 70px auto;

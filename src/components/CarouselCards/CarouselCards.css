@@ -5,6 +5,7 @@
     line-height: 44px;
     margin: 15px 50px;
 }
+
 .Karousel__card{
     background-color: #FAFAFA !important;
     margin-bottom: 20px;
@@ -44,11 +45,16 @@
     margin: 10px auto;
 }
 
-
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1400px) {
     .container{
         max-width: 1200px;
         margin: 0 auto;
     }
     
+}
+@media (min-width: 0px){
+    .css-1qxcd35-MuiGrid-root{
+        width: 100vw !important;
+    }
+
 }

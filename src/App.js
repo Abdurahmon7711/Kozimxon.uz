@@ -14,19 +14,18 @@ import WhoBlock from './components/WhoBlock/WhoBlock';
 function App() {
   return (
     <div className="App">
-      <Navbar/>  
-      <MainTop/>
-      <KouchDasturi/>
-      <VideosBlock/>
-      <KouchUstunligi/>
-      <WhoBlock/>
-        {/* <KouchAccor /> */}
-        {/* <KouchAccor /> */}
-        {/* <CarouselVideos /> */}
-        {/* <CarouselVideos /> */}
-        {/* <LogoSection /> */}
-        {/* <FAQs /> */}
-        {/* <Footer /> */}
+      {/* <Navbar /> */}
+      {/* <MainTop /> */}
+      {/* <KouchDasturi /> */}
+      <CarouselCards />
+      {/* <VideosBlock /> */}
+      {/* <KouchUstunligi /> */}
+      <KouchAccor />
+      <CarouselVideos />
+      <LogoSection />
+      {/* <WhoBlock /> */}
+      <FAQs />
+      <Footer />
 
     </div>
   );

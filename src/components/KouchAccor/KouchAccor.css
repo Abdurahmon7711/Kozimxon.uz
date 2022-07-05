@@ -1,44 +1,55 @@
 *{
-    font-family: 'SF Pro', 'sans-serif' !important;
+    font-family: 'SF Pro', sans-serif !important;
+}
+.bigBox{
+    width: 100%;
+    background-color: #FAFAFA;
 }
 .container{
     max-height: max-content; 
     min-width: 1200px;
     box-sizing: border-box;
     font-family: 'SF Pro', sans-serif;
+    margin-top: 120px !important;
+    width: 100vw;
 }
 .KouchAccor{
     background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-    margin: 0 auto;
+    /* min-height: 100vh; */
+    max-height: max-content;
+    width: 100vw;
+    margin: 120px auto 0 auto;
 }
 .partTitle{
     width: 100%;
     font-weight: 700;
     font-size: 40px;
     line-height: 44px;
-    margin: 15px 50px;
+    margin: 15px 0px;
 }
 .KouchAccor__inner{
     display: flex;
     flex-direction: row;
+    /* width: 100vw; */
 }
 .KouchAccor__accordionPart{
     width: 65%;
-    margin: 250px auto;
+    margin: 40px auto;
     
 }
 .KouchAccor__cardPart{
     width: 25%;
-    margin: 250px auto;
+    margin: 40px auto;
 }
 
 .KouchAccor__accordion{
     margin: 20px 0;
     background-color: #F0F0F0 !important;
+    border: none !important;
+}
+.css-ta84vm-MuiAccordionDetails-root{
     border: none !important;
 }
 .MuiAccordionSummary-expandIconWrapper {
@@ -57,15 +68,23 @@
     font-weight: 510;
     font-size: 20px;
 }
+.css-uvvswg-MuiButtonBase-root-MuiAccordionSummary-root{
+    background-color: #F0F0F0 !important;
+}
+.css-1v5z4dq-MuiPaper-root-MuiCard-root {
+    background-color: #F0F0F0 !important;
+}
 .KouchAccor__cardPartBl{
     border-top: 3px solid #28468C !important;
 }
 .Kouch__card{
-    background-color: #F0F0F0 !important;
     margin-bottom: 20px;
     border: none !important;
     border-top: 3px solid #E1E1E1 !important;
     border-radius: 0;
+}
+.css-1v5z4dq-MuiPaper-root-MuiCard-root {
+    background-color: #F0F0F0 !important;
 }
 .KouchAccor__accordion:first-child .accordion__title, .KouchAccor__accordion:first-child .MuiAccordionSummary-expandIconWrapper {
     color: #28468C;
@@ -74,6 +93,12 @@
 .Kouch__cardTitle{
     color: #0F0F0F;
     font-size: 20px;
+    line-height: 26px;
+    font-weight: 510;
+}
+.css-ag7rrr-MuiTypography-root{
+    color: #0F0F0F;
+    font-size: 20px !important;
     line-height: 26px;
     font-weight: 510;
 }
@@ -98,7 +123,7 @@
 
 
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1400px) {
     .container{
         max-width: 1200px;
         margin: 0 auto;
