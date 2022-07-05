@@ -1,36 +1,11 @@
 
 *{
-    font-family: 'SF Pro', 'sans-serif' !important;
+    font-family: 'SF Pro', sans-serif !important;
 }
 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.LogoBlock{
-    display: flex;
-    flex-direction: column;
-    height: 28px;
-    margin-top: 8px;
-
-}
-.LogoText{
-    margin: 0 10px;
-    
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 95%;
-    text-transform: uppercase;
-    color: #0F0F0F;
-}
-.LogoLowText{
-    margin: 0 10px;
-    color: #28468C;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 9.5px;
 }
 .MainNavLi{
     display: flex;
@@ -66,10 +41,7 @@
     
     color: #0F0F0F;
 }
-.MainNavLi a{
-    color: black;
-    text-decoration-line: none;
-}
+
 .Navbar{
     width: 100%;
     display: flex;
@@ -92,112 +64,7 @@
 
 @media screen and (min-width: 1400px) {
     .Navbar{
-        max-width: 1200px !important;
-        margin: 0 auto !important;
+        max-width: 1200px;
     }
-    
-}
-/* @media screen and (min-width: 786px) {
-    .MainTopBlock{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    .KouchDasturiBlock{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    .KouchDasturiBlock{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    .BigVideoTab{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    .Navbar{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    .BigVideoTab{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    
-} */
-@media screen and (max-width: 1200px) {
-    .MainNav{
-        display: none;
-    }
-    .MainTopBlock {
-        flex-direction: column;
-        margin-top: 20px !important;
-    }
-    .MainTopBlock:first-child{
-        width: 720px;
-    }
-    .CarouselMain{
-        margin-top: 20px;
-    }
-    .TopTextBlock h2{
-        margin: 0;
-        width: 100% !important;
-    }
-    .TopBtn {
-        margin-top: 60%;
-    }
-    .KouchDasturiMini{
-        flex-wrap: wrap;
-        justify-content: flex-start !important;
-    }
-    .Videoss{
-        flex-direction: column-reverse;
-    }
-    .FonVideos {
-        width: 100%;
-    }
-    .VideosBlock {
-        padding: 0px !important;
-    }
-
-    .CarouselMain{
-        width: 100%;
-    }
-    .CarouselLow {
-        width: 100% !important;
-    }
-    .CarouselMain:first-child{
-        width: 100%;
-    }
-    .VideosBlock{
-        width: 100%;
-    }
-    .MainTopBlock img {
-        width: 100% !important;
-    }
-    .CarouselSize{
-        width: 100% !important;
-        height: 100% !important;
-    }
-    .CarouselMain{
-        width: 100% ;
-    }
-    .Cards{
-        flex-wrap: wrap;
-    }
-    .Card{
-        margin-top: 20px;
-    }
-    .VideoLavhalar{
-        width: 100%;
-    }
-    .firstVideo {
-        width: 100% !important;
-        height: 100% !important;
-    }
-    .FonVideos{
-        width: 100%;
-        padding: 0px;
-    }
-    
     
 }
