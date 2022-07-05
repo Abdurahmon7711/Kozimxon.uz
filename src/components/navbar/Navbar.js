@@ -1,26 +1,20 @@
 import React from 'react'
 import './navbar.css'
 import logo from '../../assets/images/Logo.png'
-import logoImg from '../../assets/images/LogoImg.svg'
-import KouchDasturi from '../KouchDasturi/KouchDasturi'
 
 function Navbar() {
   return (
     <div className='Navbar'>
       <div className='logo'>
-        <img src={logoImg}/>
-        <div className='LogoBlock'>
-          <h2 className='LogoText'>KOZIMXON TURAEV</h2>
-          <p className='LogoLowText'>BIZNES BOSHQARUV</p>
-        </div>
+        <img src={logo}/>
       </div>
       
       <div className='MainNav'>
             <ul className='MainNavLi'>
-                <a href="#KouchDasturiBlock"><li>Kurs haqida</li></a>
-                <a href="#KouchAccor"><li>Kurs o‘quv dasturi</li></a>
-                <a href="#CarouselVideos"><li>O‘quvchilar fikri</li></a>
-                <a href="#WhoBlock"><li>Ustoz haqida</li></a>
+                <li>Kurs haqida</li>
+                <li>Kurs o‘quv dasturi</li>
+                <li>O‘quvchilar fikri</li>
+                <li>Ustoz haqida</li>
             </ul>
       </div>
 

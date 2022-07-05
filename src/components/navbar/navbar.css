@@ -1,36 +1,11 @@
 
 *{
-    font-family: 'SF Pro', 'sans-serif' !important;
+    font-family: 'SF Pro', sans-serif !important;
 }
 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.LogoBlock{
-    display: flex;
-    flex-direction: column;
-    height: 28px;
-    margin-top: 8px;
-
-}
-.LogoText{
-    margin: 0 10px;
-    
-    font-family: 'SF Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 95%;
-    text-transform: uppercase;
-    color: #0F0F0F;
-}
-.LogoLowText{
-    margin: 0 10px;
-    color: #28468C;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 9.5px;
 }
 .MainNavLi{
     display: flex;
@@ -66,10 +41,7 @@
     
     color: #0F0F0F;
 }
-.MainNavLi a{
-    color: black;
-    text-decoration-line: none;
-}
+
 .Navbar{
     width: 100%;
     display: flex;
@@ -92,8 +64,7 @@
 
 @media screen and (min-width: 1400px) {
     .Navbar{
-        max-width: 1200px !important;
-        margin: 0 auto !important;
+        max-width: 1200px;
     }
     
 }

@@ -8,16 +8,15 @@
   height: auto;
   object-fit: cover;
 }
-.TopTextBlock {
-  width: 410px;
-  z-index: 2;
+.TopTextBlock{
+    width: 410px;
 }
 .TopBtn {
   display: flex;
 }
 .TopTextBlock h2 {
-  position: absolute;
-  font-family: "SF Pro", sans-serif;
+    position: absolute;
+    font-family: 'SF Pro', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -25,68 +24,63 @@
   width: 652px;
   text-align: start;
   top: 50px;
-  letter-spacing: 0.8px;
+  /* or 112% */
+
   color: #0f0f0f;
 }
-.CarouselMainTop {
-  z-index: -1;
+.TopBtn{
+    margin-top: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-.TopBtn {
-  margin-top: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.btnRoyhat{
+    width: 246px;
+    height: 65px;
+    left: 200px;
+    top: 468px;
+    background-color: #28468C;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: white;
 }
-.btnRoyhat {
-  width: 246px;
-  height: 65px;
-  left: 200px;
-  top: 468px;
-  background-color: #28468c;
-  border: none;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  color: white;
+.kursHaqida{
+    width: 124px !important;
+    height: 38px !important;
 }
-.kursHaqida {
-  width: 124px !important;
-  height: 38px !important;
+.bir{
+    color: #28468C;
 }
-.bir {
-  color: #28468c;
+.CarouselLow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
 }
-.CarouselLow {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-  width: 790px;
+.CarouselLowText{
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #828282;
 }
-.CarouselLowText {
-  font-family: "SF Pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
-  color: #828282;
+.firstCarousel{
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    color: #28468C;
 }
-.firstCarousel {
-  font-family: "SF Pro";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 100%;
-  color: #28468c;
-}
-.allCarousel {
-  font-family: "SF Pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 100%;
-  color: #afafaf;
+.allCarousel{
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #AFAFAF;
 }
 
 @media screen and (min-width: 1400px) {
@@ -94,9 +88,7 @@
     max-width: 1200px;
     margin: 70px auto;
   }
-}
-@media screen and (max-width: 1200px) {
-  .FirstImgCarousel {
-    width: 100%;
+  .FirstImgCarousel{
+      width: 100%;
   }
 }
