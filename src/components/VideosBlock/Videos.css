@@ -3,6 +3,9 @@
     justify-content: space-between;
     align-items: center;
 }
+.BigVideoTab{
+    margin-top: 120px;
+}
 .VideoLavhalar{
     width: 298px;
     height: 68px;
@@ -81,16 +84,18 @@
 }
 .FonVideos{
     background: #FAFAFA;
-    width: 1400px;
-    padding-right: 200px;
+    width: 100%;
+    /* padding-right: 200px; */
     
 
 
 }
+.Videoss{
+    margin-top: 20px;
+}
 .VideosBlock{
-    padding-left: 100px;
-    padding-top: 28px;
-    padding-bottom: 120px;
+  padding: 0;
+  padding-bottom: 120px;
 }
 .blueVidLink{
     color: #28468C;
@@ -105,18 +110,18 @@
         max-width: 1200px;
         margin: 0 auto;
         background: #FAFAFA;
-        padding-left: 100px;
+        
     }
-    .FonVideos{
+    /* .FonVideos{
         width: 1600px;
         margin: 0 auto;
         margin-left: 80px;
         
         
-    }
-    .BigVideoTab{
+    } */
+    /* .BigVideoTab{
         max-width: 1600px;
         margin: 0 auto;
-    }
+    } */
     
 }

@@ -15,16 +15,16 @@ import TabMenu from './components/TabMenu/TabMenu'
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      {/* <MainTop /> */}
-      {/* <KouchDasturi /> */}
+      <Navbar />
+      <MainTop />
+      <KouchDasturi />
       <CarouselCards />
-      {/* <VideosBlock /> */}
-      {/* <KouchUstunligi /> */}
+      <VideosBlock />
+      <KouchUstunligi />
       <KouchAccor />
       <CarouselVideos />
       <LogoSection />
-      {/* <WhoBlock /> */}
+      <WhoBlock />
       <FAQs />
       <Footer />
 

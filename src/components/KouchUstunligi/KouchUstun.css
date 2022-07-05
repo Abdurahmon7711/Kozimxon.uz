@@ -32,7 +32,7 @@
     align-items: center;
 }
 .TopCardsText{
-    font-family: 'SF Pro', sans-serif;
+    font-family: 'SF Pro', 'sans-serif' !important;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
