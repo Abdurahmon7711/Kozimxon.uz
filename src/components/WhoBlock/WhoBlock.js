@@ -8,7 +8,7 @@ import BlockCard4 from '../../assets/images/BlockCard4.png'
 
 function WhoBlock() {
   return (
-    <div className='WhoBlock'>
+    <div className='WhoBlock' id='WhoBlock'>
         <div className='WhoBlockText'>Dastur ustozi Kozimxon Turayev o‘zi kim?</div>
         <div className='WhoBlockBlocks'>
             <div className='WhoLeftBlocks'>

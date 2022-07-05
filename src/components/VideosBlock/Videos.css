@@ -6,6 +6,11 @@
 .VideoLavhalar{
     width: 298px;
     height: 68px;
+    font-size: 30px;
+    line-height: 34px;
+    font-family: 'SF-Pro', sans-serif;
+    font-style: normal;
+    color: #0F0F0F;
 }
 .LinkRoyhat{
     /* width: 166px; */
@@ -76,7 +81,7 @@
 }
 .FonVideos{
     background: #FAFAFA;
-    width: 1400px !important;
+    width: 1400px;
     padding-right: 200px;
     
 
@@ -89,7 +94,7 @@
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
     .VideosBlock{
         max-width: 1200px;
         margin: 0 auto;

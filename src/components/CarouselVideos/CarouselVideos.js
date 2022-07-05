@@ -34,7 +34,7 @@ const responsive = {
 
 function CarouselVideos() {
     return (
-        <div className='container' >
+        <div className='container' id='CarouselVideos'>
 
         <h3 className='partTitle' >Kouching dasturi <br/>ishtirokchilari fikri qanday ? </h3>
 

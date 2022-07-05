@@ -2,9 +2,16 @@ import React from "react";
 import "./Videos.css";
 import play from "../../assets/images/play.svg";
 import stop from "../../assets/images/stop.svg";
+import { useState } from "react";
+
 
 
 function VideosBlock() {
+
+    const [isAcctive, setAcctive] = useState(true);
+    function change() {
+    setAcctive(!isAcctive);
+    }
   return (
     <div className="BigVideoTab">
         <div className="FonVideos">

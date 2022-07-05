@@ -5,7 +5,7 @@ import KouchD2 from '../../assets/images/KouchD2.png'
 import KouchD3 from '../../assets/images/KouchD3.png'
 function KouchDasturi() {
   return (
-    <div className='KouchDasturiBlock'>
+    <div className='KouchDasturiBlock' id='KouchDasturiBlock'>
         <div className='KouchDasturiText'>
            <h2 className='KouchDText'> Kouching dasturi kimlar uchun?</h2>
         </div>

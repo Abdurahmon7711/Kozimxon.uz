@@ -10,23 +10,28 @@ import Footer from "./components/Footer/Footer";
 import KouchAccor from "./components/KouchAccor/KouchAccor";
 import LogoSection from "./components/LogoSection/LogoSection";
 import WhoBlock from './components/WhoBlock/WhoBlock';
+import TabMenu from './components/TabMenu/TabMenu'
 
 function App() {
   return (
     <div className="App">
       <Navbar/>  
       <MainTop/>
-      <KouchDasturi/>
-      <VideosBlock/>
+      {/* <CarouselCards/> */}
+      {/* <KouchDasturi/> */}
+      {/* <VideosBlock/> */}
       <KouchUstunligi/>
-      <WhoBlock/>
+      
         {/* <KouchAccor /> */}
         {/* <KouchAccor /> */}
         {/* <CarouselVideos /> */}
         {/* <CarouselVideos /> */}
         {/* <LogoSection /> */}
+        <WhoBlock/>
         {/* <FAQs /> */}
         {/* <Footer /> */}
+        {/* <TabMenu/> */}
+
 
     </div>
   );
