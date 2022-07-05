@@ -1,5 +1,36 @@
-
-@media screen and (min-width:1200px) {
+.LogoSecItem:hover:nth-child(1){
+    background: url('../../assets/logos/artel01.png');
+    cursor: pointer;
+    z-index: 100000000;
+}
+.LogoSecItem:hover:nth-child(2){
+    /* background: url('../../assets/logos/'); */
+}
+.LogoSecItem:hover:nth-child(3){
+    /* background: url('../../assets/logos/'); */
+}
+.LogoSecItem:hover:nth-child(4){
+    background: url('../../assets/logos/xalq04.png');
+}
+.LogoSecItem:hover:nth-child(5){
+    background: url('../../assets/logos/OFb05.png');
+}
+.LogoSecItem:hover:nth-child(6){
+    background: url('../../assets/logos/ipoteka06.png');
+}
+.LogoSecItem:hover:nth-child(7){
+    /* background: url('../../assets/logos/'); */
+}
+.LogoSecItem:hover:nth-child(8){
+    background: url('../../assets/logos/ermak08.png');
+}
+.LogoSecItem:hover:nth-child(9){
+    background: url('../../assets/logos/turon09.png');
+}
+/* .react-multi-carousel-list{
+    width: 100vw;
+} */
+@media screen and (min-width:1400px) {
     .container{
         max-width: 1200px;
         margin: 0 auto;

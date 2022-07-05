@@ -1,37 +1,113 @@
-.footerForm{
+.bigbox {
+    width: 100%;
+    background-color: #FAFAFA;
+}
+
+.underFooter {
+    background-color: #FAFAFA;
+    width: 100%;
+}
+
+.footerForm {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
 }
-.footerItem{
+
+.footerItem {
     display: flex;
     flex-direction: column;
-    align-items:baseline;
+    align-items: baseline;
     justify-content: center;
-    margin: 20px 50px;
-}
-.footerItem p{
+    margin: 20px 20px 0px ;
     position: relative;
-    margin-top: 10px;
 }
 
-.footerItem input{
+.footerItem p {
+    position: absolute;
+    top: -50px;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 510;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0F0F0F;
+
+}
+
+.footerItem input {
     height: 65px;
     width: 246px;
 }
-.footerbtn{
+
+.footerbtn {
     height: 65px;
     width: 246px;
     margin-top: 10px;
     background-color: #28468C;
     color: #FFF;
+    border-radius: 0;
+    border: none;
 }
 
-@media screen and (min-width:1200px) {
-    .container{
+.footerLink {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerLink ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerLink ul li {
+    list-style-type: none;
+}
+
+.footerLi {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.underRow{
+ height: 3px;
+ border: 1px solid #F0F0F0;
+ width: 100vw;
+}
+
+.footerLink__logo {
+    margin: 0 32px 0 0;
+}
+
+.errorTxt {
+    display: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #FF4646;
+
+}
+
+.errorDet {
+    border: 2px solid #FF4646;
+}
+
+@media screen and (min-width:1400px) {
+    .container {
         max-width: 1200px;
         margin: 0 auto;
     }
-    
+
+    .bigbox {
+        width: 100% !important;
+        /* margin: 0 auto; */
+    }
 }

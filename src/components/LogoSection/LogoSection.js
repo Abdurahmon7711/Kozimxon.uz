@@ -3,6 +3,7 @@ import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import './LogoSection.css'
 
 // Images black
 import artelBl from '../../assets/logos/1artel.png';
@@ -21,7 +22,7 @@ import OFb from '../../assets/logos/OFb05.png';
 import ipoteka from '../../assets/logos/ipoteka06.png';
 import ermak from '../../assets/logos/ermak08.png';
 import turon from '../../assets/logos/turon09.png';
- 
+
 
 const logos = [artelBl, mavisBl, korzinka, xalqBl, OFbl, ipotekaBl, bigdBl, ermakBl, turonBl]
 const logoLight = [artel, xalq, OFb, ipotekaBl, ermak, turon]
@@ -38,17 +39,20 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function LogoSection() {
     return (
-        <div className='container' >
+        <div className='container LogoSection ' >
+            <div className='partTitle'>
+                <h3>Kouching dasturi <br /> mijozlari</h3>
+            </div>
             <Box sx={{ flexGrow: 1 }}>
-                <Grid container spacing={{ xs: 2, md: 6 }} columns={{ xs: 1, sm: 8, md: 12 }}>
+                <Grid container spacing={{ xs: 1, md: 5 }} columns={{ xs: 1, sm: 12, md: 12 }}>
                     {logos.map((logo, index) => (
-                        <Grid item xs={2} sm={4} md={4} key={index}>
-                            <Item><img src={logo} /></Item>
+                        <Grid item xs={3} sm={4} md={4} key={index}>
+                            <Item className='LogoSecItem'><img src={logo} /></Item>
                         </Grid>
                     ))}
                 </Grid>
             </Box>
-            
+
 
         </div>
     )

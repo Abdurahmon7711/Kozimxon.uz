@@ -1,5 +1,75 @@
+.faqsCont{
+    background: #FAFAFA;
+}
+.faqsCont .partTitle{
+    margin-bottom: 120px !important;
+}
+.bigBoxFaq{
+    padding: 120px 0 !important;
+    width: 100% !important;
+    background-color: #FAFAFA !important;    
+    margin-top: 120px;
+}
+.leftBox{
+    display: block;    
+    width: 25%;
+}
+.centerBox{
+    display: block;    
+    width: 25%;
+}
+.rightBox{
+    display: block;    
+    width: 25%;
+}
+.Faq__card{
+    background-color: #FAFAFA !important;
+    margin-bottom: 20px;
+    border: none !important;
+    border-top: 3px solid #E1E1E1 !important;
+    border-radius: 0;
+    width: 380px !important;
+    min-height: 170px !important;
+    max-height: max-content !important;
+    padding-bottom: 20px;
+}
+.KarouselAccor__cardPartBl{
+    border-top: 3px solid #28468C !important;
+    
+}
 
-@media screen and (min-width:1200px) {
+.Faqs__cardTitle{
+    color: #0F0F0F;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 510;
+}
+.faqCarTit{
+    padding: 33px 0 20px 0 !important;
+    margin: 0 !important;
+    font-size: 20px !important;
+}
+.faqCarTitBl{
+    color: #28468C;
+}
+.Faq__car p{
+    font-size: 18px;
+}
+.Faqs__cardContent{
+    position: relative;
+    color: #828282;
+    font-size: 18px;
+    line-height: 25.2px;
+    font-weight: 400;
+    top: 10px;
+    margin: 0 auto;
+}
+
+
+
+
+
+@media screen and (min-width:1400px) {
     .container{
         max-width: 1200px;
         margin: 0 auto;

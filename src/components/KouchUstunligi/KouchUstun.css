@@ -47,7 +47,7 @@
     text-decoration-line: underline;
 }
 .CardFirstText{
-    font-family: 'SF Pro', sans-serif;
+    font-family: 'SF Pro',sans-serif;
 font-style: normal;
 font-weight: 510;
 font-size: 20px;
@@ -72,7 +72,7 @@ line-height: 140%;
 
 color: #828282;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
     .KouchUstunligi{
         max-width: 1200px;
         margin: 32px auto;

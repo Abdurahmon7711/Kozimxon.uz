@@ -34,7 +34,7 @@ const responsive = {
 
 function CarouselVideos() {
     return (
-        <div className='container' id='CarouselVideos'>
+        <div className='container carVid' >
 
         <h3 className='partTitle' >Kouching dasturi <br/>ishtirokchilari fikri qanday ? </h3>
 
@@ -42,67 +42,90 @@ function CarouselVideos() {
                 <div>
 
                     <Box sx={{ minWidth: 275 }} >
-                        <Card className='Karousel__card KarouselAccor__cardPartBl' variant="outlined">
                             <React.Fragment>
-                                <CardContent>
+                                <CardContent className='videoBlcCont'>
                                     <iframe  className="CarouselVideo" width="560" height="315" src="https://www.youtube.com/embed/uOSFxKndG0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         John Doe
                                     </Typography>
                                 </CardContent>
                             </React.Fragment>
-                        </Card>
                     </Box>
 
                 </div>
                 <div>
 
                     <Box sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
                             <React.Fragment>
-                                <CardContent>
+                                <CardContent className='videoBlcCont'>
                                     <iframe  className="CarouselVideo" width="560" height="315" src="https://www.youtube.com/embed/uOSFxKndG0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         John Doe
                                     </Typography>
                                 </CardContent>
                             </React.Fragment>
-                        </Card>
                     </Box>
 
                 </div>
                 <div>
 
                     <Box sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
                             <React.Fragment>
-                                <CardContent>
+                                <CardContent className='videoBlcCont'>
                                     <iframe  className="CarouselVideo" width="560" height="315" src="https://www.youtube.com/embed/uOSFxKndG0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         John Doe
                                     </Typography>
                                 </CardContent>
                             </React.Fragment>
-                        </Card>
                     </Box>
 
                 </div>
                 <div>
 
                     <Box sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
                             <React.Fragment>
-                                <CardContent>
+                                <CardContent className='videoBlcCont'>
                                     <iframe  className="CarouselVideo" width="560" height="315" src="https://www.youtube.com/embed/uOSFxKndG0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         John Doe
                                     </Typography>
                                 </CardContent>
                             </React.Fragment>
-                        </Card>
                     </Box>
 
                 </div>
+                <div>
+
+                    <Box sx={{ minWidth: 275 }}>
+                            <React.Fragment>
+                                <CardContent className='videoBlcCont'>
+                                    <iframe  className="CarouselVideo" width="560" height="315" src="https://www.youtube.com/embed/uOSFxKndG0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
+                                        John Doe
+                                    </Typography>
+                                </CardContent>
+                            </React.Fragment>
+                    </Box>
+
+                </div>
+                
+                <div>
+
+                    <Box sx={{ minWidth: 275 }}>
+                            <React.Fragment>
+                                <CardContent className='videoBlcCont'>
+                                    <iframe  className="CarouselVideo" width="560" height="315" src="https://www.youtube.com/embed/uOSFxKndG0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
+                                        John Doe
+                                    </Typography>
+                                </CardContent>
+                            </React.Fragment>
+                    </Box>
+
+                </div>
+                
+
             </Carousel>
 
         </div>
