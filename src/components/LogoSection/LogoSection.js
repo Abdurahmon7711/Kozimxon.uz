@@ -102,7 +102,7 @@ function LogoSection() {
                                     }}
                                     onMouseLeave={(e) => {
                                         e.target.src = black;
-                                    }}><img src={black} /></Item>
+                                    }}><img className='LogoSecItemImg'  src={black} /></Item>
                             </Grid>
                         )
                     })}
