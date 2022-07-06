@@ -40,11 +40,43 @@
 color: #828282;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
     .KouchDasturiBlock{
         max-width: 1200px;
         margin: 70px auto;
     }
     
+    
+}
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 947px) {
+    .KouchDasturiBlock{
+        margin: 40px 40px 0 40px;
+    }
+    .KouchMiniBlocks{
+        width: 45%;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .KouchDasturiBlock{
+        margin: 20px 20px 0 20px !important;
+    }
+    .KouchMiniBlocks{
+        width: 100%;
+        margin: 0 20px 20px 0px;
+    }
+    .KouchDText{
+        font-size: 24px;
+        font-family: 'SF Pro';
+        font-style: normal;
+        width: 250px;
+        font-weight: 700;
+        font-style: normal;
+    }
     
 }

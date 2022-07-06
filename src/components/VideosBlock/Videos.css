@@ -32,7 +32,7 @@
 }
 .videosName{
     width: 380px !important;
-    height: 90px !important;
+    height: 90px;
     display: flex;
     /* justify-content: space-between; */
     text-align: center;
@@ -95,27 +95,25 @@
     color: #28468C;
 }
 
-/* .react-multi-carousel-list{
-    width: 100vw;
-} */
-
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
     .VideosBlock{
         max-width: 1200px;
         margin: 0 auto;
         background: #FAFAFA;
         
     }
-    /* .FonVideos{
-        width: 1600px;
-        margin: 0 auto;
-        margin-left: 80px;
-        
-        
-    } */
-    /* .BigVideoTab{
-        max-width: 1600px;
-        margin: 0 auto;
-    } */
+
+    
+}
+@media screen and (max-width: 947px) {
+    .firstVideo{
+        height: 405px;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    .firstVideo{
+        height: 202px;
+    }
     
 }

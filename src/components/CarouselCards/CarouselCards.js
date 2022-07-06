@@ -34,7 +34,7 @@ const responsive = {
 
 function CarouselCards() {
     return (
-        <div className='container' >
+        <div className='container' id="CarouselCards" >
 
         <h3 className='partTitle' >Biznes protsesda ko‘p <br/> uchratishimiz mumkin bo‘lgan <br /> muammolarga to‘xtalamiz</h3>
 

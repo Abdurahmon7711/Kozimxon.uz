@@ -10,6 +10,8 @@ import Footer from "./components/Footer/Footer";
 import KouchAccor from "./components/KouchAccor/KouchAccor";
 import LogoSection from "./components/LogoSection/LogoSection";
 import WhoBlock from './components/WhoBlock/WhoBlock';
+import TabMenu from './components/TabMenu/TabMenu'
+import './App.css'
 
 function App() {
   return (
@@ -17,15 +19,15 @@ function App() {
       <Navbar />
       <MainTop />
       <KouchDasturi />
-      <CarouselCards />
+      {/* <CarouselCards /> */}
       <VideosBlock />
       <KouchUstunligi />
-      <KouchAccor />
-      <CarouselVideos />
-      <LogoSection />
+      {/* <KouchAccor /> */}
+      {/* <CarouselVideos /> */}
+      {/* <LogoSection /> */}
       <WhoBlock />
-      <FAQs />
-      <Footer />
+      {/* <FAQs /> */}
+      {/* <Footer /> */}
 
     </div>
   );

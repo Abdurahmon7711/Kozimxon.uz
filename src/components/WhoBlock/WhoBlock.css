@@ -47,11 +47,95 @@
 .WhoBlockBlocks{
     margin-top: 40px;
 }
+#BlockCard4{
+    margin-top: 20px;
+    width: 350px;
+    height: 160px;
+}
 
-@media screen and (min-width:1400px) {
+@media screen and (min-width:1200px) {
     .WhoBlock{
         max-width: 1200px;
         margin: 120px auto;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .TwoCardsTwo{
+        display: flex;
+        justify-content: space-between;
+    }
+    #BlockCard4{
+        height: 220px;
+        padding-bottom: 0px !important;
+        margin-left: 35px;
+    }
+}
+
+@media screen and (max-width: 947px) {
+    .WhoBlock{
+        margin: 40px 40px 0 40px;
+    }
+    .TwoCardsTwo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .WhoImgBlock{
+        position: absolute;
+        right: 40px;
+    }
+    #BlockCard{
+        margin-top: 0px !important;
+        margin-bottom: 20px;
+    }
+    #BlockCard4{
+        height: 220px;
+        padding-bottom: 0px !important;
+        margin-left: 35px;
+    }
+    .WhoLeftBlocks{
+        width: 100% ;
+    }
+    
+    
+}
+@media screen and (max-width: 576px) {
+    .WhoBlock{
+        margin: 20px 20px 0 20px !important;
+    }
+    .TwoCardsTwo{
+        flex-direction: column;
+    }
+    #BlockCard4{
+        margin-left: 0px;
+    }
+    .WhoImgBlock{
+        position: block;
+    }
+    .WhoBlockBlocks{
+        flex-direction: column-reverse;
+    }
+    .WhoImgBlock img{
+        width: 100%;
+        height: auto;
+    }
+    .WhoBlockText{
+        width: 100%;
+        font-family: 'SF Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 30px;
+        color: #0F0F0F;
+    }
+    .WhoImgBlock{
+        position: relative;
+        width: 100%;
+        margin: 20px 10%;
+    }
+    #CardSecondBlock{
+        width: 100%;
     }
     
 }

@@ -1,0 +1,117 @@
+/* @media screen and (min-width: 786px) {
+    .MainTopBlock{
+        max-width: 100%;
+        margin: 0 5%;
+    }
+    .KouchDasturiBlock{
+        max-width: 100%;
+        margin: 0 5%;
+    }
+    .KouchDasturiBlock{
+        max-width: 100%;
+        margin: 0 5%;
+    }
+    .BigVideoTab{
+        max-width: 100%;
+        margin: 0 5%;
+    }
+    .Navbar{
+        max-width: 100%;
+        margin: 0 5%;
+    }
+    .BigVideoTab{
+        max-width: 100%;
+        margin: 0 5%;
+    }
+    
+} */
+
+@media screen and (max-width: 1200px) {
+    /* .MainTopBlock{
+        width: 90%;
+        margin: 120px auto 0 auto !important;
+    } */
+    
+    .KouchDasturiBlock, .VideoTabs, .KouchUstunligi, .WhoBlock {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .VideosBlock{
+        width: 100%;
+    }
+
+    .firstVideo{
+        width: 100% !important;
+    }
+    .DasturText{
+        width: 100%;
+    }
+    .CardSecondText {
+        width: 100%;
+    }
+  
+    .KouchAccor__inner{
+        flex-direction: column;
+    }
+    .player{
+        width: 60%;
+    }
+   
+    .TopTextBlock{
+        width: 40%;
+    }
+    .MainNavLi li{
+        margin: 20px 10px;
+    }
+    #BlockCard {
+        width: 45%;
+        height: auto;
+    }
+    #CardSecondBlock {
+        width: 100%;
+    }
+    
+ 
+       
+    
+}
+@media screen and (max-width: 947px) {
+     #CarouselCards, .KouchAccor {
+        margin: 40px 40px 0 40px !important;
+    }
+    
+    .MainNav{
+        display: none;
+    }
+
+    .Videoss{
+        flex-direction: column-reverse;
+    }
+    .player{
+        width: 100%;
+    }
+    .VideosBlock{
+        padding: 80px 0;
+    }
+    .videosName, .videosName2 {
+        width: 100% !important;
+        margin-top: 20px;
+    }
+    /* Dastur media */
+    .KouchDasturiMini{
+        flex-wrap: wrap;
+    }
+    .Cards{
+        flex-wrap: wrap;
+    }
+    .Card{
+        margin-top: 20px;
+        padding: 30px 0 30px 30px;
+        height: 226px !important;
+    }
+    /* .BlockCard{
+        margin-top: 0px !important;
+    } */    
+}
+
+

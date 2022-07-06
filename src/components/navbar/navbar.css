@@ -62,7 +62,6 @@
     align-items: center;
     height: 28px;
     margin-top: 40px;
-    width: 154px;
 }
 .NumberNav h2 {
     margin: 0px;
@@ -99,111 +98,34 @@
     text-transform: uppercase;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
     .Navbar{
         max-width: 1200px;
+    }  
+}
+@media screen and (max-width: 1200px) {
+    .Navbar {
+        width: 90%;
+        margin: 0 5%;
     }
     
 }
-/* @media screen and (min-width: 786px) {
-    .MainTopBlock{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    .KouchDasturiBlock{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    .KouchDasturiBlock{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    .BigVideoTab{
-        max-width: 100%;
-        margin: 0 5%;
-    }
+
+@media screen and (max-width: 947px) {
     .Navbar{
-        max-width: 100%;
-        margin: 0 5%;
+        margin: 0 40px;
+        height: 80px;
     }
-    .BigVideoTab{
-        max-width: 100%;
-        margin: 0 5%;
+    .NumberNav {
+        margin-top: 30px;
     }
     
-} */
-@media screen and (max-width: 1200px) {
-    .MainNav{
-        display: none;
-    }
-    .MainTopBlock {
-        flex-direction: column;
-        margin-top: 20px !important;
-    }
-    .MainTopBlock:first-child{
-        width: 720px;
-    }
-    .CarouselMain{
-        margin-top: 20px;
-    }
-    .TopTextBlock h2{
-        margin: 0;
-        width: 100% !important;
-    }
-    .TopBtn {
-        margin-top: 60%;
-    }
-    .KouchDasturiMini{
-        flex-wrap: wrap;
-        justify-content: flex-start !important;
-    }
-    .Videoss{
-        flex-direction: column-reverse;
-    }
-    .FonVideos {
-        width: 100%;
-        
-    }
-    .VideosBlock {
-        padding: 0px;
+}
+
+@media screen and (max-width: 576px) {
+    .Navbar{
+        margin: 0 20px 0 20px !important;
     }
 
-    .CarouselMain{
-        width: 100%;
-    }
-    .CarouselLow {
-        width: 100% !important;
-    }
-    .CarouselMain:first-child{
-        width: 100%;
-    }
-    .VideosBlock{
-        width: 100%;
-    }
-    .MainTopBlock img {
-        width: 100% !important;
-    }
-    .CarouselSize{
-        width: 100% !important;
-        height: 100% !important;
-    }
-    .CarouselMain{
-        width: 100% ;
-    }
-    .Cards{
-        flex-wrap: wrap;
-    }
-    .Card{
-        margin-top: 20px;
-    }
-    .VideoLavhalar{
-        width: 100%;
-    }
-    .firstVideo {
-        width: 100% !important;
-        height: 100% !important;
-    }
-   
-    
     
 }

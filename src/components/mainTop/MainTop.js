@@ -14,6 +14,7 @@ function MainTop() {
             <h2>Qadriyatlarga asoslangan biznesni boshqarish <span className="bir"> bir oylik kouching dasturi</span></h2>
             <div className='TopBtn'>
                 <button className='btnRoyhat'>Ro‘yxatdan o‘tish →</button>
+                <div className='tochka'></div>
                 <a href='ss'><img className="kursHaqida" src={kursHaqida}/></a>
             </div>
             

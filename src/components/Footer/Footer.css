@@ -100,7 +100,7 @@
     border: 2px solid #FF4646;
 }
 
-@media screen and (min-width:1400px) {
+@media screen and (min-width:1200px) {
     .container {
         max-width: 1200px;
         margin: 0 auto;
