@@ -8,36 +8,41 @@ import yout from '../../assets/images/f-yout.png'
 import fb from '../../assets/images/f-fb.png'
 
 function Footer() {
-                                    
+
     return (
         <div className='Footer'>
             <div className='container'>
                 <div className='upperFooter'>
                     <h3 className='partTitle' >Kozimxon Turaev bilan kelajakda o‘z <br /> o‘rniga ega biznesingizni yarating!</h3>
                     <div className='footerForm'>
-                        <div className='footerItem' >
-                            <p>Ismingizni kiriting</p>
-                            <input className='msgInput ' placeholder='Ismingiz ...' />
-                            <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
+                        {/* <div className='footerFormGrid'> */}
+                            <div className='footerItem' >
+                                <p>Ismingizni kiriting</p>
+                                <input className='msgInput ' placeholder='F.I.Sh ...' />
+                                <sub className="errorTxt">F.I.Sh notog‘ri kiritilgan!</sub>
+                            </div>
+                            <div className='footerItem' >
+                                <p>Raqamingizni kiriting</p>
+                                <input className='msgInput ' type="number" placeholder='Raqamingiz ...' />
+                                <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
+                            </div>
+                        {/* </div> */}
 
-                        </div>
-                        <div className='footerItem' >
-                            <p>Raqamingizni kiriting</p>
-                            <input className='msgInput ' type="number" placeholder='Raqamingiz ...' />
-                            <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
-                        </div>
-                        <div className='footerItem' >
-                            <p>Biznes sohangizni kiriting</p>
-                            <input className='msgInput ' placeholder='Biznesingiz ...' />
-                            <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
+                        {/* <div className='footerFormGrid'> */}
+                            <div className='footerItem' >
+                                <p>Biznes sohangizni kiriting</p>
+                                <input className='msgInput ' placeholder='Biznesingiz ...' />
+                                <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
 
-                        </div>
-                        <div className='footerItem'>
-                            {/* <p></p> */}
-                            <button className='footerbtn' >Ro‘yxatdan o‘tish →</button>
-                            <sub></sub>
+                            </div>
+                            <div className='footerItem'>
+                                {/* <p></p> */}
+                                <button className='footerbtn' >Ro‘yxatdan o‘tish →</button>
+                                <sub></sub>
 
-                        </div>
+                            </div>
+                        {/* </div> */}
+
                     </div>
                 </div>
             </div>

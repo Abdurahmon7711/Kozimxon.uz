@@ -1,31 +1,3 @@
-/* @media screen and (min-width: 786px) {
-    .MainTopBlock{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    .KouchDasturiBlock{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    .KouchDasturiBlock{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    .BigVideoTab{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    .Navbar{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    .BigVideoTab{
-        max-width: 100%;
-        margin: 0 5%;
-    }
-    
-} */
-
 @media screen and (max-width: 1200px) {
     /* .MainTopBlock{
         width: 90%;

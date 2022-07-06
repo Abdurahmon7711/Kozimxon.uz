@@ -1,3 +1,9 @@
+.rowCarousel{
+    display: flex;
+}
+.rowCarousel > div {
+    margin: 0 50px;
+}
 .partTitle{
     width: 100%;
     font-weight: 700;
@@ -44,6 +50,9 @@
     line-height: 21.48px;
     margin: 10px auto;
 }
+.react-multi-carousel-item, .react-multi-carousel-item--active {
+    margin: 0 20px !important;
+}
 
 @media screen and (min-width:1200px) {
     .container{
@@ -52,9 +61,29 @@
     }
     
 }
-@media (min-width: 0px){
-    .css-1qxcd35-MuiGrid-root{
-        width: 100vw !important;
-    }
+.css-1qxcd35-MuiGrid-root{
+    width: 100vw !important;
+}
 
+/* Tablet Start */
+@media screen and (max-width: 768px) {
+    
+}
+/* Tablet Finish */
+@media screen and (max-width: 947px) {
+
+}
+/* Laptop */
+@media screen and (max-width: 1200px) {
+    /* .MuiPaper-root, .MuiPaper-outlined, .MuiPaper-rounded, .MuiCard-root, .Karousel__card, .KarouselAccor__cardPartBl, */
+    .css-1v5z4dq-MuiPaper-root-MuiCard-root{
+        width: 300px !important;
+        height: 261px;        
+    }
+    /* .react-multi-carousel-list  {
+        width: 1000px;
+    } */
+    .react-multi-carousel-item, .react-multi-carousel-item--active {
+        margin: 0 25px !important;
+    }
 }

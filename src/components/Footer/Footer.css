@@ -111,3 +111,11 @@
         /* margin: 0 auto; */
     }
 }
+@media screen and (max-width:947px ){
+    .footerForm{
+        flex-wrap: wrap;
+    }
+    .footerItem{
+        margin-top: 30px;
+    }
+}

@@ -1,7 +1,6 @@
 .MainTopBlock {
   display: flex;
   position: relative;
-  margin-top: 500px;
 }
 .MainTopBlock img {
   width: 790px;

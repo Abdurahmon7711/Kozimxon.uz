@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    z-index: 100000000;
+    z-index: 1000;
     height: 110px;
     display: flex;
     align-items: center;
@@ -12,7 +12,14 @@
     animation-duration: 0.5s;
 }
 .LogoSecItem:hover{
-    transition: 0.5s;
+    transition: 0.5s ease all;
+}
+.css-1sir9cm-MuiPaper-root{
+    padding: 0;
+}
+.LogoSecItemImg{
+    width: 380px ;
+
 }
 
 /* .react-multi-carousel-list{
@@ -22,6 +29,25 @@
     .container{
         max-width: 1200px;
         margin: 0 auto;
+    }
+}
+@media screen and (max-width:768px){
+    .LogoSecItem{
+        height: 70px !important;
+    }
+    .LogoSecItemImg{
+        width: 170px !important;
+        height: 70px !important;
+    }
+    .css-1sir9cm-MuiPaper-root{
+        padding: 3px !important;
+    }
+    /* .css-1y5qi0o-MuiGrid-root>.MuiGrid-item ,
+    .css-rog8y0-MuiGrid-root{
+        width: 170px !important;
+    } */
+    .css-1y5qi0o-MuiGrid-root>.MuiGrid-item:nth-child(8){
+        display: none !important;
     }
     
 }
