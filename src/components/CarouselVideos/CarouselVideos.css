@@ -1,23 +1,28 @@
-.partTitle{
+.partTitle {
     width: 100%;
     font-weight: 700;
     font-size: 40px;
     line-height: 44px;
     margin: 15px 50px 40px 0px !important;
 }
-.KarouselAccor__cardPartBl{
+
+.KarouselAccor__cardPartBl {
     border-top: 3px solid #28468C !important;
 }
-.KouchAccor__accordion:first-child .accordion__title, .KouchAccor__accordion:first-child .MuiAccordionSummary-expandIconWrapper {
+
+.KouchAccor__accordion:first-child .accordion__title,
+.KouchAccor__accordion:first-child .MuiAccordionSummary-expandIconWrapper {
     color: #28468C;
 }
-.Karousel__cardTitle{
+
+.Karousel__cardTitle {
     color: #0F0F0F;
     font-size: 20px;
     line-height: 26px;
     font-weight: 510;
 }
-.Karousel__cardContent{
+
+.Karousel__cardContent {
     position: relative;
     color: #828282;
     font-size: 18px;
@@ -26,7 +31,8 @@
     top: 10px;
     margin: 0 auto;
 }
-.Karousel__cardLink a{
+
+.Karousel__cardLink a {
     color: #0F0F0F !important;
     text-decoration: underline;
     font-weight: 400;
@@ -34,7 +40,8 @@
     line-height: 21.48px;
     margin: 10px auto;
 }
-.Video__cardContent{
+
+.Video__cardContent {
     position: absolute;
     color: #828282;
     font-size: 14px;
@@ -43,16 +50,17 @@
     bottom: 15px;
     left: 15px;
 }
-.CarouselVideo{
+.CarouselVideo {
     /* position: absolute; */
     width: 100%;
     height: 100%;
     top: 0;
 }
-.videoBlcCont{
+
+.videoBlcCont {
     width: 320px;
     height: 214px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     position: relative;
 }
 
@@ -69,8 +77,19 @@
 } */
 
 @media screen and (min-width:1400px) {
-    .container{
+    .container {
         max-width: 1200px;
         margin: 0 auto;
     }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .CarouselItem{
+    }
+    .react-multi-carousel-item{
+        margin-right: 300px !important;
+    }      
+    
 }

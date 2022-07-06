@@ -53,14 +53,11 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 
 function KouchAccor() {
-
-
-    const [expanded, setExpanded] = React.useState('panel1');
+const [expanded, setExpanded] = React.useState('panel1');
 
     const handleChange = (panel) => (event, newExpanded) => {
         setExpanded(newExpanded ? panel : false);
     };
-
 
     return (
         <div className='bigBox' id="bigBox">
@@ -94,7 +91,7 @@ function KouchAccor() {
                                 <Typography className='accordion__title' >02 — Islom moliyasi asoslari</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
-                                <Typography>
+                                <Typography className='accText'>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                                     malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
                                     sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -107,7 +104,7 @@ function KouchAccor() {
                                 <Typography className='accordion__title' >03 — Biznesda baraka omillari</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
-                                <Typography>
+                                <Typography className='accText'>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                                     malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
                                     sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -120,7 +117,7 @@ function KouchAccor() {
                                 <Typography className='accordion__title' >04 — Muvaffaqqiyatli sherekchilik asosolari </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
-                                <Typography>
+                                <Typography className='accText'>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                                     malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
                                     sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -133,7 +130,7 @@ function KouchAccor() {
                                 <Typography className='accordion__title' >05 — Qadriyatlarga asoslangan liderlik</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
-                                <Typography>
+                                <Typography className='accText'>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                                     malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
                                     sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -146,7 +143,7 @@ function KouchAccor() {
                                 <Typography className='accordion__title' >06 — Xalqaro standardlarga javob beruvchi xizmat ko‘rsatish</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
-                                <Typography>
+                                <Typography className='accText'>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                                     malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
                                     sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -159,7 +156,7 @@ function KouchAccor() {
                                 <Typography className='accordion__title' >07 — Yaponiyaning samaradorlikni oshiruvchi TQM va KAIZEN sistemasi</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
-                                <Typography>
+                                <Typography className='accText'>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                                     malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
                                     sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -172,7 +169,7 @@ function KouchAccor() {
                                 <Typography className='accordion__title' >08 — Qadriyatlarga asoslangan shaxsiy rivojlanish</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
-                                <Typography>
+                                <Typography className='accText'>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                                     malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
                                     sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -181,10 +178,10 @@ function KouchAccor() {
                             </AccordionDetails>
                         </Accordion>
                     </div>
-                    <div className='KouchAccor__cardPart KouchAccor__cardPartBl '>
+                    <div className='KouchAccor__cardPart  '>
 
-                        <Box sx={{ minWidth: 275 }}>
-                            <Card className='Kouch__card' variant="outlined">
+                        <Box >
+                            <Card className='Kouch__card KouchAccor__cardPartBl' variant="outlined">
                                 <React.Fragment>
                                     <CardContent>
                                         <Typography className="Kouch__cardTitle" variant="h5" component="div">
@@ -200,7 +197,7 @@ function KouchAccor() {
                                 </React.Fragment>
                             </Card>
                         </Box>
-                        <Box sx={{ minWidth: 275 }}>
+                        <Box >
                             <Card className='Kouch__card' variant="outlined">
                                 <React.Fragment>
                                     <CardContent>

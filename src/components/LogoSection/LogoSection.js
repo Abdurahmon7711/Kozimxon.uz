@@ -66,7 +66,7 @@ const images = [
         "black": turonBl,
         "light": turon
     },
-    
+
 ]
 
 
@@ -92,26 +92,20 @@ function LogoSection() {
                 <h3>Kouching dasturi <br /> mijozlari</h3>
             </div>
             <Box sx={{ flexGrow: 1 }}  >
-                <Grid container spacing={{ xs: 1, md: 5 }} columns={{ xs: 1, sm: 12, md: 12 }}>
-                    {images.map(({black, light}, index) => {
-                        
-                        
+                <Grid container spacing={{ xs: 1, md: 5 }} columns={{ xs: 6, sm: 12, md: 12 }}>
+                    {images.map(({ black, light }, index) => {
                         return (
-                        
-                        <Grid item xs={3} sm={4} md={4} key={index}>
-                            <Item className='LogoSecItem' onMouseEnter={(e) => {
-
-                                e.target.src = light;
-
-
-                            }}  onMouseLeave={(e) => {
-                                
-                                e.target.src = black;
-
-
-                            }} ><img   src={black} /></Item>
-                        </Grid>
-                    )})}
+                            <Grid item xs={3} sm={4} md={4} key={index}>
+                                <Item className='LogoSecItem'
+                                    onMouseEnter={(e) => {
+                                        e.target.src = light;
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.target.src = black;
+                                    }}><img src={black} /></Item>
+                            </Grid>
+                        )
+                    })}
                 </Grid>
             </Box>
 
