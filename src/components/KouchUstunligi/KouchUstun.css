@@ -62,16 +62,15 @@ color: #0F0F0F;
 }
 .CardSecondText{
     
-font-family: 'SF Pro', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 140%;
-/* or 25px */
-
-
-color: #828282;
+    font-family: 'SF Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    width: 330px;
+    color: #828282;
 }
+
 @media screen and (min-width: 1400px) {
     .KouchUstunligi{
         max-width: 1200px;

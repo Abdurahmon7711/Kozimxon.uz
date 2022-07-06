@@ -63,7 +63,7 @@ function KouchAccor() {
 
 
     return (
-        <div className='bigBox'>
+        <div className='bigBox' id="bigBox">
             <div className='container KouchAccor'>
                 <div className='partTitle'>
                     <h3>Kouching dasturidagi <br /> modullar qanday?</h3>

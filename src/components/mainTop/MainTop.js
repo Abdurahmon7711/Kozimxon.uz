@@ -1,9 +1,11 @@
 import React from 'react'
 import './MainTop.css'
 
+
 // images
 import imgCarousel from '../../assets/images/ImgCarous1.png'
 import kursHaqida from '../../assets/images/kursHaqida.svg'
+import CarouselMain from '../CarouselMain/CarouselMain'
 // images
 function MainTop() {
   return (
@@ -17,7 +19,7 @@ function MainTop() {
             
         </div>
         <div className='TopCarouselBlock'>
-            <img className="FirstImgCarousel" src={imgCarousel}/>
+            <CarouselMain/>
             <div className='CarouselLow'>
                 <h3 className='CarouselLowText'>Kozimxon To‘rayevning treninglaridan lavhalar</h3>
                 <h4 className='firstCarousel'>01<span className='allCarousel'>/03</span></h4>
