@@ -32,7 +32,7 @@
 }
 .videosName{
     width: 380px !important;
-    height: 90px;
+    height: 65px;
     display: flex;
     /* justify-content: space-between; */
     text-align: center;
@@ -53,8 +53,10 @@
     border: none;
     width: 360px;
     padding: 20px;
-
+    transform: scaleY(1.15)
+  
 }
+
 .VideosText{
     margin-left: 20px;
     height: 50px;
@@ -71,10 +73,12 @@
 
     /* or 25px */
 
-    color: #828282;
+    color: #28468C;
 }
+
 .videosName .VideosText{
-    color: #28468C !important;
+    /* color: #28468C !important; */
+    color: #828282;
     text-decoration-line: underline;
 }
 .FonVideos{
