@@ -18,7 +18,8 @@ function Navbar() {
 
 
   return (
-    <div className='Navbar' 
+    <div className='NavFon'>
+    <div className='Navbar'id='Navbar' 
     style={scrollY > 10 ? { marginTop: "112px" } : {}}>
       <div className='logo'>
         <a href="#"><img src={logo} /></a>
@@ -73,6 +74,7 @@ function Navbar() {
         </div>
 
       </div>
+    </div>
     </div>
   )
 }

@@ -13,7 +13,7 @@ function MainTop() {
         <div className='TopTextBlock'>
             <h2>Qadriyatlarga asoslangan biznesni boshqarish <span className="bir"> bir oylik kouching dasturi</span></h2>
             <div className='TopBtn'>
-                <button className='btnRoyhat'>Ro‘yxatdan o‘tish →</button>
+                <a href="#footerbtn" ><button className='btnRoyhat'>Ro‘yxatdan o‘tish →</button></a>
                 <div className='tochka'></div>
                 <a href='ss'><img className="kursHaqida" src={kursHaqida}/></a>
             </div>

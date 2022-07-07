@@ -37,7 +37,7 @@ function Footer() {
                             </div>
                             <div className='footerItem'>
                                 {/* <p></p> */}
-                                <button className='footerbtn' >Ro‘yxatdan o‘tish →</button>
+                                <button className='footerbtn'id="footerbtn" >Ro‘yxatdan o‘tish →</button>
                                 <sub></sub>
 
                             </div>
