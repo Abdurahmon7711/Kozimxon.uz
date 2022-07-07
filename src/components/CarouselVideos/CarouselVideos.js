@@ -59,7 +59,7 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }}>
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
-                                    <iframe  className="CarouselVideo" width="560" height="315" src="https://www.youtube.com/embed/uOSFxKndG0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <img src={vidBlock} alt={"ad"}/>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         John Doe
                                     </Typography>
@@ -73,7 +73,7 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }}>
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
-                                    <iframe  className="CarouselVideo" width="560" height="315" src="https://youtu.be/rtv1rbHsHCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <img src={vidBlock} alt={"ad"}/>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         John Doe
                                     </Typography>
@@ -87,7 +87,7 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }}>
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
-                                    <iframe  className="CarouselVideo" width="560" height="315" src="https://www.youtube.com/embed/uOSFxKndG0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <img src={vidBlock} alt={"ad"}/>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         John Doe
                                     </Typography>
@@ -101,7 +101,7 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }}>
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
-                                    <iframe  className="CarouselVideo" width="560" height="315" src="https://www.youtube.com/embed/uOSFxKndG0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <img src={vidBlock} alt={"ad"}/>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         John Doe
                                     </Typography>
@@ -116,7 +116,7 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }}>
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
-                                    <iframe  className="CarouselVideo" width="560" height="315" src="https://www.youtube.com/embed/uOSFxKndG0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <img src={vidBlock} alt={"ad"}/>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         John Doe
                                     </Typography>

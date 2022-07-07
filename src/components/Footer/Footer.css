@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
-    margin: 20px 20px 0px ;
+    margin: 20px 20px 0px;
     position: relative;
 }
 
@@ -68,12 +68,14 @@
     list-style-type: none;
     margin-left: 34px;
 }
-.footerLink ul li a > * {
+
+.footerLink ul li a>* {
     text-decoration: none;
     color: #0F0F0F;
     font-size: 20px;
 }
-.footerLink ul li a > * :hover{
+
+.footerLink ul li a>* :hover {
     color: #28468C;
 }
 
@@ -85,10 +87,10 @@
     line-height: 20px;
 }
 
-.underRow{
- height: 3px;
- border: 1px solid #F0F0F0;
- width: 100vw;
+.underRow {
+    height: 3px;
+    border: 1px solid #F0F0F0;
+    width: 100vw;
 }
 
 .footerLink__logo {
@@ -103,15 +105,34 @@
     line-height: 100%;
     color: #FF4646;
 }
+
 input {
     outline: none;
 }
-button{
+
+button {
     cursor: pointer;
 }
 
 .errorDet {
     border: 2px solid #FF4646;
+}
+
+.copyName {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+    color: #0F0F0F;
+}
+.copyBrand{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: right;
+    color: #B7B7B7;
+    text-decoration: none;
 }
 
 @media screen and (min-width:1200px) {
@@ -124,12 +145,49 @@ button{
         width: 100% !important;
         /* margin: 0 auto; */
     }
+
+    .footerForm {
+        display: flex;
+    }
+
+    .footerFormGrid {
+        display: flex;
+
+    }
 }
-@media screen and (max-width:947px ){
-    .footerForm{
+
+@media screen and (max-width:1200px) {
+    .footerForm {
         flex-wrap: wrap;
     }
-    .footerItem{
+}
+
+@media screen and (max-width:947px) {
+    .footerItem {
         margin-top: 30px;
     }
+}
+@media screen and (max-width:500px ) {
+    .underFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerLink{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important; 
+        justify-content: center !important;
+        text-align: center !important; 
+    }
+    .footerLink > *{
+        text-align: center !important; 
+
+    }
+    .footerLink ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
 }

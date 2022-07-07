@@ -16,17 +16,17 @@ function VideosBlock() {
     }
 
     const Tabmenu = [
-        createDataAcc(play, 'Qadriyatlarga asoslangan biznesni boshqarish kursi ', 'https://www.youtube.com/embed/Al14l9SdI-I?controls=1'),
-        createDataAcc(play, 'HR meneger kim? ', 'https://www.youtube.com/embed/Zra33_gCgxQ'),
-        createDataAcc(play, 'Yaponiyaning KAIZEN sistemasi ', 'https://www.youtube.com/embed/tk_2n-mZGNc'),
-        createDataAcc(play, 'Moliya boshqaruvi ', 'https://www.youtube.com/embed/Evfj7JMjR1Q'),
-        createDataAcc(play, 'Ko‘p yillik tajribaga ega ustoz ', 'https://www.youtube.com/embed/0nZnBncSkZE'),
+        createDataAcc(play, 'Qadriyatlarga asoslangan biznesni boshqarish kursi ', 'https://www.youtube.com/embed/32si5cfrCNc?controls=1'),
+        createDataAcc(play, 'HR meneger kim? ', 'https://www.youtube.com/embed/jvrDXVNEHwQ'),
+        createDataAcc(play, 'Yaponiyaning KAIZEN sistemasi ', 'https://www.youtube.com/embed/jvrDXVNEHwQ'),
+        createDataAcc(play, 'Moliya boshqaruvi ', 'https://www.youtube.com/embed/jvrDXVNEHwQ'),
+        createDataAcc(play, 'Ko‘p yillik tajribaga ega ustoz ', 'https://www.youtube.com/embed/jvrDXVNEHwQ'),
 
     ]
 
 
     return (
-        <div className="BigVideoTab" id="BigVideoTab">
+        <div className="BigVideoTab">
             <div className="FonVideos">
                 <div className="VideosBlock">
                     <div className="VideoTabs">
@@ -34,7 +34,7 @@ function VideosBlock() {
                             <h2 className="VideoLavhalar">
                                 Kouching dasturidan video lavhalar
                             </h2>
-                            <a className="LinkRoyhat" href="#Footer">
+                            <a className="LinkRoyhat" href="#">
                                 Ro‘yxatdan o‘tish →
                             </a>
                         </div>
@@ -63,12 +63,9 @@ function VideosBlock() {
                                     )
                                 })
                                 }
-                                 <a className="LinkRoyhat" id="LinkRoyhat" href="#Footer">
-                                    Ro‘yxatdan o‘tish →
-                                </a>
                             </div>
                             <div className='player' id='myplayer'  >
-                                <iframe className='firstVideo' if='videoiframe' src='https://www.youtube.com/embed/Al14l9SdI-I'>
+                                <iframe className='firstVideo' if='videoiframe' src='https://www.youtube.com/embed/jvrDXVNEHwQ'>
 
                                 </iframe>
                             </div>

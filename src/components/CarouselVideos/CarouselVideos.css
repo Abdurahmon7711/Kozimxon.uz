@@ -5,6 +5,9 @@
     line-height: 44px;
     margin: 15px 50px 40px 0px !important;
 }
+.CarouselItem{
+    position: relative;
+}
 
 .KarouselAccor__cardPartBl {
     border-top: 3px solid #28468C !important;
@@ -43,13 +46,16 @@
 
 .Video__cardContent {
     position: absolute;
-    color: #828282;
+    bottom: 60px;
+    margin-left: 15px !important;
+    margin-bottom: 15px;
+    font-weight: 274;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 274;
-    bottom: 15px;
-    left: 15px;
+    color: #FFFFFF !important;
+
 }
+
 .CarouselVideo {
     /* position: absolute; */
     width: 100%;
@@ -77,7 +83,7 @@
 } */
 
 @media screen and (min-width:1200px) {
-    .container{
+    .container {
         max-width: 1200px;
         margin: 0 auto;
     }
@@ -86,9 +92,9 @@
 
 
 @media screen and (max-width: 768px) {
-   
+
     /* .react-multi-carousel-item{
         margin-right: 300px !important;
     }       */
-    
+
 }

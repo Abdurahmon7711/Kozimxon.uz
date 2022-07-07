@@ -22,7 +22,7 @@ function Footer() {
                 <div className='upperFooter'>
                     <h3 className='partTitle' >Kozimxon Turaev bilan kelajakda o‘z <br /> o‘rniga ega biznesingizni yarating!</h3>
                     <div className='footerForm'>
-                        {/* <div className='footerFormGrid'> */}
+                        <div className='footerFormGrid'>
                             <div className='footerItem' >
                                 <p>Ismingizni kiriting</p>
                                 <input className='msgInput ' placeholder='F.I.Sh ...' />
@@ -33,9 +33,9 @@ function Footer() {
                                 <input className='msgInput ' type="number" placeholder='Raqamingiz ...' />
                                 <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
                             </div>
-                        {/* </div> */}
+                        </div>
 
-                        {/* <div className='footerFormGrid'> */}
+                        <div className='footerFormGrid'>
                             <div className='footerItem' >
                                 <p>Biznes sohangizni kiriting</p>
                                 <input className='msgInput ' placeholder='Biznesingiz ...' />
@@ -48,7 +48,7 @@ function Footer() {
                                 <sub></sub>
 
                             </div>
-                        {/* </div> */}
+                        </div>
 
                     </div>
                 </div>
@@ -78,12 +78,13 @@ function Footer() {
                         <hr />
                         {/* <span className='underRow'></span> */}
                         <div className='footerLink'>
-                            <p>© {' '} Kozimxon Turaev barcha huquqlar himoyalangan</p>
+                            <p className='copyName'>© {' '} Kozimxon Turaev barcha huquqlar himoyalangan</p>
+                            <p className='copyBrand'> by <a className='copyBrand' href=""> QWERTY al-Fajr</a> & <a className='copyBrand' href="">Socially Agency</a> </p>
                             <ul>
-                                <li><a href="#"> <RiTelegramLine/> </a></li>
-                                <li><a href="#"> <RiInstagramLine/> </a></li>
-                                <li><a href="#"> <RiYoutubeLine/> </a></li>
-                                <li><a href="#"> <RiFacebookCircleLine/> </a></li>
+                                <li><a href="https://t.me/KozimxonTuraev"> <RiTelegramLine/> </a></li>
+                                <li><a href="https://www.instagram.com/kozimxon_turaev"> <RiInstagramLine/> </a></li>
+                                <li><a href="https://www.youtube.com/channel/UCsAjvumJ1T_5EW0792YQHTQ"> <RiYoutubeLine/> </a></li>
+                                <li><a href="https://www.facebook.com/kozimhon"> <RiFacebookCircleLine/> </a></li>
                             </ul>
 
                         </div>
