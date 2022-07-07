@@ -9,7 +9,7 @@ function KouchUstunligi() {
     <div className="KouchUstunligi">
       <div className="TopCards">
         <h2 className="TopCardsText">Kouching dasturining ustunligi nimada?</h2>
-        <p className="LinkRoyhat">Ro‘yxatdan o‘tish →</p>
+        <a href="#Footer"><p className="LinkRoyhat">Ro‘yxatdan o‘tish →</p></a>
       </div>
         
       <div className="Cards">
@@ -46,7 +46,7 @@ function KouchUstunligi() {
               </div>
           </div>
       </div>
-      <p className="LinkRoyhat" id="LinkRoyhat">Ro‘yxatdan o‘tish →</p>
+      <a href="#Footer"><p className="LinkRoyhat" id="LinkRoyhat">Ro‘yxatdan o‘tish →</p></a>
 
     </div>
   );

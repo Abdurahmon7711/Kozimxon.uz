@@ -63,7 +63,7 @@ function WhoBlock() {
                             
 
                 </div>
-                <button className='btnRoyhat' id="btnRoyhat">Ro‘yxatdan o‘tish →</button>
+                <a href="#Footer"><button className='btnRoyhat' id="btnRoyhat">Ro‘yxatdan o‘tish →</button></a>
             </div>
 
             <div className='WhoImgBlock'>

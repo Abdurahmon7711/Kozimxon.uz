@@ -108,6 +108,7 @@ color: #0F0F0F;
     }
     #LinkRoyhat{
         display: block !important;
+        margin-top: 20px;
     }
     .Navbar{
         margin: 0 20px;

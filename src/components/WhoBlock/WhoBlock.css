@@ -50,7 +50,9 @@
     width: 350px;
     height: 160px;
 }
-
+.WhoImgBlock{
+    margin-top: 20px;
+}
 @media screen and (min-width:1200px) {
     .WhoBlock{
         max-width: 1200px;
@@ -72,6 +74,9 @@
         margin-top: 100px;
         width: auto;
     } 
+    .WhoBlockText{
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width: 947px) {
@@ -85,6 +90,7 @@
     .WhoImgBlock{
         position: absolute;
         right: 40px;
+        margin-top: 0px;
     }
     #BlockCard{
         margin-top: 0px !important;
@@ -99,6 +105,12 @@
     }
     .WhoLeftBlocks{
         width: 100% ;
+    }
+    .WhoBlockText{
+        margin-top: 20px;
+    }
+    .videosName, .videosName2{
+        margin-right: 0px;
     }
     
     
@@ -115,9 +127,11 @@
     }
     .WhoImgBlock{
         position: block;
+        margin-top: 0px !important;
     }
     .WhoBlockBlocks{
         flex-direction: column-reverse;
+        margin-top: 0px;
     }
     .WhoImgBlock img{
         width: 100%;
@@ -139,6 +153,9 @@
     }
     #CardSecondBlock{
         width: 100%;
+    }
+    .videosName, .videosName2{
+        margin-right: 0px;
     }
     
 }

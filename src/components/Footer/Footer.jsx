@@ -58,15 +58,15 @@ function Footer() {
                     <div className='underFooter'>
                         <div className='Navbar'>
                             <div className='logo'>
-                                <img src={logo} />
+                                <a href="#"><img src={logo} /></a>
                             </div>
 
                             <div className='MainNav'>
                                 <ul className='MainNavLi'>
-                                    <li className='footerLi'>Kurs haqida</li>
-                                    <li className='footerLi'>Kurs o‘quv dasturi</li>
-                                    <li className='footerLi'>O‘quvchilar fikri</li>
-                                    <li className='footerLi'>Ustoz haqida</li>
+                                    <a href="#KouchDasturiBlock"><li>Kurs haqida</li></a>
+                                    <a href="#bigBox"><li>Kurs o‘quv dasturi</li></a>
+                                    <a href="#carVid"><li>O‘quvchilar fikri</li></a>
+                                    <a href="#WhoBlock"><li>Ustoz haqida</li></a>
                                 </ul>
                             </div>
 
