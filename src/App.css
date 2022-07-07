@@ -48,9 +48,9 @@
     
 }
 @media screen and (max-width: 947px) {
-     #CarouselCards, .KouchAccor {
+     /* #CarouselCards, .KouchAccor {
         margin: 40px 40px 0 40px !important;
-    }
+    } */
     
     .MainNav{
         display: none;

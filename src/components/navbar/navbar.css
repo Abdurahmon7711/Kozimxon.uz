@@ -189,18 +189,6 @@
     justify-content: center ;
     flex-direction: column;
 }
-.NavFon{
-    position: fixed;
-    width: 100%;
-    /* margin: 0 5%; */
-    box-shadow:  0 2px 0 0px rgb(231, 229, 229);
-    z-index: 22;
-    background: #fff;
-    top: 0;
-    right: 0;
-
-}
-
 @media screen and (min-width: 1200px) {
     .Navbar{
         max-width: 1200px;
@@ -210,17 +198,6 @@
     .Navbar {
         width: 90%;
         margin: 0 5%;
-    }
-    .NavFon{
-        position: fixed;
-        width: 100%;
-        /* margin: 0 5%; */
-        box-shadow:  0 2px 0 0px rgb(231, 229, 229);
-        z-index: 22;
-        background: #fff;
-        top: 0;
-        right: 0;
-
     }
     
 }

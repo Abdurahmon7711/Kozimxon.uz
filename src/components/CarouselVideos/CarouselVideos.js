@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import { Link } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import "./CarouselVideos.css"
+import vidBlock from '../../assets/images/vidBlock.png'
 
 const responsive = {
     superLargeDesktop: {
@@ -44,6 +45,20 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }} >
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
+                                    <img src={vidBlock} alt={"ad"}/>
+                                    <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
+                                        John Doe
+                                    </Typography>
+                                </CardContent>
+                            </React.Fragment>
+                    </Box>
+
+                </div>
+                <div>
+
+                    <Box className='CarouselItem' sx={{ minWidth: 275 }}>
+                            <React.Fragment>
+                                <CardContent className='videoBlcCont'>
                                     <iframe  className="CarouselVideo" width="560" height="315" src="https://www.youtube.com/embed/uOSFxKndG0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         John Doe
@@ -59,20 +74,6 @@ function CarouselVideos() {
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
                                     <iframe  className="CarouselVideo" width="560" height="315" src="https://youtu.be/rtv1rbHsHCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
-                                        John Doe
-                                    </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                    </Box>
-
-                </div>
-                <div>
-
-                    <Box className='CarouselItem' sx={{ minWidth: 275 }}>
-                            <React.Fragment>
-                                <CardContent className='videoBlcCont'>
-                                    <iframe  className="CarouselVideo" width="560" height="315" src="https://www.youtube.com/embed/uOSFxKndG0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         John Doe
                                     </Typography>

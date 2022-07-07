@@ -7,10 +7,17 @@ import inst from '../../assets/images/f-inst.png'
 import yout from '../../assets/images/f-yout.png'
 import fb from '../../assets/images/f-fb.png'
 
+// Icons
+import { RiTelegramLine } from "react-icons/ri";
+import { RiInstagramLine } from "react-icons/ri";
+import { RiYoutubeLine } from "react-icons/ri";
+import { RiFacebookCircleLine } from "react-icons/ri";
+
+
 function Footer() {
 
     return (
-        <div className='Footer'>
+        <div className='Footer' id='Footer'>
             <div className='container'>
                 <div className='upperFooter'>
                     <h3 className='partTitle' >Kozimxon Turaev bilan kelajakda o‘z <br /> o‘rniga ega biznesingizni yarating!</h3>
@@ -37,7 +44,7 @@ function Footer() {
                             </div>
                             <div className='footerItem'>
                                 {/* <p></p> */}
-                                <button className='footerbtn'id="footerbtn" >Ro‘yxatdan o‘tish →</button>
+                                <button className='footerbtn' >Ro‘yxatdan o‘tish →</button>
                                 <sub></sub>
 
                             </div>
@@ -73,10 +80,10 @@ function Footer() {
                         <div className='footerLink'>
                             <p>© {' '} Kozimxon Turaev barcha huquqlar himoyalangan</p>
                             <ul>
-                                <li><a href="#"><img className='footerLink__logo tg' src={tg} alt="Telegram Logo" /></a></li>
-                                <li><a href="#"><img className='footerLink__logo inst' src={inst} alt="Instagram Logo" /></a></li>
-                                <li><a href="#"><img className='footerLink__logo yout' src={yout} alt="YouTube Logo" /></a></li>
-                                <li><a href="#"><img className='footerLink__logo fb' src={fb} alt="Facebook Logo" /></a></li>
+                                <li><a href="#"> <RiTelegramLine/> </a></li>
+                                <li><a href="#"> <RiInstagramLine/> </a></li>
+                                <li><a href="#"> <RiYoutubeLine/> </a></li>
+                                <li><a href="#"> <RiFacebookCircleLine/> </a></li>
                             </ul>
 
                         </div>

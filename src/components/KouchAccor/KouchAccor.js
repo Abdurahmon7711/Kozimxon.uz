@@ -12,6 +12,8 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
+import logo from '../../assets/navbarLogo/Logo.png'
+
 
 
 
@@ -192,7 +194,8 @@ const [expanded, setExpanded] = React.useState('panel1');
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Link to="#" className='Kouch__cardLink'>PDF yuklab olish → </Link>
+                                        <a className='Kouch__cardLink' href='./KouchAccor.css' download="PDF file">PDF yuklab olish →</a>
+                                        {/* <Link to="#" className='Kouch__cardLink'>PDF yuklab olish → </Link> */}
                                     </CardActions>
                                 </React.Fragment>
                             </Card>
@@ -209,7 +212,8 @@ const [expanded, setExpanded] = React.useState('panel1');
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Link to="#" className='Kouch__cardLink' >Ro‘yxatdan o‘tish →</Link>
+                                        {/* <Link to="#Footer" className='Kouch__cardLink'>Ro‘yxatdan o‘tish →</Link> */}
+                                        <a href="#Footer" className='Kouch__cardLink'>Ro‘yxatdan o‘tish →</a> 
                                     </CardActions>
                                 </React.Fragment>
                             </Card>

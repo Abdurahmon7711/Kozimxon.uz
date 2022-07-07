@@ -4,6 +4,16 @@
 .faqsCont .partTitle{
     margin-bottom: 120px !important;
 }
+.faqsContBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.faqsContBox > *{
+    margin-right: 50px;
+}
 .bigBoxFaq{
     padding: 120px 0 !important;
     width: 100% !important;
@@ -28,16 +38,13 @@
     border: none !important;
     border-top: 3px solid #E1E1E1 !important;
     border-radius: 0;
-    width: 380px !important;
-    min-height: 170px !important;
-    max-height: max-content !important;
+    width: 380px ;
+    height: max-content !important;
     padding-bottom: 20px;
 }
 .KarouselAccor__cardPartBl{
     border-top: 3px solid #28468C !important;
-    
 }
-
 .Faqs__cardTitle{
     color: #0F0F0F;
     font-size: 20px;
@@ -65,14 +72,47 @@
     margin: 0 auto;
 }
 
-
-
-
-
 @media screen and (min-width:1200px) {
     .container{
         max-width: 1200px;
         margin: 0 auto;
     }
     
+}
+@media screen and (max-width:947px) {
+    .faqsContBox{
+        display: none !important;
+    }
+    .faqsContBoxTablet{
+        display: flex;
+        width: 100%;
+        margin: 10px auto;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .faqsContBoxTablet > * {
+        /* width: 250px !important; */
+        margin: 10px 0 0 20px;
+    }
+    .Faq__card{
+        width: 250px !important;
+    }
+}
+@media screen and (min-width:947px) {
+    .faqsContBoxTablet{
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
+    .faqsContBoxTablet{
+        display: none;
+    }
+    .faqsContBox{
+        display: flex !important; 
+    }
+    .leftBox, .centerBox, .rightBox{
+        /* margin-right: 50px; */
+        width: 100%;
+        margin: 10px 10000px;
+    }
 }

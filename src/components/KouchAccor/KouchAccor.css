@@ -86,6 +86,9 @@
 
 .css-1v5z4dq-MuiPaper-root-MuiCard-root {
     background-color: #F0F0F0 !important;
+    height: 286px;
+    width:350px;
+    position: relative;
 }
 
 .KouchAccor__cardPartBl {
@@ -99,9 +102,6 @@
     border-radius: 0;
 }
 
-.css-1v5z4dq-MuiPaper-root-MuiCard-root {
-    background-color: #F0F0F0 !important;
-}
 
 .KouchAccor__accordion:first-child .accordion__title,
 .KouchAccor__accordion:first-child .MuiAccordionSummary-expandIconWrapper {
@@ -109,10 +109,10 @@
 }
 
 .Kouch__cardTitle {
-    color: #0F0F0F;
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 510;
+    color: #0F0F0F !important;
+    font-size: 20px !important;
+    line-height: 26px !important;
+    font-weight: 510 !important ; 
 }
 
 .css-ag7rrr-MuiTypography-root {
@@ -123,29 +123,34 @@
 }
 
 .Kouch__cardContent {
-    position: relative;
-    color: #828282;
-    font-size: 18px;
-    line-height: 25.2px;
-    font-weight: 400;
-    top: 10px;
-    margin: 0 auto;
+    position: relative !important;
+    color: #828282 !important;
+    font-size: 18px !important;
+    line-height: 25.2px !important;
+    font-weight: 400 !important;
+    top: 10px !important;
+    margin: 20px auto !important;
+    
 }
 .Kouch__card{
     position: relative;
 }
-.Kouch__cardLink a {
+.Kouch__cardLink {
     color: #0F0F0F !important;
     text-decoration: underline;
     font-weight: 400;
     font-size: 18px;
     line-height: 21.48px;
-    margin: 10px auto;
-    
+    margin: 100px 0 auto;
+    position: absolute;
+    bottom: 30px;
+    width: 200px;
 }
 .css-1t6e9jv-MuiCardActions-root{
     position: absolute;
     bottom:20px;
+}
+.css-1v5z4dq-MuiPaper-root-MuiCard-root {
 }
 
 
@@ -157,11 +162,13 @@
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:947px) {
     .KouchAccor__cardPart {
-        width: 300px;
         display: flex;
-        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
     }
 
     .css-12dv9jb {
@@ -174,7 +181,7 @@
 
 }
 
-@media screen and (max-width: 947px) {
+@media screen and (max-width: 950px) {
     .container {
         max-width: 720px;
         margin: 120px auto;
@@ -217,18 +224,21 @@
         margin: 40px auto;
     }
 }
-
 @media screen and (max-width: 768px) {
-    .container {
-        width: 360px;
-    }
     .KouchAccor__cardPart{
         display: flex;
         flex-direction: column;
         margin: 0;
     }
+}
+@media screen and (max-width: 500px) {
+    .container {
+        width: 360px;
+    }
+
     .Kouch__card{
-        height: 223px;
+        height: 300px;
+        width: 360px;
     }
     .partTitle {
         width: 100%;
@@ -237,5 +247,9 @@
         line-height: 30px;
         margin: 15px 0px;
         color: #0F0F0F;
+    }
+    .KouchAccor__accordionPart {
+        width: 90%;
+        margin: 40px auto;
     }
 }

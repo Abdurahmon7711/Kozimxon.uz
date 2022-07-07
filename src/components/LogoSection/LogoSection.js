@@ -39,8 +39,8 @@ const images = [
         "light": mavis
     },
     {
-        "black": korzinka,
-        "light": korzinkaBl
+        "black": korzinkaBl,
+        "light": korzinka
     },
     {
         "black": xalqBl,

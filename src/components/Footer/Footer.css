@@ -66,6 +66,15 @@
 
 .footerLink ul li {
     list-style-type: none;
+    margin-left: 34px;
+}
+.footerLink ul li a > * {
+    text-decoration: none;
+    color: #0F0F0F;
+    font-size: 20px;
+}
+.footerLink ul li a > * :hover{
+    color: #28468C;
 }
 
 .footerLi {
@@ -93,7 +102,12 @@
     font-size: 12px;
     line-height: 100%;
     color: #FF4646;
-
+}
+input {
+    outline: none;
+}
+button{
+    cursor: pointer;
 }
 
 .errorDet {

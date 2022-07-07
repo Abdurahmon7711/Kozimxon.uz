@@ -50,9 +50,9 @@
     line-height: 21.48px;
     margin: 10px auto;
 }
-.react-multi-carousel-item, .react-multi-carousel-item--active {
+/* .react-multi-carousel-item, .react-multi-carousel-item--active {
     margin: 0 20px !important;
-}
+} */
 
 @media screen and (min-width:1200px) {
     .container{

@@ -1,7 +1,6 @@
 .MainTopBlock {
   display: flex;
   position: relative;
-  margin-top: 180px !important;
 }
 .MainTopBlock img {
   width: 790px;
@@ -108,7 +107,6 @@
   .MainTopBlock {
     width: 90%;
     margin: 0 5%;
-    margin-top: 120px !important;
   }
   .CarouselMain {
     width: auto;
@@ -142,7 +140,7 @@
 }
 @media screen and (max-width: 947px) {
   .MainTopBlock {
-    margin: 80px 40px 0 40px !important;
+    margin: 40px 40px 0 40px !important;
   }
   .MainTopBlock {
     display: flex;
@@ -184,7 +182,7 @@
     width: 100%;
   }
   .MainTopBlock{
-    margin: 60px 20px 0 20px !important;
+    margin: 0 20px 0 20px !important;
   }
   .TopBtn{
     flex-direction: column;
