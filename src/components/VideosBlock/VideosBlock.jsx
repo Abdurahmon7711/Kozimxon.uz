@@ -48,7 +48,7 @@ function VideosBlock() {
                                                 if( e.currentTarget.className == 'videosName'){
                                                     e.currentTarget.className = 'videosName2';
                                                     e.currentTarget.querySelector('img').src = play;
-                                                    document.getElementById('myplayer').innerHTML = `<iframe class='firstVideo' if='videoiframe' src=${cont.ssilka}></iframe>`;
+                                                    document.getElementById('myplayer').innerHTML = `<iframe class='firstVideo' if='videoiframe' src=${cont.ssilka} frameborder="0" allowfullscreen></iframe>`;
 
                                                 } else {
                                                     e.currentTarget.className = 'videosName';
@@ -68,7 +68,7 @@ function VideosBlock() {
                                 </a>
                             </div>
                             <div className='player' id='myplayer'  >
-                                <iframe className='firstVideo' if='videoiframe' src='https://www.youtube.com/embed/Al14l9SdI-I'>
+                                <iframe className='firstVideo'  if='videoiframe' src='https://www.youtube.com/embed/Al14l9SdI-I' frameborder="0" allowfullscreen>
 
                                 </iframe>
                             </div>

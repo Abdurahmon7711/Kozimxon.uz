@@ -66,19 +66,19 @@ export default function VerticalTabs() {
         <Tab className='TabsNumber' label="Ko‘p yillik tajribaga ega ustoz" {...a11yProps(4)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        <iframe className='firstVideo' src="https://www.youtube.com/embed/fW2BZDxDlIM"/>
+        <iframe className='firstVideo' frameborder="0" allowfullscreen src="https://www.youtube.com/embed/fW2BZDxDlIM"/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <iframe className='firstVideo' src="https://www.youtube.com/embed/Ua5shXolDD0"/>
+        <iframe className='firstVideo' frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Ua5shXolDD0"/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <iframe className='firstVideo' src="https://www.youtube.com/embed/nDcO6UOVd6A"/>
+        <iframe className='firstVideo' frameborder="0" allowfullscreen src="https://www.youtube.com/embed/nDcO6UOVd6A"/>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <iframe className='firstVideo' src="https://www.youtube.com/embed/jvrDXVNEHwQ"/>
+        <iframe className='firstVideo' frameborder="0" allowfullscreen src="https://www.youtube.com/embed/jvrDXVNEHwQ"/>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <iframe className='firstVideo' src="https://www.youtube.com/embed/nDcO6UOVd6A"/>
+        <iframe className='firstVideo' frameborder="0" allowfullscreen src="https://www.youtube.com/embed/nDcO6UOVd6A"/>
       </TabPanel>
     </Box>
   );
