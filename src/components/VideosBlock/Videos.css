@@ -105,6 +105,20 @@
 
     
 }
+@media screen and (max-width: 1200px) {
+    .Videoss{
+        flex-direction: row;
+    }
+    .videosName, .videosName2{
+        width: 360px;
+        margin-right: 20px;
+    }
+    .WhoImgBlock{
+        position: absolute;
+        right: 40px
+    }
+    
+}
 @media screen and (max-width: 947px) {
     .firstVideo{
         height: 405px;
@@ -113,7 +127,16 @@
 }
 @media screen and (max-width: 576px) {
     .firstVideo{
-        height: 202px;
+        height: 405;
+    }
+    .player{
+        height: 202px !important;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .firstVideo{
+        height: 202px !important;
     }
     
 }

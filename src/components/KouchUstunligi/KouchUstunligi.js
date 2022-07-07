@@ -45,7 +45,9 @@ function KouchUstunligi() {
               </p>
               </div>
           </div>
-        </div>
+      </div>
+      <p className="LinkRoyhat" id="LinkRoyhat">Ro‘yxatdan o‘tish →</p>
+
     </div>
   );
 }

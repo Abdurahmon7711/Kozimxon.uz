@@ -113,8 +113,9 @@
     margin: 0px !important;
   }
   .TopCarouselBlock {
-    width: 60% !important;
+    width: 100% !important;
     height: auto;
+    margin-top: 40px;
   }
   .CarouselSize {
     width: 100% !important;
@@ -123,10 +124,10 @@
     width: auto;
     margin: 0px !important;
   }
-  .TopCarouselBlock {
+  /* .TopCarouselBlock {
     width: 60% !important;
     height: auto;
-  }
+  } */
   .CarouselSize {
     width: 100% !important;
   }

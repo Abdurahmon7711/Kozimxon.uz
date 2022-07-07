@@ -24,15 +24,13 @@
     width: 350px;
     height: 160px;
 }
-.WhoLeftBlocks{
+/* .WhoLeftBlocks{
     height: 565px;;
-}
+} */
 #btnRoyhat{
     margin-top: 20px;
     width: 246px;
     height: 65px;
-    left: 200px;
-    top: 468px;
     background-color: #28468C;
     border: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -59,10 +57,11 @@
         margin: 120px auto;
     }
     
+    
 }
 
 @media screen and (max-width: 1200px) {
-    .TwoCardsTwo{
+     .TwoCardsTwo{
         display: flex;
         justify-content: space-between;
     }
@@ -70,7 +69,9 @@
         height: 220px;
         padding-bottom: 0px !important;
         margin-left: 35px;
-    }
+        margin-top: 100px;
+        width: auto;
+    } 
 }
 
 @media screen and (max-width: 947px) {
@@ -88,11 +89,13 @@
     #BlockCard{
         margin-top: 0px !important;
         margin-bottom: 20px;
+        width: auto;
     }
     #BlockCard4{
         height: 220px;
         padding-bottom: 0px !important;
         margin-left: 35px;
+        margin-top: 20px;
     }
     .WhoLeftBlocks{
         width: 100% ;

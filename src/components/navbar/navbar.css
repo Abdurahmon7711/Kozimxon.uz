@@ -105,7 +105,7 @@
 .menuGridTemp {
     font-size: 18px;
     position: absolute;
-    margin: 52px 10px;
+    margin: 30px 10px;
     /* top: 33%; */
     padding: 3px 6px;
     display: flex;
@@ -166,6 +166,7 @@
 .MainNavLiActive {
     margin: 20px 20px;
     list-style-type: none;
+    padding: 0px;
 }
 .MainNavLiActive > *{
     margin: 12px auto;
@@ -209,11 +210,39 @@
     .NumberNav {
         margin-top: 30px;
     }
+    /* .MainNav{
+        display: block !important;
+    } */
+    .NumberNav{
+        display: none;
+    }
+    .menuGridTemp{
+        right: 40px;
+    }
     
 } 
+
+@media screen and (max-width: 747px) {
+    .menuGridTemp{
+        right: 30px;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    .menuGridTemp{
+        right: 20px;
+    }
+    
+}
 @media screen and (max-width: 1200px) {
-    .MainNav, .NumberNav{
+    /* .MainNav, .NumberNav{
         display: none;
+    } */
+    /* .MainNav{
+        display: block;
+    } */
+    .MainNavLi li{
+        font-size: 14px;
     }
     .MainTopBlock {
         flex-direction: column;
@@ -234,7 +263,7 @@
     }
     .KouchDasturiMini{
         flex-wrap: wrap;
-        justify-content: flex-start !important;
+        justify-content: space-between !important;
     }
     .Videoss{
         flex-direction: column-reverse;
@@ -287,7 +316,8 @@
 
 /* ================================================================================================= */
 /* Menu Media */
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: 947px){
     .menuGridTemp{
         display: none;
     }   

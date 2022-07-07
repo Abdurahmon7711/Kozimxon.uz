@@ -106,4 +106,16 @@ color: #0F0F0F;
     #CardSecondBlock{
         width: 100% !important;
     }
+    #LinkRoyhat{
+        display: block !important;
+    }
+    .Navbar{
+        margin: 0 20px;
+    }
+}
+@media screen and (min-width: 576px) {
+    #LinkRoyhat{
+        display: none !important;
+    }
+    
 }

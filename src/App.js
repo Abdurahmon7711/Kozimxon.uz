@@ -19,15 +19,15 @@ function App() {
       <Navbar />
       <MainTop />
       <KouchDasturi />
-      {/* <CarouselCards /> */}
+      <CarouselCards />
       <VideosBlock />
       <KouchUstunligi />
-      {/* <KouchAccor /> */}
-      {/* <CarouselVideos /> */}
-      {/* <LogoSection /> */}
+      <KouchAccor />
+      <CarouselVideos />
+      <LogoSection />
       <WhoBlock />
-      {/* <FAQs /> */}
-      {/* <Footer /> */}
+      <FAQs />
+      <Footer />
 
     </div>
   );
