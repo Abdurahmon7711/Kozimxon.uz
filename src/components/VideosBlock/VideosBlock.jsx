@@ -34,7 +34,7 @@ function VideosBlock() {
                             <h2 className="VideoLavhalar">
                                 Kouching dasturidan video lavhalar
                             </h2>
-                            <a className="LinkRoyhat" href="#">
+                            <a className="LinkRoyhat" href="#Footer">
                                 Ro‘yxatdan o‘tish →
                             </a>
                         </div>
@@ -63,6 +63,9 @@ function VideosBlock() {
                                     )
                                 })
                                 }
+                                 <a className="LinkRoyhat" id="LinkRoyhat" href="#Footer">
+                                    Ro‘yxatdan o‘tish →
+                                </a>
                             </div>
                             <div className='player' id='myplayer'  >
                                 <iframe className='firstVideo' if='videoiframe' src='https://www.youtube.com/embed/Al14l9SdI-I'>
