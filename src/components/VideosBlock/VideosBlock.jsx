@@ -26,7 +26,7 @@ function VideosBlock() {
 
 
     return (
-        <div className="BigVideoTab">
+        <div className="BigVideoTab" id="BigVideoTab">
             <div className="FonVideos">
                 <div className="VideosBlock">
                     <div className="VideoTabs">

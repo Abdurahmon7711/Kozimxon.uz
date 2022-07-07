@@ -15,7 +15,7 @@ function MainTop() {
             <div className='TopBtn'>
                 <a href="#Footer"><button className='btnRoyhat'>Ro‘yxatdan o‘tish →</button></a>
                 <div className='tochka'></div>
-                <a href='#'><img className="kursHaqida" src={kursHaqida}/></a>
+                <a href='#BigVideoTab'><img className="kursHaqida" src={kursHaqida}/></a>
             </div>
             
         </div>
