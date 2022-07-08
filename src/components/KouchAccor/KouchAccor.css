@@ -65,6 +65,9 @@
     position: absolute;
     right: 30px;
 }
+.css-78njj9, .css-1fpbxjw{
+    background-color: #f0f0f0 !important;
+}
 
 .accordionInner {
     display: flex;
@@ -256,5 +259,8 @@
     .KouchAccor__accordionPart {
         width: 90%;
         margin: 40px auto;
+    }
+    .KouchAccor__cardPart  {
+        width: 100% !important;
     }
 }
