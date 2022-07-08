@@ -39,6 +39,9 @@
 .footerItem input {
     height: 65px;
     width: 246px;
+    font-family: 'SF Pro' !important;
+    font-size: 1em;
+    padding: 0px 10px;
 }
 
 .footerbtn {

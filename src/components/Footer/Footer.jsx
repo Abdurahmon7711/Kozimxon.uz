@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import { Container, Row, Col, Nav } from 'react-bootstrap'
 import "./Footer.css"
 import logo from '../../assets/navbarLogo/Logo.png'
@@ -12,33 +12,36 @@ import { RiTelegramLine } from "react-icons/ri";
 import { RiInstagramLine } from "react-icons/ri";
 import { RiYoutubeLine } from "react-icons/ri";
 import { RiFacebookCircleLine } from "react-icons/ri";
-import { useState } from 'react'
+
 
 
 function Footer() {
+    
 
-    const [data, setData] = useState({
-        fio:"",
-        phone: "",
-        biznes: ""
+    const [headers, setHeaders] = useState({
+        name:"",
+        number: "",
+        work_place: ""
     })
     function handle(e){
-        const newdata={...data}
-        newdata[e.target.id] = e.target.value
-        setData(newdata)
-        console.log(newdata)
+        const newheaders={...headers}
+        newheaders[e.target.id] = e.target.value
+        setHeaders(newheaders)
+        // console.log(newheaders)
 
     }
     function submit(e){
         e.preventDefault();
-        Axios.post("https://62373d82f5f6e28a154abef5.mockapi.io/data",{
-            fio: data.fio,
-            phone: data.phone,
-            biznes: data.biznes
+        Axios.post("http://146.190.225.174:4000/register",{
+            name: headers.name,
+            number: headers.number,
+            work_place: headers.work_place
         })
         .then(res=>{
-            console.log(res.data)
+            console.log(res.headers)
         })
+        window.scrollTo(0,0)
+        // window.location.reload();
     }
 
     return (
@@ -52,7 +55,7 @@ function Footer() {
                             <div className='footerItem' >
                                 <p>Ismingizni kiriting</p>
                                 <form onSubmit={(e)=>submit(e)}>
-                                    <input  onChange={(e)=>handle(e)} id="fio" value={data.fio} className='msgInput'  placeholder='F.I.Sh ...' />
+                                    <input  onChange={(e)=>handle(e)} id="name" value={headers.name} className='msgInput'  placeholder='F.I.Sh ...' />
                                 </form>
 
                                 <sub className="errorTxt">F.I.Sh notog‘ri kiritilgan!</sub>
@@ -60,7 +63,7 @@ function Footer() {
                             <div className='footerItem' >
                                 <p>Raqamingizni kiriting</p>
                                 <form onSubmit={(e)=>submit(e)}>
-                                    <input onChange={(e)=>handle(e)} id="phone" value={data.phone} className='msgInput'  type="number" placeholder='Raqamingiz ...' />
+                                    <input onChange={(e)=>handle(e)} id="number" value={headers.number} className='msgInput'  type="number" placeholder='Raqamingiz ...' />
                                 </form>
 
                                 <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
@@ -71,7 +74,7 @@ function Footer() {
                             <div className='footerItem' >
                                 <p>Biznes sohangizni kiriting</p>
                                 <form onSubmit={(e)=>submit(e)}>
-                                    <input onChange={(e)=>handle(e)} id="biznes" value={data.biznes} className='msgInput'  placeholder='Biznesingiz ...' />
+                                    <input onChange={(e)=>handle(e)} id="work_place" value={headers.work_place} className='msgInput'  placeholder='Biznesingiz ...' />
                                 </form>
 
                                 <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
