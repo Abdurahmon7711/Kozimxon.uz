@@ -59,6 +59,9 @@
         max-width: 1200px;
         margin: 0 auto;
     }
+    .react-multiple-carousel__arrow {
+        z-index: 1 !important;
+    }
     
 }
 .css-1qxcd35-MuiGrid-root{
@@ -85,5 +88,8 @@
     } */
     .react-multi-carousel-item, .react-multi-carousel-item--active {
         margin: 0 25px !important;
+    }
+    .react-multiple-carousel__arrow {
+        z-index: 1 !important;
     }
 }

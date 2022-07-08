@@ -188,6 +188,10 @@ button {
         align-items: center;
         justify-content: center;
         text-align: center;
+        padding: 0px;
+    }
+    .footerLink ul li {
+        margin: 0 16px;
     }
     
 }

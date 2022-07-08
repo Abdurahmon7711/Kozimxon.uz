@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 10;
     height: 110px;
     display: flex;
     align-items: center;

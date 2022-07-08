@@ -115,4 +115,10 @@
         width: 100%;
         margin: 10px 10000px;
     }
+    .faqsCont .partTitle{
+        margin-bottom: 20px !important;
+    }
+    .bigBoxFaq{
+        padding-top: 20px !important;
+    }
 }
