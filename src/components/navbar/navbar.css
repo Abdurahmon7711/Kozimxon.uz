@@ -72,6 +72,10 @@
     
     color: #0F0F0F;
 }
+.telPhone{
+    text-decoration-line: none;
+    color: black;
+}
 
 .Navbar{
     width: 100%;

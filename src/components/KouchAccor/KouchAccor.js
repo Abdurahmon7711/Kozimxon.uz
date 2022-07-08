@@ -75,16 +75,8 @@ const [expanded, setExpanded] = React.useState('panel1');
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'>
                                 <Typography className='innerAcc__text' >
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                    malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                    sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                    sit amet blandit leo lobortis eget.
-                                </Typography>
-                                <Typography className='innerAcc__text' >
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                    malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                    sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                    sit amet blandit leo lobortis eget.
+                                Kompaniyaning missiyasi, qadriyatlari va maqsadlari. HR rejalash (Kompaniyaga kerak bo‘ladigan xodimlar sonini aniqlash). Ishga olishda samarali usullar (Intervyu, testlar, keys savollar va boshqalar). 
+                                daptasiya tizimi (Yangi kelgan xodimlarni tezda ishga ko‘nikib ketishi va foyda keltirishi). Maosh va kompensasiya tizimini yaratish. Kompaniya samaradorligini oshiruvchi KPI tizimini yo‘lga qo‘yish.
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>

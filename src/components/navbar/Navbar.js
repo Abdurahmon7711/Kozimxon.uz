@@ -40,7 +40,7 @@ function Navbar() {
       </div>
 
       <div className='NumberNav'>
-        <h2>+998 33 383 73 13</h2>
+        <a className='telPhone' href="tel:+998333837313"><h2>+998 33 383 73 13</h2></a>
         <p className='kursgaYozilish'>kursga yozilish uchun</p>
       </div>
 
@@ -67,7 +67,7 @@ function Navbar() {
             <div className={isAcctive ? 'NumberNav' : 'NumberNavActive'} 
 
             >
-              <h2>+998 33 383 73 13</h2>
+              <a className='telPhone' href="tel:+998333837313"><h2>+998 33 383 73 13</h2></a>
               <p className='kursgaYozilish'>kursga yozilish uchun</p>
             </div>
           </div>

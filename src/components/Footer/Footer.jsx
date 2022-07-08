@@ -109,7 +109,7 @@ function Footer() {
                             </div>
 
                             <div className='NumberNav'>
-                                <h2>+998 33 383 73 13</h2>
+                                <a className='telPhone' href="tel:+998333837313"><h2>+998 33 383 73 13</h2></a>
                                 <p className='kursgaYozilish'>KURSGA YOZILISH UCHUN</p>
                             </div>
                         </div>
