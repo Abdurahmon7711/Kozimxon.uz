@@ -87,12 +87,17 @@
 .css-1v5z4dq-MuiPaper-root-MuiCard-root {
     background-color: #F0F0F0 !important;
     height: 286px;
-    width:350px;
+    width:350px !important;
     position: relative;
 }
 
 .KouchAccor__cardPartBl {
     border-top: 3px solid #28468C !important;
+}
+.css-1okfn8i {
+    background-color: #f0f0f0 !important;
+    height: 286px !important;
+    width:350px !important;
 }
 
 .Kouch__card {

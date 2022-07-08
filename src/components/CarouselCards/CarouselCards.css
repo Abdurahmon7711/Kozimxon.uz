@@ -81,7 +81,8 @@
     /* .MuiPaper-root, .MuiPaper-outlined, .MuiPaper-rounded, .MuiCard-root, .Karousel__card, .KarouselAccor__cardPartBl, */
     .css-1v5z4dq-MuiPaper-root-MuiCard-root{
         width: 300px !important;
-        height: 261px;        
+        height: 261px; 
+        background-color: #F0F0F0 !important;       
     }
     /* .react-multi-carousel-list  {
         width: 1000px;
