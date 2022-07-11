@@ -129,13 +129,19 @@ button {
     text-align: right;
     color: #0F0F0F;
 }
-.copyBrand{
+
+.copyBrand {
     font-weight: 400;
     font-size: 10px;
     line-height: 18px;
     text-align: right;
     color: #B7B7B7;
     text-decoration: none;
+}
+
+.footerFormData {
+    display: flex;
+    flex-direction: row;
 }
 
 @media screen and (min-width:1200px) {
@@ -155,22 +161,26 @@ button {
 
     .footerFormGrid {
         display: flex;
+        flex-direction: row;
 
     }
 }
+
 @media screen and (min-width: 500px) {
+
     /* .copyBrand{
         display: none;
     } */
-    #copyBrand, .footerHR{
+    #copyBrand,
+    .footerHR {
         display: none;
     }
-    
+
 }
 
 @media screen and (max-width:1200px) {
     .footerForm {
-        flex-wrap: wrap;
+        flex-wrap: flex;
     }
 }
 
@@ -179,22 +189,26 @@ button {
         margin-top: 30px;
     }
 }
-@media screen and (max-width:500px ) {
-    .underFooter{
+
+@media screen and (max-width:500px) {
+    .underFooter {
         display: flex;
         flex-direction: column;
     }
-    .footerLink{
+
+    .footerLink {
         display: flex;
         flex-direction: column;
-        align-items: center !important; 
+        align-items: center !important;
         justify-content: center !important;
-        text-align: center !important; 
+        text-align: center !important;
     }
-    .footerLink > *{
-        text-align: center !important; 
+
+    .footerLink>* {
+        text-align: center !important;
 
     }
+
     .footerLink ul {
         display: flex;
         align-items: center;
@@ -202,36 +216,56 @@ button {
         text-align: center;
         padding: 0px;
     }
+
     .footerLink ul li {
         margin: 0 16px;
     }
-    #footerNav{
+
+    #footerNav {
         justify-content: space-around;
     }
-    .footerLink{
+
+    .footerLink {
         flex-direction: column-reverse;
     }
-    .copyBrand{
+
+    .copyBrand {
         display: none;
     }
-    #copyBrand{
+
+    #copyBrand {
         display: flex;
         margin-top: 0px;
         margin-bottom: 10px;
     }
-    .underFooter ul{
+
+    .underFooter ul {
         margin-top: 0px;
     }
-    .copyName{
-        font-family: 'SF Pro'!important;
+
+    .copyName {
+        font-family: 'SF Pro' !important;
         font-size: 14px;
     }
-    .footerHR{
+
+    .footerHR {
         border: 1px solid #F0F0F0;
         width: 100%;
         margin-bottom: 0px;
     }
-    .footerNavHR{
+
+    .footerNavHR {
         display: none;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .footerFormData {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
