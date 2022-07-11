@@ -162,7 +162,7 @@ button {
     /* .copyBrand{
         display: none;
     } */
-    #copyBrand{
+    #copyBrand, .footerHR{
         display: none;
     }
     
@@ -216,6 +216,22 @@ button {
     }
     #copyBrand{
         display: flex;
+        margin-top: 0px;
+        margin-bottom: 10px;
     }
-    
+    .underFooter ul{
+        margin-top: 0px;
+    }
+    .copyName{
+        font-family: 'SF Pro'!important;
+        font-size: 14px;
+    }
+    .footerHR{
+        border: 1px solid #F0F0F0;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .footerNavHR{
+        display: none;
+    }
 }

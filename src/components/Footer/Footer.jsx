@@ -116,11 +116,12 @@ function Footer() {
                                 <p className='kursgaYozilish'>KURSGA YOZILISH UCHUN</p>
                             </div>
                         </div>
-                        <hr />
+                        <hr className='footerNavHR'/>
                         {/* <span className='underRow'></span> */}
                         <div className='footerLink'>
                                <p className='copyBrand' id='copyBrand'> by <a className='copyBrand' id='copyBrand' href=""> QWERTY al-Fajr</a> & <a className='copyBrand' id='copyBrand' href="">Socially Agency</a> </p>
                             <p className='copyName'>© {' '} Kozimxon Turaev barcha huquqlar himoyalangan</p>
+                            <hr className='footerHR'/>
                             <p className='copyBrand'> by <a className='copyBrand' href=""> QWERTY al-Fajr</a> & <a className='copyBrand' href="">Socially Agency</a> </p>
                             <ul>
                                 <li><a href="https://t.me/KozimxonTuraev"> <RiTelegramLine/> </a></li>
