@@ -158,6 +158,15 @@ button {
 
     }
 }
+@media screen and (min-width: 500px) {
+    /* .copyBrand{
+        display: none;
+    } */
+    #copyBrand{
+        display: none;
+    }
+    
+}
 
 @media screen and (max-width:1200px) {
     .footerForm {
@@ -195,6 +204,18 @@ button {
     }
     .footerLink ul li {
         margin: 0 16px;
+    }
+    #footerNav{
+        justify-content: space-around;
+    }
+    .footerLink{
+        flex-direction: column-reverse;
+    }
+    .copyBrand{
+        display: none;
+    }
+    #copyBrand{
+        display: flex;
     }
     
 }

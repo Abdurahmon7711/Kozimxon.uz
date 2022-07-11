@@ -97,7 +97,7 @@ function Footer() {
             <div className='bigBox'>
                 <div className="container">
                     <div className='underFooter'>
-                        <div className='Navbar'>
+                        <div className='Navbar' id='footerNav'>
                             <div className='logo'>
                                 <a href="#"><img src={logo} /></a>
                             </div>
@@ -119,6 +119,7 @@ function Footer() {
                         <hr />
                         {/* <span className='underRow'></span> */}
                         <div className='footerLink'>
+                               <p className='copyBrand' id='copyBrand'> by <a className='copyBrand' id='copyBrand' href=""> QWERTY al-Fajr</a> & <a className='copyBrand' id='copyBrand' href="">Socially Agency</a> </p>
                             <p className='copyName'>© {' '} Kozimxon Turaev barcha huquqlar himoyalangan</p>
                             <p className='copyBrand'> by <a className='copyBrand' href=""> QWERTY al-Fajr</a> & <a className='copyBrand' href="">Socially Agency</a> </p>
                             <ul>
