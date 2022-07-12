@@ -42,14 +42,6 @@ const responsive = {
 // ];
 // 
 
-{/* 
-
-1. Kompaniyangiz uchun xalqaro standartlarga javob beruvchi HR tizimini biz bilan quring.
-2. Bugun xalqaro bozorda qo'llanilayotgan STAR suhbat o'tqazish instrumenti, xodim kartinkasi va boshqalarni joriy eting.
-3. Kompaniyangiz uchun "Korparativ Madaniyat" va "Kompaniya Qadriyatlari"ni tuzing.
-4. KPI tizimini to'g'ri o'rnatish orqali xodimlaringiz samaradorligini oshiring. 
-
-*/}
 
 function CarouselCards() {
     return (

@@ -4,6 +4,10 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import './LogoSection.css'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 // Images black
 import artelBl from '../../assets/logos/1artel.png';
@@ -15,21 +19,59 @@ import ipotekaBl from '../../assets/logos/6ipoteka.png';
 import bigdBl from '../../assets/logos/7bigd.png';
 import ermakBl from '../../assets/logos/8ermak.png';
 import turonBl from '../../assets/logos/9turon.png';
+import loookBl from '../../assets/logos/10loook.png';
+import kapitalBl from '../../assets/logos/11kapital.png';
+import mfaktorBl from '../../assets/logos/12mfaktor.png';
+import xclubBl from '../../assets/logos/club1000x13.png';
+import summitBl from '../../assets/logos/14summit.png';
+import uniredBl from '../../assets/logos/15unired.png'
+
 // Logo
 import artel from '../../assets/logos/artel01.png';
 import mavis from '../../assets/logos/mavis02.png';
+import korzinka from '../../assets/logos/korzinka03.png';
 import xalq from '../../assets/logos/xalq04.png';
 import OFb from '../../assets/logos/OFb05.png';
 import ipoteka from '../../assets/logos/ipoteka06.png';
+import bigd from '../../assets/logos/bigd07.png';
 import ermak from '../../assets/logos/ermak08.png';
 import turon from '../../assets/logos/turon09.png';
-import korzinka from '../../assets/logos/korzinka03.png';
-import bigd from '../../assets/logos/bigd07.png';
+import loook from '../../assets/logos/loook010.jpg';
+import kapital from '../../assets/logos/kapital011.png';
+import mfaktor from '../../assets/logos/mfaktor012.jpg';
+import xclub from '../../assets/logos/13club1000x.png';
+import summit from '../../assets/logos/summit14.png';
+import unired from '../../assets/logos/unired15.png'
 
 
 
 
-const images = [
+
+const responsive = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 947 },
+        items: 3
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 768 },
+        items: 2
+    },
+    mobile: {
+        breakpoint: { max: 768, min: 0 },
+        items: 1
+    }
+};
+
+const images1 = [
+    {
+        "black": korzinkaBl,
+        "light": korzinka
+    },
     {
         "black": artelBl,
         "light": artel
@@ -39,17 +81,17 @@ const images = [
         "light": mavis
     },
     {
-        "black": korzinkaBl,
-        "light": korzinka
-    },
-    {
         "black": xalqBl,
         "light": xalq
     },
     {
         "black": OFbl,
         "light": OFb
-    },
+    }
+]
+
+const images2 = [
+
     {
         "black": ipotekaBl,
         "light": ipoteka
@@ -66,13 +108,36 @@ const images = [
         "black": turonBl,
         "light": turon
     },
+    {
+        "black": xclubBl,
+        "light": xclub
+    },
+
+]
+const images3 = [
+    {
+        "black": loookBl,
+        "light": loook
+    },
+    {
+        "black": kapitalBl,
+        "light": kapital
+    },
+    {
+        "black": mfaktorBl,
+        "light": mfaktor
+    },
+    {
+        "black": summitBl,
+        "light": summit
+    },
+    {
+        "black": uniredBl,
+        "light": unired
+    }
 
 ]
 
-
-
-// const logos = [artelBl, mavisBl, korzinka, xalqBl, OFbl, ipotekaBl, bigdBl, ermakBl, turonBl]
-// const logoLight = [artel ,mavis, korzinka3 , xalq, OFb, ipoteka,]
 
 
 
@@ -91,27 +156,54 @@ function LogoSection() {
             <div className='partTitle'>
                 <h3>Kouching dasturi <br /> mijozlari</h3>
             </div>
-            <Box sx={{ flexGrow: 1 }}  >
-                <Grid container spacing={{ xs: 1, md: 5 }} columns={{ xs: 6, sm: 12, md: 12 }}>
-                    {images.map(({ black, light }, index) => {
+            <Box sx={{ flexGrow: 1 }} className="FaqsLogoRow" >
+                <div className='ustkidiv'>
+                    {images1.map(({ black, light }, index) => {
                         return (
-                            <Grid item xs={3} sm={4} md={4} key={index}>
-                                <Item className='LogoSecItem'
-                                    onMouseEnter={(e) => {
-                                        e.target.src = light;
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.target.src = black;
-                                    }}><img className='LogoSecItemImg' src={black} />
-                                </Item>
-                            </Grid>
+                            <Item className='LogoSecItem'
+                                onMouseEnter={(e) => {
+                                    e.target.src = light;
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.target.src = black;
+                                }}><img className='LogoSecItemImg' src={black} />
+                            </Item>
                         )
                     })}
-                </Grid>
-
+                </div>
             </Box>
-
-
+            <Box sx={{ flexGrow: 1 }} className="FaqsLogoRow" >
+                <div className='ustkidiv'>
+                    {images2.map(({ black, light }, index) => {
+                        return (
+                            <Item className='LogoSecItem'
+                                onMouseEnter={(e) => {
+                                    e.target.src = light;
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.target.src = black;
+                                }}><img className='LogoSecItemImg' src={black} />
+                            </Item>
+                        )
+                    })}
+                </div>
+            </Box>
+            <Box sx={{ flexGrow: 1 }} className="FaqsLogoRow" >
+                <div className='ustkidiv'>
+                    {images3.map(({ black, light }, index) => {
+                        return (
+                            <Item className='LogoSecItem'
+                                onMouseEnter={(e) => {
+                                    e.target.src = light;
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.target.src = black;
+                                }}><img className='LogoSecItemImg' src={black} />
+                            </Item>
+                        )
+                    })}
+                </div>
+            </Box>
         </div>
     )
 }

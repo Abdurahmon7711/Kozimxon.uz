@@ -13,7 +13,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import logo from '../../assets/navbarLogo/Logo.png'
-
+import pdf from '../../assets/pdf/kozimxon.pdf'
 
 
 
@@ -234,14 +234,14 @@ function KouchAccor() {
                                 <React.Fragment>
                                     <CardContent>
                                         <Typography className="Kouch__cardTitle" variant="h5" component="div">
-                                            Kurs o‘quv dasturining elektor PDF
+                                            Kurs o‘quv dasturining elektron PDF varianti
                                         </Typography>
                                         <Typography sx={{ fontSize: 14 }} className="Kouch__cardContent" color="text.secondary" gutterBottom>
                                             Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <a className='Kouch__cardLink' href='../../assets/pdf/kozimxon.pdf' download="PDF file">PDF yuklab olish →</a>
+                                        <a className='Kouch__cardLink' href={pdf} download="Kurs o‘quv dasturining elektron PDF varianti ">PDF yuklab olish →</a>
                                         {/* <Link to="#" className='Kouch__cardLink'>PDF yuklab olish → </Link> */}
                                     </CardActions>
                                 </React.Fragment>

@@ -73,7 +73,8 @@ function Footer() {
               let data = {
                 name: headers.name,
                 number: headers.number,
-                work_place: headers.work_place,
+                // work_place: headers.work_place,
+                type: document.getElementById('bbb').value
               }
               let url = new URL('http://192.168.0.113:8000/register');
               for (let k in data) {
@@ -120,14 +121,19 @@ function Footer() {
               <div className="footerFormGrid">
                 <div className="footerItem">
                   <p>Biznes sohangizni kiriting</p>
-                  <input
+                  {/* <input
                     onChange={(e) => handle(e)}
                     id="work_place"
                     name="work_place"
                     value={headers.work_place}
                     className="msgInput"
                     placeholder="Biznesingiz ..."
-                  />
+                  /> */}
+                  
+                  <select name="biznes" id="bbb">
+                    <option  value="1">HR kursi uchun</option>
+                    <option  value="2">Biznes kursi uchun</option>
+                  </select>
 
                   <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
                 </div>
