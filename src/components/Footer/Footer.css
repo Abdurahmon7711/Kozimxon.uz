@@ -147,6 +147,11 @@ button {
     height: 67px !important;
     width: 250px;
 }
+.option {
+    padding: 30px 60px !important;
+    margin: 50px;
+
+}
 @media screen and (min-width:1200px) {
     .container {
         max-width: 1200px;

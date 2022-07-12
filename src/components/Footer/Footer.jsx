@@ -131,6 +131,27 @@ function Footer() {
 
                   <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
                 </div>
+
+                <div className="footerItem">
+                  <p>Kursni tanlang </p>
+                  <select name="kurs" id="bbb">
+                    <option value="hr"><span className="option"  >HR kursi uchun </span> </option>
+                    <option className="option" value="biznes"><span className="option">Biznes kursi uchun </span> </option>
+
+                  </select>
+                  
+                  {/* <input
+                    onChange={(e) => handle(e)}
+                    id="work_place"
+                    name="work_place"
+                    value={headers.work_place}
+                    className="msgInput"
+                    placeholder="Biznesingiz ..."
+                  /> */}
+                </div>
+
+
+          
                 <div className="footerItem">
                   {/* <p></p> */}
                   <button className="footerbtn" type="submit" >Ro‘yxatdan o‘tish →</button>
