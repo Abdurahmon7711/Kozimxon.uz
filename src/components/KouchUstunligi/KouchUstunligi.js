@@ -3,6 +3,9 @@ import "./KouchUstun.css";
 import Ustunlik1 from '../../assets/images/Ustunlik1.png'
 import Ustunlik2 from '../../assets/images/Ustunlik2.png'
 import Ustunlik3 from '../../assets/images/Ustunlik3.png'
+import muammo1 from '../../assets/images/muammo1.svg'
+import muammo2 from '../../assets/images/muammo2.svg'
+import muammo3 from '../../assets/images/muammo3.svg'
 
 function KouchUstunligi() {
   return (
@@ -15,7 +18,7 @@ function KouchUstunligi() {
       <div className="Cards">
           <div className="Card" id="ustunlikCard">
               <div id="empty"></div>
-              <div className="iconCard"><img src={Ustunlik1}/></div>
+              <div className="iconCard"><img className="icons" src={muammo1}/></div>
               <div className="textCard">
               {/* <h2 className="CardFirstText">Xodimlarni boshqarishda muammoga uchrayapsizmi?</h2> */}
               <p className="CardSecondText">
@@ -27,7 +30,7 @@ Hozirgi kunda biznesda muvaffaqiyatli bo'lish uchun zamonaviy va qadriyatlarga a
           
           <div className="Card">
               <div id="empty"></div>
-              <div className="iconCard"><img src={Ustunlik2}/></div>
+              <div className="iconCard"><img className="icons" src={muammo2}/></div>
               <div className="textCard">
               {/* <h2 className="CardFirstText">Xodimlarni boshqarishda muammoga uchrayapsizmi?</h2> */}
               <p className="CardSecondText">
@@ -38,7 +41,7 @@ Hozirgi kunda biznesda muvaffaqiyatli bo'lish uchun zamonaviy va qadriyatlarga a
 
           <div className="Card">
               <div id="empty"></div>
-              <div className="iconCard"><img src={Ustunlik3}/></div>
+              <div className="iconCard"><img className="icons"src={muammo3}/></div>
               <div className="textCard">
               {/* <h2 className="CardFirstText">Xodimlarni boshqarishda muammoga uchrayapsizmi?</h2> */}
               <p className="CardSecondText">

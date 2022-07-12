@@ -58,7 +58,7 @@ function CarouselCards() {
                         <Card className='Karousel__card' variant="outlined">
                             <React.Fragment>
                                 <CardContent>
-                                    <Typography className="Karousel__cardTitle" variant="h5" component="div">
+                                    <Typography className={"Karousel__cardTitle"} variant={"h5"} component={"div"}>
                                         Kompaniyada HR tizimi to'gri yo'lga qoyilmagan
                                     </Typography>
                                 </CardContent>
@@ -71,7 +71,7 @@ function CarouselCards() {
                         <Card className='Karousel__card' variant="outlined">
                             <React.Fragment>
                                 <CardContent>
-                                    <Typography className="Karousel__cardTitle" variant="h5" component="div">
+                                    <Typography className="Karousel__cardTitle" variant="h5" component="span">
                                         To'gri hodim tanlashda to'gri instrumentlar qo'llanilmaydi
                                     </Typography>
                                 </CardContent>

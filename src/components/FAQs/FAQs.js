@@ -62,7 +62,7 @@ function FAQs() {
                                 <Card className='Faq__card KarouselAccor__cardPartBl' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component="span">
                                                 <h5 className='faqCarTit faqCarTitBl '>
                                                     Kursda qatnashish necha pul turadi?
                                                 </h5>

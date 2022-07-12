@@ -5,6 +5,18 @@
     position: relative;
   
 }
+.iconCard{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #EBEBEB;
+}
+.iconCard:hover{
+    background-color: #28468C;
+}
+
 /* #ustunlikCard{
     width: 50% !important;
     height: auto !important;

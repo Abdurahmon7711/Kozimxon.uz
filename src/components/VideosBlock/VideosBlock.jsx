@@ -2,27 +2,51 @@ import React, { useState } from "react";
 import "./Videos.css";
 import play from "../../assets/images/play.svg";
 import stop from "../../assets/images/stop.svg";
+import axios from "axios";
 
 
 function VideosBlock() {
+    /**
+     * @return {Array}
+     */
 
-    // const [isAcctive, setAcctive] = useState(true);
-    // function onTab() {
-    //     setAcctive(!isAcctive);
-    // }
+    async function getVideos() {
+        // const headers = new Headers({
+        //   "Content-Type": "x-www-form-urlencoded",
+        //   "X-CSRFToken": "{{csrf_token}}",
+        // });
+    
+        // const res = await fetch("http://192.168.0.113:8000/videos");
+        // console.log(res);
+        const data = await axios.get('http://192.168.0.113:8000/videos');
+        return data;
+
+    }
 
     function createDataAcc(icon, name, ssilka) {
         return { icon, name, ssilka };
     }
 
-    const Tabmenu = [
-        createDataAcc(play, 'Qadriyatlarga asoslangan biznesni boshqarish kursi ', 'https://www.youtube.com/embed/XsBil1zbVOc?controls=1'),
-        createDataAcc(play, 'HR meneger kim? ', 'https://www.youtube.com/embed/Zra33_gCgxQ'),
-        createDataAcc(play, 'Yaponiyaning KAIZEN sistemasi ', 'https://www.youtube.com/embed/tk_2n-mZGNc'),
-        createDataAcc(play, 'Moliya boshqaruvi ', 'https://www.youtube.com/embed/Evfj7JMjR1Q'),
-        createDataAcc(play, 'Ko‘p yillik tajribaga ega ustoz ', 'https://www.youtube.com/embed/0nZnBncSkZE'),
+    // const Tabmenu = [
+    //     createDataAcc(play, 'Qadriyatlarga asoslangan biznesni boshqarish kursi ', 'https://www.youtube.com/embed/XsBil1zbVOc?controls=1'),
+    //     createDataAcc(play, 'HR meneger kim? ', 'https://www.youtube.com/embed/Zra33_gCgxQ'),
+    //     createDataAcc(play, 'Yaponiyaning KAIZEN sistemasi ', 'https://www.youtube.com/embed/tk_2n-mZGNc'),
+    //     createDataAcc(play, 'Moliya boshqaruvi ', 'https://www.youtube.com/embed/Evfj7JMjR1Q'),
+    //     createDataAcc(play, 'Ko‘p yillik tajribaga ega ustoz ', 'https://www.youtube.com/embed/0nZnBncSkZE'),
 
-    ]
+    // ]
+    const Tabmenu = [];
+    const videos =  getVideos();
+
+
+    console.log(videos)
+    // videos.forEach((video, i) => {
+    //     console.log(video)
+    //     Tabmenu.push(createDataAcc(
+    //         play, video.title,
+    //         video.url
+    //     ));
+    // });
 
 
     return (
@@ -68,7 +92,7 @@ function VideosBlock() {
                                 </a>
                             </div>
                             <div className='player' id='myplayer'  >
-                                <iframe className='firstVideo'  if='videoiframe' src='https://www.youtube.com/embed/XsBil1zbVOc' frameborder="0" allowfullscreen>
+                                <iframe className='firstVideo'  if='videoiframe' src='https://www.youtube.com/embed/XsBil1zbVOc' frameBorder="0" allowFullScreen>
 
                                 </iframe>
                             </div>
