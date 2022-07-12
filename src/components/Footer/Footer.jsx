@@ -63,79 +63,80 @@ function Footer() {
       <div className="container">
         <div className="upperFooter">
           <h3 className="partTitle">
-            Kozimxon Turaev bilan kelajakda o‘z <br /> o‘rniga ega biznesingizni
-            yarating!
+            {/* Kozimxon Turaev bilan kelajakda o‘z o‘rniga ega biznesingizni */}
+            {/* yarating! */}
+            Kozimxon Turayev bilan  muvaffaqiyatli <br /> va barakali biznesingizni yarating
           </h3>
           <div className="footerForm">
-            <form onSubmit={async (e) => {
-                e.preventDefault();
-                let data = {
-                    name: headers.name,
-                    number: headers.number,
-                    work_place: headers.work_place,
-                }
-                let url = new URL('http://192.168.0.113:8000/register');
-                for (let k in data) {
-                    url.searchParams.append(k, data[k]);
-                  }
-                console.log(url.href)
-                const res = fetch(url.href);
+            <form className="footerFormData"  onSubmit={async (e) => {
+              e.preventDefault();
+              let data = {
+                name: headers.name,
+                number: headers.number,
+                work_place: headers.work_place,
+              }
+              let url = new URL('http://192.168.0.113:8000/register');
+              for (let k in data) {
+                url.searchParams.append(k, data[k]);
+              }
+              console.log(url.href)
+              const res = fetch(url.href);
 
-                console.log((await res).status);
-                
+              console.log((await res).status);
+
 
             }}>
-            <div className="footerFormGrid">
-              <div className="footerItem">
-                <p>Ismingizni kiriting</p>
-                <input
-                  onChange={(e) => handle(e)}
-                  id="name"
+              <div className="footerFormGrid">
+                <div className="footerItem">
+                  <p>Ismingizni kiriting</p>
+                  <input
+                    onChange={(e) => handle(e)}
+                    id="name"
 
-                  name="name"
-                  value={headers.name}
-                  className="msgInput"
-                  placeholder="F.I.Sh ..."
-                />
+                    name="name"
+                    value={headers.name}
+                    className="msgInput"
+                    placeholder="F.I.Sh ..."
+                  />
 
-                <sub className="errorTxt">F.I.Sh notog‘ri kiritilgan!</sub>
+                  <sub className="errorTxt">F.I.Sh notog‘ri kiritilgan!</sub>
+                </div>
+                <div className="footerItem">
+                  <p>Raqamingizni kiriting</p>
+                  <input
+                    onChange={(e) => handle(e)}
+                    id="number"
+                    name="number"
+                    value={headers.number}
+                    className="msgInput"
+                    type="number"
+                    placeholder="Raqamingiz ..."
+                  />
+
+                  <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
+                </div>
               </div>
-              <div className="footerItem">
-                <p>Raqamingizni kiriting</p>
-                <input
-                  onChange={(e) => handle(e)}
-                  id="number"
-                  name="number"
-                  value={headers.number}
-                  className="msgInput"
-                  type="number"
-                  placeholder="Raqamingiz ..."
-                />
 
-                <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
-              </div>
-            </div>
+              <div className="footerFormGrid">
+                <div className="footerItem">
+                  <p>Biznes sohangizni kiriting</p>
+                  <input
+                    onChange={(e) => handle(e)}
+                    id="work_place"
+                    name="work_place"
+                    value={headers.work_place}
+                    className="msgInput"
+                    placeholder="Biznesingiz ..."
+                  />
 
-            <div className="footerFormGrid">
-              <div className="footerItem">
-                <p>Biznes sohangizni kiriting</p>
-                <input
-                  onChange={(e) => handle(e)}
-                  id="work_place"
-                  name="work_place"
-                  value={headers.work_place}
-                  className="msgInput"
-                  placeholder="Biznesingiz ..."
-                />
-
-                <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
+                  <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
+                </div>
+                <div className="footerItem">
+                  {/* <p></p> */}
+                  <button className="footerbtn">Ro‘yxatdan o‘tish →</button>
+                  <sub></sub>
+                </div>
               </div>
-              <div className="footerItem">
-                {/* <p></p> */}
-                <button className="footerbtn">Ro‘yxatdan o‘tish →</button>
-                <sub></sub>
-              </div>
-            </div>
             </form>
 
           </div>
@@ -178,33 +179,14 @@ function Footer() {
             <hr className="footerNavHR" />
             {/* <span className='underRow'></span> */}
             <div className="footerLink">
-              <p className="copyBrand" id="copyBrand">
-                 by 
-                <a className="copyBrand" id="copyBrand" href="">
-                  {" "}
-                  QWERTY al-Fajr
-                </a>
-                 & 
-                <a className="copyBrand" id="copyBrand" href="">
-                  Socially Agency
-                </a>{" "}
-              </p>
-              <p className="copyName">
-                © Kozimxon Turaev barcha huquqlar himoyalangan
-              </p>
+              <p className="copyBrand" id="copyBrand">by
+                <a className="copyBrand" id="copyBrand" href="">{" "}QWERTY al-Fajr</a>&
+                <a className="copyBrand" id="copyBrand" href="">Socially Agency</a></p>
+              <p className="copyName">© Kozimxon Turaev barcha huquqlar himoyalangan</p>
               <hr className="footerHR" />
-              <p className="copyBrand">
-                {" "}
-                by{" "}
-                <a className="copyBrand" href="">
-                  {" "}
-                  QWERTY al-Fajr
-                </a>{" "}
-                &{" "}
-                <a className="copyBrand" href="">
-                  Socially Agency
-                </a>{" "}
-              </p>
+              <p className="copyBrand">{" "}by{" "}
+                <a className="copyBrand" href="">{" "}QWERTY al-Fajr</a>{" "}&{" "}
+                <a className="copyBrand" href="">Socially Agency</a>{" "}</p>
               <ul>
                 <li>
                   <a href="https://t.me/KozimxonTuraev">

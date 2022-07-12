@@ -45,7 +45,10 @@
     margin: 40px auto;
 
 }
-
+.innerAcc__text{
+    display: flex;
+    width: 100%;
+}
 .KouchAccor__cardPart {
     width: 25%;
     margin: 40px auto;
@@ -203,13 +206,15 @@
     }
 
     .css-ahj2mt-MuiTypography-root {
+        display: flex !important;
         font-weight: 510;
         font-size: 20px;
         line-height: 24px !important;
         /* color: #0F0F0F !important; */
-
     }
-
+    .accText {
+        display: flex !important;
+    }
     .accText,
     .accordionInner {
         font-family: 'SF Pro';
@@ -218,7 +223,9 @@
         font-size: 18px;
         line-height: 140%;
         color: #828282 !important;
-
+    }
+    .accTextPart{
+        width: 45% !important;
     }
 
     .KouchAccor__inner {

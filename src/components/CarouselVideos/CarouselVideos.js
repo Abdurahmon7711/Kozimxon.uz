@@ -45,9 +45,9 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }} >
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
-                                    <img src={vidBlock} alt={"ad"}/>
+                                <iframe className='videoBox' width="350" height="200" src="https://www.youtube.com/embed/gltEjhvswLA?start=43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
-                                        John Doe
+                                        Ahmadaliyeva Nodira
                                     </Typography>
                                 </CardContent>
                             </React.Fragment>
@@ -59,9 +59,9 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }}>
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
-                                <img src={vidBlock} alt={"ad"}/>
+                                <iframe className='videoBox' width="350" height="200" src="https://www.youtube.com/embed/gltEjhvswLA?start=688" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
-                                        John Doe
+                                        Abu Solih
                                     </Typography>
                                 </CardContent>
                             </React.Fragment>
@@ -73,9 +73,9 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }}>
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
-                                <img src={vidBlock} alt={"ad"}/>
+                                <iframe className='videoBox' width="350" height="200" src="https://www.youtube.com/embed/gltEjhvswLA?start=913" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
-                                        John Doe
+                                        Kurs qatnashuvchisi
                                     </Typography>
                                 </CardContent>
                             </React.Fragment>
@@ -87,45 +87,16 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }}>
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
-                                <img src={vidBlock} alt={"ad"}/>
+                                <iframe className='videoBox' width="350" height="200" src="https://www.youtube.com/embed/gltEjhvswLA?start=1351" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
-                                        John Doe
+                                        Abdulloh
                                     </Typography>
                                 </CardContent>
                             </React.Fragment>
                     </Box>
 
                 </div>
-                <div>
-
-                    <Box className='CarouselItem' sx={{ minWidth: 275 }}>
-                            <React.Fragment>
-                                <CardContent className='videoBlcCont'>
-                                <img src={vidBlock} alt={"ad"}/>
-                                    <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
-                                        John Doe
-                                    </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                    </Box>
-
-                </div>
-                
-                <div>
-
-                    <Box className='CarouselItem' sx={{ minWidth: 275 }}>
-                            <React.Fragment>
-                                <CardContent className='videoBlcCont'>
-                                <img src={vidBlock} alt={"ad"}/>
-                                    <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
-                                        John Doe
-                                    </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                    </Box>
-
-                </div>
-                
+                              
 
             </Carousel>
 

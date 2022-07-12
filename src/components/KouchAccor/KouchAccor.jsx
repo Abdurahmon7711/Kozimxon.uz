@@ -55,7 +55,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 
 function KouchAccor() {
-const [expanded, setExpanded] = React.useState('panel1');
+    const [expanded, setExpanded] = React.useState('panel1');
 
     const handleChange = (panel) => (event, newExpanded) => {
         setExpanded(newExpanded ? panel : false);
@@ -69,14 +69,25 @@ const [expanded, setExpanded] = React.useState('panel1');
                 </div>
                 <div className='KouchAccor__inner'>
                     <div className='KouchAccor__accordionPart'>
+                      
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                                 <Typography className='accordion__title' >01 — HR tizimini yaratish</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'>
                                 <Typography className='innerAcc__text' >
-                                Kompaniyaning missiyasi, qadriyatlari va maqsadlari. HR rejalash (Kompaniyaga kerak bo‘ladigan xodimlar sonini aniqlash). Ishga olishda samarali usullar (Intervyu, testlar, keys savollar va boshqalar). 
-                                daptasiya tizimi (Yangi kelgan xodimlarni tezda ishga ko‘nikib ketishi va foyda keltirishi). Maosh va kompensasiya tizimini yaratish. Kompaniya samaradorligini oshiruvchi KPI tizimini yo‘lga qo‘yish.
+                                    <div className='accTextPart'>
+                                        Kompaniyaning missiyalari, qadriyatlari va vazifalari.
+                                        <br /> HR rejalash (Kompaniya kerak buladigan xodimlar sonini aniqlash).
+                                        Ishga olishdasamarali usullar (Intervyu, testlar, case savollar,…).
+                                    </div>
+                                    <div className='accTextPart'>
+                                        Adaptatsiya tizimi (Yangi kelgan xodimlarni tezda ishga ko'nikib ketishi va foyda keltirishi)
+                                        Kompaniya samaradorligini oshiruvchi KPI tizimini yo'lga qo'yish.
+                                        Maosh wa kompensatsiya tizimini yaratish.
+                                        Motivatsiya dasturlari.
+                                        Ichki nizom va standart operatsion prodteduralar yaratish.
+                                    </div>
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -84,12 +95,17 @@ const [expanded, setExpanded] = React.useState('panel1');
                             <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
                                 <Typography className='accordion__title' >02 — Islom moliyasi asoslari</Typography>
                             </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography className='accText'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                    malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                    sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                    sit amet blandit leo lobortis eget.
+                            <AccordionDetails className='accordionInner'> 
+                                <Typography className='innerAcc__text'>
+                                    <div className='accTextPart'>
+                                        Islom moliyasi tamoyillari asosida biznesni boshqarish.
+                                        Islom moliyasidagi taqiqlar
+                                    </div>
+                                    <div className='accTextPart'>
+                                        Asosiy produktlar (Murabaha, Ijara, Mushakara, Muzabara, Istisno va Salam).
+                                        Shartnomalar.
+                                        Islom moliyasida sha'riy savollarga mehmonimiz Muhammad Ayyubxon Xomidobdan javoblar.
+                                    </div>
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -97,12 +113,17 @@ const [expanded, setExpanded] = React.useState('panel1');
                             <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
                                 <Typography className='accordion__title' >03 — Biznesda baraka omillari</Typography>
                             </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography className='accText'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                    malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                    sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                    sit amet blandit leo lobortis eget.
+                            <AccordionDetails className='accordionInner'> 
+                                <Typography className='innerAcc__text'>
+                                    <div className='accTextPart'>
+                                        Islomda pulga va biznesga bo'lgan munosabat.
+                                        Dunyo va oxirat orasida muvozanat saqlash.
+                                        Musulmonlarning rivojlanish bo'yicha ortda qolish sabablari.
+                                    </div>
+                                    <div className='accTextPart'>
+                                        Baraka o'zi nima va unga qanday erishiladi ?
+                                        Barakaga erishishning 10 ta omili.
+                                    </div>
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -110,12 +131,17 @@ const [expanded, setExpanded] = React.useState('panel1');
                             <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
                                 <Typography className='accordion__title' >04 — Muvaffaqqiyatli sherekchilik asosolari </Typography>
                             </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography className='accText'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                    malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                    sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                    sit amet blandit leo lobortis eget.
+                            <AccordionDetails className='accordionInner'> 
+                                <Typography className='innerAcc__text'>
+                                    <div className='accTextPart'>
+                                        Biznesda niyatning muhimligi.
+                                        Sherik tanlashda qadriyatlarga asoslanish.
+                                        Sherikchilik kelishuvini to'g'ri tuzish shartlari.
+                                    </div>
+                                    <div className='accTextPart'>
+                                        Kelishuvdagi asosiy masalalar (Sheriklarning biznesdagi ulushi, sarmoya vazifalar, foyda va zarar taqsimoti, biznesdan chiqish shartlari ).
+                                        Sherikchilikdagi muammolarni hal qilish yo'llari.
+                                    </div>
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -123,12 +149,18 @@ const [expanded, setExpanded] = React.useState('panel1');
                             <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
                                 <Typography className='accordion__title' >05 — Qadriyatlarga asoslangan liderlik</Typography>
                             </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography className='accText'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                    malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                    sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                    sit amet blandit leo lobortis eget.
+                            <AccordionDetails className='accordionInner'> 
+                                <Typography className='innerAcc__text'>
+                                    <div className='accTextPart'>
+                                        Zamonaviy va qadriyatlarga asoslangan liderlikning farqlari.
+                                        Payg'ambarimiz (S.A.V)ning liderlik mahoratlari.
+                                        Qadriyatlarga asoslangan liderlikga berilgan tavsiyalar.
+                                    </div>
+                                    <div className='accTextPart'>
+
+                                        Qo'l ostidagilarni motivatsiyasini oshirish yo'llari.
+                                        Nizolarni hal qilish yo'llari
+                                    </div>
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -136,12 +168,16 @@ const [expanded, setExpanded] = React.useState('panel1');
                             <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
                                 <Typography className='accordion__title' >06 — Xalqaro standardlarga javob beruvchi xizmat ko‘rsatish</Typography>
                             </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography className='accText'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                    malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                    sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                    sit amet blandit leo lobortis eget.
+                            <AccordionDetails className='accordionInner'> 
+                                <Typography className='innerAcc__text'>
+                                    <div className='accTextPart'>
+                                        Xalqaro talablarga javob beradigan servis tizimi nima ?
+                                        YAponiya tajribasi asosida mijozlarga yuqori darajada xizmat ko'rsatish tizimi yaratish
+                                    </div>
+                                    <div className='accTextPart'>
+                                        Servis tizimi va uning raqobatga qo'l kelishuvini
+                                        Qadriyatlarga asoslangan servis tizimi qanday bo'ladi ?
+                                    </div>
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -149,12 +185,18 @@ const [expanded, setExpanded] = React.useState('panel1');
                             <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
                                 <Typography className='accordion__title' >07 — Yaponiyaning samaradorlikni oshiruvchi TQM va KAIZEN sistemasi</Typography>
                             </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography className='accText'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                    malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                    sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                    sit amet blandit leo lobortis eget.
+                            <AccordionDetails className='accordionInner'> 
+                                <Typography className='innerAcc__text'>
+                                    <div className='accTextPart'>
+                                        Yaponiya Kaizen sistemasi nima va u qanday ishlaydi ?
+                                        Tizimlashtirish uchun kerak bo'ladigan 5C sistemasi.
+                                        Standart Operatsion Protseduralarni yaratish
+                                    </div>
+                                    <div className='accTextPart'>
+                                        Mijozlarni xohishi inobatga olish.
+                                        Doimiy o'sish va rivojlanish strategiyasi.
+                                        Ishchilarni korxonaning faoliyatida va hayotida ishtirok etishlari.
+                                    </div>
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -162,12 +204,18 @@ const [expanded, setExpanded] = React.useState('panel1');
                             <AccordionSummary aria-controls="panel8d-content" id="panel8d-header">
                                 <Typography className='accordion__title' >08 — Qadriyatlarga asoslangan shaxsiy rivojlanish</Typography>
                             </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography className='accText'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                    malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                                    sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                                    sit amet blandit leo lobortis eget.
+                            <AccordionDetails className='accordionInner'> 
+                                <Typography className='innerAcc__text'>
+                                    <div className='accTextPart'>
+                                        Qur'on va Hadisda shaxshiy rivojlanishga kerak bo'ladigan qanday tavsiyalar bor.
+                                        Hayotda qanday oliy maqsad ko'yish kerak.
+                                        Maqsadlarni to'g'ri ko'yish yo'llari.
+                                    </div>
+                                    <div className='accTextPart'>
+                                        Hayotdagi muammolarga qanday yondashish kerak.
+                                        Doimiy harakatm intizom va natija.
+                                        Dastur mehmoni Abdukarim Mirzayevdan shaxsiy tavsiyalar.
+                                    </div>
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -205,7 +253,7 @@ const [expanded, setExpanded] = React.useState('panel1');
                                     </CardContent>
                                     <CardActions>
                                         {/* <Link to="#Footer" className='Kouch__cardLink'>Ro‘yxatdan o‘tish →</Link> */}
-                                        <a href="#Footer" className='Kouch__cardLink'>Ro‘yxatdan o‘tish →</a> 
+                                        <a href="#Footer" className='Kouch__cardLink'>Ro‘yxatdan o‘tish →</a>
                                     </CardActions>
                                 </React.Fragment>
                             </Card>
