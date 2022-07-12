@@ -5,6 +5,13 @@
     position: relative;
   
 }
+/* #ustunlikCard{
+    width: 50% !important;
+    height: auto !important;
+} */
+.CardSecondText{
+    width: 100% !important;
+}
 .Cards{
     display: flex;
     justify-content: space-between;
@@ -88,10 +95,16 @@ color: #0F0F0F;
         margin: 40px 40px 0 40px;
     }
     .Card{
-        width: 250px !important;
+        width: 40%;
     }
     
     
+    
+}
+@media screen and (max-width: 683px) {
+    .Card{
+        width: 100%;
+    }
     
 }
 @media screen and (max-width: 576px) {
@@ -113,10 +126,12 @@ color: #0F0F0F;
     .Navbar{
         margin: 0 20px;
     }
+    .whoblockImg{
+        height: auto !important;
+    }
 }
 @media screen and (min-width: 576px) {
     #LinkRoyhat{
         display: none !important;
     }
-    
 }

@@ -12,6 +12,7 @@ import LogoSection from "./components/LogoSection/LogoSection";
 import WhoBlock from './components/WhoBlock/WhoBlock';
 import TabMenu from './components/TabMenu/TabMenu'
 import './App.css'
+import Kozimxon from './components/KozimxonKim/Kozimxon';
 
 function App() {
   return (
@@ -25,9 +26,12 @@ function App() {
       <KouchAccor />
       <CarouselVideos />
       <LogoSection />
-      <WhoBlock />
+      <Kozimxon/>
       <FAQs />
       <Footer />
+  
+      {/* <WhoBlock /> */}
+
     </div>
   );
 }

@@ -7,11 +7,44 @@ import imgCarousel from '../../assets/images/ImgCarous1.png'
 import kursHaqida from '../../assets/images/kursHaqida.svg'
 import CarouselMain from '../CarouselMain/CarouselMain'
 // images
+
+setInterval(function(){
+    document.querySelector('#MainBlockText').style.top = '-120%';
+    document.querySelector('#MainBlockText2').style.top = '0px';
+    document.querySelector("#span01").style.display = 'none'
+    document.querySelector("#span02").style.display = 'block'
+},4000)
+setInterval(function(){
+    document.querySelector('#MainBlockText').style.top = '0px';
+    document.querySelector('#MainBlockText2').style.top = '-120%';
+    document.querySelector("#span01").style.display = 'block'
+    document.querySelector("#span02").style.display = 'none'
+},8000)
+
+// let textIndex = 1 ;
+// function NewsRotator(){
+//     (".MainBlockText").hide();
+//     (".MainBlockText"+textIndex).show();
+//     let newsCount = 5;
+//     textIndex++;
+//     if(textIndex > newsCount){
+//         textIndex = 1;
+//     }
+// }
+// (document).ready(function(){
+//     NewsRotator();
+//     setInterval(NewsRotator, 2200)
+// });
+
+
+
+
 function MainTop() {
   return (
     <div className='MainTopBlock'>
         <div className='TopTextBlock'>
-            <h2>Qadriyatlarga asoslangan biznesni boshqarish <span className="bir"> bir oylik kouching dasturi</span></h2>
+            <h2 className='MainBlockText MainBlockText1 ' id='MainBlockText'>Qadriyatlarga asoslangan biznesni boshqarish <span className="bir"> bir oylik kouching dasturi</span></h2>
+            <h2 className='MainBlockText MainBlockText2'id='MainBlockText2'>Halqaro standartlarga javob beruvchi <span className="bir">HR kursi</span></h2>
             <div className='TopBtn'>
                 <a href="#Footer"><button className='btnRoyhat'>Ro‘yxatdan o‘tish →</button></a>
                 <div className='tochka'></div>
@@ -23,7 +56,7 @@ function MainTop() {
             <CarouselMain/>
             <div className='CarouselLow'>
                 <h3 className='CarouselLowText'>Kozimxon To‘rayevning treninglaridan lavhalar</h3>
-                <h4 className='firstCarousel'>01<span className='allCarousel'>/03</span></h4>
+                <h4 className='firstCarousel'><span id="span01">01</span><span id='span02'>02</span><span className='allCarousel'>/02</span></h4>
             </div>
            
         </div>
