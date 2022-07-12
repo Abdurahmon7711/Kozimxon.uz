@@ -16,7 +16,7 @@ function VideosBlock() {
     }
 
     const Tabmenu = [
-        createDataAcc(play, 'Qadriyatlarga asoslangan biznesni boshqarish kursi ', 'https://www.youtube.com/embed/Al14l9SdI-I?controls=1'),
+        createDataAcc(play, 'Qadriyatlarga asoslangan biznesni boshqarish kursi ', 'https://www.youtube.com/embed/XsBil1zbVOc?controls=1'),
         createDataAcc(play, 'HR meneger kim? ', 'https://www.youtube.com/embed/Zra33_gCgxQ'),
         createDataAcc(play, 'Yaponiyaning KAIZEN sistemasi ', 'https://www.youtube.com/embed/tk_2n-mZGNc'),
         createDataAcc(play, 'Moliya boshqaruvi ', 'https://www.youtube.com/embed/Evfj7JMjR1Q'),
@@ -68,7 +68,7 @@ function VideosBlock() {
                                 </a>
                             </div>
                             <div className='player' id='myplayer'  >
-                                <iframe className='firstVideo'  if='videoiframe' src='https://www.youtube.com/embed/Al14l9SdI-I' frameborder="0" allowfullscreen>
+                                <iframe className='firstVideo'  if='videoiframe' src='https://www.youtube.com/embed/XsBil1zbVOc' frameborder="0" allowfullscreen>
 
                                 </iframe>
                             </div>

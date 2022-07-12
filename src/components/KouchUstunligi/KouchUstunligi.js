@@ -13,13 +13,14 @@ function KouchUstunligi() {
       </div>
         
       <div className="Cards">
-          <div className="Card">
+          <div className="Card" id="ustunlikCard">
               <div id="empty"></div>
               <div className="iconCard"><img src={Ustunlik1}/></div>
               <div className="textCard">
-              <h2 className="CardFirstText">Xodimlarni boshqarishda muammoga uchrayapsizmi?</h2>
+              {/* <h2 className="CardFirstText">Xodimlarni boshqarishda muammoga uchrayapsizmi?</h2> */}
               <p className="CardSecondText">
-                Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.
+              - Amerika, Yaponiya, Evropa mamlakatlaridan olingan zamonaviy ilm va Saudia Arabistonidagi Islom Taraqqiyot Bankidan olingan Islomiy Moliya bilimlari jamlangan. 
+Hozirgi kunda biznesda muvaffaqiyatli bo'lish uchun zamonaviy va qadriyatlarga asoslangan ilmlarni bilish lozim.
               </p>
               </div>
           </div>
@@ -28,9 +29,9 @@ function KouchUstunligi() {
               <div id="empty"></div>
               <div className="iconCard"><img src={Ustunlik2}/></div>
               <div className="textCard">
-              <h2 className="CardFirstText">Xodimlarni boshqarishda muammoga uchrayapsizmi?</h2>
+              {/* <h2 className="CardFirstText">Xodimlarni boshqarishda muammoga uchrayapsizmi?</h2> */}
               <p className="CardSecondText">
-                Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.
+              Dasturda kompaniyangizda qo'llashingiz mumkin bo'lgan instrumentlar va shablonlar, muammoli masalalar uchun mentorlar yordami mavjud.
               </p>
               </div>
           </div>
@@ -39,9 +40,9 @@ function KouchUstunligi() {
               <div id="empty"></div>
               <div className="iconCard"><img src={Ustunlik3}/></div>
               <div className="textCard">
-              <h2 className="CardFirstText">Xodimlarni boshqarishda muammoga uchrayapsizmi?</h2>
+              {/* <h2 className="CardFirstText">Xodimlarni boshqarishda muammoga uchrayapsizmi?</h2> */}
               <p className="CardSecondText">
-                Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.
+              Har bir narsani mutaxasisdan o'rganish afzal! Kozimxon Turaev Aynan siz qidirgan xalqaro darajadagi mutaxasis! Xodimlar bilan ishlash va moliya sohalarida 20 yillik tajribaga egadir. Procter &Gamble distributorlik kompaniyasida, Islom Taraqqiyot Bankida HR menejer lavozimlarida faoliyat yuritgan.
               </p>
               </div>
           </div>
