@@ -14,6 +14,7 @@ import TabMenu from './components/TabMenu/TabMenu'
 import './App.css'
 import Kozimxon from './components/KozimxonKim/Kozimxon';
 
+
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
       <Kozimxon/>
       <FAQs />
       <Footer />
+
   
       {/* <WhoBlock /> */}
 

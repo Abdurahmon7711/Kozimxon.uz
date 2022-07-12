@@ -13,6 +13,15 @@
     justify-content: space-around;
     background: #EBEBEB;
 }
+.icons{
+    filter: hue-rotate(360deg)
+}
+.icons path, polygon:hover{
+    fill: white !important;
+    stroke: white;
+    color: white;
+    background-color: red;
+}
 .iconCard:hover{
     background-color: #28468C;
 }
@@ -89,6 +98,8 @@ color: #0F0F0F;
     width: 330px;
     color: #828282;
 }
+
+
 
 @media screen and (min-width: 1200px) {
     .KouchUstunligi{
