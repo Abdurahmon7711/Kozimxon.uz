@@ -91,6 +91,7 @@ function KouchAccor() {
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
+
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                             <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
                                 <Typography className='accordion__title' component={'span'} >02 — Islom moliyasi asoslari</Typography>
@@ -109,6 +110,7 @@ function KouchAccor() {
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
+
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                             <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
                                 <Typography className='accordion__title' component={'span'} >03 — Biznesda baraka omillari</Typography>
@@ -127,6 +129,7 @@ function KouchAccor() {
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
+                        
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                             <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
                                 <Typography className='accordion__title' component={'span'} >04 — Muvaffaqqiyatli sherekchilik asosolari </Typography>
@@ -145,6 +148,7 @@ function KouchAccor() {
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
+
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                             <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
                                 <Typography className='accordion__title' component={'span'} >05 — Qadriyatlarga asoslangan liderlik</Typography>
@@ -164,6 +168,7 @@ function KouchAccor() {
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
+
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
                             <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
                                 <Typography className='accordion__title' component={'span'} >06 — Xalqaro standardlarga javob beruvchi xizmat ko‘rsatish</Typography>
@@ -181,6 +186,7 @@ function KouchAccor() {
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
+
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
                             <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
                                 <Typography className='accordion__title' component={'span'} >07 — Yaponiyaning samaradorlikni oshiruvchi TQM va KAIZEN sistemasi</Typography>
@@ -200,6 +206,7 @@ function KouchAccor() {
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
+                        
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
                             <AccordionSummary aria-controls="panel8d-content" id="panel8d-header">
                                 <Typography className='accordion__title' component={'span'} >08 — Qadriyatlarga asoslangan shaxsiy rivojlanish</Typography>
@@ -234,7 +241,7 @@ function KouchAccor() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <a className='Kouch__cardLink' href='./KouchAccor.css' download="PDF file">PDF yuklab olish →</a>
+                                        <a className='Kouch__cardLink' href='../../assets/pdf/kozimxon.pdf' download="PDF file">PDF yuklab olish →</a>
                                         {/* <Link to="#" className='Kouch__cardLink'>PDF yuklab olish → </Link> */}
                                     </CardActions>
                                 </React.Fragment>

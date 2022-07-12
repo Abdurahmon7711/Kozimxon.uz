@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Videos.css";
 import play from "../../assets/images/play.svg";
 import stop from "../../assets/images/stop.svg";
-import axios from "axios";
+const fetch = require('sync-fetch')
 
 
 function VideosBlock() {
@@ -10,17 +10,15 @@ function VideosBlock() {
      * @return {Array}
      */
 
-    async function getVideos() {
-        // const headers = new Headers({
-        //   "Content-Type": "x-www-form-urlencoded",
-        //   "X-CSRFToken": "{{csrf_token}}",
-        // });
+    function getVideos() {
+        const headers = new Headers({
+          "Content-Type": "x-www-form-urlencoded",
+          "X-CSRFToken": "{{csrf_token}}",
+        });
     
-        // const res = await fetch("http://192.168.0.113:8000/videos");
-        // console.log(res);
-        const data = await axios.get('http://192.168.0.113:8000/videos');
-        return data;
-
+            const res = fetch("http://192.168.0.113:8000/videos");
+            
+            return res.json().data;
     }
 
     function createDataAcc(icon, name, ssilka) {
@@ -36,16 +34,16 @@ function VideosBlock() {
 
     // ]
     const Tabmenu = [];
-    const videos =  getVideos();
-
-
-    console.log(videos)
+    const videos = getVideos();
+    console.log(videos);
+    // const videos = await getVideos();
+    // console.log(videos)
     // videos.forEach((video, i) => {
     //     console.log(video)
     //     Tabmenu.push(createDataAcc(
     //         play, video.title,
     //         video.url
-    //     ));
+    //     ))
     // });
 
 
@@ -65,14 +63,14 @@ function VideosBlock() {
                         <div className="Videoss">
                             <div className="NavVideos">
 
-                                {Tabmenu.map((cont, i) => {
+                                {videos.map((cont, i) => {
                                     return (
                                         <div className="Tabmeuvd" >
                                             <button className='videosName' onClick={(e, element) => {
                                                 if( e.currentTarget.className == 'videosName'){
                                                     e.currentTarget.className = 'videosName2';
                                                     e.currentTarget.querySelector('img').src = play;
-                                                    document.getElementById('myplayer').innerHTML = `<iframe class='firstVideo' if='videoiframe' src=${cont.ssilka} frameborder="0" allowfullscreen></iframe>`;
+                                                    document.getElementById('myplayer').innerHTML = `<iframe class='firstVideo' if='videoiframe' src=${cont.url} frameBorder="0" allowFullScreen></iframe>`;
 
                                                 } else {
                                                     e.currentTarget.className = 'videosName';

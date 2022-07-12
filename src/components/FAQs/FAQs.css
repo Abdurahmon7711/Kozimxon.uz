@@ -21,15 +21,18 @@
     margin-top: 120px;
 }
 .leftBox{
-    display: block;    
+    display: flex;    
+    flex-wrap: wrap;
     width: 25%;
 }
 .centerBox{
-    display: block;    
+    display: flex;    
+    flex-wrap: wrap;
     width: 25%;
 }
 .rightBox{
-    display: block;    
+    display: flex;    
+    flex-wrap: wrap;
     width: 25%;
 }
 .Faq__card{
@@ -39,10 +42,12 @@
     border-top: 3px solid #E1E1E1 !important;
     border-radius: 0;
     width: 380px ;
+    /* height: 100px !important; */
     height: max-content !important;
     padding-bottom: 20px;
 }
-.KarouselAccor__cardPartBl{
+
+.leftBox > :nth-child(1) {
     border-top: 3px solid #28468C !important;
 }
 .Faqs__cardTitle{
@@ -71,6 +76,16 @@
     top: 10px;
     margin: 0 auto;
 }
+.accTextPartFaq{
+    width: 100%;
+}
+
+.KouchAccor__accordionFaq{
+    width: 250px;
+    margin: 20px 0;
+    background-color: #F0F0F0 !important;
+    border: none !important;
+}
 
 @media screen and (min-width:1200px) {
     .container{
@@ -80,9 +95,7 @@
     
 }
 @media screen and (max-width:947px) {
-    .faqsContBox{
-        display: none !important;
-    }
+ 
     .faqsContBoxTablet{
         display: flex;
         width: 100%;
@@ -98,9 +111,22 @@
         width: 250px !important;
     }
 }
-@media screen and (min-width:947px) {
+@media screen and (min-width:768px) {
+    .faqsContBox{
+        display: flex;
+    }
     .faqsContBoxTablet{
+        display: none !important;
+    }
+}
+@media screen and (max-width:768px) {
+    .faqsContBox{
         display: none;
+    }
+    .faqsContBoxTablet{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
     }
 }
 @media screen and (max-width:500px) {

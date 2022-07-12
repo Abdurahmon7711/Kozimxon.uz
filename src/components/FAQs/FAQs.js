@@ -62,7 +62,7 @@ function FAQs() {
                                 <Card className='Faq__card KarouselAccor__cardPartBl' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="span">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit faqCarTitBl '>
                                                     Kursda qatnashish necha pul turadi?
                                                 </h5>
@@ -72,6 +72,7 @@ function FAQs() {
                                                 className="Faqs__cardContent"
                                                 color="text.secondary"
                                                 gutterBottom
+                                                component={'span'}
                                                 onMouseMove = {(e) => {
                                                     e.target.style.opacity = 1;
                                                 }}
@@ -92,12 +93,12 @@ function FAQs() {
                                 <Card className='Faq__card ' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Chegirma olish tartibi qanday?
                                                 </h5>
                                             </Typography>
-                                            <Typography           onMouseMove = {(e) => {
+                                            <Typography     component={'span'}      onMouseMove = {(e) => {
                                                     e.target.style.opacity = 1;
                                                 }}
                                                 onMouseLeave={(e) => {
@@ -116,12 +117,12 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography  className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     To‘lov turi qanday?
                                                 </h5>
                                             </Typography>
-                                            <Typography           onMouseMove = {(e) => {
+                                            <Typography     component={'span'}      onMouseMove = {(e) => {
                                                     e.target.style.opacity = 1;
                                                 }}
                                                 onMouseLeave={(e) => {
@@ -144,12 +145,12 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Kursda qatnashib, qanday amaliy ko‘nikmalar olaman?
                                                 </h5>
                                             </Typography>
-                                            <Typography           onMouseMove = {(e) => {
+                                            <Typography   component={'span'}        onMouseMove = {(e) => {
                                                     e.target.style.opacity = 1;
                                                 }}
                                                 onMouseLeave={(e) => {
@@ -169,7 +170,7 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Kursdan qoniqmagan taqdirimda to‘lovni qaytarishim mumkinmi?
                                                 </h5>
@@ -193,7 +194,7 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ?
                                                 </h5>
@@ -224,7 +225,7 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Viloyatdan “Zoom” orqali onlayn qatnashish mumkinmi?
                                                 </h5>
@@ -247,7 +248,7 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi?
                                                 </h5>
@@ -269,7 +270,7 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Dastur ishtirokchilariga konsultatsiya xizmati mavjudmi?
                                                 </h5>
@@ -299,7 +300,7 @@ function FAQs() {
                                 <Card className='Faq__card KarouselAccor__cardPartBl' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit faqCarTitBl '>
                                                     Kursda qatnashish necha pul turadi?
                                                 </h5>
@@ -320,7 +321,7 @@ function FAQs() {
                                 <Card className='Faq__card ' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Chegirma olish tartibi qanday?
                                                 </h5>
@@ -341,7 +342,7 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Kursda qatnashib, qanday amaliy ko‘nikmalar olaman?
                                                 </h5>
@@ -362,7 +363,7 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Kursdan qoniqmagan taqdirimda to‘lovni qaytarishim mumkinmi?
                                                 </h5>
@@ -387,7 +388,7 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Viloyatdan “Zoom” orqali onlayn qatnashish mumkinmi?
                                                 </h5>
@@ -409,7 +410,7 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     To‘lov turi qanday?
                                                 </h5>
@@ -430,7 +431,7 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ?
                                                 </h5>
@@ -458,7 +459,7 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi?
                                                 </h5>
@@ -480,7 +481,7 @@ function FAQs() {
                                 <Card className='Faq__card' variant="outlined">
                                     <>
                                         <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                            <Typography className="Faqs__cardTitle" variant="h5" component={'span'}>
                                                 <h5 className='faqCarTit'>
                                                     Dastur ishtirokchilariga konsultatsiya xizmati mavjudmi?
                                                 </h5>
