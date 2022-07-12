@@ -42,6 +42,14 @@ const responsive = {
 // ];
 // 
 
+{/* 
+
+1. Kompaniyangiz uchun xalqaro standartlarga javob beruvchi HR tizimini biz bilan quring.
+2. Bugun xalqaro bozorda qo'llanilayotgan STAR suhbat o'tqazish instrumenti, xodim kartinkasi va boshqalarni joriy eting.
+3. Kompaniyangiz uchun "Korparativ Madaniyat" va "Kompaniya Qadriyatlari"ni tuzing.
+4. KPI tizimini to'g'ri o'rnatish orqali xodimlaringiz samaradorligini oshiring. 
+
+*/}
 
 function CarouselCards() {
     return (
@@ -59,7 +67,10 @@ function CarouselCards() {
                             <React.Fragment>
                                 <CardContent>
                                     <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                        Kompaniyada HR tizimi to'gri yo'lga qoyilmagan
+                                        Kompaniyada HR tizimi to'gri yo'lga qoyilmaganmi ?
+                                    </Typography>
+                                    <Typography sx={{ fontSize: 14 }} className="Karousel__cardContent" color="text.secondary" gutterBottom>
+                                        Kompaniyangiz uchun xalqaro standartlarga javob beruvchi HR tizimini biz bilan quring.
                                     </Typography>
                                 </CardContent>
                             </React.Fragment>
@@ -72,7 +83,10 @@ function CarouselCards() {
                             <React.Fragment>
                                 <CardContent>
                                     <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                        To'gri hodim tanlashda to'gri instrumentlar qo'llanilmaydi
+                                        Kerakli xodim tanlashda to'g'ri instrumentlar qo'llanilmaydi.
+                                    </Typography>
+                                    <Typography sx={{ fontSize: 14 }} className="Karousel__cardContent" color="text.secondary" gutterBottom>
+                                        Bugun xalqaro bozorda qo'llanilayotgan STAR suhbat o'tqazish instrumenti, xodim kartinkasi va boshqalarni joriy eting.
                                     </Typography>
                                 </CardContent>
                             </React.Fragment>
@@ -87,18 +101,8 @@ function CarouselCards() {
                                     <Typography className="Karousel__cardTitle" variant="h5" component="div">
                                         Bazi ishga olingan hodimrlarning qadriyatlari to'gri emas
                                     </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                        </Card>
-                    </Box>
-                </div>
-                <div className='KarouselMainCard'>
-                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
-                            <React.Fragment>
-                                <CardContent>
-                                    <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                        Kompaniyada to'gri KPI tizimi joriy qilinmagan
+                                    <Typography sx={{ fontSize: 14 }} className="Karousel__cardContent" color="text.secondary" gutterBottom>
+                                        Kompaniyangiz uchun "Korparativ Madaniyat" va "Kompaniya Qadriyatlari"ni tuzing.
                                     </Typography>
                                 </CardContent>
                             </React.Fragment>
@@ -111,171 +115,21 @@ function CarouselCards() {
                             <React.Fragment>
                                 <CardContent>
                                     <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                        Islom moliyasiga tamoyillariga to'gri keladigan sarmoya jalb qilishni bilishmaydi
-                                    </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                        </Card>
-                    </Box>
-                </div>
-                <div className='KarouselMainCard'>
-                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
-                            <React.Fragment>
-                                <CardContent>
-                                    <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                        Biznesni Islom moliyasi ko'rsatmalari boyicha halol boshqarish qanday bo'ladi
-
-                                    </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                        </Card>
-                    </Box>
-                </div>
-                <div className='KarouselMainCard'>
-                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
-                            <React.Fragment>
-                                <CardContent>
-                                    <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                        Bizensda barakaga erishish yo'llari qanday
-                                    </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                        </Card>
-                    </Box>
-                </div>
-                <div className='KarouselMainCard'>
-                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
-                            <React.Fragment>
-                                <CardContent>
-                                    <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                        Qadriyatlarga asoslangan liderlik va boshqaruv qanday bo'la
-                                    </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                        </Card>
-                    </Box>
-                </div>
-                <div className='KarouselMainCard'>
-                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
-                            <React.Fragment>
-                                <CardContent>
-                                    <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                        Halqaro standardlarga javob beruvchi hizmat ko'rsatish va raqobatbardosh bo'lish uchun nima qilish kerak
-                                    </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                        </Card>
-                    </Box>
-                </div>
-                <div className='KarouselMainCard'>
-                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
-                            <React.Fragment>
-                                <CardContent>
-                                    <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                        Samaradorlikni oshiruvchi KAIZEN tizimini qanday qilib joriy qilish mumkin
-                                    </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                        </Card>
-                    </Box>
-                </div>
-                <div className='KarouselMainCard'>
-                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
-                            <React.Fragment>
-                                <CardContent>
-                                    <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                        Qadriyatlarga asoslangan shaxsiy rivojlanish uchun biznes boshqaruvchisi qanday yo'l tutushi kerak
-                                    </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                        </Card>
-                    </Box>
-                </div>
-
-
-                {/* <div className='KarouselMainCard'>
-                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }} >
-                        <Card className='Karousel__card KarouselAccor__cardPartBl' variant="outlined">
-                            <React.Fragment>
-                                <CardContent>
-                                    <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                    Xodimlarni boshqarishda muammoga uchrayapsizmi ?
+                                        Kompaniyada o'rnatilgan KPI tizimi samarali ishlamaydi.
                                     </Typography>
                                     <Typography sx={{ fontSize: 14 }} className="Karousel__cardContent" color="text.secondary" gutterBottom>
-                                        Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.
+                                        KPI tizimini to'g'ri o'rnatish orqali xodimlaringiz samaradorligini oshiring.
                                     </Typography>
                                 </CardContent>
                             </React.Fragment>
                         </Card>
                     </Box>
-
                 </div>
-
-                <div className='KarouselMainCard'>
-
-                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
-                            <React.Fragment>
-                                <CardContent>
-                                    <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                    Xodimlarning KPI tizimi kompaniya foydasiga ishlamayaptimi?
-                                    </Typography>
-                                    <Typography sx={{ fontSize: 14 }} className="Karousel__cardContent" color="text.secondary" gutterBottom>
-                                        Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.
-                                    </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                        </Card>
-                    </Box>
-
-                </div>
-                <div className='KarouselMainCard'>
-
-                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
-                            <React.Fragment>
-                                <CardContent>
-                                    <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                    Sherikchilikdagi biznesingizda muammolar kelib chiqyaptimi?
-                                    </Typography>
-                                    <Typography sx={{ fontSize: 14 }} className="Karousel__cardContent" color="text.secondary" gutterBottom>
-                                        Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.
-                                    </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                        </Card>
-                    </Box>
-
-                </div>
-                <div className='KarouselMainCard'>
-
-                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
-                            <React.Fragment>
-                                <CardContent>
-                                    <Typography className="Karousel__cardTitle" variant="h5" component="div">
-                                    Kompaniyangizdagi servis tizimi savdo pastligi uchun asosiy sabablardan birimi?
-                                    </Typography>
-                                    <Typography sx={{ fontSize: 14 }} className="Karousel__cardContent" color="text.secondary" gutterBottom>
-                                        Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.
-                                    </Typography>
-                                </CardContent>
-                            </React.Fragment>
-                        </Card>
-                    </Box>
-
-                </div> */}
-
+{/* 
                 <div >
                     <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
                     </Box>
-                </div>
+                </div> */}
 
 
 

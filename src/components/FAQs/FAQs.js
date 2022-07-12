@@ -33,6 +33,45 @@ const responsive = {
 
 function FAQs() {
 
+    const createContent = (title, text) => {
+        return { title, text }
+    }
+
+    const content1 = [
+        createContent(" Kursda qatnashish necha pul turadi ? ", " Kursimizda qatnashish istagida bo‘lganlar, pastda ko‘rsatilgan raqamlarga murojaat qilishingiz mumkin. Oldindan ro‘yhatdan o‘tgan ishtirokchilarimiz uchun chegirmalarimiz mavjud. "),
+        createContent(" Chegirma olish tartibi qanday ?  ", " Kursimizda qatnashish istagida bo‘lganlar, pastda ko‘rsatilgan raqamlarga murojaat qilishingiz mumkin. Oldindan ro‘yhatdan o‘tgan ishtirokchilarimiz uchun chegirmalarimiz mavjud. "),
+        createContent(" To‘lov turi qanday? ", " Naqd va pul o'tkazish yo'li bilan. "),
+    ]
+    const content2 = [
+        createContent(" Kursda qatnashib, qanday amaliy ko‘nikmalar olaman ? ", " Har bir modul bo‘yicha hayotiy keyslar, real misollar bilan tanishasiz. "),
+        createContent(" Kursdan qoniqmagan taqdirimda to‘lovni qaytarishim mumkinmi ? ", " Kursdan qoniqmagan taqdirda, pulni qaytarish mumkin, faqat maxsus intervyu orqali qaytariladi. "),
+        createContent(" Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? ", ` 3 xil paketlarimiz mavhud: \n Korporativ paket \n Standart paket \n Premium paket `),
+    ]
+
+    const content3 = [
+        createContent(" Viloyatdan “Zoom” orqali onlayn qatnashish mumkinmi ? ", " Xa mumkin. “Zoom” yoki boshqa mahsus platforma orqali qatnashish mumkin bo‘ladi. "),
+        createContent(" Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi ? ", " Kursimiz muborak Ramazon oyidan keyin ,may oyining birinchi yarmida boshlanib, shanba va yakshanba kunlari 9:30 dan 18:00 gacha bo‘lib o‘tadi. "),
+        createContent(" Dastur ishtirokchilariga konsultatsiya xizmati mavjudmi ? ", " Ha, premium tarifda mavjud, standart tarifda qatnashsangiz konsultatsiya hizmati uchun 50% chegirmaga ega bo‘lasiz. "),
+    ]
+
+    const contentTab1 = [
+        createContent(" Kursda qatnashish necha pul turadi ? ", " Kursimizda qatnashish istagida bo‘lganlar, pastda ko‘rsatilgan raqamlarga murojaat qilishingiz mumkin. Oldindan ro‘yhatdan o‘tgan ishtirokchilarimiz uchun chegirmalarimiz mavjud. "),
+        createContent(" Chegirma olish tartibi qanday ?  ", " Kursimizda qatnashish istagida bo‘lganlar, pastda ko‘rsatilgan raqamlarga murojaat qilishingiz mumkin. Oldindan ro‘yhatdan o‘tgan ishtirokchilarimiz uchun chegirmalarimiz mavjud. "),
+        createContent(" To‘lov turi qanday? ", " Naqd va pul o'tkazish yo'li bilan. "),
+        createContent(" Kursda qatnashib, qanday amaliy ko‘nikmalar olaman ? ", " Har bir modul bo‘yicha hayotiy keyslar, real misollar bilan tanishasiz. "),
+    ]
+    
+    const contentTab2 = [
+        createContent(" Kursdan qoniqmagan taqdirimda to‘lovni qaytarishim mumkinmi ? ", " Kursdan qoniqmagan taqdirda, pulni qaytarish mumkin, faqat maxsus intervyu orqali qaytariladi. "),
+        createContent(" Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? ", ` 3 xil paketlarimiz mavhud: \n Korporativ paket \n Standart paket \n Premium paket `),
+        createContent(" Viloyatdan “Zoom” orqali onlayn qatnashish mumkinmi ? ", " Xa mumkin. “Zoom” yoki boshqa mahsus platforma orqali qatnashish mumkin bo‘ladi. "),
+        createContent(" Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi ? ", " Kursimiz muborak Ramazon oyidan keyin ,may oyining birinchi yarmida boshlanib, shanba va yakshanba kunlari 9:30 dan 18:00 gacha bo‘lib o‘tadi. "),
+        createContent(" Dastur ishtirokchilariga konsultatsiya xizmati mavjudmi ? ", " Ha, premium tarifda mavjud, standart tarifda qatnashsangiz konsultatsiya hizmati uchun 50% chegirmaga ega bo‘lasiz. "),
+    ]
+
+    
+   
+
     return (
         <div className='FaqCont'>
 
@@ -42,252 +81,120 @@ function FAQs() {
                     <h3 className='partTitle' >Ko‘p so‘raladigan <br /> savollar</h3>
 
                     <div className='faqsContBox'>
+ 
                         <div className='leftBox'>
-                            {/* 
-                            <Grid item xs={3} sm={4} md={4} key={index}>
-                                <Item className='LogoSecItem'
-                                    onMouseEnter={(e) => {
-                                        e.target.src = light;
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.target.src = black;
-                                    }}><img className='LogoSecItemImg' src={black} />
-                                </Item>
-                            </Grid> 
-                            
-                            */}
+                            {
+                                content1.map((el, ind) => {
+                                    return (
+                                        <div>
+                                            <Card  className= "Faq__card" variant="outlined"                                                             onMouseMove={(e) => {
+                                                                e.target.style.opacity = 1;
+                                                            }}
+                                                            onMouseLeave={(e) => {
+                                                                e.target.style.opacity = 0;
 
-                            <div>
-
-                                <Card className='Faq__card KarouselAccor__cardPartBl' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit faqCarTitBl '>
-                                                    Kursda qatnashish necha pul turadi?
-                                                </h5>
-                                            </Typography>
-                                            <Typography
-                                                sx={{ fontSize: 18 }}
-                                                className="Faqs__cardContent"
-                                                color="text.secondary"
-                                                gutterBottom
-                                                onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}>
-                                                Kursimizda qatnashish istagida bo‘lganlar, pastda ko‘rsatilgan raqamlarga murojaat qilishingiz mumkin. Oldindan ro‘yhatdan o‘tgan ishtirokchilarimiz uchun chegirmalarimiz mavjud.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
+                                                            }}>
+                                                <>
+                                                    <CardContent>
+                                                        <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                                            <h5 className='faqCarTit faqCarTitBl '>
+                                                                {el.title}
+                                                            </h5>
+                                                        </Typography>
+                                                        <Typography
+                                                            sx={{ fontSize: 18 }}
+                                                            className="Faqs__cardContent"
+                                                            color="text.secondary"
+                                                            gutterBottom
+>
+                                                            {el.text}
+                                                        </Typography>
+                                                    </CardContent>
+                                                </>
+                                            </Card>
 
 
-                            </div>
-                            <div>
-
-
-                                <Card className='Faq__card ' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Chegirma olish tartibi qanday?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Kursimizda qatnashish istagida bo‘lganlar, pastda ko‘rsatilgan raqamlarga murojaat qilishingiz mumkin. Oldindan ro‘yhatdan o‘tgan ishtirokchilarimiz uchun chegirmalarimiz mavjud.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-
-
-                            </div>
-
-                            <div>
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    To‘lov turi qanday?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Naqd va pul o'tkazish yo'li bilan
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div>
-
-
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
-                        {/*  */}
                         <div className='centerBox'>
-                            <div>
+                            {
+                                content2.map((el, ind) => {
+                                    return (
+                                        <div>
+                                            <Card className='Faq__card' variant="outlined">
+                                                <>
+                                                    <CardContent>
+                                                        <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                                            <h5 className='faqCarTit faqCarTitBl '>
+                                                                {el.title}
+                                                            </h5>
+                                                        </Typography>
+                                                        <Typography
+                                                            sx={{ fontSize: 18 }}
+                                                            className="Faqs__cardContent"
+                                                            color="text.secondary"
+                                                            gutterBottom
+                                                            onMouseMove={(e) => {
+                                                                e.target.style.opacity = 1;
+                                                            }}
+                                                            onMouseLeave={(e) => {
+                                                                e.target.style.opacity = 0;
+
+                                                            }}>
+                                                            {el.text}
+                                                        </Typography>
+                                                    </CardContent>
+                                                </>
+                                            </Card>
 
 
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Kursda qatnashib, qanday amaliy ko‘nikmalar olaman?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Har bir modul bo‘yicha hayotiy keyslar, real misollar bilan tanishasiz.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-
-
-                            </div>
-                            <div>
-
-
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Kursdan qoniqmagan taqdirimda to‘lovni qaytarishim mumkinmi?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Kursdan qoniqmagan taqdirda, pulni qaytarish mumkin, faqat maxsus intervyu orqali qaytariladi.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-
-
-                            </div>
-
-                            <div>
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                3 xil paketlarimiz mavhud:
-                                                <ul>
-                                                    <li>Korporativ paket </li>
-                                                    <li>Standart paket </li>
-                                                    <li>Premium paket </li>
-                                                </ul>
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div >
-
-
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
-                        {/*  */}
                         <div className='rightBox'>
-                            <div>
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Viloyatdan “Zoom” orqali onlayn qatnashish mumkinmi?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Xa mumkin. “Zoom” yoki boshqa mahsus platforma orqali qatnashish mumkin bo‘ladi.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div>
+                            {
+                                content3.map((el, ind) => {
+                                    return (
+                                        <div>
+                                            <Card className='Faq__card' variant="outlined">
+                                                <>
+                                                    <CardContent>
+                                                        <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                                            <h5 className='faqCarTit faqCarTitBl '>
+                                                                {el.title}
+                                                            </h5>
+                                                        </Typography>
+                                                        <Typography
+                                                            sx={{ fontSize: 18 }}
+                                                            className="Faqs__cardContent"
+                                                            color="text.secondary"
+                                                            gutterBottom
+                                                            onMouseMove={(e) => {
+                                                                e.target.style.opacity = 1;
+                                                            }}
+                                                            onMouseLeave={(e) => {
+                                                                e.target.style.opacity = 0;
+
+                                                            }}>
+                                                            {el.text}
+                                                        </Typography>
+                                                    </CardContent>
+                                                </>
+                                            </Card>
 
 
-                            <div>
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Kursimiz muborak Ramazon oyidan keyin ,may oyining birinchi yarmida boshlanib, shanba va yakshanba kunlari 9:30 dan 18:00 gacha bo‘lib o‘tadi.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
 
-                            <div>
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Dastur ishtirokchilariga konsultatsiya xizmati mavjudmi?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Ha, premium tarifda mavjud, standart tarifda qatnashsangiz konsultatsiya hizmati uchun 50% chegirmaga ega bo‘lasiz.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div >
 
-                        </div >
                     </div>
 
 
@@ -295,209 +202,85 @@ function FAQs() {
                     <div className='faqsContBoxTablet'>
 
                         <div className="faqsTablPart">
-                            <div>
-                                <Card className='Faq__card KarouselAccor__cardPartBl' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit faqCarTitBl '>
-                                                    Kursda qatnashish necha pul turadi?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Kursimizda qatnashish istagida bo‘lganlar, pastda ko‘rsatilgan raqamlarga murojaat qilishingiz mumkin. Oldindan ro‘yhatdan o‘tgan ishtirokchilarimiz uchun chegirmalarimiz mavjud.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div>
-                            <div>
-                                <Card className='Faq__card ' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Chegirma olish tartibi qanday?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Kursimizda qatnashish istagida bo‘lganlar, pastda ko‘rsatilgan raqamlarga murojaat qilishingiz mumkin. Oldindan ro‘yhatdan o‘tgan ishtirokchilarimiz uchun chegirmalarimiz mavjud.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div>
-                            <div>
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Kursda qatnashib, qanday amaliy ko‘nikmalar olaman?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Har bir modul bo‘yicha hayotiy keyslar, real misollar bilan tanishasiz.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div>
-                            <div>
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Kursdan qoniqmagan taqdirimda to‘lovni qaytarishim mumkinmi?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Kursdan qoniqmagan taqdirda, pulni qaytarish mumkin, faqat maxsus intervyu orqali qaytariladi.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div>
+                        {
+                                contentTab1.map((el, ind) => {
+                                    return (
+                                        <div>
+                                            <Card 
+                                            className= "Faq__card"
+
+                                            variant="outlined">
+                                                <>
+                                                    <CardContent>
+                                                        <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                                            <h5 className='faqCarTit faqCarTitBl '>
+                                                                {el.title}
+                                                            </h5>
+                                                        </Typography>
+                                                        <Typography
+                                                            sx={{ fontSize: 18 }}
+                                                            className="Faqs__cardContent"
+                                                            color="text.secondary"
+                                                            gutterBottom
+                                                            onMouseMove={(e) => {
+                                                                e.target.style.opacity = 1;
+                                                            }}
+                                                            onMouseLeave={(e) => {
+                                                                e.target.style.opacity = 0;
+
+                                                            }}>
+                                                            {el.text}
+                                                        </Typography>
+                                                    </CardContent>
+                                                </>
+                                            </Card>
+
+
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
                         {/*  */}
                         <div className="faqsTablPart">
+                        {
+                                contentTab2.map((el, ind) => {
+                                    return (
+                                        <div>
+                                            <Card 
+                                            className= "Faq__card"
 
-                            <div>
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Viloyatdan “Zoom” orqali onlayn qatnashish mumkinmi?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Xa mumkin. “Zoom” yoki boshqa mahsus platforma orqali qatnashish mumkin bo‘ladi.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div>
+                                            variant="outlined">
+                                                <>
+                                                    <CardContent>
+                                                        <Typography className="Faqs__cardTitle" variant="h5" component="div">
+                                                            <h5 className='faqCarTit faqCarTitBl '>
+                                                                {el.title}
+                                                            </h5>
+                                                        </Typography>
+                                                        <Typography
+                                                            sx={{ fontSize: 18 }}
+                                                            className="Faqs__cardContent"
+                                                            color="text.secondary"
+                                                            gutterBottom
+                                                            onMouseMove={(e) => {
+                                                                e.target.style.opacity = 1;
+                                                            }}
+                                                            onMouseLeave={(e) => {
+                                                                e.target.style.opacity = 0;
 
-                            <div>
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    To‘lov turi qanday?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Naqd va pul o'tkazish yo'li bilan
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div>
-                            <div>
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                3 xil paketlarimiz mavhud:
-                                                <ul>
-                                                    <li>Korporativ paket </li>
-                                                    <li>Standart paket </li>
-                                                    <li>Premium paket </li>
-                                                </ul>
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div >
+                                                            }}>
+                                                            {el.text}
+                                                        </Typography>
+                                                    </CardContent>
+                                                </>
+                                            </Card>
 
 
-                            <div>
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Kursimiz muborak Ramazon oyidan keyin ,may oyining birinchi yarmida boshlanib, shanba va yakshanba kunlari 9:30 dan 18:00 gacha bo‘lib o‘tadi.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div>
-
-                            <div>
-                                <Card className='Faq__card' variant="outlined">
-                                    <>
-                                        <CardContent>
-                                            <Typography className="Faqs__cardTitle" variant="h5" component="div">
-                                                <h5 className='faqCarTit'>
-                                                    Dastur ishtirokchilariga konsultatsiya xizmati mavjudmi?
-                                                </h5>
-                                            </Typography>
-                                            <Typography           onMouseMove = {(e) => {
-                                                    e.target.style.opacity = 1;
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.target.style.opacity = 0;
-                                                }}  sx={{ fontSize: 18 }} className="Faqs__cardContent" color="text.secondary" gutterBottom>
-                                                Ha, premium tarifda mavjud, standart tarifda qatnashsangiz konsultatsiya hizmati uchun 50% chegirmaga ega bo‘lasiz.
-                                            </Typography>
-                                        </CardContent>
-                                    </>
-                                </Card>
-                            </div >
-
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div >

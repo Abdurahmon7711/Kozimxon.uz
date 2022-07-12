@@ -42,7 +42,7 @@
     height: max-content !important;
     padding-bottom: 20px;
 }
-.KarouselAccor__cardPartBl{
+.leftBox:nth-child(1) , .faqsTablPart:nth-child(1){
     border-top: 3px solid #28468C !important;
 }
 .Faqs__cardTitle{
