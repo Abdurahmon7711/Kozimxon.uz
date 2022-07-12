@@ -41,7 +41,7 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }} >
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
-                                <iframe className='videoBox' width="350" height="200" src="https://www.youtube.com/embed/gltEjhvswLA?start=43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe className='videoBox' width="350" height="200" src="https://www.youtube.com/embed/gltEjhvswLA?start=43" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         Ahmadaliyeva Nodira
                                     </Typography>
@@ -55,7 +55,7 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }}>
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
-                                <iframe className='videoBox' width="350" height="200" src="https://www.youtube.com/embed/gltEjhvswLA?start=688" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe className='videoBox' width="350" height="200" src="https://www.youtube.com/embed/gltEjhvswLA?start=688" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         Abu Solih
                                     </Typography>
@@ -69,7 +69,7 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }}>
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
-                                <iframe className='videoBox' width="350" height="200" src="https://www.youtube.com/embed/gltEjhvswLA?start=913" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe className='videoBox' width="350" height="200" src="https://www.youtube.com/embed/gltEjhvswLA?start=913" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         Kurs qatnashuvchisi
                                     </Typography>
@@ -83,7 +83,7 @@ function CarouselVideos() {
                     <Box className='CarouselItem' sx={{ minWidth: 275 }}>
                             <React.Fragment>
                                 <CardContent className='videoBlcCont'>
-                                <iframe className='videoBox' width="350" height="200" src="https://www.youtube.com/embed/gltEjhvswLA?start=1351" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe className='videoBox' width="350" height="200" src="https://www.youtube.com/embed/gltEjhvswLA?start=1351" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     <Typography sx={{ fontSize: 14 }} className="Video__cardContent" color="text.secondary" gutterBottom>
                                         Abdulloh
                                     </Typography>

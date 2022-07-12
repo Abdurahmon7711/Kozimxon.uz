@@ -2,13 +2,16 @@ import React from "react";
 
 import '../WhoBlock/WhoBlock.css'
 
-import BlockCard1 from '../../assets/images/BlockCard1.png'
-import BlockCard2 from '../../assets/images/BlockCard2.png'
-import BlockCard3 from '../../assets/images/BlockCard3.png'
-import BlockCard4 from '../../assets/images/BlockCard4.png'
+// import BlockCard1 from '../../assets/images/BlockCard1.png'
+// import BlockCard2 from '../../assets/images/BlockCard2.png'
+// import BlockCard3 from '../../assets/images/BlockCard3.png'
+// import BlockCard4 from '../../assets/images/BlockCard4.png'
 import Kozimxon1 from '../../assets/images/Kozimxon1.JPG'
 import Kozimxon2 from '../../assets/images/Kozimxon2.JPG'
 import Kozimxon3 from '../../assets/images/Kozimxon3.JPG'
+import ustoz1 from '../../assets/images/ustoz1.svg'
+import ustoz2 from '../../assets/images/ustoz2.svg'
+import ustoz3 from '../../assets/images/ustoz3.svg'
 
 function Kozimxon() {
   return (
@@ -23,7 +26,7 @@ function Kozimxon() {
                 <div className="Card" id="BlockCard">
                         <div id="empty"></div>
                         <div className="iconCard">
-                        <img src={BlockCard1} />
+                        <img src={ustoz1} />
                         </div>
                         <div className="textCard">
                         <p className="CardSecondText" id="CardSecondBlock">
@@ -41,7 +44,7 @@ function Kozimxon() {
             <div className="Card" id="BlockCard">
                 <div id="empty"></div>
                 <div className="iconCard">
-                  <img src={BlockCard3} />
+                  <img src={ustoz2} />
                 </div>
                 <div className="textCard">
                   <p className="CardSecondText" id="CardSecondBlock">
@@ -58,7 +61,7 @@ function Kozimxon() {
             <div className="Card" id="BlockCard">
                 <div id="empty"></div>
                 <div className="iconCard">
-                  <img src={BlockCard4} />
+                  <img src={ustoz3} />
                 </div>
                 <div className="textCard">
                   <p className="CardSecondText" id="CardSecondBlock">

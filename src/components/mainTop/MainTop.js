@@ -1,6 +1,6 @@
 import React from 'react'
 import './MainTop.css'
-
+import CarouselTop from '../CarouselTop/CarouselTop'
 
 // images
 import imgCarousel from '../../assets/images/ImgCarous1.png'
@@ -53,7 +53,8 @@ function MainTop() {
             
         </div>
         <div className='TopCarouselBlock'>
-            <CarouselMain/>
+            {/* <CarouselMain/> */}
+            <CarouselTop/>
             <div className='CarouselLow'>
                 <h3 className='CarouselLowText'>Kozimxon To‘rayevning treninglaridan lavhalar</h3>
                 <h4 className='firstCarousel'><span id="span01">01</span><span id='span02'>02</span><span className='allCarousel'>/02</span></h4>

@@ -1,0 +1,127 @@
+/* body{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  } */
+  
+  
+  .slider{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /* object-fit: cover; */
+  }
+  
+  .slides{
+    width: 500%;
+    /* height: 500px; */
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  .imgCarousels{
+    object-fit: cover;
+  }
+  
+  .slide img{
+    width: 800px;
+    /* height: 500px; */
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: none;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #bdbaba1b;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #fbfbfb00;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 460px;
+    display: none;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #f5f5f500;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #28468C;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #28468C;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #28468C;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #28468C;
+  }
+  /* @media screen and (max-width: 576px) {
+    .slider{
+        height: 200px;
+        object-fit: cover;
+    }
+    
+  } */

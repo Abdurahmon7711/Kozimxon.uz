@@ -5,7 +5,6 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Sonnet from 'react-bootstrap'
 import KouchDasturi from "../KouchDasturi/KouchDasturi";
-import KouchAccor from "../KouchAccor/KouchAccor";
 import TabPanel from './TabPanel/TabPanel'
 import TabsMenu from './TabsMenu.css'
 
