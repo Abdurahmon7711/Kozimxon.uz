@@ -17,18 +17,18 @@ import Kozimxon from './components/KozimxonKim/Kozimxon';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <MainTop />
-      <KouchDasturi />
-      <CarouselCards />
-      <VideosBlock />
-      <KouchUstunligi />
+      {/* <Navbar /> */}
+      {/* <MainTop /> */}
+      {/* <KouchDasturi /> */}
+      {/* <CarouselCards /> */}
+      {/* <VideosBlock /> */}
+      {/* <KouchUstunligi /> */}
       <KouchAccor />
-      <CarouselVideos />
+      {/* <CarouselVideos /> */}
       <LogoSection />
-      <Kozimxon/>
+      {/* <Kozimxon/> */}
       <FAQs />
-      <Footer />
+      {/* <Footer /> */}
   
       {/* <WhoBlock /> */}
 

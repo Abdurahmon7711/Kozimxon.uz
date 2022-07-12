@@ -241,7 +241,7 @@ function KouchAccor() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <a className='Kouch__cardLink' href='./KouchAccor.css' download="PDF file">PDF yuklab olish →</a>
+                                        <a className='Kouch__cardLink' href='../../assets/pdf/kozimxon.pdf' download="PDF file">PDF yuklab olish →</a>
                                         {/* <Link to="#" className='Kouch__cardLink'>PDF yuklab olish → </Link> */}
                                     </CardActions>
                                 </React.Fragment>
