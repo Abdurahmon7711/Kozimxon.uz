@@ -30,10 +30,6 @@ function App() {
       <Kozimxon/>
       <FAQs />
       <Footer />
-
-  
-      {/* <WhoBlock /> */}
-
     </div>
   );
 }

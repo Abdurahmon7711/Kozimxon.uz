@@ -2,11 +2,7 @@ import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import { Link } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import "./CarouselVideos.css"
 import vidBlock from '../../assets/images/vidBlock.png'

@@ -2,6 +2,7 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    width: 345px;
     z-index: 10;
     height: 110px;
     display: flex;
@@ -21,10 +22,43 @@
     width: 380px ;
 
 }
-
+.asdas{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 /* .react-multi-carousel-list{
     width: 100vw;
 } */
+
+.FaqsLogoRow{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    height: 150px;
+    margin-top: 50px;
+}
+.ustkidiv{
+    display: flex;
+}
+.ustkidiv > *{
+    margin: 0 25px;
+}
+
+.LogoSection ::-webkit-scrollbar{
+    width: 10px;
+    height: 2px;
+    background-color: inherit;
+    margin-right: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color:#28468C;
+    width: 20px;
+    opacity: 0.5;
+}
+
 @media screen and (min-width:1200px) {
     .container{
         max-width: 1200px;
