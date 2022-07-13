@@ -233,10 +233,10 @@ function KouchAccor() {
                             <Card className='Kouch__card KouchAccor__cardPartBl' variant="outlined">
                                 <React.Fragment>
                                     <CardContent>
-                                        <Typography className="Kouch__cardTitle" variant="h5" component={'span'}>
+                                        <Typography className="Kouch__cardTitle" variant="h5" >
                                             Kurs o‘quv dasturining elektron PDF varianti
                                         </Typography>
-                                        <Typography sx={{ fontSize: 14 }} className="Kouch__cardContent" color="text.secondary" component={'span'} gutterBottom>
+                                        <Typography sx={{ fontSize: 14 }} className="Kouch__cardContent" color="text.secondary"  gutterBottom>
                                             Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.
                                         </Typography>
                                     </CardContent>
@@ -251,10 +251,10 @@ function KouchAccor() {
                             <Card className='Kouch__card' variant="outlined">
                                 <React.Fragment>
                                     <CardContent>
-                                        <Typography className="Kouch__cardTitle" variant="h5" component={'span'}>
+                                        <Typography className="Kouch__cardTitle" variant="h5" >
                                             Kouching dasturimizda o‘qish uchun ro‘yxatdan o‘ting!
                                         </Typography>
-                                        <Typography sx={{ fontSize: 14 }} className="Kouch__cardContent" color="text.secondary" component={'span'} gutterBottom>
+                                        <Typography sx={{ fontSize: 14 }} className="Kouch__cardContent" color="text.secondary"  gutterBottom>
                                             Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.
                                         </Typography>
                                     </CardContent>
