@@ -250,7 +250,12 @@
     .container {
         width: 360px;
     }
-
+    .innerAcc__text{
+        flex-direction: column;
+    }
+    .accTextPart{
+        width: 100% !important;
+    }
     .Kouch__card{
         height: 300px;
         width: 360px;
