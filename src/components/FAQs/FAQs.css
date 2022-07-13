@@ -7,9 +7,9 @@
 .faqsContBox > * {
     margin: 0 10px;
 }
-.css-ta84vm-MuiAccordionDetails-root{
+/* .css-ta84vm-MuiAccordionDetails-root{
     border: none !important;
-}
+} */
 .faqsContBox{
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +41,7 @@
 .Faq__card{
     background-color: #FAFAFA !important;
     margin-bottom: 20px;
-    border: none !important;
+    /* border: none !important; */
     border-top: 3px solid #E1E1E1 !important;
     border-radius: 0;
     /* width: 380px ; */
@@ -55,9 +55,17 @@
     border-top: 3px solid #28468C !important;
 } */
 
-/* .KouchAccor__accordionFaq:hover > * {
+.KouchAccor__accordionFaq{
+    width: 350px;
+    margin: 20px 0;
+    background-color: #F0F0F0 !important;
+    border: none !important;
+}
+.KouchAccor__accordionFaq:hover {
+    transition: 0.1s ease all;
+    animation: 0.1s ease all;
     border-top: 3px solid #28468C !important;
-} */
+}
 
 .Faqs__cardTitle{
     color: #0F0F0F;
@@ -92,12 +100,6 @@
     width: 100%;
 }
 
-.KouchAccor__accordionFaq{
-    width: 350px;
-    margin: 20px 0;
-    background-color: #F0F0F0 !important;
-    border: none !important;
-}
 .css-yw020d-MuiAccordionSummary-expandIconWrapper{
     position: absolute !important;
     right: 10px !important;
