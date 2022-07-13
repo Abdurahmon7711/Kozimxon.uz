@@ -80,7 +80,7 @@ function Footer() {
                 number: headers.number,
                 work_place: headers.work_place,
               }
-              let url = new URL('http://192.168.0.113:8000/register');
+              let url = new URL('/register');
               for (let k in data) {
                 url.searchParams.append(k, data[k]);
               }
