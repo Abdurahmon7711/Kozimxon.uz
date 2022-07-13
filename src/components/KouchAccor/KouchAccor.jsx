@@ -233,7 +233,7 @@ function KouchAccor() {
                             <Card className='Kouch__card KouchAccor__cardPartBl' variant="outlined">
                                 <React.Fragment>
                                     <CardContent>
-                                        <Typography className="Kouch__cardTitle" variant="h5" component="div">
+                                        <Typography className="Kouch__cardTitle" variant="h5" component={'span'}>
                                             Kurs o‘quv dasturining elektron PDF varianti
                                         </Typography>
                                         <Typography sx={{ fontSize: 14 }} className="Kouch__cardContent" color="text.secondary" component={'span'} gutterBottom>
@@ -251,7 +251,7 @@ function KouchAccor() {
                             <Card className='Kouch__card' variant="outlined">
                                 <React.Fragment>
                                     <CardContent>
-                                        <Typography className="Kouch__cardTitle" variant="h5" component="span">
+                                        <Typography className="Kouch__cardTitle" variant="h5" component={'span'}>
                                             Kouching dasturimizda o‘qish uchun ro‘yxatdan o‘ting!
                                         </Typography>
                                         <Typography sx={{ fontSize: 14 }} className="Kouch__cardContent" color="text.secondary" component={'span'} gutterBottom>

@@ -146,10 +146,15 @@ button {
 #bbb{
     height: 67px !important;
     width: 250px;
+    padding: 10px;
+    font-family: 'SF pro' !important;
+    font-size: 16px;
 }
 .option {
+    /* background-color: red; */
     padding: 30px 60px !important;
-    margin: 50px;
+    font-size: 22px ;
+    font-family: 'SF Pro' !important;
 
 }
 @media screen and (min-width:1200px) {
@@ -202,6 +207,9 @@ button {
     .underFooter {
         display: flex;
         flex-direction: column;
+    }
+    #bbb {
+        width: 270px;
     }
 
     .footerLink {

@@ -13,6 +13,7 @@ import WhoBlock from './components/WhoBlock/WhoBlock';
 import TabMenu from './components/TabMenu/TabMenu'
 import './App.css'
 import Kozimxon from './components/KozimxonKim/Kozimxon';
+import CarouselLogo from './components/CarouselLogo/CarouselLogo';
 
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
       <KouchUstunligi />
       <KouchAccor />
       <CarouselVideos />
-      <LogoSection />
+      {/* <LogoSection /> */}
+      <CarouselLogo/>
       <Kozimxon/>
       <FAQs />
       <Footer />

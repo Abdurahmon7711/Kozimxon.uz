@@ -135,8 +135,8 @@ function Footer() {
                 <div className="footerItem">
                   <p>Kursni tanlang </p>
                   <select name="kurs" id="bbb">
-                    <option value="hr"><span className="option"  >HR kursi uchun </span> </option>
                     <option className="option" value="biznes"><span className="option">Biznes kursi uchun </span> </option>
+                    <option className="option" value="hr"><span className="option"  >HR kursi uchun </span> </option>
 
                   </select>
                   
