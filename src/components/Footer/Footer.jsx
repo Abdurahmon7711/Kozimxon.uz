@@ -132,13 +132,13 @@ function Footer() {
                   <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
                 </div>
 
-                <div className="footerItem">
+                {/* <div className="footerItem">
                   <p>Kursni tanlang </p>
                   <select name="kurs" id="bbb">
                     <option className="option" value="biznes"><span className="option">Biznes kursi uchun </span> </option>
                     <option className="option" value="hr"><span className="option"  >HR kursi uchun </span> </option>
 
-                  </select>
+                  </select> */}
                   
                   {/* <input
                     onChange={(e) => handle(e)}
@@ -148,7 +148,7 @@ function Footer() {
                     className="msgInput"
                     placeholder="Biznesingiz ..."
                   /> */}
-                </div>
+                {/* </div> */}
 
 
           
