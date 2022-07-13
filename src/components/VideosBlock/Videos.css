@@ -28,7 +28,7 @@
     height: 444px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .videosName{
     width: 380px !important;
@@ -41,6 +41,7 @@
     border: none;
     width: 360px;
     padding: 20px ;
+    margin-bottom: 30px;
 
 }
 .videosName2{
@@ -54,6 +55,7 @@
     width: 360px;
     padding: 20px;
     transform:scaleY(1.15);
+    margin-bottom: 30px;
 
 }
 .VideosText{

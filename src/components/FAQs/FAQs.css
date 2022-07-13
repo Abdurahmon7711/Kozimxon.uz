@@ -7,6 +7,9 @@
 .faqsContBox > * {
     margin: 0 10px;
 }
+.css-ta84vm-MuiAccordionDetails-root{
+    border: none !important;
+}
 .faqsContBox{
     display: flex;
     flex-wrap: wrap;
