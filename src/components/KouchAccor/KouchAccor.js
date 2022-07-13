@@ -72,10 +72,10 @@ function KouchAccor() {
                       
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                                <Typography className='accordion__title' component={'span'} >01 — HR tizimini yaratish</Typography>
+                                <Typography className='accordion__title' component={'div'} >01 — HR tizimini yaratish</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'>
-                                <Typography className='innerAcc__text' component={'span'} >
+                                <Typography className='innerAcc__text' component={'div'} >
                                     <div className='accTextPart'>
                                         Kompaniyaning missiyalari, qadriyatlari va vazifalari.
                                         <br /> HR rejalash (Kompaniya kerak buladigan xodimlar sonini aniqlash).
@@ -94,10 +94,10 @@ function KouchAccor() {
 
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                             <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                                <Typography className='accordion__title' component={'span'} >02 — Islom moliyasi asoslari</Typography>
+                                <Typography className='accordion__title' component={'div'} >02 — Islom moliyasi asoslari</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
-                                <Typography className='innerAcc__text' component={'span'}>
+                                <Typography className='innerAcc__text' component={'div'}>
                                     <div className='accTextPart'>
                                         Islom moliyasi tamoyillari asosida biznesni boshqarish.
                                         Islom moliyasidagi taqiqlar
@@ -113,10 +113,10 @@ function KouchAccor() {
 
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                             <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                                <Typography className='accordion__title' component={'span'} >03 — Biznesda baraka omillari</Typography>
+                                <Typography className='accordion__title' component={'div'} >03 — Biznesda baraka omillari</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
-                                <Typography className='innerAcc__text' component={'span'}>
+                                <Typography className='innerAcc__text' component={'div'}>
                                     <div className='accTextPart'>
                                         Islomda pulga va biznesga bo'lgan munosabat.
                                         Dunyo va oxirat orasida muvozanat saqlash.
@@ -132,10 +132,10 @@ function KouchAccor() {
                         
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                             <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-                                <Typography className='accordion__title' component={'span'} >04 — Muvaffaqqiyatli sherekchilik asosolari </Typography>
+                                <Typography className='accordion__title' component={'div'} >04 — Muvaffaqqiyatli sherekchilik asosolari </Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
-                                <Typography className='innerAcc__text' component={'span'}>
+                                <Typography className='innerAcc__text' component={'div'}>
                                     <div className='accTextPart'>
                                         Biznesda niyatning muhimligi.
                                         Sherik tanlashda qadriyatlarga asoslanish.
@@ -151,10 +151,10 @@ function KouchAccor() {
 
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                             <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
-                                <Typography className='accordion__title' component={'span'} >05 — Qadriyatlarga asoslangan liderlik</Typography>
+                                <Typography className='accordion__title' component={'div'} >05 — Qadriyatlarga asoslangan liderlik</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
-                                <Typography className='innerAcc__text' component={'span'}>
+                                <Typography className='innerAcc__text' component={'div'}>
                                     <div className='accTextPart'>
                                         Zamonaviy va qadriyatlarga asoslangan liderlikning farqlari.
                                         Payg'ambarimiz (S.A.V)ning liderlik mahoratlari.
@@ -171,10 +171,10 @@ function KouchAccor() {
 
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
                             <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
-                                <Typography className='accordion__title' component={'span'} >06 — Xalqaro standardlarga javob beruvchi xizmat ko‘rsatish</Typography>
+                                <Typography className='accordion__title' component={'div'} >06 — Xalqaro standardlarga javob beruvchi xizmat ko‘rsatish</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
-                                <Typography className='innerAcc__text' component={'span'} >
+                                <Typography className='innerAcc__text' component={'div'} >
                                     <div className='accTextPart'>
                                         Xalqaro talablarga javob beradigan servis tizimi nima ?
                                         YAponiya tajribasi asosida mijozlarga yuqori darajada xizmat ko'rsatish tizimi yaratish
@@ -189,10 +189,10 @@ function KouchAccor() {
 
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
                             <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
-                                <Typography className='accordion__title' component={'span'} >07 — Yaponiyaning samaradorlikni oshiruvchi TQM va KAIZEN sistemasi</Typography>
+                                <Typography className='accordion__title' component={'div'} >07 — Yaponiyaning samaradorlikni oshiruvchi TQM va KAIZEN sistemasi</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
-                                <Typography className='innerAcc__text' component={'span'}>
+                                <Typography className='innerAcc__text' component={'div'}>
                                     <div className='accTextPart'>
                                         Yaponiya Kaizen sistemasi nima va u qanday ishlaydi ?
                                         Tizimlashtirish uchun kerak bo'ladigan 5C sistemasi.
@@ -209,10 +209,10 @@ function KouchAccor() {
                         
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
                             <AccordionSummary aria-controls="panel8d-content" id="panel8d-header">
-                                <Typography className='accordion__title' component={'span'} >08 — Qadriyatlarga asoslangan shaxsiy rivojlanish</Typography>
+                                <Typography className='accordion__title' component={'div'} >08 — Qadriyatlarga asoslangan shaxsiy rivojlanish</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
-                                <Typography className='innerAcc__text' component={'span'}>
+                                <Typography className='innerAcc__text' component={'div'}>
                                     <div className='accTextPart'>
                                         Qur'on va Hadisda shaxshiy rivojlanishga kerak bo'ladigan qanday tavsiyalar bor.
                                         Hayotda qanday oliy maqsad ko'yish kerak.
@@ -230,7 +230,7 @@ function KouchAccor() {
                     <div className='KouchAccor__cardPart  '>
 
                         <Box >
-                            <Card className='Kouch__card KouchAccor__cardPartBl' variant="outlined">
+                            <Card className='Kouch__card  kouchCardRight KouchAccor__cardPartBl' variant="outlined">
                                 <React.Fragment>
                                     <CardContent>
                                         <Typography className="Kouch__cardTitle" variant="h5" >
@@ -248,7 +248,7 @@ function KouchAccor() {
                             </Card>
                         </Box>
                         <Box >
-                            <Card className='Kouch__card' variant="outlined">
+                            <Card className='Kouch__card  kouchCardRight ' variant="outlined">
                                 <React.Fragment>
                                     <CardContent>
                                         <Typography className="Kouch__cardTitle" variant="h5" >

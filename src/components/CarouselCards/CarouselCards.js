@@ -9,6 +9,15 @@ import Button from '@mui/material/Button';
 import { Link } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import "./CarouselCards.css"
+import Carouselcard from './CarouselTop/Carouselcard';
+
+// import CarouseCardComp from './CarouselTop/CarouseCardComp';
+// import arrowLeft from '../../assets/images/arrowLeft.png'
+// import arrowRight from '../../assets/images/arrowRight.png'
+// import arrowLeftDis from '../../assets/images/arrowLeftDis.png'
+// import arrowRightDis from '../../assets/images/arrowRightDis.png'
+
+
 
 const responsive = {
     superLargeDesktop: {
@@ -30,32 +39,44 @@ const responsive = {
     }
 };
 
-// function createData(title, text) {
-//     return { title, text };
-// }
-//   
-// const rows = [
-//     createData('Xodimlarni boshqarishda muammoga uchrayapsizmi?', 'Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.'),
-//     createData('Xodimlarning KPI tizimi kompaniya foydasiga ishlamayaptimi?', 'Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.'),
-//     createData('Sherikchilikdagi biznesingizda muammolar kelib chiqyaptimi?', 'Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.'),
-//     createData('Kompaniyangizdagi servis tizimi savdo pastligi uchun asosiy sabablardan birimi?', 'Zamonaviy va qadriyatlarga asoslangan holda o‘z biznesini boshqarmoqchi bo‘lgan biznes egalari uchun.'),
-// ];
-// 
-
+function scrollL(params) {
+    window.scroll({
+        top: 100,
+        left: 100,
+        behavior: 'smooth'
+    });
+}
 
 function CarouselCards() {
     return (
         <div className='container' id="CarouselCards" >
 
-            {/* <h3 className='partTitle' >Biznes protsesda ko‘p <br /> uchratishimiz mumkin bo‘lgan <br /> muammolarga to‘xtalamiz</h3> */}
-            <h3 className='partTitle' >Bizneslarda ko'p uchraydigan <br /> muammolarga bizda yechim <br /> topshingiz mumkin.</h3>
+            <>
+                <div className='iconBox'>
+                    <h3 className='partTitle' >Bizneslarda ko'p uchraydigan <br /> muammolarga bizda yechim <br /> topshingiz mumkin.</h3>
+                </div>
+                
+                <Carouselcard />
 
-            <Carousel responsive={responsive}>
+                {/*     <div className='arrowPart'>
+                        <img className='arrow' src={arrowLeft} onClick={(e) => { if (arrowLeft) { e.target.src = arrowLeftDis } else { e.target.src = arrowLeft } }} />
+                        <img className='arrow' src={arrowRight} onClick={(e) => { e.target.src = arrowRightDis }} />
+                    </div> */}
+                {/* <div className='arrowPart'>
+                        <img className='arrow' src={arrowLeftDis} onClick={(e) => { e.target.src = arrowLeftDis }} />
+                        <img className='arrow' src={arrowRightDis} />
+                    </div> */}
+
+            </>
+
+
+
+            {/* <Carousel responsive={responsive}>
 
                 <div className='KarouselMainCard'>
 
                     <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card' variant="outlined">
+                        <Card className='Karousel__card KarouselAccor__cardPartBl' variant="outlined">
                             <React.Fragment>
                                 <CardContent>
                                     <Typography className="Karousel__cardTitle" variant="h5" component="div">
@@ -117,15 +138,8 @@ function CarouselCards() {
                         </Card>
                     </Box>
                 </div>
-{/* 
-                <div >
-                    <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                    </Box>
-                </div> */}
 
-
-
-            </Carousel>
+            </Carousel> */}
 
         </div>
     )

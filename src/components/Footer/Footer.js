@@ -1,19 +1,54 @@
 import React, { useState, useEffect } from "react";
+import ReactDOM from 'react-dom/client';
+// import swal from '@sweetalert/with-react'
+import swal from "sweetalert";
+
 import { Container, Row, Col, Nav } from "react-bootstrap";
 import "./Footer.css";
 import logo from "../../assets/navbarLogo/Logo.png";
+import Axios from "axios";
+import Backdrop from '@mui/material/Backdrop';
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import Fade from '@mui/material/Fade';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
+// Icons
 import tg from "../../assets/images/f-tg.png";
 import inst from "../../assets/images/f-inst.png";
 import yout from "../../assets/images/f-yout.png";
 import fb from "../../assets/images/f-fb.png";
-import Axios from "axios";
-// Icons
 import { RiTelegramLine } from "react-icons/ri";
 import { RiInstagramLine } from "react-icons/ri";
 import { RiYoutubeLine } from "react-icons/ri";
 import { RiFacebookCircleLine } from "react-icons/ri";
 
+
+
+
+
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
+
+
+
 function Footer() {
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   async function registeramocrm(name, number, work_place) {
     const headers = new Headers({
       "Content-Type": "x-www-form-urlencoded",
@@ -46,21 +81,24 @@ function Footer() {
     e.preventDefault();
     await registeramocrm(headers.name, headers.number, headers.work_place);
 
-    // Axios.post("https://62373d82f5f6e28a154abef5.mockapi.io/headers",{
-    //     name: headers.name,
-    //     number: headers.number,
-    //     work_place: headers.work_place
-    // })
-    // .then(res=>{
-    //     console.log(res.headers)
-    // })
-    // window.scrollTo(0,0)
-    // window.location.reload();
+    // swal({
+    //   title: "Siz Muvaffaqiyatli ro'yxatdan o'tdingiz!",
+    //   icon: "success",
+    //   button: "Rahmat!",
+    // });
+
   }
+
   function Top() {
-    window.scrollTo(0, 0)
-    document.querySelector('.msgInput').value = " "
-    
+    // window.scrollTo(0, 0);
+    if (document.querySelector('#work_place').value != ' ' && document.querySelector('#name').value != ' ' && document.querySelector('#number').value != "") {
+      swal({
+        title: "Siz Muvaffaqiyatli ro'yxatdan o'tdingiz!",
+        icon: "success",
+        button: "Rahmat!",
+      });
+    }
+
   }
 
   return (
@@ -72,6 +110,7 @@ function Footer() {
             {/* yarating! */}
             Kozimxon Turayev bilan  muvaffaqiyatli <br /> va barakali biznesingizni yarating
           </h3>
+
           <div className="footerForm">
             <form className="footerFormData" onSubmit={async (e) => {
               e.preventDefault();
@@ -80,28 +119,28 @@ function Footer() {
                 number: headers.number,
                 work_place: headers.work_place,
               }
+
+
               let url = new URL('/register');
               for (let k in data) {
                 url.searchParams.append(k, data[k]);
               }
               console.log(url.href)
               const res = fetch(url.href);
-
               console.log((await res).status);
-
-
             }}>
+
               <div className="footerFormGrid">
                 <div className="footerItem">
                   <p>Ismingizni kiriting</p>
                   <input
                     onChange={(e) => handle(e)}
                     id="name"
-
                     name="name"
                     value={headers.name}
                     className="msgInput"
                     placeholder="F.I.Sh ..."
+                    required
                   />
 
                   <sub className="errorTxt">F.I.Sh notog‘ri kiritilgan!</sub>
@@ -114,8 +153,22 @@ function Footer() {
                     name="number"
                     value={headers.number}
                     className="msgInput"
-                    type="number"
+                    type="phone"
                     placeholder="Raqamingiz ..."
+                    required
+
+                    onKeyDown={(e) => {
+                      // console.log(e.key);
+                      // return false if key is not a number
+                      if (['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Enter'].indexOf(e.key) !== -1) {
+                        return;
+                      }
+                      if (!e.key.match(/[0-9]/)) {
+                        e.preventDefault();
+                      }
+
+                    }}
+
                   />
 
                   <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
@@ -132,34 +185,16 @@ function Footer() {
                     value={headers.work_place}
                     className="msgInput"
                     placeholder="Biznesingiz ..."
+                    required
+
                   />
 
                   <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
                 </div>
 
-                {/* <div className="footerItem">
-                  <p>Kursni tanlang </p>
-                  <select name="kurs" id="bbb">
-                    <option className="option" value="biznes"><span className="option">Biznes kursi uchun </span> </option>
-                    <option className="option" value="hr"><span className="option"  >HR kursi uchun </span> </option>
-
-                  </select> */}
-
-                {/* <input
-                    onChange={(e) => handle(e)}
-                    id="work_place"
-                    name="work_place"
-                    value={headers.work_place}
-                    className="msgInput"
-                    placeholder="Biznesingiz ..."
-                  /> */}
-                {/* </div> */}
-
-
-
                 <div className="footerItem">
                   {/* <p></p> */}
-                  <button className="footerbtn" onClick={Top} type="submit" >Ro‘yxatdan o‘tish →</button>
+                  <button className="footerbtn" onClick={Top} type="submit"  >Ro‘yxatdan o‘tish →</button>
                   <sub></sub>
                 </div>
               </div>
@@ -206,34 +241,34 @@ function Footer() {
             {/* <span className='underRow'></span> */}
             <div className="footerLink">
               <p className="copyBrand" id="copyBrand">by
-                <a className="copyBrand" id="copyBrand" href="">{" "}QWERTY al-Fajr</a>&
-                <a className="copyBrand" id="copyBrand" href="">Socially Agency</a></p>
+                <a target="_blank" className="copyBrand" id="copyBrand" href="">{" "}QWERTY al-Fajr</a>&
+                <a target="_blank" className="copyBrand" id="copyBrand" href="">Socially Agency</a></p>
               <p className="copyName">© Kozimxon Turaev barcha huquqlar himoyalangan</p>
               <hr className="footerHR" />
               <p className="copyBrand">{" "}by{" "}
-                <a className="copyBrand" href="">{" "}QWERTY al-Fajr</a>{" "}&{" "}
-                <a className="copyBrand" href="">Socially Agency</a>{" "}</p>
+                <a target="_blank" className="copyBrand" href="https://instagram.com/afshon_official">{" "}QWERTY al-Fajr</a>{" "}&{" "}
+                <a target="_blank" className="copyBrand" href="">Socially Agency</a>{" "}</p>
               <ul>
                 <li>
-                  <a href="https://t.me/KozimxonTuraev">
+                  <a target="_blank" href="https://t.me/KozimxonTuraev">
                     {" "}
                     <RiTelegramLine />{" "}
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/kozimxon_turaev">
+                  <a target="_blank" href="https://www.instagram.com/kozimxon_turaev">
                     {" "}
                     <RiInstagramLine />{" "}
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/channel/UCsAjvumJ1T_5EW0792YQHTQ">
+                  <a target="_blank" href="https://www.youtube.com/channel/UCsAjvumJ1T_5EW0792YQHTQ">
                     {" "}
                     <RiYoutubeLine />{" "}
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/kozimhon">
+                  <a target="_blank" href="https://www.facebook.com/kozimhon">
                     {" "}
                     <RiFacebookCircleLine />{" "}
                   </a>

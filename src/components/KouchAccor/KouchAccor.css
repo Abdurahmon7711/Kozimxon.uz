@@ -91,10 +91,19 @@
 }
 
 .css-1v5z4dq-MuiPaper-root-MuiCard-root {
-    background-color: #F0F0F0 !important;
+    background-color: #F0F0F0 ;
     height: 286px;
     width:350px !important;
     position: relative;
+}
+.cardAccorright, .kouchCardRight{
+    background-color: #F0F0F0 !important;
+}
+.Kouch__card {
+    margin-bottom: 20px;
+    border: none !important;
+    border-top: 3px solid #E1E1E1 !important;
+    border-radius: 0;
 }
 
 .KouchAccor__cardPartBl {
@@ -105,14 +114,6 @@
     height: 286px !important;
     width:350px !important;
 }
-
-.Kouch__card {
-    margin-bottom: 20px;
-    border: none !important;
-    border-top: 3px solid #E1E1E1 !important;
-    border-radius: 0;
-}
-
 
 .KouchAccor__accordion:first-child .accordion__title,
 .KouchAccor__accordion:first-child .MuiAccordionSummary-expandIconWrapper {
@@ -161,11 +162,7 @@
 .css-1t6e9jv-MuiCardActions-root{
     position: absolute;
     bottom:20px;
-}
-/* .css-1v5z4dq-MuiPaper-root-MuiCard-root {
-} */
-
-
+} 
 
 @media screen and (min-width:1200px) {
     .container{

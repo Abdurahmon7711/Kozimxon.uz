@@ -11,7 +11,24 @@
     line-height: 44px;
     margin: 15px 50px;
 }
-
+.iconBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.arrowPart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.arrowPart > *{
+    margin: 0 20px;
+}
 .Karousel__card{
     background-color: #FAFAFA !important;
     margin-bottom: 20px;
@@ -24,6 +41,12 @@
 .KarouselAccor__cardPartBl{
     border-top: 3px solid #28468C !important;
 }
+.Karousel__card:hover {
+    transition: 0.1s ease all;
+    animation: 0.1s ease all;
+    border-top: 3px solid #28468C !important;
+}
+
 .KouchAccor__accordion:first-child .accordion__title, .KouchAccor__accordion:first-child .MuiAccordionSummary-expandIconWrapper {
     color: #28468C;
 }
