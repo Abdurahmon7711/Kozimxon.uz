@@ -46,7 +46,7 @@
 
 .footerbtn {
     height: 65px;
-    width: 246px;
+    width: 270px;
     margin-top: 10px;
     background-color: #28468C;
     color: #FFF;
@@ -209,6 +209,10 @@ button {
         flex-direction: column;
     }
     #bbb {
+        width: 270px;
+    }
+
+    .footerbtn{
         width: 270px;
     }
 

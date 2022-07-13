@@ -59,7 +59,7 @@ function VideosBlock() {
     // ]
     const Tabmenu = [];
     const videos = getVideos();
-    console.log(videos);
+    // console.log(videos);
     // const videos = await getVideos();
     // console.log(videos)
     // videos.forEach((video, i) => {

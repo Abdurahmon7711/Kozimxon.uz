@@ -143,89 +143,88 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 function CaroselLogo() {
-  return (
-    <div className='container LogoSection' >
-    <div className='partTitle'>
-        <h3>Kouching dasturi <br /> mijozlari</h3>
-    </div>
-
-        <Carousel responsive={responsive}>
-            
-        {images1.map(({ black, light }, index) => {
-                        return (
-            <div>
-
-            <Box sx={{ flexGrow: 1}} className="FaqsLogoRow" >
-                <div className='ustkidiv' id="ustkidiv">
-                  
-                            <Item className='LogoSecItem' id="LogosecItem"
-                                onMouseEnter={(e) => {
-                                    e.target.src = light;
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.target.src = light;
-                                }}><img className='LogoSecItemImg' id="LogoSecItemImg" src={light} />
-                            </Item>
-                     
-                </div>
-            </Box>
-
+    return (
+        <div className='container LogoSection' >
+            <div className='partTitle'>
+                <h3>Kouching dasturi <br /> mijozlari</h3>
             </div>
-               )
-            })}
+
+            <Carousel responsive={responsive}>
+
+                {images1.map(({ black, light }, index) => {
+                    return (
+                        <div>
+
+                            <Box sx={{ flexGrow: 1 }} className="FaqsLogoRow" >
+                                <div className='ustkidiv' id="ustkidiv">
+
+                                    <Item component="span" className='LogoSecItem' id="LogosecItem"
+                                        onMouseEnter={(e) => {
+                                            e.target.src = light;
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.target.src = light;
+                                        }}><img className='LogoSecItemImg' id="LogoSecItemImg" src={light} />
+                                    </Item>
+
+                                </div>
+                            </Box>
+
+                        </div>
+                    )
+                })}
+
+
+                {images2.map(({ black, light }, index) => {
+                    return (
+                        <div>
+                            <Box sx={{ flexGrow: 1 }} className="FaqsLogoRow" >
+                                <div className='ustkidiv' id="ustkidiv">
+
+                                    <Item component="span" className='LogoSecItem' id="LogosecItem"
+                                        onMouseEnter={(e) => {
+                                            e.target.src = light;
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.target.src = light;
+                                        }}><img className='LogoSecItemImg' id="LogoSecItemImg" src={light} />
+                                    </Item>
+
+                                </div>
+                            </Box>
+                        </div>
+                    )
+                })}
+
+
+                {images3.map(({ black, light }, index) => {
+                    return (
+                        <div>
+
+                            <Box sx={{ flexGrow: 1 }} className="FaqsLogoRow" >
+                                <div className='ustkidiv' id="ustkidiv">
+
+                                    <Item component="span" className='LogoSecItem' id="LogosecItem"
+                                        onMouseEnter={(e) => {
+                                            e.target.src = light;
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.target.src = light;
+                                        }}><img className='LogoSecItemImg' id="LogoSecItemImg" src={light} />
+                                    </Item>
+
+                                </div>
+                            </Box>
+                        </div>
+                    )
+                })}
 
 
 
-            {images2.map(({ black, light }, index) => {
-                        return (
-            <div>
-            <Box sx={{ flexGrow: 1 }} className="FaqsLogoRow" >
-                <div className='ustkidiv' id="ustkidiv">
-                 
-                            <Item className='LogoSecItem' id="LogosecItem"
-                                onMouseEnter={(e) => {
-                                    e.target.src = light;
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.target.src = light;
-                                }}><img className='LogoSecItemImg' id="LogoSecItemImg" src={light} />
-                            </Item>
-             
-                </div>
-            </Box>
-            </div>
-                       )
-                    })}
+            </Carousel>
 
-
-            {images3.map(({ black, light }, index) => {
-            return (
-            <div>
-
-            <Box sx={{ flexGrow: 1 }} className="FaqsLogoRow" >
-                <div className='ustkidiv' id="ustkidiv">
-                  
-                            <Item className='LogoSecItem' id="LogosecItem"
-                                onMouseEnter={(e) => {
-                                    e.target.src = light;
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.target.src = light;
-                                }}><img className='LogoSecItemImg' id="LogoSecItemImg" src={light} />
-                            </Item>
-                 
-                </div>
-            </Box>
-            </div>
-                )
-            })}
-           
-                          
-
-        </Carousel>
-
-    </div>
-  )
+        </div>
+    )
 }
 
 export default CaroselLogo

@@ -47,9 +47,14 @@
     padding-bottom: 20px;
 }
 
-.leftBox > :nth-child(1) {
+/* .leftBox > :nth-child(1) {
     border-top: 3px solid #28468C !important;
-}
+} */
+
+/* .KouchAccor__accordionFaq:hover > * {
+    border-top: 3px solid #28468C !important;
+} */
+
 .Faqs__cardTitle{
     color: #0F0F0F;
     font-size: 20px;
@@ -85,6 +90,14 @@
     margin: 20px 0;
     background-color: #F0F0F0 !important;
     border: none !important;
+}
+.css-yw020d-MuiAccordionSummary-expandIconWrapper{
+    position: absolute !important;
+    right: 10px !important;
+}
+
+.accTextPartFaq{
+    width: 200px !important;
 }
 
 @media screen and (min-width:1200px) {
@@ -127,6 +140,9 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-around;
+    }
+    .faqAccTitle{
+        width: 85% !important;
     }
 }
 @media screen and (max-width:500px) {
