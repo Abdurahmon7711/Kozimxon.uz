@@ -4,15 +4,15 @@
 .faqsCont .partTitle{
     margin-bottom: 120px !important;
 }
+.faqsContBox > * {
+    margin: 0 10px;
+}
 .faqsContBox{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
     box-sizing: border-box;
-}
-.faqsContBox > *{
-    margin-right: 50px;
 }
 .bigBoxFaq{
     padding: 120px 0 !important;
@@ -23,17 +23,17 @@
 .leftBox{
     display: flex;    
     flex-wrap: wrap;
-    width: 25%;
+    width: 30%;
 }
 .centerBox{
     display: flex;    
     flex-wrap: wrap;
-    width: 25%;
+    width: 30%;
 }
 .rightBox{
     display: flex;    
     flex-wrap: wrap;
-    width: 25%;
+    width: 30%;
 }
 .Faq__card{
     background-color: #FAFAFA !important;
@@ -41,7 +41,8 @@
     border: none !important;
     border-top: 3px solid #E1E1E1 !important;
     border-radius: 0;
-    width: 380px ;
+    /* width: 380px ; */
+    width: 110%;
     /* height: 100px !important; */
     height: max-content !important;
     padding-bottom: 20px;
@@ -86,7 +87,7 @@
 }
 
 .KouchAccor__accordionFaq{
-    width: 250px;
+    width: 350px;
     margin: 20px 0;
     background-color: #F0F0F0 !important;
     border: none !important;

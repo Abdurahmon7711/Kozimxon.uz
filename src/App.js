@@ -27,7 +27,7 @@ function App() {
       <KouchUstunligi />
       <KouchAccor />
       <CarouselVideos />
-      {/* <LogoSection /> */}
+      <LogoSection />
       <CarouselLogo/>
       <Kozimxon/>
       <FAQs />
