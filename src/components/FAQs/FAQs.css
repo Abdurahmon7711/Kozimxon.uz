@@ -1,55 +1,47 @@
-.faqsCont {
+.faqsCont{
     background: #FAFAFA;
 }
-
-.faqsCont .partTitle {
+.faqsCont .partTitle{
     margin-bottom: 120px !important;
 }
-
-.faqsContBox {
+.faqsContBox{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-evenly;
     box-sizing: border-box;
 }
-
-.faqsContBox>* {
+.faqsContBox > *{
     margin-right: 50px;
 }
-
-.bigBoxFaq {
+.bigBoxFaq{
     padding: 120px 0 !important;
     width: 100% !important;
-    background-color: #FAFAFA !important;
+    background-color: #FAFAFA !important;    
     margin-top: 120px;
 }
-
-.leftBox {
-    display: flex;
+.leftBox{
+    display: flex;    
     flex-wrap: wrap;
     width: 25%;
 }
-
-.centerBox {
-    display: flex;
+.centerBox{
+    display: flex;    
     flex-wrap: wrap;
     width: 25%;
 }
-
-.rightBox {
-    display: flex;
+.rightBox{
+    display: flex;    
     flex-wrap: wrap;
     width: 25%;
 }
-
-.Faq__card {
+.Faq__card{
     background-color: #FAFAFA !important;
     margin-bottom: 20px;
     border: none !important;
     border-top: 3px solid #E1E1E1 !important;
     border-radius: 0;
-    width: 380px;
+    width: 380px ;
     /* height: 100px !important; */
     height: max-content !important;
     padding-bottom: 20px;
@@ -63,28 +55,24 @@
     border-top: 3px solid #28468C !important;
 } */
 
-.Faqs__cardTitle {
+.Faqs__cardTitle{
     color: #0F0F0F;
     font-size: 20px;
     line-height: 26px;
     font-weight: 510;
 }
-
-.faqCarTit {
+.faqCarTit{
     padding: 33px 0 20px 0 !important;
     margin: 0 !important;
     font-size: 20px !important;
 }
-
-.faqCarTitBl {
+.faqCarTitBl{
     color: #28468C;
 }
-
-.Faq__car p {
+.Faq__car p{
     font-size: 18px;
 }
-
-.Faqs__cardContent {
+.Faqs__cardContent{
     position: relative;
     color: #828282;
     font-size: 18px;
@@ -93,107 +81,89 @@
     top: 10px;
     margin: 0 auto;
 }
-
-.accTextPartFaq {
+.accTextPartFaq{
     width: 100%;
 }
 
-.KouchAccor__accordionFaq {
+.KouchAccor__accordionFaq{
     width: 250px;
     margin: 20px 0;
     background-color: #F0F0F0 !important;
     border: none !important;
 }
-
-.css-yw020d-MuiAccordionSummary-expandIconWrapper {
+.css-yw020d-MuiAccordionSummary-expandIconWrapper{
     position: absolute !important;
     right: 10px !important;
 }
-
 .accordion__title {
-    padding: 5px 10px;
+    padding: 5px 10px; 
 }
 
-.accTextPartFaq {
+.accTextPartFaq{
     width: 200px !important;
 }
 
 @media screen and (min-width:1200px) {
-    .container {
+    .container{
         max-width: 1200px;
         margin: 0 auto;
     }
-
+    
 }
-
 @media screen and (max-width:947px) {
-
-    .faqsContBoxTablet {
+ 
+    .faqsContBoxTablet{
         display: flex;
         width: 100%;
         margin: 10px auto;
         justify-content: space-evenly;
         align-items: flex-start;
     }
-
-    .faqsContBoxTablet>* {
+    .faqsContBoxTablet > * {
         /* width: 250px !important; */
         margin: 10px 0 0 20px;
     }
-
-    .Faq__card {
+    .Faq__card{
         width: 250px !important;
     }
 }
-
 @media screen and (min-width:768px) {
-    .faqsContBox {
+    .faqsContBox{
         display: flex;
     }
-
-    .faqsContBoxTablet {
+    .faqsContBoxTablet{
         display: none !important;
     }
 }
-
 @media screen and (max-width:768px) {
-    .faqsContBox {
+    .faqsContBox{
         display: none;
     }
-
-    .faqsContBoxTablet {
+    .faqsContBoxTablet{
         display: flex;
         align-items: flex-start;
         justify-content: space-around;
     }
-
-    .faqAccTitle {
+    .faqAccTitle{
         width: 85% !important;
     }
 }
-
 @media screen and (max-width:500px) {
-    .faqsContBoxTablet {
+    .faqsContBoxTablet{
         display: none;
     }
-
-    .faqsContBox {
-        display: flex !important;
+    .faqsContBox{
+        display: flex !important; 
     }
-
-    .leftBox,
-    .centerBox,
-    .rightBox {
+    .leftBox, .centerBox, .rightBox{
         /* margin-right: 50px; */
         width: 100%;
         margin: 10px 10000px;
     }
-
-    .faqsCont .partTitle {
+    .faqsCont .partTitle{
         margin-bottom: 20px !important;
     }
-
-    .bigBoxFaq {
+    .bigBoxFaq{
         padding-top: 20px !important;
     }
 }
