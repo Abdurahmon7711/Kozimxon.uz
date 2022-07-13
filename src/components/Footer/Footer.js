@@ -20,7 +20,7 @@ function Footer() {
       "X-CSRFToken": "{{csrf_token}}",
     });
 
-    const res = await fetch("http://192.168.0.113:000/register", {
+    const res = await fetch("/register", {
       method: "POST",
       headers: headers,
       body: JSON.stringify({
