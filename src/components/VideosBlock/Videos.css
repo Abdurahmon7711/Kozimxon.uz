@@ -25,7 +25,7 @@
     border: 1px solid #28468C;
 }
 .NavVideos{
-    height: 444px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -126,6 +126,9 @@
     .firstVideo{
         height: 405px;
     }
+    .videosName, .videosName2{
+        margin-bottom: 0px !important;
+    }
     
 }
 @media screen and (max-width: 576px) {
@@ -135,6 +138,8 @@
     .player{
         height: 202px !important;
     }
+   
+    
     
 }
 @media screen and (max-width: 450px) {
