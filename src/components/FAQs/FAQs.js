@@ -96,7 +96,7 @@ function FAQs() {
     return (
         <div className='FaqCont'>
             <div className='bigBoxFaq'>
-                <div className='container faqsCont' >
+                <div className='container faqsCont' id='faqsCont' >
                     <h3 className='partTitle' >Ko‘p so‘raladigan <br /> savollar</h3>
 
                     <div className='faqsContBox'>

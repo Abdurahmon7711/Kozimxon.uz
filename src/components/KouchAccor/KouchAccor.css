@@ -12,7 +12,7 @@
     /* min-width: 1200px; */
     box-sizing: border-box;
     font-family: 'SF Pro', sans-serif;
-    margin-top: 120px !important;
+    margin-top: 120px ;
     width: 100vw;
 }
 
@@ -164,7 +164,10 @@
 }
 /* .css-1v5z4dq-MuiPaper-root-MuiCard-root {
 } */
-
+.KouchDasturi{
+    margin: 0px;
+    padding-top: 80px;
+}
 
 
 @media screen and (min-width:1200px) {
@@ -275,5 +278,8 @@
     }
     .KouchAccor__cardPart  {
         width: 100% !important;
+    }
+    .KouchAccor{
+        margin-top: 80px !important;
     }
 }

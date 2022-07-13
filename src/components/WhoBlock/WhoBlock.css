@@ -41,6 +41,14 @@
     font-weight: 400;
     line-height: 25.2px !important; 
 }
+#WhoButton{
+    display: none;
+}
+#WhoLink{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    display: block;
+}
 #CardSecondBlock{
     width: 330px;
 }
@@ -81,11 +89,16 @@
     border-radius: 10px;
     object-fit: cover;
 }
+.WhoTopBlock{
+    display: flex;
+    justify-content: space-between;
+}
 
 @media screen and (min-width:1200px) {
     .WhoBlock{
         max-width: 1200px;
-        margin: 120px auto;
+        margin: 0 auto;
+        padding-top: 120px;
     }
     
     
@@ -103,14 +116,14 @@
         margin-top: 100px;
         width: auto;
     } 
-    .WhoBlockText{
-        margin-top: 40px;
-    }
+  
 }
 
 @media screen and (max-width: 947px) {
     .WhoBlock{
-        margin: 40px 40px 0 40px;
+        margin: 0px 40px 0 40px;
+        padding-top: 80px;
+        margin-top: 0px !important;
     }
     .TwoCardsTwo{
         display: flex;
@@ -150,6 +163,15 @@
         height: 450px;
     }
     
+    
+}
+@media screen and (max-width: 768px) {
+    #WhoButton{
+        display: block;
+    }
+    #WhoLink{
+        display: none;
+    }
     
 }
 @media screen and (max-width: 576px) {
@@ -194,5 +216,9 @@
     .videosName, .videosName2{
         margin-right: 0px;
     }
+    .Complect{
+        margin-bottom: 30px;
+    }
+  
     
 }

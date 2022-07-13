@@ -28,6 +28,7 @@ function VideosBlock() {
             //         {
             //             name: 'HR meneger kim?',
             //             url: 'https://www.youtube.com/embed/Zra33_gCgxQ'
+                        
             //         },
             //         {
             //             name: 'Yaponiyaning KAIZEN sistemasi',
@@ -70,6 +71,8 @@ function VideosBlock() {
     //     ))
     // });
 
+    let last;
+
 
     return (
         <div className="BigVideoTab" id="BigVideoTab">
@@ -91,15 +94,22 @@ function VideosBlock() {
                                     return (
                                         <div className="Tabmeuvd" >
                                             <button className='videosName' onClick={(e, element) => {
+
                                                 if( e.currentTarget.className == 'videosName'){
+                                                    if(last){
+                                                        last.className = 'videosName';
+                                                        last.querySelector('img').src = stop;
+                                                    }
+                                                    last = e.currentTarget;
                                                     e.currentTarget.className = 'videosName2';
                                                     e.currentTarget.querySelector('img').src = play;
                                                     document.getElementById('myplayer').innerHTML = `<iframe class='firstVideo' if='videoiframe' src=${cont.url} frameBorder="0" allowFullScreen></iframe>`;
 
-                                                } else {
-                                                    e.currentTarget.className = 'videosName';
-                                                    e.currentTarget.querySelector('img').src = stop;
-                                                    document.getElementById('myplayer').innerHTML = "";
+                                                }
+                                                else {
+                                                    // e.currentTarget.className = 'videosName';
+                                                    // e.currentTarget.querySelector('img').src = stop;
+                                                    // document.getElementById('myplayer').innerHTML = "";
                                                 }
                                             }}>
                                                 <img src={stop} />

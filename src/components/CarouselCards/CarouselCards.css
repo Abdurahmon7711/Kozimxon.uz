@@ -4,6 +4,9 @@
 .rowCarousel > div {
     margin: 0 50px;
 }
+#CarouselCards{
+    margin-top: 40px;
+}
 .partTitle{
     width: 100%;
     font-weight: 700;
@@ -75,6 +78,12 @@
 /* Tablet Finish */
 @media screen and (max-width: 947px) {
 
+}
+@media screen and (max-width: 576px) {
+    #CarouselCards{
+        margin-top: 40px;
+    }
+    
 }
 /* Laptop */
 @media screen and (max-width: 1200px) {

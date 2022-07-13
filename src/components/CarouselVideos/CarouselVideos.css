@@ -70,7 +70,10 @@
     position: relative;
 }
 
-
+#carVid{
+    margin-top: 40px !important;
+    padding-top: 80px;
+}
 
 
 
@@ -91,10 +94,19 @@
 
 
 
-@media screen and (max-width: 768px) {
 
+@media screen and (max-width: 768px) {
+    #carVid{
+        margin-top: 0px;
+    }
     /* .react-multi-carousel-item{
         margin-right: 300px !important;
     }       */
 
+}
+@media screen and (max-width: 576px) {
+    #carVid{
+        margin-top: 0px !important;
+    }
+    
 }

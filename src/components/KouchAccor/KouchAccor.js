@@ -65,7 +65,7 @@ function KouchAccor() {
         <div className='bigBox' id="bigBox">
             <div className='container KouchAccor'>
                 <div className='partTitle'>
-                    <h3>Kouching dasturidagi <br /> modullar qanday?</h3>
+                    <h3 className='KouchDasturi'>Kouching dasturidagi <br /> modullar qanday?</h3>
                 </div>
                 <div className='KouchAccor__inner'>
                     <div className='KouchAccor__accordionPart'>

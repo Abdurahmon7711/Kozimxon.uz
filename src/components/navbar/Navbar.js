@@ -32,16 +32,18 @@ function Navbar() {
 
       <div className='MainNav'>
         <ul className='MainNavLi'>
-          <a href="#KouchDasturiBlock"><li>Kurs haqida</li></a>
-          <a href="#bigBox"><li>Kurs o‘quv dasturi</li></a>
-          <a href="#carVid"><li>O‘quvchilar fikri</li></a>
-          <a href="#WhoBlock"><li>Ustoz haqida</li></a>
+          <li><a href="#KouchDasturiBlock">Kurs haqida</a></li>
+          <li><a href="#bigBox">Kurs o‘quv dasturi</a></li>
+          <li><a href="#carVid">O‘quvchilar fikri</a></li>
+          <li><a href="#WhoBlock">Ustoz haqida</a></li>
         </ul>
       </div>
 
       <div className='NumberNav'>
-        <a className='telPhone' href="tel:+998333837313"><h2>+998 33 383 73 13</h2></a>
-        <p className='kursgaYozilish'>kursga yozilish uchun</p>
+        <div className='navbarNumbers'>
+          <a className='telPhone' href="tel:+998333837313"><h2>+998 33 383 73 13</h2></a>
+          <p className='kursgaYozilish'>kursga yozilish uchun</p>
+        </div>
       </div>
 
       <div className="menuGridTemp" onClick={onMenu}>

@@ -111,6 +111,7 @@
   .MainTopBlock {
     max-width: 1200px;
     margin: 70px auto;
+    margin-bottom: 0px;
   }
   .FirstImgCarousel {
     width: 100%;

@@ -2,6 +2,12 @@
     width: 100%;
     background-color: #FAFAFA;
 }
+.Footer{
+    margin-top: 120px;
+}
+.upperFooter{
+    margin-bottom: 60px;
+}
 
 .underFooter {
     background-color: #FAFAFA;

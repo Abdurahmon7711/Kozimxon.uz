@@ -25,6 +25,7 @@ function KouchDasturi() {
                 <p className='DasturText'>Xizmat ko‘rsatish tizimini rivojlantirish orqali savdoni oshirmoqchi bo‘lgan har bir tadbirkor uchun.</p>
             </div>
         </div>
+        <hr className='hrDasturblock'/>
       
     </div>
   )

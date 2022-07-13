@@ -1,6 +1,7 @@
 *{
     font-family: 'SF Pro', sans-serif !important;
 }
+
 .logo{
     display: flex;
     justify-content: center;
@@ -55,8 +56,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 28px;
-    margin-top: 40px;
+    justify-content: space-around;
 }
 .NumberNav h2 {
     margin: 0px;
@@ -81,7 +81,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 80px;
     margin: 0 auto;
 
 }
@@ -153,6 +153,9 @@
 .MainNavLi{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 100%;
+    margin: 0px;
 }
 .MainNavActive{
     display: flex;
