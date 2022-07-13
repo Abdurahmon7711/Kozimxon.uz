@@ -123,7 +123,8 @@
     color: #0F0F0F !important;
     font-size: 20px !important;
     line-height: 26px !important;
-    font-weight: 510 !important ; 
+    font-weight: 510 !important ;
+    /* margin-top: 20px !important;  */
 }
 
 .css-ag7rrr-MuiTypography-root {
@@ -250,7 +251,12 @@
     .container {
         width: 360px;
     }
-
+    .innerAcc__text{
+        flex-direction: column;
+    }
+    .accTextPart{
+        width: 100% !important;
+    }
     .Kouch__card{
         height: 300px;
         width: 360px;

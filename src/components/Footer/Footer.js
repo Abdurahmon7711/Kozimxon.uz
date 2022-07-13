@@ -57,6 +57,11 @@ function Footer() {
     // window.scrollTo(0,0)
     // window.location.reload();
   }
+  function Top() {
+    window.scrollTo(0, 0)
+    document.querySelector('.msgInput').value = " "
+    
+  }
 
   return (
     <div className="Footer" id="Footer">
@@ -68,7 +73,7 @@ function Footer() {
             Kozimxon Turayev bilan  muvaffaqiyatli <br /> va barakali biznesingizni yarating
           </h3>
           <div className="footerForm">
-            <form className="footerFormData"  onSubmit={async (e) => {
+            <form className="footerFormData" onSubmit={async (e) => {
               e.preventDefault();
               let data = {
                 name: headers.name,
@@ -139,8 +144,8 @@ function Footer() {
                     <option className="option" value="hr"><span className="option"  >HR kursi uchun </span> </option>
 
                   </select> */}
-                  
-                  {/* <input
+
+                {/* <input
                     onChange={(e) => handle(e)}
                     id="work_place"
                     name="work_place"
@@ -151,10 +156,10 @@ function Footer() {
                 {/* </div> */}
 
 
-          
+
                 <div className="footerItem">
                   {/* <p></p> */}
-                  <button className="footerbtn" type="submit" >Ro‘yxatdan o‘tish →</button>
+                  <button className="footerbtn" onClick={Top} type="submit" >Ro‘yxatdan o‘tish →</button>
                   <sub></sub>
                 </div>
               </div>
