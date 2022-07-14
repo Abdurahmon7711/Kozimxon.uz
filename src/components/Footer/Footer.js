@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
 // import swal from '@sweetalert/with-react'
 import swal from "sweetalert";
 
@@ -7,12 +7,12 @@ import { Container, Row, Col, Nav } from "react-bootstrap";
 import "./Footer.css";
 import logo from "../../assets/navbarLogo/Logo.png";
 import Axios from "axios";
-import Backdrop from '@mui/material/Backdrop';
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
-import Fade from '@mui/material/Fade';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import Backdrop from "@mui/material/Backdrop";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import Fade from "@mui/material/Fade";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
 // Icons
 import tg from "../../assets/images/f-tg.png";
@@ -25,20 +25,18 @@ import { RiYoutubeLine } from "react-icons/ri";
 import { RiFacebookCircleLine } from "react-icons/ri";
 
 const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
   width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
+  bgcolor: "background.paper",
+  border: "2px solid #000",
   boxShadow: 24,
   p: 4,
 };
 
-
 function Footer() {
-
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -59,7 +57,7 @@ function Footer() {
       }),
     });
   }
- 
+
   const [headers, setHeaders] = useState({
     name: "",
     number: "",
@@ -74,44 +72,45 @@ function Footer() {
   async function submit(e) {
     e.preventDefault();
     await registeramocrm(headers.name, headers.number, headers.work_place);
-
   }
 
   function Top(res) {
-    // window.scrollTo(0, 0);
-    console.log(res);
 
+    setHeaders(
+      {
+        name: "",
+        number: "",
+        work_place: ""
+      }
+    )
+    // window.scrollTo(0, 0);
+ 
     swal({
-            title: res.ok ? "Siz Muvaffaqiyatli ro'yxatdan o'tdingiz!" : 'Xatolik',
-            icon: res.ok ? "success" : "error",
-            button: res.ok ? "Rahmat!" : "Qayta urinib ko'ring.",
+      title: res.ok ? "Siz Muvaffaqiyatli ro'yxatdan o'tdingiz!" : " Ro'yxatdan o'tib bo'lgansiz ! ",
+      icon: res.ok ? "success" : "error",
+      button: res.ok ? "Rahmat!" : " Qayta urinib ko'ring ",
     });
   }
 
+  // if(res.ok){
+  //   if (document.querySelector('#work_place').value != ' ' && document.querySelector('#name').value != ' ' && document.querySelector('#number').value != "") {
+  //     swal({
+  //       title: "Siz Muvaffaqiyatli ro'yxatdan o'tdingiz!",
+  //       icon: "success",
+  //       button: "Rahmat!",
+  //     });
+  //   }
+  // }
+  // else {
 
-    // if(res.ok){
-    //   if (document.querySelector('#work_place').value != ' ' && document.querySelector('#name').value != ' ' && document.querySelector('#number').value != "") {
-    //     swal({
-    //       title: "Siz Muvaffaqiyatli ro'yxatdan o'tdingiz!",
-    //       icon: "success",
-    //       button: "Rahmat!",
-    //     });
-    //     document.querySelector('#work_place').value = "" ;
-    //     document.querySelector('#name').value = "" ;
-    //     document.querySelector('#number').value = "";
-    //   }
-    // } 
-    // else {
-      
-    //   document.querySelector('#work_place').classList.add('errorDet');
-    //   document.querySelector('#name').classList.add('errorDet');
-    //   document.querySelector('#number').classList.add('errorDet');
-    //   document.querySelector('.errorTxt').style.display = 'block';
-      
-    // }
+  //   document.querySelector('#work_place').classList.add('errorDet');
+  //   document.querySelector('#name').classList.add('errorDet');
+  //   document.querySelector('#number').classList.add('errorDet');
+  //   document.querySelector('.errorTxt').style.display = 'block';
 
-    
-    // console.log(200);
+  // }
+
+  // console.log(200);
   // }
 
   return (
@@ -119,31 +118,33 @@ function Footer() {
       <div className="container" id="footerCont">
         <div className="upperFooter">
           <h3 className="partTitle">
-            Kozimxon Turaev bilan kelajakda o‘z <br/> o‘rniga ega biznesingizni
+            Kozimxon Turaev bilan kelajakda o‘z <br /> o‘rniga ega biznesingizni
             yarating!
             {/* Kozimxon Turayev bilan  <br /> muvaffaqiyatli biznesingizni yarating */}
           </h3>
 
           <div className="footerForm">
-            <form className="footerFormData" onSubmit={async (e) => {
-              e.preventDefault();
-              let data = {
-                name: headers.name,
-                number: headers.number,
-                work_place: headers.work_place,
-              }
+            <form
+              className="footerFormData"
+              onSubmit={async (e) => {
+                e.preventDefault();
+                let data = {
+                  name: headers.name,
+                  number: headers.number,
+                  work_place: headers.work_place,
+                };
 
-              // const xurl = location.origin;
-              let url = new URL('/register');
-              for (let k in data) {
-                url.searchParams.append(k, data[k]);
-              }
-              console.log(url.href)
-              const res = await fetch(url.href);
-              const response = await res.json();
-              Top(response)
-            }}>
-
+                // const xurl = location.origin;
+                let url = new URL("/register");
+                for (let k in data) {
+                  url.searchParams.append(k, data[k]);
+                }
+                console.log(url.href);
+                const res = await fetch(url.href);
+                const response = await res.json();
+                Top(response);
+              }}
+            >
               <div className="footerFormGrid">
                 <div className="footerItem">
                   <p>Ismingizni kiriting</p>
@@ -170,22 +171,31 @@ function Footer() {
                     type="phone"
                     placeholder="Raqamingiz ..."
                     required
-
                     onKeyDown={(e) => {
                       // console.log(e.key);
                       // return false if key is not a number
-                      if (['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Enter'].indexOf(e.key) !== -1) {
+                      if (
+                        [
+                          "Backspace",
+                          "Delete",
+                          "ArrowLeft",
+                          "ArrowRight",
+                          "ArrowUp",
+                          "ArrowDown",
+                          "Enter",
+                        ].indexOf(e.key) !== -1
+                      ) {
                         return;
                       }
                       if (!e.key.match(/[0-9]/)) {
                         e.preventDefault();
                       }
-
                     }}
-
                   />
 
-                  <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
+                  <sub className="errorTxt">
+                    Raqamingiz notog‘ri kiritilgan!
+                  </sub>
                 </div>
               </div>
 
@@ -202,17 +212,20 @@ function Footer() {
                     required
                   />
 
-                  <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>
+                  <sub className="errorTxt">
+                    Raqamingiz notog‘ri kiritilgan!
+                  </sub>
                 </div>
 
                 <div className="footerItem">
                   {/* <p></p> */}
-                  <button className="footerbtn"  type="submit"  >Ro‘yxatdan o‘tish →</button>
+                  <button className="footerbtn" type="submit">
+                    Ro‘yxatdan o‘tish →
+                  </button>
                   <sub></sub>
                 </div>
               </div>
             </form>
-
           </div>
         </div>
       </div>
@@ -254,14 +267,37 @@ function Footer() {
             <hr className="footerNavHR" />
             {/* <span className='underRow'></span> */}
             <div className="footerLink">
-              <p className="copyBrand" id="copyBrand">by
-                <a target="_blank" className="copyBrand" id="copyBrand" href="">{" "}QWERTY al-Fajr</a>&
-                <a target="_blank" className="copyBrand" id="copyBrand" href="">Socially Agency</a></p>
-              <p className="copyName">© Kozimxon Turaev barcha huquqlar himoyalangan</p>
+              <p className="copyBrand" id="copyBrand">
+                by
+                <a target="_blank" className="copyBrand" id="copyBrand" href="">
+                  {" "}
+                  QWERTY al-Fajr
+                </a>
+                &
+                <a target="_blank" className="copyBrand" id="copyBrand" href="">
+                  Socially Agency
+                </a>
+              </p>
+              <p className="copyName">
+                © Kozimxon Turaev barcha huquqlar himoyalangan
+              </p>
               <hr className="footerHR" />
-              <p className="copyBrand">{" "}by{" "}
-                <a target="_blank" className="copyBrand" href="https://instagram.com/afshon_official">{" "}QWERTY al-Fajr</a>{" "}&{" "}
-                <a target="_blank" className="copyBrand" href="">Socially Agency</a>{" "}</p>
+              <p className="copyBrand">
+                {" "}
+                by{" "}
+                <a
+                  target="_blank"
+                  className="copyBrand"
+                  href="https://instagram.com/afshon_official"
+                >
+                  {" "}
+                  QWERTY al-Fajr
+                </a>{" "}
+                &{" "}
+                <a target="_blank" className="copyBrand" href="">
+                  Socially Agency
+                </a>{" "}
+              </p>
               <ul>
                 <li>
                   <a target="_blank" href="https://t.me/KozimxonTuraev">
@@ -270,13 +306,19 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.instagram.com/kozimxon_turaev">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/kozimxon_turaev"
+                  >
                     {" "}
                     <RiInstagramLine />{" "}
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.youtube.com/channel/UCsAjvumJ1T_5EW0792YQHTQ">
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/channel/UCsAjvumJ1T_5EW0792YQHTQ"
+                  >
                     {" "}
                     <RiYoutubeLine />{" "}
                   </a>
