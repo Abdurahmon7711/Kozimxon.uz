@@ -42,7 +42,7 @@ function CarouselCards() {
 
             <h3 className='partTitle' >Bizneslarda ko'p uchraydigan <br /> muammolarga bizda yechim <br /> topshingiz mumkin.</h3>
 
-            <Carousel responsive={responsive}>
+            <Carousel responsive={responsive} id="carCardsBot">
 
                 <div className='KarouselMainCard'>
 

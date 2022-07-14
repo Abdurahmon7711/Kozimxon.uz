@@ -1,26 +1,31 @@
-.rowCarousel{
+.rowCarousel {
     display: flex;
 }
-.rowCarousel > div {
+
+.rowCarousel>div {
     margin: 0 50px;
 }
-#CarouselCards{
+
+#CarouselCards {
     margin-top: 40px;
 }
-.partTitle{
+
+.partTitle {
     width: 100%;
     font-weight: 700;
     font-size: 40px;
     line-height: 44px;
     margin: 15px 50px;
 }
-.iconBox{
+
+.iconBox {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 }
-.arrowPart{
+
+.arrowPart {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,10 +34,16 @@
     bottom: 20px;
     right: 20px;
 }
-.arrowPart > *{
+
+.arrowPart>* {
     margin: 0 20px;
 }
-.Karousel__card{
+
+#CarouselCards{
+    margin-bottom: 120px !important;
+}
+
+.Karousel__card {
     background-color: #FAFAFA !important;
     margin-bottom: 20px;
     border: none !important;
@@ -41,6 +52,7 @@
     width: 380px !important;
     height: 261px !important;
 }
+
 /* .KarouselAccor__cardPartBl{
     border-top: 3px solid #28468C !important;
 } */
@@ -50,16 +62,17 @@
     border-top: 3px solid #28468C !important;
 }
 
-.KouchAccor__accordion:first-child .accordion__title, .KouchAccor__accordion:first-child .MuiAccordionSummary-expandIconWrapper {
+/* .KouchAccor__accordion:first-child .accordion__title, .KouchAccor__accordion:first-child .MuiAccordionSummary-expandIconWrapper {
     color: #28468C;
-}
-.Karousel__cardTitle{
+} */
+.Karousel__cardTitle {
     color: #0F0F0F;
     font-size: 20px;
     line-height: 26px;
     font-weight: 510;
 }
-.Karousel__cardContent{
+
+.Karousel__cardContent {
     position: relative;
     color: #828282;
     font-size: 18px;
@@ -68,7 +81,8 @@
     top: 10px;
     margin: 0 auto;
 }
-.Karousel__cardLink a{
+
+.Karousel__cardLink a {
     color: #0F0F0F !important;
     text-decoration: underline;
     font-weight: 400;
@@ -76,6 +90,7 @@
     line-height: 21.48px;
     margin: 10px auto;
 }
+
 /* .react-multi-carousel-item, .react-multi-carousel-item--active {
     margin: 0 20px !important;
 } */
@@ -86,8 +101,10 @@
 .react-multi-carousel-list {
     display: flex;
 }
+
 /* .react-multiple-carousel__arrow--left::before */
-.react-multiple-carousel__arrow--right::before, .react-multiple-carousel__arrow--left::before {
+.react-multiple-carousel__arrow--right::before,
+.react-multiple-carousel__arrow--left::before {
     background-color: inherit;
     color: #28468C !important;
     font-size: 50px;
@@ -95,69 +112,93 @@
     top: -5px;
     content: '\2192';
 }
+
 /* .react-multi-carousel-track{
     height: auto;
 } */
 .Karousel__card {
     top: 50px;
 }
-.react-multiple-carousel__arrow--right::before  {
+
+.react-multiple-carousel__arrow--right::before {
     z-index: 11;
 }
-.react-multiple-carousel__arrow--left::before  {
+
+.react-multiple-carousel__arrow--left::before {
     content: '\2192';
     z-index: 11;
     transform: rotateY(180deg);
 
 }
-.react-multi-carousel-list  .react-multiple-carousel__arrow{
+
+.react-multi-carousel-list .react-multiple-carousel__arrow {
     position: absolute;
     top: 0px;
     background: inherit;
 }
 
+.react-multiple-carousel__arrow--left {
+    position: absolute;
+    left: 85%;
+}
+
 @media screen and (min-width:1200px) {
-    .container{
+    .container {
         max-width: 1200px;
         margin: 0 auto;
     }
+
     .react-multiple-carousel__arrow {
         z-index: 1 !important;
     }
-    
+
 }
-.css-1qxcd35-MuiGrid-root{
+
+.css-1qxcd35-MuiGrid-root {
     width: 100vw !important;
 }
 
 /* Tablet Start */
-@media screen and (max-width: 768px) {
-    
-}
+@media screen and (max-width: 768px) {}
+
 /* Tablet Finish */
 @media screen and (max-width: 947px) {
-
-}
-@media screen and (max-width: 576px) {
-    #CarouselCards{
-        margin-top: 40px;
+    .react-multiple-carousel__arrow--left {
+        position: absolute;
+        left: 75%;
     }
     
 }
+
+@media screen and (max-width: 576px) {
+    #CarouselCards {
+        margin-top: 40px;
+    }
+    .react-multiple-carousel__arrow--left {
+        position: absolute;
+        left: 65%;
+    }
+
+}
+
 /* Laptop */
 @media screen and (max-width: 1200px) {
+
     /* .MuiPaper-root, .MuiPaper-outlined, .MuiPaper-rounded, .MuiCard-root, .Karousel__card, .KarouselAccor__cardPartBl, */
-    .css-1v5z4dq-MuiPaper-root-MuiCard-root{
+    .css-1v5z4dq-MuiPaper-root-MuiCard-root {
         width: 300px !important;
-        height: 261px; 
-        background-color: #F0F0F0 !important;       
+        height: 261px;
+        background-color: #F0F0F0 !important;
     }
+
     /* .react-multi-carousel-list  {
         width: 1000px;
     } */
-    .react-multi-carousel-item, .react-multi-carousel-item--active {
+    .react-multi-carousel-item,
+    .react-multi-carousel-item--active {
         margin: 0 25px !important;
     }
+
     .react-multiple-carousel__arrow {
         z-index: 1 !important;
     }

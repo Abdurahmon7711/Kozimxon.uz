@@ -11,6 +11,12 @@ function Navbar() {
   function onMenu() {
     setAcctive(!isAcctive);
   }
+
+  const [isOpen, setOpen] = useState(true);
+  function onOpen() {
+    setOpen(!isOpen);
+  }
+
   const [scrollY, setScrollY] = useState(0);
   function logit() {
     setScrollY(window.pageYOffset);
@@ -51,16 +57,16 @@ function Navbar() {
       <div className={isAcctive ? 'menu' : 'menuMob'}>
         <div className="innerMenuMob">
           <div className="topMenuLinks">
-            <div className={ isAcctive ? 'MainNav' : 'MainNavActive '}>
+            <div className={ isAcctive ? 'MainNav' : 'MainNavActive ' || isOpen ? 'MainNavActive' : 'MainNav' }>
               <ul className={ isAcctive ? 'MainNavLi': 'MainNavLiActive' }>
               
-                <li><a href="#KouchDasturiBlock">Kurs haqida</a></li>
+                <li><a onClick={onMenu} href="#KouchDasturiBlock">Kurs haqida</a></li>
               
-                <li><a href="#bigBox">Kurs o‘quv dasturi</a></li>
+                <li><a onClick={onMenu} href="#bigBox">Kurs o‘quv dasturi</a></li>
               
-                <li><a href="#carVid">O‘quvchilar fikri</a></li>
+                <li><a onClick={onMenu} href="#carVid">O‘quvchilar fikri</a></li>
               
-                <li><a href="#WhoBlock">Ustoz haqida</a></li>
+                <li><a onClick={onMenu} href="#WhoBlock">Ustoz haqida</a></li>
               </ul>
             </div>
 

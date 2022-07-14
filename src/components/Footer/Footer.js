@@ -106,9 +106,9 @@ function Footer() {
       <div className="container" id="footerCont">
         <div className="upperFooter">
           <h3 className="partTitle">
-            {/* Kozimxon Turaev bilan kelajakda o‘z o‘rniga ega biznesingizni */}
-            {/* yarating! */}
-            Kozimxon Turayev bilan  muvaffaqiyatli <br /> va barakali biznesingizni yarating
+            Kozimxon Turaev bilan kelajakda o‘z <br/> o‘rniga ega biznesingizni
+            yarating!
+            {/* Kozimxon Turayev bilan  <br /> muvaffaqiyatli biznesingizni yarating */}
           </h3>
 
           <div className="footerForm">
