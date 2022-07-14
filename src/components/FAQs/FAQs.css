@@ -115,7 +115,7 @@
     display: none;
 }
 .css-yw020d-MuiAccordionSummary-expandIconWrapper::before{
-    content: '\2192';
+    content: '\2192' !important;
     z-index: 10000;
     opacity: 1;
     font-size: 22px;

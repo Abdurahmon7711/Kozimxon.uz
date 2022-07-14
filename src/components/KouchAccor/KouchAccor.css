@@ -15,6 +15,18 @@
     margin-top: 120px ;
     width: 100vw;
 }
+.css-yw020d-MuiAccordionSummary-expandIconWrapper{
+    display: none;
+}
+.KouchAccor__accordion:hover .css-yw020d-MuiAccordionSummary-expandIconWrapper {
+    color: #28468C !important;
+}
+.css-yw020d-MuiAccordionSummary-expandIconWrapper{
+    content: '\2192' !important;
+    z-index: 10000 !important;
+    opacity: 1 !important;
+    font-size: 22px !important;
+}
 
 .KouchAccor {
     background-color: #FAFAFA;
@@ -184,6 +196,10 @@
     padding-top: 80px;
 }
 
+.accTextPart{
+    width: 45% !important;
+    margin: 0 auto !important;
+}
 
 @media screen and (min-width:1200px) {
     .container{
@@ -242,9 +258,6 @@
         font-size: 18px;
         line-height: 140%;
         color: #828282 !important;
-    }
-    .accTextPart{
-        width: 45% !important;
     }
 
     .KouchAccor__inner {
