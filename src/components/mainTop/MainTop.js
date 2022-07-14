@@ -56,7 +56,7 @@ function MainTop() {
             {/* <CarouselMain/> */}
             <CarouselTop/>
             <div className='CarouselLow'>
-                <h3 className='CarouselLowText'>Kozimxon To‘rayevning treninglaridan lavhalar</h3>
+                <h3 className='CarouselLowText'>Kozimxon To‘rayevning treninglaridan <br className='lavhalar'/>lavhalar</h3>
                 <h4 className='firstCarousel'><span id="span01">01</span><span id='span02'>02</span><span className='allCarousel'>/02</span></h4>
             </div>
            

@@ -19,6 +19,9 @@
 .logo a{
     text-decoration-line: none;
 }
+.CarouselLow{
+    margin-top: 10px;
+}
 .LogoText{
     margin: 0px;
     font-family: 'SF Pro', sans-serif;

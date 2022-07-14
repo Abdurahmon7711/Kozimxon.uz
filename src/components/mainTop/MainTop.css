@@ -1,7 +1,7 @@
 .MainTopBlock {
   display: flex;
   position: relative;
-  margin-top: 180px !important;
+  margin-top: 160px !important;
 }
 .MainTopBlock img {
   width: 790px;
@@ -91,6 +91,8 @@
   font-size: 20px;
   line-height: 100%;
   color: #afafaf;
+  margin-top: 7px;
+  letter-spacing: 2px;
 }
 
 
@@ -230,6 +232,9 @@
   color: #0F0F0F;
   }
   .LinkRoyhat{
+    display: none;
+  }
+  .lavhalar{
     display: none;
   }
   
