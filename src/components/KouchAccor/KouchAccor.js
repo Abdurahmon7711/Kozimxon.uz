@@ -79,7 +79,7 @@ function KouchAccor() {
                                     <div className='accTextPart'>
                                         Kompaniyaning missiyalari, qadriyatlari va vazifalari.
                                         <br /> HR rejalash (Kompaniya kerak buladigan xodimlar sonini aniqlash).
-                                        Ishga olishdasamarali usullar (Intervyu, testlar, case savollar,…).
+                                        Ishga olishda samarali usullar (Intervyu, testlar, case savollar,…).
                                     </div>
                                     <div className='accTextPart'>
                                         Adaptatsiya tizimi (Yangi kelgan xodimlarni tezda ishga ko'nikib ketishi va foyda keltirishi)
@@ -177,7 +177,7 @@ function KouchAccor() {
                                 <Typography className='innerAcc__text' component={'div'} >
                                     <div className='accTextPart'>
                                         Xalqaro talablarga javob beradigan servis tizimi nima ?
-                                        YAponiya tajribasi asosida mijozlarga yuqori darajada xizmat ko'rsatish tizimi yaratish
+                                        Yaponiya tajribasi asosida mijozlarga yuqori darajada xizmat ko'rsatish tizimi yaratish
                                     </div>
                                     <div className='accTextPart'>
                                         Servis tizimi va uning raqobatga qo'l kelishuvini

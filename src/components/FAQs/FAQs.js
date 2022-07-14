@@ -61,12 +61,12 @@ function FAQs() {
     const content2 = [
         createContent(" Kursda qatnashib, qanday amaliy ko‘nikmalar olaman ? ", " Har bir modul bo‘yicha hayotiy keyslar, real misollar bilan tanishasiz. "),
         createContent(" Kursdan qoniqmagan taqdirimda to‘lovni qaytarishim mumkinmi ? ", " Kursdan qoniqmagan taqdirda, pulni qaytarish mumkin, faqat maxsus intervyu orqali qaytariladi. "),
-        createContent(" Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? ", ` 3 xil paketlarimiz mavhud: \n Korporativ paket \n Standart paket \n Premium paket `),
+        createContent(" Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? ", ` 3 xil paketlarimiz mavjud: \n Korporativ paket \n Standart paket \n Premium paket `),
     ]
 
     const content3 = [
         createContent(" Viloyatdan “Zoom” orqali onlayn qatnashish mumkinmi ? ", " Xa mumkin. “Zoom” yoki boshqa mahsus platforma orqali qatnashish mumkin bo‘ladi. "),
-        createContent(" Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi ? ", " Kursimiz muborak Ramazon oyidan keyin ,may oyining birinchi yarmida boshlanib, shanba va yakshanba kunlari 9:30 dan 18:00 gacha bo‘lib o‘tadi. "),
+        createContent(" Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi ? ", " Kursimiz shanba va yakshanba kunlari 9:30 dan 18:00 gacha davom etadi "),
         createContent(" Dastur ishtirokchilariga konsultatsiya xizmati mavjudmi ? ", " Ha, premium tarifda mavjud, standart tarifda qatnashsangiz konsultatsiya hizmati uchun 50% chegirmaga ega bo‘lasiz. "),
     ]
 
@@ -79,9 +79,9 @@ function FAQs() {
     ]
 
     const contentTab2 = [
-        createContent(" Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? ", ` 3 xil paketlarimiz mavhud: \n Korporativ paket \n Standart paket \n Premium paket `),
+        createContent(" Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? ", ` 3 xil paketlarimiz mavjud: \n Korporativ paket \n Standart paket \n Premium paket `),
         createContent(" Viloyatdan “Zoom” orqali onlayn qatnashish mumkinmi ? ", " Xa mumkin. “Zoom” yoki boshqa mahsus platforma orqali qatnashish mumkin bo‘ladi. "),
-        createContent(" Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi ? ", " Kursimiz muborak Ramazon oyidan keyin ,may oyining birinchi yarmida boshlanib, shanba va yakshanba kunlari 9:30 dan 18:00 gacha bo‘lib o‘tadi. "),
+        createContent(" Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi ? ", " Kursimiz shanba va yakshanba kunlari 9:30 dan 18:00 gacha davom etadi "),
         createContent(" Dastur ishtirokchilariga konsultatsiya xizmati mavjudmi ? ", " Ha, premium tarifda mavjud, standart tarifda qatnashsangiz konsultatsiya hizmati uchun 50% chegirmaga ega bo‘lasiz. "),
     ]
 

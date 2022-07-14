@@ -2,7 +2,7 @@
     background: #FAFAFA;
 }
 .faqsCont .partTitle{
-    margin-bottom: 120px !important;
+    margin-bottom: 40px !important;
 }
 .faqsContBox > * {
     margin: 0 10px;
@@ -125,7 +125,7 @@
 }
 
 .accTextPartFaq{
-    width: 200px !important;
+    width: 100% !important;
 }
 
 @media screen and (min-width:1200px) {

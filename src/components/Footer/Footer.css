@@ -48,7 +48,7 @@
 }
 
 .footerItem input {
-    height: 65px;
+    height: 61px;
     width: 246px;
     font-family: 'SF Pro' !important;
     font-size: 1em;
@@ -58,7 +58,7 @@
 .footerbtn {
     height: 65px;
     width: 270px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     background-color: #28468C;
     color: #FFF;
     border-radius: 0;
@@ -225,6 +225,15 @@ button {
 
     .footerbtn{
         width: 270px;
+    }
+    .footerItem input{
+        margin-bottom: 20px;
+    }
+    .footerItem p{
+        font-size: 18px;
+    }
+    #footerBiznes input{
+        margin-bottom: 0px !important;
     }
 
     .footerLink {

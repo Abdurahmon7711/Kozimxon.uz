@@ -24,11 +24,6 @@ import { RiInstagramLine } from "react-icons/ri";
 import { RiYoutubeLine } from "react-icons/ri";
 import { RiFacebookCircleLine } from "react-icons/ri";
 
-
-
-
-
-
 const style = {
   position: 'absolute',
   top: '50%',
@@ -40,7 +35,6 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
-
 
 
 function Footer() {
@@ -65,7 +59,7 @@ function Footer() {
       }),
     });
   }
-
+ 
   const [headers, setHeaders] = useState({
     name: "",
     number: "",
@@ -81,25 +75,34 @@ function Footer() {
     e.preventDefault();
     await registeramocrm(headers.name, headers.number, headers.work_place);
 
-    // swal({
-    //   title: "Siz Muvaffaqiyatli ro'yxatdan o'tdingiz!",
-    //   icon: "success",
-    //   button: "Rahmat!",
-    // });
-
   }
 
-  function Top() {
+  function Top(res) {
     // window.scrollTo(0, 0);
-    if (document.querySelector('#work_place').value != ' ' && document.querySelector('#name').value != ' ' && document.querySelector('#number').value != "") {
-      swal({
-        title: "Siz Muvaffaqiyatli ro'yxatdan o'tdingiz!",
-        icon: "success",
-        button: "Rahmat!",
-      });
-    }
+ 
+    // if(res.ok){
+      // if (document.querySelector('#work_place').value != ' ' && document.querySelector('#name').value != ' ' && document.querySelector('#number').value != "") {
+        swal({
+          title: "Siz Muvaffaqiyatli ro'yxatdan o'tdingiz!",
+          icon: "success",
+          button: "Rahmat!",
+        });
+        document.querySelector('#work_place').value = "" ;
+        document.querySelector('#name').value = "" ;
+        document.querySelector('#number').value = "";
+      // }
+    } 
+    // else {
+    //   document.querySelector('#work_place').classList.add('errorDet');
+    //   document.querySelector('#name').classList.add('errorDet');
+    //   document.querySelector('#number').classList.add('errorDet');
+    //   document.querySelector('.errorTxt').style.display = 'block';
+      
+    // }
 
-  }
+    
+    // console.log(200);
+  // }
 
   return (
     <div className="Footer" id="Footer">
@@ -121,13 +124,14 @@ function Footer() {
               }
 
 
-              let url = new URL('/register');
+              let url = new URL('http://kozimhon.uz/register');
               for (let k in data) {
                 url.searchParams.append(k, data[k]);
               }
               console.log(url.href)
-              const res = fetch(url.href);
-              console.log((await res).status);
+              const res = await fetch(url.href);
+              const response = await res.json();
+              // Top(response)
             }}>
 
               <div className="footerFormGrid">
@@ -176,7 +180,7 @@ function Footer() {
               </div>
 
               <div className="footerFormGrid">
-                <div className="footerItem">
+                <div className="footerItem" id="footerBiznes">
                   <p>Biznes sohangizni kiriting</p>
                   <input
                     onChange={(e) => handle(e)}
@@ -186,7 +190,6 @@ function Footer() {
                     className="msgInput"
                     placeholder="Biznesingiz ..."
                     required
-
                   />
 
                   <sub className="errorTxt">Raqamingiz notog‘ri kiritilgan!</sub>

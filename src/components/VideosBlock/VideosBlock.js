@@ -17,32 +17,32 @@ function VideosBlock() {
           "X-CSRFToken": "{{csrf_token}}",
         });
     
-            // const res = fetch("/videos");
+            const res = fetch("/videos");
             
-            // return res.json().data;
-            return [
-                    {
-                        name: 'Qadriyatlarga asoslangan biznesni boshqarish kursi',
-                        url: 'https://www.youtube.com/embed/XsBil1zbVOc'
-                    },
-                    {
-                        name: 'HR meneger kim?',
-                        url: 'https://www.youtube.com/embed/Zra33_gCgxQ'
+            return res.json().data;
+            // return [
+            //         {
+            //             name: 'Qadriyatlarga asoslangan biznesni boshqarish kursi',
+            //             url: 'https://www.youtube.com/embed/XsBil1zbVOc'
+            //         },
+            //         {
+            //             name: 'HR meneger kim?',
+            //             url: 'https://www.youtube.com/embed/Zra33_gCgxQ'
                         
-                    },
-                    {
-                        name: 'Yaponiyaning KAIZEN sistemasi',
-                        url: 'https://www.youtube.com/embed/tk_2n-mZGNc'
-                    },
-                    {
-                        name: 'Moliya boshqaruvi',
-                        url: 'https://www.youtube.com/embed/Evfj7JMjR1Q'
-                    },
-                    {
-                        name: 'Ko‘p yillik tajribaga ega ustoz',
-                        url: 'https://www.youtube.com/embed/0nZnBncSkZE'
-                    }
-                ]
+            //         },
+            //         {
+            //             name: 'Yaponiyaning KAIZEN sistemasi',
+            //             url: 'https://www.youtube.com/embed/tk_2n-mZGNc'
+            //         },
+            //         {
+            //             name: 'Moliya boshqaruvi',
+            //             url: 'https://www.youtube.com/embed/Evfj7JMjR1Q'
+            //         },
+            //         {
+            //             name: 'Ko‘p yillik tajribaga ega ustoz',
+            //             url: 'https://www.youtube.com/embed/0nZnBncSkZE'
+            //         }
+            //     ]
             
     }
 

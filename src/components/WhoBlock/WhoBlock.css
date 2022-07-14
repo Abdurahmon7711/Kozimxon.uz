@@ -12,6 +12,9 @@
     height: 88px;
     color: #0F0F0F;
 }
+.whoBtnLink{
+    text-decoration-line: none;
+}
 .WhoBlockBlocks{
     display: flex;
 }

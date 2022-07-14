@@ -30,15 +30,8 @@ function Kozimxon() {
           <div className="Complect">
             <div className="Card" id="BlockCard">
               <div id="empty"></div>
-              <div className="iconCard">
- 
-          
+              <div className="iconCard">     
                     <Ustoz1 className='icons' />
-
-
-
-
-
               </div>
               <div className="textCard">
                 <p className="CardSecondText" id="CardSecondBlock">
@@ -87,7 +80,7 @@ function Kozimxon() {
           </div>
         </div>
       </div>
-      <a href="#Footer"><button className='btnRoyhat' id="WhoButton">Ro‘yxatdan o‘tish →</button></a>
+      <a href="#Footer" className="whoBtnLink"><button className='btnRoyhat' id="WhoButton">Ro‘yxatdan o‘tish →</button></a>
     </div>
   );
 }
