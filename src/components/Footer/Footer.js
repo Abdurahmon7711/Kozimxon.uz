@@ -133,8 +133,8 @@ function Footer() {
                 work_place: headers.work_place,
               }
 
-
-              let url = new URL('http://kozimhon.uz/register');
+              // const xurl = location.origin;
+              let url = new URL('/register');
               for (let k in data) {
                 url.searchParams.append(k, data[k]);
               }
