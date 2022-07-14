@@ -72,7 +72,7 @@ function KouchAccor() {
                       
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                                <Typography className='accordion__title' component={'div'} >01 — HR tizimini yaratish</Typography>
+                                <Typography className='accordion__title kouchAccTitleBl ' component={'div'} >01 — HR tizimini yaratish</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'>
                                 <Typography className='innerAcc__text' component={'div'} >
@@ -94,7 +94,7 @@ function KouchAccor() {
 
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                             <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                                <Typography className='accordion__title' component={'div'} >02 — Islom moliyasi asoslari</Typography>
+                                <Typography className='accordion__title kouchAccTitleBl ' component={'div'} >02 — Islom moliyasi asoslari</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
                                 <Typography className='innerAcc__text' component={'div'}>
@@ -113,7 +113,7 @@ function KouchAccor() {
 
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                             <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                                <Typography className='accordion__title' component={'div'} >03 — Biznesda baraka omillari</Typography>
+                                <Typography className='accordion__title kouchAccTitleBl ' component={'div'} >03 — Biznesda baraka omillari</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
                                 <Typography className='innerAcc__text' component={'div'}>
@@ -132,7 +132,7 @@ function KouchAccor() {
                         
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                             <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-                                <Typography className='accordion__title' component={'div'} >04 — Muvaffaqqiyatli sherekchilik asosolari </Typography>
+                                <Typography className='accordion__title kouchAccTitleBl ' component={'div'} >04 — Muvaffaqqiyatli sherekchilik asosolari </Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
                                 <Typography className='innerAcc__text' component={'div'}>
@@ -151,7 +151,7 @@ function KouchAccor() {
 
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                             <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
-                                <Typography className='accordion__title' component={'div'} >05 — Qadriyatlarga asoslangan liderlik</Typography>
+                                <Typography className='accordion__title kouchAccTitleBl ' component={'div'} >05 — Qadriyatlarga asoslangan liderlik</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
                                 <Typography className='innerAcc__text' component={'div'}>
@@ -171,7 +171,7 @@ function KouchAccor() {
 
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
                             <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
-                                <Typography className='accordion__title' component={'div'} >06 — Xalqaro standardlarga javob beruvchi xizmat ko‘rsatish</Typography>
+                                <Typography className='accordion__title kouchAccTitleBl ' component={'div'} >06 — Xalqaro standardlarga javob beruvchi xizmat ko‘rsatish</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
                                 <Typography className='innerAcc__text' component={'div'} >
@@ -189,7 +189,7 @@ function KouchAccor() {
 
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
                             <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
-                                <Typography className='accordion__title' component={'div'} >07 — Yaponiyaning samaradorlikni oshiruvchi TQM va KAIZEN sistemasi</Typography>
+                                <Typography className='accordion__title kouchAccTitleBl ' component={'div'} >07 — Yaponiyaning samaradorlikni oshiruvchi TQM va KAIZEN sistemasi</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
                                 <Typography className='innerAcc__text' component={'div'}>
@@ -209,7 +209,7 @@ function KouchAccor() {
                         
                         <Accordion className="KouchAccor__accordion" expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
                             <AccordionSummary aria-controls="panel8d-content" id="panel8d-header">
-                                <Typography className='accordion__title' component={'div'} >08 — Qadriyatlarga asoslangan shaxsiy rivojlanish</Typography>
+                                <Typography className='accordion__title kouchAccTitleBl ' component={'div'} >08 — Qadriyatlarga asoslangan shaxsiy rivojlanish</Typography>
                             </AccordionSummary>
                             <AccordionDetails className='accordionInner'> 
                                 <Typography className='innerAcc__text' component={'div'}>

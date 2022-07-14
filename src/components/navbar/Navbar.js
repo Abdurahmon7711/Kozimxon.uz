@@ -16,7 +16,7 @@ function Navbar() {
     setScrollY(window.pageYOffset);
   }
 
-
+ 
   return (
     <div className='NavFon'>
     <div className='Navbar'id='Navbar' 

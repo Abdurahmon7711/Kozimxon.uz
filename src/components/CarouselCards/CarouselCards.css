@@ -80,6 +80,42 @@
     margin: 0 20px !important;
 } */
 
+.react-multi-carousel-list{
+    height: 450px;
+}
+.react-multi-carousel-list {
+    display: flex;
+}
+/* .react-multiple-carousel__arrow--left::before */
+.react-multiple-carousel__arrow--right::before, .react-multiple-carousel__arrow--left::before {
+    background-color: inherit;
+    color: #28468C !important;
+    font-size: 50px;
+    position: absolute;
+    top: -5px;
+    content: '\2192';
+}
+.react-multi-carousel-track{
+    height: 450px;
+}
+.Karousel__card {
+    top: 50px;
+}
+.react-multiple-carousel__arrow--right::before  {
+    z-index: 11;
+}
+.react-multiple-carousel__arrow--left::before  {
+    content: '\2192';
+    z-index: 11;
+    transform: rotateY(180deg);
+
+}
+.react-multi-carousel-list  .react-multiple-carousel__arrow{
+    position: absolute;
+    top: 0px;
+    background: inherit;
+}
+
 @media screen and (min-width:1200px) {
     .container{
         max-width: 1200px;

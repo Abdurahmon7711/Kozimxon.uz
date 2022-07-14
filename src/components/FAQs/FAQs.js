@@ -50,7 +50,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 function FAQs() {
 
     const createContent = (title, text) => {
-        return { title, text }
+        return { title, text } 
     }
 
     const content1 = [

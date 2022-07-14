@@ -55,7 +55,9 @@
     color: #FFFFFF !important;
 
 }
-
+.CarouselItem {
+    top: 50px;
+}
 .CarouselVideo {
     /* position: absolute; */
     width: 100%;

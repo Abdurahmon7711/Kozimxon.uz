@@ -103,6 +103,17 @@
 .css-yw020d-MuiAccordionSummary-expandIconWrapper{
     position: absolute !important;
     right: 10px !important;
+    z-index: 0;
+    /* opacity: 0; */
+}
+.css-yw020d-MuiAccordionSummary-expandIconWrapper svg{
+    display: none;
+}
+.css-yw020d-MuiAccordionSummary-expandIconWrapper::before{
+    content: '\2192';
+    z-index: 10000;
+    opacity: 1;
+    font-size: 22px;
 }
 .accordion__title {
     padding: 5px 10px; 
