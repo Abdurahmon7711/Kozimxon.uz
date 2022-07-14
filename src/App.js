@@ -22,7 +22,7 @@ function App() {
       <MainTop />
       <KouchDasturi />
       <CarouselCards />
-      {/* <VideosBlock /> */}
+      <VideosBlock />
       <KouchUstunligi />
       <KouchAccor />
       <CarouselVideos />
