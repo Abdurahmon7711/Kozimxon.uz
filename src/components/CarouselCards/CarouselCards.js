@@ -12,10 +12,10 @@ import "./CarouselCards.css"
 import Carouselcard from './CarouselTop/Carouselcard';
 
 // import CarouseCardComp from './CarouselTop/CarouseCardComp';
-// import arrowLeft from '../../assets/images/arrowLeft.png'
-// import arrowRight from '../../assets/images/arrowRight.png'
-// import arrowLeftDis from '../../assets/images/arrowLeftDis.png'
-// import arrowRightDis from '../../assets/images/arrowRightDis.png'
+import arrowLeft from '../../assets/images/arrowLeft.png'
+import arrowRight from '../../assets/images/arrowRight.png'
+import arrowLeftDis from '../../assets/images/arrowLeftDis.png'
+import arrowRightDis from '../../assets/images/arrowRightDis.png'
 
 
 
@@ -58,20 +58,20 @@ function CarouselCards() {
                 
                 <Carouselcard />
 
-                {/*     <div className='arrowPart'>
+                    <div className='arrowPart'>
                         <img className='arrow' src={arrowLeft} onClick={(e) => { if (arrowLeft) { e.target.src = arrowLeftDis } else { e.target.src = arrowLeft } }} />
                         <img className='arrow' src={arrowRight} onClick={(e) => { e.target.src = arrowRightDis }} />
-                    </div> */}
-                {/* <div className='arrowPart'>
+                    </div>
+                <div className='arrowPart'>
                         <img className='arrow' src={arrowLeftDis} onClick={(e) => { e.target.src = arrowLeftDis }} />
                         <img className='arrow' src={arrowRightDis} />
-                    </div> */}
+                    </div>
 
             </>
 
 
-
-            {/* <Carousel responsive={responsive}>
+{/* 
+            <Carousel responsive={responsive}>
 
                 <div className='KarouselMainCard'>
 

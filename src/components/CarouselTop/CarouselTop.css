@@ -11,9 +11,9 @@
   
   .slider{
     width: 100%;
-    height: auto;
+    height: 444px;
     overflow: hidden;
-    /* object-fit: cover; */
+    object-fit: cover;
   }
   
   .slides{
@@ -32,6 +32,7 @@
   }
   .imgCarousels{
     object-fit: cover;
+    height: 100%;
   }
   
   .slide img{

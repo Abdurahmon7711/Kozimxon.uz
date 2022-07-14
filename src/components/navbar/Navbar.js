@@ -15,6 +15,11 @@ function Navbar() {
   function logit() {
     setScrollY(window.pageYOffset);
   }
+  function btnClick(){
+    window.scrollBy({
+      behavior: 'smooth'
+    });
+  }
 
 
   return (
@@ -32,7 +37,7 @@ function Navbar() {
 
       <div className='MainNav'>
         <ul className='MainNavLi'>
-          <li><a href="#KouchDasturiBlock">Kurs haqida</a></li>
+          <li><a onClick={btnClick} href="#KouchDasturiBlock">Kurs haqida</a></li>
           <li><a href="#bigBox">Kurs o‘quv dasturi</a></li>
           <li><a href="#carVid">O‘quvchilar fikri</a></li>
           <li><a href="#WhoBlock">Ustoz haqida</a></li>
@@ -41,7 +46,7 @@ function Navbar() {
 
       <div className='NumberNav'>
         <div className='navbarNumbers'>
-          <a className='telPhone' href="tel:+998333837313"><h2>+998 33 383 73 13</h2></a>
+          <a className='telPhone' href="tel:+998910010509"><h2>+998 91 001 05 09</h2></a>
           <p className='kursgaYozilish'>kursga yozilish uchun</p>
         </div>
       </div>
@@ -69,7 +74,7 @@ function Navbar() {
             <div className={isAcctive ? 'NumberNav' : 'NumberNavActive'} 
 
             >
-              <a className='telPhone' href="tel:+998333837313"><h2>+998 33 383 73 13</h2></a>
+              <a className='telPhone' href="tel:+998910010509"><h2>+998 91 001 05 09</h2></a>
               <p className='kursgaYozilish'>kursga yozilish uchun</p>
             </div>
           </div>

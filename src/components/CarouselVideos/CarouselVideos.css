@@ -9,9 +9,9 @@
     position: relative;
 }
 
-.KarouselAccor__cardPartBl {
+/* .KarouselAccor__cardPartBl {
     border-top: 3px solid #28468C !important;
-}
+} */
 
 .KouchAccor__accordion:first-child .accordion__title,
 .KouchAccor__accordion:first-child .MuiAccordionSummary-expandIconWrapper {

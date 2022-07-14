@@ -3,32 +3,11 @@ import "./KouchUstun.css";
 import Ustunlik1 from '../../assets/images/Ustunlik1.png'
 import Ustunlik2 from '../../assets/images/Ustunlik2.png'
 import Ustunlik3 from '../../assets/images/Ustunlik3.png'
-import muammo1 from '../../assets/images/muammo1.svg'
-import muammo2 from '../../assets/images/muammo2.svg'
-import muammo3 from '../../assets/images/muammo3.svg'
-import muammos1 from '../../assets/images/muammos1.svg'
-import muammos2 from '../../assets/images/muammos2.svg'
-import muammos3 from '../../assets/images/muammos3.svg'
+import {ReactComponent as Muammo1} from '../../assets/images/muammo1.svg'
+import {ReactComponent as Muammo2} from '../../assets/images/muammo2.svg'
+import {ReactComponent as Muammo3} from '../../assets/images/muammo3.svg'
 
 
-const svgs1 =[
-  {
-    "color": muammos1,
-    "noncolor": muammo1
-  }
-]
-const svgs2 =[
-  {
-    "color": muammos2,
-    "noncolor": muammo2
-  }
-]
-const svgs3 =[
-  {
-    "color": muammos3,
-    "noncolor": muammo3
-  }
-]
 
 function KouchUstunligi() {
   return (
@@ -42,18 +21,8 @@ function KouchUstunligi() {
           <div className="Card" id="ustunlikCard">
               <div id="empty"></div>
               <div className="iconCard">
-                {svgs1.map(({ color, noncolor }, index) => {
-                        return (
-                            <div className='icons'
-                                onMouseEnter={(e) => {
-                                    e.target.src = color;
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.target.src = noncolor;
-                                }}><img className='icons' src={noncolor} />
-                            </div>
-                        )
-                    })}
+             
+                    <Muammo1 className='icons'  />
               </div>
               <div className="textCard">
               {/* <h2 className="CardFirstText">Xodimlarni boshqarishda muammoga uchrayapsizmi?</h2> */}
@@ -67,18 +36,7 @@ Hozirgi kunda biznesda muvaffaqiyatli bo'lish uchun zamonaviy va qadriyatlarga a
           <div className="Card">
               <div id="empty"></div>
               <div className="iconCard">  
-                {svgs2.map(({ color, noncolor }, index) => {
-                        return (
-                            <div className='icons'
-                                onMouseEnter={(e) => {
-                                    e.target.src = color;
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.target.src = noncolor;
-                                }}><img className='icons' src={noncolor} />
-                            </div>
-                        )
-                    })}
+                <Muammo2 className='icons' />
               </div>
               <div className="textCard">
               {/* <h2 className="CardFirstText">Xodimlarni boshqarishda muammoga uchrayapsizmi?</h2> */}
@@ -91,18 +49,7 @@ Hozirgi kunda biznesda muvaffaqiyatli bo'lish uchun zamonaviy va qadriyatlarga a
           <div className="Card">
               <div id="empty"></div>
               <div className="iconCard">
-                {svgs3.map(({ color, noncolor }, index) => {
-                        return (
-                            <div className='icons'
-                                onMouseEnter={(e) => {
-                                    e.target.src = color;
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.target.src = noncolor;
-                                }}><img className='icons' src={noncolor} />
-                            </div>
-                        )
-                    })}
+                <Muammo3 className='icons' />
                 </div>
               <div className="textCard">
               {/* <h2 className="CardFirstText">Xodimlarni boshqarishda muammoga uchrayapsizmi?</h2> */}

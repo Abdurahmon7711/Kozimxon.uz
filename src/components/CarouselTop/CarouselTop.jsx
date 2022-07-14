@@ -1,6 +1,7 @@
 import React from 'react'
 import './CarouselTop.css'
 import imgCarousel1 from "../../assets/images/ImgCarous1.png"
+import imgCarousel2 from "../../assets/images/fonImage2.JPG"
 
 function CarouselTop() {
     // type="text/javascript"
@@ -23,7 +24,7 @@ function CarouselTop() {
           <img className='imgCarousels' src={imgCarousel1} alt=""/>
         </div>
         <div className="slide">
-          <img className='imgCarousels' src={imgCarousel1} alt=""/>
+          <img className='imgCarousels' src={imgCarousel2} alt=""/>
         </div>
        
  

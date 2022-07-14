@@ -9,31 +9,11 @@ import "../WhoBlock/WhoBlock.css";
 import Kozimxon1 from "../../assets/images/Kozimxon1.JPG";
 import Kozimxon2 from "../../assets/images/Kozimxon2.JPG";
 import Kozimxon3 from "../../assets/images/Kozimxon3.JPG";
-import ustoz1 from "../../assets/images/ustoz1.svg";
-import ustoz2 from "../../assets/images/ustoz2.svg";
-import ustoz3 from "../../assets/images/ustoz3.svg";
-import nonustoz1 from "../../assets/images/who1.svg";
-import nonustoz2 from "../../assets/images/who2.svg";
-import nonustoz3 from "../../assets/images/who3.svg";
+import {ReactComponent as Ustoz1} from "../../assets/images/ustoz1.svg";
+import {ReactComponent as Ustoz2} from "../../assets/images/ustoz2.svg";
+import {ReactComponent as Ustoz3} from "../../assets/images/ustoz3.svg";
 
-const who1 =[
-  {
-    "color": ustoz1,
-    "noncolor": nonustoz1
-  }
-]
-const who2 =[
-  {
-    "color": ustoz2,
-    "noncolor": nonustoz2
-  }
-]
-const who3 =[
-  {
-    "color": ustoz3,
-    "noncolor": nonustoz3
-  }
-]
+
 
 function Kozimxon() {
   return (
@@ -52,18 +32,8 @@ function Kozimxon() {
               <div id="empty"></div>
               <div className="iconCard">
  
-                {who1.map(({ color, noncolor }, index) => {
-                        return (
-                            <div className='icons'
-                                onMouseEnter={(e) => {
-                                    e.target.src = color;
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.target.src = noncolor;
-                                }}><img className='icons' src={noncolor} />
-                            </div>
-                        )
-                    })}
+          
+                    <Ustoz1 className='icons' />
 
 
 
@@ -86,18 +56,7 @@ function Kozimxon() {
             <div className="Card" id="BlockCard">
               <div id="empty"></div>
               <div className="iconCard">
-              {who2.map(({ color, noncolor }, index) => {
-                        return (
-                            <div className='icons'
-                                onMouseEnter={(e) => {
-                                    e.target.src = color;
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.target.src = noncolor;
-                                }}><img className='icons' src={noncolor} />
-                            </div>
-                        )
-                    })}
+                <Ustoz2 className='icons'/>
               </div>
               <div className="textCard">
                 <p className="CardSecondText" id="CardSecondBlock">
@@ -114,18 +73,7 @@ function Kozimxon() {
             <div className="Card" id="BlockCard">
               <div id="empty"></div>
               <div className="iconCard">
-              {who3.map(({ color, noncolor }, index) => {
-                        return (
-                            <div className='icons'
-                                onMouseEnter={(e) => {
-                                    e.target.src = color;
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.target.src = noncolor;
-                                }}><img className='icons' src={noncolor} />
-                            </div>
-                        )
-                    })}
+                <Ustoz3 className='icons'/>
               </div>
               <div className="textCard">
                 <p className="CardSecondText" id="CardSecondBlock">

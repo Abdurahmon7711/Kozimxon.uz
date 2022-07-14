@@ -41,9 +41,9 @@
     width: 380px !important;
     height: 261px !important;
 }
-.KarouselAccor__cardPartBl{
+/* .KarouselAccor__cardPartBl{
     border-top: 3px solid #28468C !important;
-}
+} */
 .Karousel__card:hover {
     transition: 0.1s ease all;
     animation: 0.1s ease all;

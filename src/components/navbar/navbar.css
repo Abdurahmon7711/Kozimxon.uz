@@ -1,6 +1,12 @@
 *{
     font-family: 'SF Pro', sans-serif !important;
 }
+.App{
+    scroll-behavior: smooth !important;
+}
+a{
+    transition: 2s;
+}
 
 .logo{
     display: flex;

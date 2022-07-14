@@ -105,10 +105,17 @@
     border-top: 3px solid #E1E1E1 !important;
     border-radius: 0;
 }
-
-.KouchAccor__cardPartBl {
+.Kouch__card:hover{
     border-top: 3px solid #28468C !important;
 }
+
+/* .KouchAccor__cardPartBl {
+    border-top: 3px solid #28468C !important;
+} */
+.KouchAccor__cardPartBl:hover{
+    border-top: 3px solid #28468C !important;
+}
+
 .css-1okfn8i {
     background-color: #f0f0f0 !important;
     height: 286px !important;

@@ -1,5 +1,7 @@
-a{
-    transition: 2s !important;
+@media (prefers-reduced-motion: no-preference){
+    :root{
+        scroll-behavior: smooth !important;
+    }
 }
 @media screen and (max-width: 1200px) {
     /* .MainTopBlock{

@@ -25,6 +25,19 @@
 .icons:hover{
     background-color: #28468C ;
 }
+.Card:hover .iconCard{
+    background-color: #28468C;
+}
+svg{
+    fill: #0F0F0F;
+    /* stroke: black; */
+}
+.icons:hover{
+    fill: #fff !important;
+}
+.Card:hover svg *{
+    fill: #fff;
+}
 .iconCard:hover{
     background-color: #28468C;
 }
