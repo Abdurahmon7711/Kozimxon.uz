@@ -13,11 +13,6 @@
     border-top: 3px solid #28468C !important;
 } */
 
-.KouchAccor__accordion:first-child .accordion__title,
-.KouchAccor__accordion:first-child .MuiAccordionSummary-expandIconWrapper {
-    color: #28468C;
-}
-
 .Karousel__cardTitle {
     color: #0F0F0F;
     font-size: 20px;
