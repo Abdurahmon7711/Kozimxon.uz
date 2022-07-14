@@ -75,6 +75,10 @@
     background-color: #f0f0f0 !important;
 }
 
+.css-1fpbxjw{
+    border: none !important;
+}
+
 .accordionInner {
     display: flex;
     flex-direction: row;

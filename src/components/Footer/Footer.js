@@ -268,7 +268,7 @@ function Footer() {
             {/* <span className='underRow'></span> */}
             <div className="footerLink">
               <p className="copyBrand" id="copyBrand">
-                by
+                By
                 <a target="_blank" className="copyBrand" id="copyBrand" href="">
                   {" "}
                   QWERTY al-Fajr
