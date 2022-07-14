@@ -178,6 +178,9 @@
         position: absolute;
         left: 65%;
     }
+    #CarouselCards{
+        margin-bottom: 80px !important;
+    }
 
 }
 
