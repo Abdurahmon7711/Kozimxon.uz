@@ -103,7 +103,7 @@ function Footer() {
 
   return (
     <div className="Footer" id="Footer">
-      <div className="container">
+      <div className="container" id="footerCont">
         <div className="upperFooter">
           <h3 className="partTitle">
             {/* Kozimxon Turaev bilan kelajakda o‘z o‘rniga ega biznesingizni */}

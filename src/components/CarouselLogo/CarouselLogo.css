@@ -196,12 +196,7 @@
     }
     
 }
-@media screen and (max-width: 947px) {
-    .LogoSection .react-multiple-carousel__arrow--right,.LogoSection .react-multiple-carousel__arrow--left{
-        top: 50% !important;
-    }
-    
-}
+
 @media screen and (max-width: 768px) {
     #LogosecItem{
         height: 100% !important;
@@ -229,9 +224,6 @@
     }
     .react-multi-carousel-item{
         margin: 0px !important ;
-    }
-    .LogoSection .react-multiple-carousel__arrow--right,.LogoSection .react-multiple-carousel__arrow--left{
-        top: 50% !important;
     }
     
 }

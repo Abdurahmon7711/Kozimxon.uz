@@ -80,9 +80,9 @@
     margin: 0 20px !important;
 } */
 
-.react-multi-carousel-list{
+/* .react-multi-carousel-list{
     height: 450px;
-}
+} */
 .react-multi-carousel-list {
     display: flex;
 }
@@ -95,9 +95,9 @@
     top: -5px;
     content: '\2192';
 }
-.react-multi-carousel-track{
-    height: 450px;
-}
+/* .react-multi-carousel-track{
+    height: auto;
+} */
 .Karousel__card {
     top: 50px;
 }

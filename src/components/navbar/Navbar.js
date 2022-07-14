@@ -15,13 +15,6 @@ function Navbar() {
   function logit() {
     setScrollY(window.pageYOffset);
   }
-  function btnClick(){
-    window.scrollBy({
-      behavior: 'smooth'
-    });
-  }
-
- 
   return (
     <div className='NavFon'>
     <div className='Navbar'id='Navbar' 
@@ -37,7 +30,7 @@ function Navbar() {
 
       <div className='MainNav'>
         <ul className='MainNavLi'>
-          <li><a onClick={btnClick} href="#KouchDasturiBlock">Kurs haqida</a></li>
+          <li><a  href="#KouchDasturiBlock">Kurs haqida</a></li>
           <li><a href="#bigBox">Kurs o‘quv dasturi</a></li>
           <li><a href="#carVid">O‘quvchilar fikri</a></li>
           <li><a href="#WhoBlock">Ustoz haqida</a></li>
@@ -61,13 +54,13 @@ function Navbar() {
             <div className={ isAcctive ? 'MainNav' : 'MainNavActive '}>
               <ul className={ isAcctive ? 'MainNavLi': 'MainNavLiActive' }>
               
-                <a href="#KouchDasturiBlock"><li>Kurs haqida</li></a>
+                <li><a href="#KouchDasturiBlock">Kurs haqida</a></li>
               
-                <a href="#bigBox"><li>Kurs o‘quv dasturi</li></a>
+                <li><a href="#bigBox">Kurs o‘quv dasturi</a></li>
               
-                <a href="#carVid"><li>O‘quvchilar fikri</li></a>
+                <li><a href="#carVid">O‘quvchilar fikri</a></li>
               
-                <a href="#WhoBlock"><li>Ustoz haqida</li></a>
+                <li><a href="#WhoBlock">Ustoz haqida</a></li>
               </ul>
             </div>
 

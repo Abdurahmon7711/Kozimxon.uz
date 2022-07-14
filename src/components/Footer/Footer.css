@@ -288,6 +288,12 @@ button {
     .footerNavHR {
         display: none;
     }
+    .Footer{
+        margin-top: 80px !important;
+    }
+    #footerCont{
+        margin-top: 0px !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
