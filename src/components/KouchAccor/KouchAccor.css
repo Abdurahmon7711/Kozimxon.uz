@@ -253,14 +253,18 @@
         flex-direction: column;
         margin: 0;
     }
+    .innerAcc__text{
+        flex-direction: column;
+    }
+    .accTextPart {
+        width: 100% !important;
+    }
 }
 @media screen and (max-width: 500px) {
     .container {
         width: 360px;
     }
-    .innerAcc__text{
-        flex-direction: column;
-    }
+
     .accTextPart{
         width: 100% !important;
     }

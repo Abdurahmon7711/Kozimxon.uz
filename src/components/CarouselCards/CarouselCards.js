@@ -47,7 +47,7 @@ function CarouselCards() {
                 <div className='KarouselMainCard'>
 
                     <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card KarouselAccor__cardPartBl' variant="outlined">
+                        <Card className='Karousel__card' variant="outlined">
                             <React.Fragment>
                                 <CardContent>
                                     <Typography className="Karousel__cardTitle" variant="h5" component="div">

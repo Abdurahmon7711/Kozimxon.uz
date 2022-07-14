@@ -61,6 +61,11 @@
     background-color: #F0F0F0 !important;
     border: none !important;
 }
+.KouchAccor__accordionFaq {
+    transition: 0.1s ease all;
+    animation: 0.1s ease all;
+    border-top: 3px solid #E1E1E1 !important;
+}
 .KouchAccor__accordionFaq:hover {
     transition: 0.1s ease all;
     animation: 0.1s ease all;
