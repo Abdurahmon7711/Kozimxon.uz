@@ -8,7 +8,6 @@ import CarouselVideos from "./components/CarouselVideos/CarouselVideos";
 import FAQs from "./components/FAQs/FAQs";
 import Footer from "./components/Footer/Footer";
 import KouchAccor from "./components/KouchAccor/KouchAccor";
-import LogoSection from "./components/LogoSection/LogoSection";
 import WhoBlock from './components/WhoBlock/WhoBlock';
 import TabMenu from './components/TabMenu/TabMenu'
 import './App.css'
@@ -27,7 +26,6 @@ function App() {
       <KouchUstunligi />
       <KouchAccor />
       <CarouselVideos />
-      {/* <LogoSection /> */}
       <CarouselLogo/>
       <Kozimxon/>
       <FAQs />

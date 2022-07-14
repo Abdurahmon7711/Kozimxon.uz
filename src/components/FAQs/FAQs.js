@@ -105,7 +105,7 @@ function FAQs() {
                                 content1.map((el, ind) => {
                                     return (
                                         <Accordion component="div"  className="KouchAccor__accordionFaq" expanded={expanded === `panel${ind}`} onChange={handleChange(`panel${ind}`)}>
-                                            <AccordionSummary component="div" aria-controls="panel1d-content" id="panel1d-header">
+                                            <AccordionSummary className="AccSummFaq" component="div" aria-controls="panel1d-content" id="panel1d-header">
                                                 <Typography component="span" className='accordion__title faqAccTitle' >{el.title}</Typography>
                                             </AccordionSummary>
                                             <AccordionDetails className='accordionInner'>
@@ -125,7 +125,7 @@ function FAQs() {
                                 content2.map((el, ind) => {
                                     return (
                                         <Accordion component="div"  className="KouchAccor__accordionFaq" expanded={expanded === `panel${ind + 3}`} onChange={handleChange(`panel${ind + 3}`)}>
-                                            <AccordionSummary component="div" aria-controls="panel1d-content" id="panel1d-header">
+                                            <AccordionSummary className="AccSummFaq" component="div" aria-controls="panel1d-content" id="panel1d-header">
                                                 <Typography component="span" className='accordion__title faqAccTitle' >{el.title}</Typography>
                                             </AccordionSummary>
                                             <AccordionDetails className='accordionInner'>
@@ -145,7 +145,7 @@ function FAQs() {
                                 content3.map((el, ind) => {
                                     return (
                                         <Accordion component="div"  className="KouchAccor__accordionFaq" expanded={expanded === `panel${ind + 6}`} onChange={handleChange(`panel${ind + 6}`)}>
-                                            <AccordionSummary component="div" aria-controls="panel1d-content" id="panel1d-header">
+                                            <AccordionSummary className="AccSummFaq" component="div" aria-controls="panel1d-content" id="panel1d-header">
                                                 <Typography component="span" className='accordion__title faqAccTitle' >{el.title}</Typography>
                                             </AccordionSummary>
                                             <AccordionDetails className='accordionInner'>
@@ -168,7 +168,7 @@ function FAQs() {
                                 contentTab1.map((el, ind) => {
                                     return (
                                         <Accordion component="div"  className="KouchAccor__accordionFaq" expanded={expanded === `panel${ind}`} onChange={handleChange(`panel${ind}`)}>
-                                            <AccordionSummary component="div" aria-controls="panel1d-content" id="panel1d-header">
+                                            <AccordionSummary className="AccSummFaq" component="div" aria-controls="panel1d-content" id="panel1d-header">
                                                 <Typography component="span" className='accordion__title faqAccTitle' >{el.title}</Typography>
                                             </AccordionSummary>
                                             <AccordionDetails className='accordionInner'>
@@ -188,7 +188,7 @@ function FAQs() {
                                 contentTab2.map((el, ind) => {
                                     return (
                                         <Accordion component="div"  className="KouchAccor__accordionFaq" expanded={expanded === `panel${ind + 15}`} onChange={handleChange(`panel${ind + 15}`)}>
-                                            <AccordionSummary component="div" aria-controls="panel1d-content" id="panel1d-header">
+                                            <AccordionSummary className="AccSummFaq" component="div" aria-controls="panel1d-content" id="panel1d-header">
                                                 <Typography component="span" className='accordion__title faqAccTitle' >{el.title}</Typography>
                                             </AccordionSummary>
                                             <AccordionDetails className='accordionInner'>

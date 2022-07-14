@@ -45,6 +45,9 @@
     margin: 40px auto;
 
 }
+.KouchAccor__accordion:hover .kouchAccTitleBl{
+    color: #28468C;
+}
 .innerAcc__text{
     display: flex;
     width: 100%;
@@ -122,10 +125,10 @@
     width:350px !important;
 }
 
-.KouchAccor__accordion:first-child .accordion__title,
+/* .KouchAccor__accordion:first-child .accordion__title,
 .KouchAccor__accordion:first-child .MuiAccordionSummary-expandIconWrapper {
     color: #28468C;
-}
+} */
 
 .Kouch__cardTitle {
     color: #0F0F0F !important;
@@ -257,14 +260,18 @@
         flex-direction: column;
         margin: 0;
     }
+    .innerAcc__text{
+        flex-direction: column;
+    }
+    .accTextPart {
+        width: 100% !important;
+    }
 }
 @media screen and (max-width: 500px) {
     .container {
         width: 360px;
     }
-    .innerAcc__text{
-        flex-direction: column;
-    }
+
     .accTextPart{
         width: 100% !important;
     }

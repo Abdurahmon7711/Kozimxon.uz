@@ -119,10 +119,28 @@
   #radio4:checked ~ .navigation-auto .auto-btn4{
     background: #28468C;
   }
-  /* @media screen and (max-width: 576px) {
+  @media screen and (max-width: 1200px) {
+    .slide img {
+
+      height: 444px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .slide img {
+      height: 405px;
+      object-fit: cover;
+    }
+
+    
+  }
+  @media screen and (max-width: 576px) {
+    .slide img {
+      height: 202px;
+    }
     .slider{
         height: 200px;
         object-fit: cover;
     }
     
-  } */
+  }
+  

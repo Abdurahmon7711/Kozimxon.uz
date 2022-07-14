@@ -3,21 +3,9 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import { Link } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import "./CarouselCards.css"
-import Carouselcard from './CarouselTop/Carouselcard';
-
-// import CarouseCardComp from './CarouselTop/CarouseCardComp';
-import arrowLeft from '../../assets/images/arrowLeft.png'
-import arrowRight from '../../assets/images/arrowRight.png'
-import arrowLeftDis from '../../assets/images/arrowLeftDis.png'
-import arrowRightDis from '../../assets/images/arrowRightDis.png'
-
-
 
 const responsive = {
     superLargeDesktop: {
@@ -47,36 +35,19 @@ function scrollL(params) {
     });
 }
 
+
 function CarouselCards() {
     return (
         <div className='container' id="CarouselCards" >
 
-            <>
-                <div className='iconBox'>
-                    <h3 className='partTitle' >Bizneslarda ko'p uchraydigan <br /> muammolarga bizda yechim <br /> topshingiz mumkin.</h3>
-                </div>
-                
-                <Carouselcard />
+            <h3 className='partTitle' >Bizneslarda ko'p uchraydigan <br /> muammolarga bizda yechim <br /> topshingiz mumkin.</h3>
 
-                    <div className='arrowPart'>
-                        <img className='arrow' src={arrowLeft} onClick={(e) => { if (arrowLeft) { e.target.src = arrowLeftDis } else { e.target.src = arrowLeft } }} />
-                        <img className='arrow' src={arrowRight} onClick={(e) => { e.target.src = arrowRightDis }} />
-                    </div>
-                <div className='arrowPart'>
-                        <img className='arrow' src={arrowLeftDis} onClick={(e) => { e.target.src = arrowLeftDis }} />
-                        <img className='arrow' src={arrowRightDis} />
-                    </div>
-
-            </>
-
-
-{/* 
             <Carousel responsive={responsive}>
 
                 <div className='KarouselMainCard'>
 
                     <Box className='KarouselMainCard' sx={{ minWidth: 275 }}>
-                        <Card className='Karousel__card KarouselAccor__cardPartBl' variant="outlined">
+                        <Card className='Karousel__card' variant="outlined">
                             <React.Fragment>
                                 <CardContent>
                                     <Typography className="Karousel__cardTitle" variant="h5" component="div">
@@ -139,7 +110,7 @@ function CarouselCards() {
                     </Box>
                 </div>
 
-            </Carousel> */}
+            </Carousel>
 
         </div>
     )

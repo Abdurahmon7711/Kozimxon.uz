@@ -151,9 +151,13 @@ a{
     top: 80px;
     left: 0;
     height: 100vh;
-    width: 100vw;
+    width: 105vw;
     background: #FFF;
     z-index: 100000000000000;
+}
+.innerMenuMob{
+    position: absolute;
+    top: 25%;
 }
 
 .MainNavLi{

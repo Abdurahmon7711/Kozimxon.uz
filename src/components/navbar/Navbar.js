@@ -21,7 +21,7 @@ function Navbar() {
     });
   }
 
-
+ 
   return (
     <div className='NavFon'>
     <div className='Navbar'id='Navbar' 
