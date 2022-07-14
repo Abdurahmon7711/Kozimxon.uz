@@ -86,7 +86,7 @@ function KouchAccor() {
                                         Kompaniya samaradorligini oshiruvchi KPI tizimini yo'lga qo'yish.
                                         Maosh wa kompensatsiya tizimini yaratish.
                                         Motivatsiya dasturlari.
-                                        Ichki nizom va standart operatsion prodteduralar yaratish.
+                                        Ichki nizom va standart operatsion protseduralar yaratish.
                                     </div>
                                 </Typography>
                             </AccordionDetails>

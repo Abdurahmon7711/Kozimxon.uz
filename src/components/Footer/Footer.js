@@ -79,20 +79,30 @@ function Footer() {
 
   function Top(res) {
     // window.scrollTo(0, 0);
- 
+    console.log(res);
+
+    swal({
+            title: res.ok ? "Siz Muvaffaqiyatli ro'yxatdan o'tdingiz!" : 'Xatolik',
+            icon: res.ok ? "success" : "error",
+            button: res.ok ? "Rahmat!" : "Qayta urinib ko'ring.",
+    });
+  }
+
+
     // if(res.ok){
-      // if (document.querySelector('#work_place').value != ' ' && document.querySelector('#name').value != ' ' && document.querySelector('#number').value != "") {
-        swal({
-          title: "Siz Muvaffaqiyatli ro'yxatdan o'tdingiz!",
-          icon: "success",
-          button: "Rahmat!",
-        });
-        document.querySelector('#work_place').value = "" ;
-        document.querySelector('#name').value = "" ;
-        document.querySelector('#number').value = "";
-      // }
-    } 
+    //   if (document.querySelector('#work_place').value != ' ' && document.querySelector('#name').value != ' ' && document.querySelector('#number').value != "") {
+    //     swal({
+    //       title: "Siz Muvaffaqiyatli ro'yxatdan o'tdingiz!",
+    //       icon: "success",
+    //       button: "Rahmat!",
+    //     });
+    //     document.querySelector('#work_place').value = "" ;
+    //     document.querySelector('#name').value = "" ;
+    //     document.querySelector('#number').value = "";
+    //   }
+    // } 
     // else {
+      
     //   document.querySelector('#work_place').classList.add('errorDet');
     //   document.querySelector('#name').classList.add('errorDet');
     //   document.querySelector('#number').classList.add('errorDet');
@@ -131,7 +141,7 @@ function Footer() {
               console.log(url.href)
               const res = await fetch(url.href);
               const response = await res.json();
-              // Top(response)
+              Top(response)
             }}>
 
               <div className="footerFormGrid">
@@ -197,7 +207,7 @@ function Footer() {
 
                 <div className="footerItem">
                   {/* <p></p> */}
-                  <button className="footerbtn" onClick={Top} type="submit"  >Ro‘yxatdan o‘tish →</button>
+                  <button className="footerbtn"  type="submit"  >Ro‘yxatdan o‘tish →</button>
                   <sub></sub>
                 </div>
               </div>
