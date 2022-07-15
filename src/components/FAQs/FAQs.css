@@ -50,7 +50,9 @@
     height: max-content !important;
     padding-bottom: 20px;
 }
-
+.css-uvvswg-MuiButtonBase-root-MuiAccordionSummary-root{
+    background-color: #F0F0F0 !important;
+}
 /* .leftBox > :nth-child(1) {
     border-top: 3px solid #28468C !important;
 } */
@@ -104,22 +106,7 @@
 .accTextPartFaq{
     width: 100%;
 }
-
-.css-yw020d-MuiAccordionSummary-expandIconWrapper{
-    position: absolute !important;
-    right: 10px !important;
-    z-index: 0;
-    /* opacity: 0; */
-}
-.css-yw020d-MuiAccordionSummary-expandIconWrapper svg{
-    display: none !important;
-}
-.css-yw020d-MuiAccordionSummary-expandIconWrapper::before{
-    content: '\2192' !important;
-    z-index: 10000;
-    opacity: 1;
-    font-size: 22px;
-}
+ 
 .accordion__title {
     padding: 5px 10px; 
 }
@@ -132,7 +119,7 @@
     width: 90% !important;
 }
 .accordion__title {
-    width: 90% !important;
+    width: 80% !important;
 }
 
 @media screen and (min-width:1200px) {
@@ -186,7 +173,7 @@
         justify-content: space-around;
     }
     .faqAccTitle{
-        width: 85% !important;
+        width: 75% !important;
     }
 }
 @media screen and (max-width:500px) {

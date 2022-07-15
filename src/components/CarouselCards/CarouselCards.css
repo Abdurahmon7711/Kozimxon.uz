@@ -42,9 +42,19 @@
 #CarouselCards{
     margin-bottom: 120px !important;
 }
+.css-1v5z4dq-MuiPaper-root-MuiCard-root{
+    background-color: #fafafa !important;
+}
+.css-1w6wz2d {
+    font-size: 18px !important;
+}
+.css-1okfn8i {
+    background-color: #fafafa !important;
+}
 
 .react-multi-carousel-list  {
-    height: 400px;
+    padding-top: 60px;
+    /* height: 360px !important; */
 }
 
 .Karousel__card {
@@ -104,6 +114,7 @@
 } */
 .react-multi-carousel-list {
     display: flex;
+    align-items: flex-end;
 }
 
 /* .react-multiple-carousel__arrow--left::before */

@@ -20,18 +20,12 @@
     width: 100vw;
 }
 .css-yw020d-MuiAccordionSummary-expandIconWrapper{
-    display: none;
-}
-/* .css-yw020d-MuiAccordionSummary-expandIconWrapper{
-    content: '\2192' !important;
-    z-index: 10000;
-} */
-
-.css-yw020d-MuiAccordionSummary-expandIconWrapper{
-    /* content: '\2192' !important; */
     z-index: 1 !important;
     opacity: 1 !important;
     font-size: 22px !important;
+}
+.css-yw020d-MuiAccordionSummary-expandIconWrapper:hover{
+    color: #28468C;
 }
 
 .KouchAccor {
@@ -69,6 +63,11 @@
 .innerAcc__text{
     display: flex;
     width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #828282;
 }
 .KouchAccor__cardPart {
     width: 25%;
@@ -111,12 +110,26 @@
     font-size: 20px;
 }
 
-.css-uvvswg-MuiButtonBase-root-MuiAccordionSummary-root {
+/* .css-uvvswg-MuiButtonBase-root-MuiAccordionSummary-root {
     background-color: #F0F0F0 !important;
 }
-
+.css-107vo98-MuiButtonBase-root-MuiAccordionSummary-root {
+    background-color: #F0F0F0 !important;
+} */
+.css-pwcg7p-MuiCollapse-root{
+    background-color: #F0F0F0 !important;
+}
+.css-107vo98-MuiButtonBase-root-MuiAccordionSummary-root{
+    background-color: #F0F0F0 !important;
+}
+.css-1fjvggn-MuiPaper-root-MuiAccordion-root{
+    background-color: #f0f0f0;
+}
+.css-1tp5dum{
+    background-color: #f0f0f0 !important;
+}
 .css-1v5z4dq-MuiPaper-root-MuiCard-root {
-    background-color: #F0F0F0 ;
+    background-color: #F0F0F0 !important;
     height: 286px;
     width:350px !important;
     position: relative;
@@ -142,7 +155,7 @@
 }
 
 .css-1okfn8i {
-    background-color: #f0f0f0 !important;
+    /* background-color: #f0f0f0 !important; */
     height: 286px !important;
     width:350px !important;
 }
@@ -206,8 +219,25 @@
     width: 45% !important;
     margin: 0 auto !important;
 }
-.KouchAccor__accordion:hover .css-yw020d-MuiAccordionSummary-expandIconWrapper {
+/* .KouchAccor__accordion:hover .css-yw020d-MuiAccordionSummary-expandIconWrapper svg {
     color: #28468C !important;
+    fill: #28468C !important;
+}
+.KouchAccor__accordion:hover .css-yw020d-MuiAccordionSummary-expandIconWrapper svg::before{
+    top: 50px;
+    z-index: 10;
+    position: absolute;
+    fill: #28468C !important;
+    color: #28468C !important;
+}  */
+#KOuchAccorc .KouchAccor__accordion:hover svg{
+    color: #28468C !important;
+    fill: #28468C !important; 
+}
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper{
+    position: absolute;
+    right: 15px;
 }
 
 @media screen and (min-width:1200px) {
@@ -258,17 +288,14 @@
     }
     .accText {
         display: flex !important;
+        color: #828282 !important;
     }
     .accText,
     .accordionInner {
         font-family: 'SF Pro';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 140%;
         color: #828282 !important;
     }
-
+ 
     .KouchAccor__inner {
         display: flex;
         flex-direction: column;

@@ -15,6 +15,12 @@ import Button from "@mui/material/Button";
 import logo from "../../assets/navbarLogo/Logo.png";
 import pdf from "../../assets/pdf/kozimxon.pdf";
 
+// Icons
+
+import { AiOutlineArrowDown } from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/ai";
+
+
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -29,7 +35,7 @@ const Accordion = styled((props) => (
 
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
-    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: "0.9rem" }} />}
+    expandIcon={<AiOutlineArrowRight sx={{ fontSize: "0.9rem" }} />}
     {...props}
   />
 ))(({ theme }) => ({
@@ -40,6 +46,7 @@ const AccordionSummary = styled((props) => (
   flexDirection: "row-reverse",
   "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
     transform: "rotate(90deg)",
+    fill: "#28468C" 
   },
   "& .MuiAccordionSummary-content": {
     marginLeft: theme.spacing(1),
@@ -60,7 +67,7 @@ function KouchAccor() {
 
   return (
     <div className="bigBox" id="bigBox">
-      <div className="container KouchAccor">
+      <div className="container KouchAccor" id='KOuchAccorc'>
         <div className="partTitle">
           <h3 className="KouchDasturi">
             Kouching dasturidagi <br /> modullar qanday?
@@ -72,6 +79,7 @@ function KouchAccor() {
               className="KouchAccor__accordion"
               expanded={expanded === "panel1"}
               onChange={handleChange("panel1")}
+              
             >
               <AccordionSummary
                 aria-controls="panel1d-content"
@@ -89,14 +97,14 @@ function KouchAccor() {
                   <div className="accTextPart">
                     Kompaniyaning missiyalari, qadriyatlari va vazifalari.
                     <br /> HR rejalash (Kompaniya kerak buladigan xodimlar sonini aniqlash).
-                    <br/> Ishga olishda samarali usullar (Intervyu, testlar, case savollar,…).
+                    <br /> Ishga olishda samarali usullar (Intervyu, testlar, case savollar,…).
                   </div>
                   <div className="accTextPart">
-                    Adaptatsiya tizimi (Yangi kelgan xodimlarni tezda ishga ko'nikib ketishi va foyda keltirishi). 
-                    <br/>  Kompaniya samaradorligini oshiruvchi KPI tizimini yo'lga qo'yish.
-                    <br/>  Maosh wa kompensatsiya tizimini yaratish. 
-                    <br/> Motivatsiya dasturlari.
-                    <br/>  Ichki nizom va standart operatsion protseduralar yaratish.
+                    Adaptatsiya tizimi (Yangi kelgan xodimlarni tezda ishga ko'nikib ketishi va foyda keltirishi).
+                    <br />  Kompaniya samaradorligini oshiruvchi KPI tizimini yo'lga qo'yish.
+                    <br />  Maosh wa kompensatsiya tizimini yaratish.
+                    <br /> Motivatsiya dasturlari.
+                    <br />  Ichki nizom va standart operatsion protseduralar yaratish.
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -122,12 +130,12 @@ function KouchAccor() {
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
                     Islom moliyasi tamoyillari asosida biznesni boshqarish.
-                    <br/>Islom moliyasidagi taqiqlar 
-                    <br/> Asosiy produktlar 
+                    <br />Islom moliyasidagi taqiqlar.
+                    <br /> Asosiy produktlar
                   </div>
                   <div className="accTextPart">
-                  (Murabaha, Ijara, Mushakara, Muzabara, Istisno va Salam).
-                    <br/>  Shartnomalar. Islom moliyasida sha'riy savollarga mehmonimiz Muhammad Ayyubxon Xomidobdan javoblar.
+                    (Murabaha, Ijara, Mushakara, Muzabara, Istisno va Salam).
+                    <br />  Shartnomalar. <br/> Islom moliyasida sha'riy savollarga mehmonimiz Muhammad Ayyubxon Xomidobdan javoblar.
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -153,12 +161,12 @@ function KouchAccor() {
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
                     Islomda pulga va biznesga bo'lgan munosabat.
-                    <br/>  Dunyo va oxirat orasida muvozanat saqlash. 
+                    <br />  Dunyo va oxirat orasida muvozanat saqlash.
                     <br /> Musulmonlarning rivojlanish bo'yicha ortda qolish sabablari.
                   </div>
                   <div className="accTextPart">
-                    Baraka o'zi nima va unga qanday erishiladi ? 
-                    <br/>  Barakaga erishishning 10 ta omili.
+                    Baraka o'zi nima va unga qanday erishiladi ?
+                    <br />  Barakaga erishishning 10 ta omili.
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -183,15 +191,15 @@ function KouchAccor() {
               <AccordionDetails className="accordionInner">
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
-                    Biznesda niyatning muhimligi. 
-                    <br/> Sherik tanlashda qadriyatlarga asoslanish. 
-                    <br/> Sherikchilik kelishuvini to'g'ri tuzish shartlari.
+                    Biznesda niyatning muhimligi.
+                    <br /> Sherik tanlashda qadriyatlarga asoslanish.
+                    <br /> Sherikchilik kelishuvini to'g'ri tuzish shartlari.
                   </div>
                   <div className="accTextPart">
-                    Kelishuvdagi asosiy masalalar <br/>  (Sheriklarning biznesdagi
-                    <br/>  ulushi, sarmoya vazifalar, foyda va zarar taqsimoti, biznesdan chiqish shartlari ). 
-                    <br/> Sherikchilikdagi muammolarni hal qilish yo'llari.
-                    <br/> 
+                    Kelishuvdagi asosiy masalalar <br />  (Sheriklarning biznesdagi
+                    <br />  ulushi, sarmoya vazifalar, foyda va zarar taqsimoti, biznesdan chiqish shartlari ).
+                    <br /> Sherikchilikdagi muammolarni hal qilish yo'llari.
+                    <br />
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -218,11 +226,11 @@ function KouchAccor() {
                   <div className="accTextPart">
                     Zamonaviy va qadriyatlarga asoslangan liderlikning farqlari.
                     Payg'ambarimiz (S.A.V)ning liderlik mahoratlari.
-                    <br/> Qadriyatlarga asoslangan liderlikga berilgan tavsiyalar.
+                    <br /> Qadriyatlarga asoslangan liderlikga berilgan tavsiyalar.
                   </div>
                   <div className="accTextPart">
                     Qo'l ostidagilarni motivatsiyasini oshirish yo'llari.
-                    <br/> Nizolarni hal qilish yo'llari
+                    <br /> Nizolarni hal qilish yo'llari.
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -248,12 +256,12 @@ function KouchAccor() {
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
                     Xalqaro talablarga javob beradigan servis tizimi nima ?
-                    <br/> Yaponiya tajribasi asosida mijozlarga yuqori 
-                    <br/>  darajada xizmat ko'rsatish tizimi yaratish
+                    <br /> Yaponiya tajribasi asosida mijozlarga yuqori
+                    darajada xizmat ko'rsatish tizimi yaratish.
                   </div>
                   <div className="accTextPart">
-                    Servis tizimi va uning raqobatga qo'l kelishuvini
-                    <br/> Qadriyatlarga asoslangan servis tizimi qanday bo'ladi ?
+                    Servis tizimi va uning raqobatga qo'l kelishuvini.
+                    <br /> Qadriyatlarga asoslangan servis tizimi qanday bo'ladi ?
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -280,13 +288,13 @@ function KouchAccor() {
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
                     Yaponiya Kaizen sistemasi nima va u qanday ishlaydi ?
-                    <br/> Tizimlashtirish uchun kerak bo'ladigan 5C sistemasi.
-                    <br/> Standart Operatsion Protseduralarni yaratish.
+                    <br /> Tizimlashtirish uchun kerak bo'ladigan 5C sistemasi.
+                    <br /> Standart Operatsion Protseduralarni yaratish.
                   </div>
                   <div className="accTextPart">
-                    Mijozlarni xohishi inobatga olish. 
-                    <br/> Doimiy o'sish va rivojlanish strategiyasi. 
-                    <br/> Ishchilarni korxonaning
+                    Mijozlarni xohishi inobatga olish.
+                    <br /> Doimiy o'sish va rivojlanish strategiyasi.
+                    <br /> Ishchilarni korxonaning
                     faoliyatida va hayotida ishtirok etishlari.
                   </div>
                 </Typography>
@@ -313,15 +321,15 @@ function KouchAccor() {
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
                     Qur'on va Hadisda shaxshiy rivojlanishga kerak bo'ladigan
-                    qanday tavsiyalar bor. 
-                    <br/> Hayotda qanday oliy maqsad ko'yish
-                    kerak. 
-                    <br/> Maqsadlarni to'g'ri ko'yish yo'llari.
+                    qanday tavsiyalar bor.
+                    <br /> Hayotda qanday oliy maqsad ko'yish
+                    kerak.
+                    <br /> Maqsadlarni to'g'ri ko'yish yo'llari.
                   </div>
                   <div className="accTextPart">
-                    Hayotdagi muammolarga qanday yondashish kerak. 
-                    <br/> Doimiy harakat intizom va natija. 
-                    <br/> Dastur mehmoni Abdukarim Mirzayevdan shaxsiy tavsiyalar.
+                    Hayotdagi muammolarga qanday yondashish kerak.
+                    <br /> Doimiy harakat intizom va natija.
+                    <br /> Dastur mehmoni Abdukarim Mirzayevdan shaxsiy tavsiyalar.
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -374,7 +382,7 @@ function KouchAccor() {
                       color="text.secondary"
                       gutterBottom
                     >
-                     O'z biznesingizdagi muammolarni mutaxasis bilan hal qiling.
+                      O'z biznesingizdagi muammolarni mutaxasis bilan hal qiling.
                     </Typography>
                   </CardContent>
                   <CardActions>

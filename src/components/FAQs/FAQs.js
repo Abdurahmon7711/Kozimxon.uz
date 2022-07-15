@@ -5,9 +5,8 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-// import '../KouchAccor/KouchAccor.css'
-// import "../CarouselCards/CarouselCards.css"
 import "./FAQs.css"
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 
 const Accordion = styled((props) => (
@@ -24,7 +23,7 @@ const Accordion = styled((props) => (
 
 const AccordionSummary = styled((props) => (
     <MuiAccordionSummary
-        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+        expandIcon={<AiOutlineArrowRight sx={{ fontSize: '0.9rem' }} />}
         {...props}
     />
 ))(({ theme }) => ({
@@ -61,7 +60,7 @@ function FAQs() {
     const content2 = [
         createContent(" Kursda qatnashib, qanday amaliy ko‘nikmalar olaman ? ", " Har bir modul bo‘yicha hayotiy keyslar, real misollar bilan tanishasiz. "),
         createContent(" Kursdan qoniqmagan taqdirimda to‘lovni qaytarishim mumkinmi ? ", " Kursdan qoniqmagan taqdirda, pulni qaytarish mumkin, faqat maxsus intervyu orqali qaytariladi. "),
-        createContent(" Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? ", ` 3 xil paketlarimiz mavjud: \n Korporativ paket \n Standart paket \n Premium paket. `),
+        createContent(` Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? `, ` 3 xil paketlarimiz mavjud: Korporativ paket, Standart paket, Premium paket. `),
     ]
 
     const content3 = [
@@ -79,7 +78,7 @@ function FAQs() {
     ]
 
     const contentTab2 = [
-        createContent(" Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? ", ` 3 xil paketlarimiz mavjud: \n Korporativ paket \n Standart paket \n Premium paket. `),
+        createContent(" Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? ", " 3 xil paketlarimiz mavjud: Korporativ paket, Standart paket, Premium paket. "),
         createContent(" Viloyatdan “Zoom” orqali onlayn qatnashish mumkinmi ? ", " Xa mumkin. “Zoom” yoki boshqa mahsus platforma orqali qatnashish mumkin bo‘ladi. "),
         createContent(" Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi ? ", " Kursimiz shanba va yakshanba kunlari bo'ladi. "),
         createContent(" Dastur ishtirokchilariga konsultatsiya xizmati mavjudmi ? ", " Ha, premium tarifda mavjud, standart tarifda qatnashsangiz konsultatsiya hizmati uchun 50% chegirmaga ega bo‘lasiz. "),
