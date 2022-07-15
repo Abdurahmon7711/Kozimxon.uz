@@ -61,17 +61,17 @@ function FAQs() {
     const content2 = [
         createContent(" Kursda qatnashib, qanday amaliy ko‘nikmalar olaman ? ", " Har bir modul bo‘yicha hayotiy keyslar, real misollar bilan tanishasiz. "),
         createContent(" Kursdan qoniqmagan taqdirimda to‘lovni qaytarishim mumkinmi ? ", " Kursdan qoniqmagan taqdirda, pulni qaytarish mumkin, faqat maxsus intervyu orqali qaytariladi. "),
-        createContent(" Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? ", ` 3 xil paketlarimiz mavjud: \n Korporativ paket \n Standart paket \n Premium paket `),
+        createContent(" Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? ", ` 3 xil paketlarimiz mavjud: \n Korporativ paket \n Standart paket \n Premium paket. `),
     ]
 
     const content3 = [
         createContent(" Viloyatdan “Zoom” orqali onlayn qatnashish mumkinmi ? ", " Xa mumkin. “Zoom” yoki boshqa mahsus platforma orqali qatnashish mumkin bo‘ladi. "),
-        createContent(" Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi ? ", " Kursimiz shanba va yakshanba kunlari bo'ladi "),
+        createContent(" Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi ? ", " Kursimiz shanba va yakshanba kunlari bo'ladi. "),
         createContent(" Dastur ishtirokchilariga konsultatsiya xizmati mavjudmi ? ", " Ha, premium tarifda mavjud, standart tarifda qatnashsangiz konsultatsiya hizmati uchun 50% chegirmaga ega bo‘lasiz. "),
     ]
 
     const contentTab1 = [
-        createContent(" Kursda qatnashish necha pul turadi ? ", " Kursimizda qatnashish istagida bo‘lganlar, pastda ko‘rsatilgan raqamlarga murojaat qilishingiz mumkin. Oldindan ro‘yhatdan o‘tgan ishtirokchilarimiz uchun chegirmalarimiz mavjud. "),
+        createContent(" Kursda qatnashish necha \n pul turadi ? ", " Kursimizda qatnashish istagida bo‘lganlar, pastda ko‘rsatilgan raqamlarga murojaat qilishingiz mumkin. Oldindan ro‘yhatdan o‘tgan ishtirokchilarimiz uchun chegirmalarimiz mavjud. "),
         createContent(" Chegirma olish tartibi qanday ?  ", " Kursimizda qatnashish istagida bo‘lganlar, pastda ko‘rsatilgan raqamlarga murojaat qilishingiz mumkin. Oldindan ro‘yhatdan o‘tgan ishtirokchilarimiz uchun chegirmalarimiz mavjud. "),
         createContent(" To‘lov turi qanday? ", " Naqd va pul o'tkazish yo'li bilan. "),
         createContent(" Kursda qatnashib, qanday amaliy ko‘nikmalar olaman ? ", " Har bir modul bo‘yicha hayotiy keyslar, real misollar bilan tanishasiz. "),
@@ -79,9 +79,9 @@ function FAQs() {
     ]
 
     const contentTab2 = [
-        createContent(" Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? ", ` 3 xil paketlarimiz mavjud: \n Korporativ paket \n Standart paket \n Premium paket `),
+        createContent(" Ushbu biznes dasturni qanday paketlarda sotib olish mumkin ? ", ` 3 xil paketlarimiz mavjud: \n Korporativ paket \n Standart paket \n Premium paket. `),
         createContent(" Viloyatdan “Zoom” orqali onlayn qatnashish mumkinmi ? ", " Xa mumkin. “Zoom” yoki boshqa mahsus platforma orqali qatnashish mumkin bo‘ladi. "),
-        createContent(" Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi ? ", " Kursimiz shanba va yakshanba kunlari bo'ladi "),
+        createContent(" Kurs qaysi kunlari, necha soatdan bo‘lib o‘tadi ? ", " Kursimiz shanba va yakshanba kunlari bo'ladi. "),
         createContent(" Dastur ishtirokchilariga konsultatsiya xizmati mavjudmi ? ", " Ha, premium tarifda mavjud, standart tarifda qatnashsangiz konsultatsiya hizmati uchun 50% chegirmaga ega bo‘lasiz. "),
     ]
 
@@ -106,7 +106,7 @@ function FAQs() {
                                     return (
                                         <Accordion component="div"  className="KouchAccor__accordionFaq" expanded={expanded === `panel${ind}`} onChange={handleChange(`panel${ind}`)}>
                                             <AccordionSummary className="AccSummFaq" component="div" aria-controls="panel1d-content" id="panel1d-header">
-                                                <Typography component="span" className='accordion__title faqAccTitle' >{el.title}</Typography>
+                                                <Typography component="span" className='accordion__title faqAccTitle'  id="FaqTitle">{el.title}</Typography>
                                             </AccordionSummary>
                                             <AccordionDetails className='accordionInner'>
                                                 <Typography component="span" className='innerAcc__text' >
@@ -126,7 +126,7 @@ function FAQs() {
                                     return (
                                         <Accordion component="div"  className="KouchAccor__accordionFaq" expanded={expanded === `panel${ind + 3}`} onChange={handleChange(`panel${ind + 3}`)}>
                                             <AccordionSummary className="AccSummFaq" component="div" aria-controls="panel1d-content" id="panel1d-header">
-                                                <Typography component="span" className='accordion__title faqAccTitle' >{el.title}</Typography>
+                                                <Typography component="span" className='accordion__title faqAccTitle'id="FaqTitle" >{el.title}</Typography>
                                             </AccordionSummary>
                                             <AccordionDetails className='accordionInner'>
                                                 <Typography component="span" className='innerAcc__text' >
@@ -146,7 +146,7 @@ function FAQs() {
                                     return (
                                         <Accordion component="div"  className="KouchAccor__accordionFaq" expanded={expanded === `panel${ind + 6}`} onChange={handleChange(`panel${ind + 6}`)}>
                                             <AccordionSummary className="AccSummFaq" component="div" aria-controls="panel1d-content" id="panel1d-header">
-                                                <Typography component="span" className='accordion__title faqAccTitle' >{el.title}</Typography>
+                                                <Typography component="span" className='accordion__title faqAccTitle'id="FaqTitle" >{el.title}</Typography>
                                             </AccordionSummary>
                                             <AccordionDetails className='accordionInner'>
                                                 <Typography component="span" className='innerAcc__text' >
@@ -169,7 +169,7 @@ function FAQs() {
                                     return (
                                         <Accordion component="div"  className="KouchAccor__accordionFaq" expanded={expanded === `panel${ind}`} onChange={handleChange(`panel${ind}`)}>
                                             <AccordionSummary className="AccSummFaq" component="div" aria-controls="panel1d-content" id="panel1d-header">
-                                                <Typography component="span" className='accordion__title faqAccTitle' >{el.title}</Typography>
+                                                <Typography component="span" className='accordion__title faqAccTitle' id="FaqTitle" >{el.title}</Typography>
                                             </AccordionSummary>
                                             <AccordionDetails className='accordionInner'>
                                                 <Typography component="span" className='innerAcc__text' >
@@ -189,7 +189,7 @@ function FAQs() {
                                     return (
                                         <Accordion component="div"  className="KouchAccor__accordionFaq" expanded={expanded === `panel${ind + 15}`} onChange={handleChange(`panel${ind + 15}`)}>
                                             <AccordionSummary className="AccSummFaq" component="div" aria-controls="panel1d-content" id="panel1d-header">
-                                                <Typography component="span" className='accordion__title faqAccTitle' >{el.title}</Typography>
+                                                <Typography component="span" className='accordion__title faqAccTitle'id="FaqTitle">{el.title}</Typography>
                                             </AccordionSummary>
                                             <AccordionDetails className='accordionInner'>
                                                 <Typography component="span" className='innerAcc__text' >

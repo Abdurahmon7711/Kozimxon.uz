@@ -6,6 +6,10 @@
     width: 100%;
     background-color: #FAFAFA;
 }
+/* .css-3vmltg{
+    content: '\2192' !important;
+    z-index: 10000;
+} */
 
 .container {
     max-height: max-content;
@@ -18,12 +22,14 @@
 .css-yw020d-MuiAccordionSummary-expandIconWrapper{
     display: none;
 }
-.KouchAccor__accordion:hover .css-yw020d-MuiAccordionSummary-expandIconWrapper {
-    color: #28468C !important;
-}
-.css-yw020d-MuiAccordionSummary-expandIconWrapper{
+/* .css-yw020d-MuiAccordionSummary-expandIconWrapper{
     content: '\2192' !important;
-    z-index: 10000 !important;
+    z-index: 10000;
+} */
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper{
+    /* content: '\2192' !important; */
+    z-index: 1 !important;
     opacity: 1 !important;
     font-size: 22px !important;
 }
@@ -200,6 +206,9 @@
     width: 45% !important;
     margin: 0 auto !important;
 }
+.KouchAccor__accordion:hover .css-yw020d-MuiAccordionSummary-expandIconWrapper {
+    color: #28468C !important;
+}
 
 @media screen and (min-width:1200px) {
     .container{
@@ -282,6 +291,8 @@
     }
     .accTextPart {
         width: 100% !important;
+        margin-bottom: 20px !important;
+        padding: 0 5px !important
     }
 }
 @media screen and (max-width: 500px) {
@@ -289,8 +300,10 @@
         width: 360px;
     }
 
-    .accTextPart{
+    .accTextPart {
         width: 100% !important;
+        margin-bottom: 20px !important;
+      
     }
     .Kouch__card{
         height: 300px;
@@ -314,4 +327,17 @@
     .KouchAccor{
         margin-top: 80px !important;
     }
+    .KouchAccor__accordionPart{
+        width: 100% !important;
+    }
+    .css-ahj2mt-MuiTypography-root{
+        width: 87% !important;
+    }
+    .kouchAccTitleBl{
+        width: 87% !important;
+        
+    }
+   .css-ta84vm-MuiAccordionDetails-root{
+        width: 98% !important;
+   }
 }

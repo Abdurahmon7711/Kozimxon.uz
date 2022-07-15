@@ -1,7 +1,7 @@
 import React from 'react'
 import './CarouselTop.css'
 import imgCarousel1 from "../../assets/images/ImgCarous1.png"
-import imgCarousel2 from "../../assets/images/fonImage2.JPG"
+import imgCarousel2 from "../../assets/images/fonImage2.jpg"
 
 function CarouselTop() {
     // type="text/javascript"

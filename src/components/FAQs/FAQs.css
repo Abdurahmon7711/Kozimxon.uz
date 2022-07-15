@@ -112,7 +112,7 @@
     /* opacity: 0; */
 }
 .css-yw020d-MuiAccordionSummary-expandIconWrapper svg{
-    display: none;
+    display: none !important;
 }
 .css-yw020d-MuiAccordionSummary-expandIconWrapper::before{
     content: '\2192' !important;
@@ -126,12 +126,25 @@
 
 .accTextPartFaq{
     width: 100% !important;
+    padding: 0 15px 0 20px !important;
+}
+.css-ahj2mt-MuiTypography-root{
+    width: 90% !important;
+}
+.accordion__title {
+    width: 90% !important;
 }
 
 @media screen and (min-width:1200px) {
     .container{
         max-width: 1200px;
         margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width: 1200px) {
+    .css-9l3uo3{
+        width: 84%;
     }
     
 }
@@ -151,8 +164,11 @@
     .Faq__card{
         width: 250px !important;
     }
+    .accTextPartFaq{
+        padding: 0px !important;
+    }
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
     .faqsContBox{
         display: flex;
     }
@@ -191,5 +207,12 @@
     .bigBoxFaq{
         padding-top: 20px !important;
         padding-bottom: 80px !important;
+    }
+    #FaqTitle{
+        font-size: 1.1em !important;
+    }
+    
+    .accTextPartFaq{
+        padding-left: 10px !important;
     }
 }
