@@ -146,7 +146,7 @@ function CaroselLogo() {
     return (
         <div className='container LogoSection' >
             <div className='partTitle'>
-                <h3>Kouching dasturi <br /> mijozlari</h3>
+                <h3>Bizning mijozlar</h3>
             </div>
 
             <Carousel responsive={responsive}>

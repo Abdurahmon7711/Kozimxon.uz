@@ -9,9 +9,9 @@ import "../WhoBlock/WhoBlock.css";
 import Kozimxon1 from "../../assets/images/Kozimxon1.JPG";
 import Kozimxon2 from "../../assets/images/Kozimxon2.JPG";
 import Kozimxon3 from "../../assets/images/Kozimxon3.JPG";
-import {ReactComponent as Ustoz1} from "../../assets/images/ustoz1.svg";
-import {ReactComponent as Ustoz2} from "../../assets/images/ustoz2.svg";
-import {ReactComponent as Ustoz3} from "../../assets/images/ustoz3.svg";
+import { ReactComponent as Ustoz1 } from "../../assets/images/ustoz1.svg";
+import { ReactComponent as Ustoz2 } from "../../assets/images/ustoz2.svg";
+import { ReactComponent as Ustoz3 } from "../../assets/images/ustoz3.svg";
 
 
 
@@ -30,8 +30,8 @@ function Kozimxon() {
           <div className="Complect">
             <div className="Card" id="BlockCard">
               <div id="empty"></div>
-              <div className="iconCard">     
-                    <Ustoz1 className='icons' />
+              <div className="iconCard">
+                <Ustoz1 className='icons' />
               </div>
               <div className="textCard">
                 <p className="CardSecondText" id="CardSecondBlock">
@@ -49,7 +49,7 @@ function Kozimxon() {
             <div className="Card" id="BlockCard">
               <div id="empty"></div>
               <div className="iconCard">
-                <Ustoz2 className='icons'/>
+                <Ustoz2 className='icons' />
               </div>
               <div className="textCard">
                 <p className="CardSecondText" id="CardSecondBlock">
@@ -66,13 +66,11 @@ function Kozimxon() {
             <div className="Card" id="BlockCard">
               <div id="empty"></div>
               <div className="iconCard">
-                <Ustoz3 className='icons'/>
+                <Ustoz3 className='icons' />
               </div>
               <div className="textCard">
                 <p className="CardSecondText" id="CardSecondBlock">
-                  Hozirda IsBF kompaniyasining asoschilaridan biri va ko‘plab
-                  mavzularda trening va konsalting hizmatlarini ko‘rsatib
-                  kelmoqda.
+                  Hozirda qadriyatlar akademiyasining asoschisi. Ko'plab mavzularda trening va konsulting xizmatlarini ko'rsatib kelmoqda.
                 </p>
               </div>
             </div>
