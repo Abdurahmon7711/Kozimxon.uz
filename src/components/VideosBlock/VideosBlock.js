@@ -17,7 +17,7 @@ function VideosBlock() {
           "X-CSRFToken": "{{csrf_token}}",
         });
     
-            const res = fetch("/videos");
+            const res = fetch("https://kozimhon.uz/videos");
             
             return res.json().data;
             // return [

@@ -169,7 +169,7 @@ function Footer() {
                     value={headers.number}
                     className="msgInput"
                     type="phone"
-                    placeholder="Raqamingiz ..."
+                    placeholder="Raqamingiz...."
                     required
                     onKeyDown={(e) => {
                       // console.log(e.key);
