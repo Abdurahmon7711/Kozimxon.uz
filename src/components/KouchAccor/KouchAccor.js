@@ -20,7 +20,6 @@ import pdf from "../../assets/pdf/kozimxon.pdf";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -46,7 +45,7 @@ const AccordionSummary = styled((props) => (
   flexDirection: "row-reverse",
   "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
     transform: "rotate(90deg)",
-    fill: "#28468C" 
+    fill: "#28468C",
   },
   "& .MuiAccordionSummary-content": {
     marginLeft: theme.spacing(1),
@@ -67,10 +66,12 @@ function KouchAccor() {
 
   return (
     <div className="bigBox" id="bigBox">
-      <div className="container KouchAccor" id='KOuchAccorc'>
+      <div className="container KouchAccor" id="KOuchAccorc">
         <div className="partTitle">
           <h3 className="KouchDasturi">
-            Kouching dasturidagi <br /> modullar qanday?
+            Korporativ boshqaruv
+            <br />
+            va HR kursi modullar
           </h3>
         </div>
         <div className="KouchAccor__inner">
@@ -79,7 +80,6 @@ function KouchAccor() {
               className="KouchAccor__accordion"
               expanded={expanded === "panel1"}
               onChange={handleChange("panel1")}
-              
             >
               <AccordionSummary
                 aria-controls="panel1d-content"
@@ -89,22 +89,20 @@ function KouchAccor() {
                   className="accordion__title kouchAccTitleBl "
                   component={"div"}
                 >
-                  01 — HR tizimini yaratish
+                  01 — HR Audit orqali kompaniyadagi kamchiliklarni aniqlash
                 </Typography>
               </AccordionSummary>
               <AccordionDetails className="accordionInner">
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
-                    Kompaniyaning missiyalari, qadriyatlari va vazifalari.
-                    <br /> HR rejalash (Kompaniya kerak buladigan xodimlar sonini aniqlash).
-                    <br /> Ishga olishda samarali usullar (Intervyu, testlar, case savollar,…).
-                  </div>
-                  <div className="accTextPart">
-                    Adaptatsiya tizimi (Yangi kelgan xodimlarni tezda ishga ko'nikib ketishi va foyda keltirishi).
-                    <br />  Kompaniya samaradorligini oshiruvchi KPI tizimini yo'lga qo'yish.
-                    <br />  Maosh wa kompensatsiya tizimini yaratish.
-                    <br /> Motivatsiya dasturlari.
-                    <br />  Ichki nizom va standart operatsion protseduralar yaratish.
+                    Kurs boshlanishida trener bilan birgalikda kompaniyangizdagi
+                    HR tizmini tahlil qilish.
+                    <br />
+                    HR tizimi to'g'ri joriy qilinmaganligi, kompaniyaga qancha
+                    zarar keltirganligini raqamlarda hisoblash.
+                    <br />
+                    HR bo'limining asosiy vazifalari qanday muammolarga yechim
+                    bera olishi
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -123,19 +121,21 @@ function KouchAccor() {
                   className="accordion__title kouchAccTitleBl "
                   component={"div"}
                 >
-                  02 — Islom moliyasi asoslari
+                  02 — Kompaniyani missiyasi, qadriyatlari va maqsadlari
                 </Typography>
               </AccordionSummary>
               <AccordionDetails className="accordionInner">
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
-                    Islom moliyasi tamoyillari asosida biznesni boshqarish.
-                    <br />Islom moliyasidagi taqiqlar.
-                    <br /> Asosiy produktlar
-                  </div>
-                  <div className="accTextPart">
-                    (Murabaha, Ijara, Mushakara, Muzabara, Istisno va Salam).
-                    <br />  Shartnomalar. <br/> Islom moliyasida sha'riy savollarga mehmonimiz Muhammad Ayyubxon Xomidobdan javoblar.
+                    Kompaniya missiyasi (oliy maqsadini) aniqlash.
+                    <br />
+                    SMART tizimi bo'yicha maqsadlar qo'yish.
+                    <br />
+                    Kompaniya qadriyatlarini ishlab chiqish va ularning
+                    muximligi.
+                    <br />
+                    Biznesni tizimli boshqarishda biznes egasi bilishi kerak
+                    bo'lgan metrikalar (statistik ma'lumotlar).
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -154,19 +154,20 @@ function KouchAccor() {
                   className="accordion__title kouchAccTitleBl "
                   component={"div"}
                 >
-                  03 — Biznesda baraka omillari
+                  03 — Korporativ boshqaruv
                 </Typography>
               </AccordionSummary>
               <AccordionDetails className="accordionInner">
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
-                    Islomda pulga va biznesga bo'lgan munosabat.
-                    <br />  Dunyo va oxirat orasida muvozanat saqlash.
-                    <br /> Musulmonlarning rivojlanish bo'yicha ortda qolish sabablari.
-                  </div>
-                  <div className="accTextPart">
-                    Baraka o'zi nima va unga qanday erishiladi ?
-                    <br />  Barakaga erishishning 10 ta omili.
+                    Kompaniyani boshqarishda xalqaro tajribaga asoslangan
+                    amalyotlar va jarayonlar tizimi.
+                    <br />
+                    Ijrochi derektor (SEO)dan va HR menejerdan talab qilinishi
+                    kerak bo'lgan vazifalar va ularga qo'yiladigan metrikalar.
+                    <br />
+                    Korporativ boshqaruvda direktorlar kengashining tuzilmasi va
+                    vazifalari.
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -185,21 +186,23 @@ function KouchAccor() {
                   className="accordion__title kouchAccTitleBl "
                   component={"div"}
                 >
-                  04 — Muvaffaqqiyatli sherekchilik asosolari{" "}
+                  04 — Kompaniyada tizimlashtirish
                 </Typography>
               </AccordionSummary>
               <AccordionDetails className="accordionInner">
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
-                    Biznesda niyatning muhimligi.
-                    <br /> Sherik tanlashda qadriyatlarga asoslanish.
-                    <br /> Sherikchilik kelishuvini to'g'ri tuzish shartlari.
-                  </div>
-                  <div className="accTextPart">
-                    Kelishuvdagi asosiy masalalar <br />  (Sheriklarning biznesdagi
-                    <br />  ulushi, sarmoya vazifalar, foyda va zarar taqsimoti, biznesdan chiqish shartlari ).
-                    <br /> Sherikchilikdagi muammolarni hal qilish yo'llari.
+                    Biznesni tizimlashtirish jarayonlari nimalardan iborat va
+                    uni qanday amalga oshirish mumkin.
                     <br />
+                    Kompaniyani tashkiliy tuzulmasini yaratish va har bir
+                    lavozim uchun lavozim yo'riqnomasini ishlab chiqish.
+                    <br />
+                    Ichki nizomlar va standart operasion proseduralarni ishlab
+                    chiqish.
+                    <br />
+                    Kompaniyada Checks & Balances (nazorat) tizimini yo'lga
+                    qo'yish.
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -218,19 +221,20 @@ function KouchAccor() {
                   className="accordion__title kouchAccTitleBl "
                   component={"div"}
                 >
-                  05 — Qadriyatlarga asoslangan liderlik
+                  05 — HR rejalash (HR Planning)
                 </Typography>
               </AccordionSummary>
               <AccordionDetails className="accordionInner">
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
-                    Zamonaviy va qadriyatlarga asoslangan liderlikning farqlari.
-                    Payg'ambarimiz (S.A.V)ning liderlik mahoratlari.
-                    <br /> Qadriyatlarga asoslangan liderlikga berilgan tavsiyalar.
-                  </div>
-                  <div className="accTextPart">
-                    Qo'l ostidagilarni motivatsiyasini oshirish yo'llari.
-                    <br /> Nizolarni hal qilish yo'llari.
+                    Kompaniya maqsadlariga erishish uchun qancha xodim olish
+                    kerak
+                    <br />
+                    Kompaniyada kelajakda ochilishi mumkin bo'lgan ish
+                    o'rinlarini obyektiv tahlil qilish.
+                    <br />
+                    Kompaniyada qancha ishchi kerakligini aniqlash bo'yicha
+                    amaliy mashg'lot.
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -249,19 +253,19 @@ function KouchAccor() {
                   className="accordion__title kouchAccTitleBl "
                   component={"div"}
                 >
-                  06 — Xalqaro standardlarga javob beruvchi xizmat ko‘rsatish
+                  06 — Kompaniyada samarali ishga olish tizimini o'rnatish
                 </Typography>
               </AccordionSummary>
               <AccordionDetails className="accordionInner">
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
-                    Xalqaro talablarga javob beradigan servis tizimi nima ?
-                    <br /> Yaponiya tajribasi asosida mijozlarga yuqori
-                    darajada xizmat ko'rsatish tizimi yaratish.
-                  </div>
-                  <div className="accTextPart">
-                    Servis tizimi va uning raqobatga qo'l kelishuvini.
-                    <br /> Qadriyatlarga asoslangan servis tizimi qanday bo'ladi ?
+                    Ishga qabul qilish tartibi uchun "Ish anketa"sini tuzish
+                    <br />
+                    Yangi xodimni saralashda va ishga qabul qilishda amaliy
+                    instrumentlar
+                    <br />
+                    Xalqaro kompaniyalarda qo'llaniladigan STAR tizimi bo'yicha
+                    intervyu o'tkazish (amaliy mashg'ulotlar)
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -280,22 +284,20 @@ function KouchAccor() {
                   className="accordion__title kouchAccTitleBl "
                   component={"div"}
                 >
-                  07 — Yaponiyaning samaradorlikni oshiruvchi TQM va KAIZEN
-                  sistemasi
+                  07 — Yangi kelganlar uchun samarali moslashish / (adaptasiya)
+                  jarayonini qurish
                 </Typography>
               </AccordionSummary>
               <AccordionDetails className="accordionInner">
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
-                    Yaponiya Kaizen sistemasi nima va u qanday ishlaydi ?
-                    <br /> Tizimlashtirish uchun kerak bo'ladigan 5C sistemasi.
-                    <br /> Standart Operatsion Protseduralarni yaratish.
-                  </div>
-                  <div className="accTextPart">
-                    Mijozlarni xohishi inobatga olish.
-                    <br /> Doimiy o'sish va rivojlanish strategiyasi.
-                    <br /> Ishchilarni korxonaning
-                    faoliyatida va hayotida ishtirok etishlari.
+                    Kompaniyaga yangi kelganlar uchun moslashish rejalarini
+                    ishlab chiqish
+                    <br />
+                    Tanishtiruv prezentatsiyasiyaga nimalar kiritilishi kerak
+                    <br />
+                    Adaptasiya treninglari samarali o'tganligini aniqlash
+                    yo'llari
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -314,22 +316,265 @@ function KouchAccor() {
                   className="accordion__title kouchAccTitleBl "
                   component={"div"}
                 >
-                  08 — Qadriyatlarga asoslangan shaxsiy rivojlanish
+                  08 — Xodimlarni baholash tizimini joriy qilish (Performance
+                  Review)
                 </Typography>
               </AccordionSummary>
               <AccordionDetails className="accordionInner">
                 <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
-                    Qur'on va Hadisda shaxshiy rivojlanishga kerak bo'ladigan
-                    qanday tavsiyalar bor.
-                    <br /> Hayotda qanday oliy maqsad ko'yish
-                    kerak.
-                    <br /> Maqsadlarni to'g'ri ko'yish yo'llari.
+                    Xodimlarning faoliyatlarini tahlil qilish va baholash
+                    <br />
+                    Shaxsiy ish rejasi va ummumiy biznes-rejani qanday bog'lash
+                    mumkin?
+                    <br />
+                    Kompaniyada rivojlanish standart tartibini ishlab chiqish
+                    yo'llari
                   </div>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion
+              className="KouchAccor__accordion"
+              expanded={expanded === "panel9"}
+              onChange={handleChange("panel9")}
+            >
+              <AccordionSummary
+                aria-controls="panel9d-content"
+                id="panel9d-header"
+              >
+                <Typography
+                  className="accordion__title kouchAccTitleBl "
+                  component={"div"}
+                >
+                  09 — Maosh va intiyozlar tizimi
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails className="accordionInner">
+                <Typography className="innerAcc__text" component={"div"}>
                   <div className="accTextPart">
-                    Hayotdagi muammolarga qanday yondashish kerak.
-                    <br /> Doimiy harakat intizom va natija.
-                    <br /> Dastur mehmoni Abdukarim Mirzayevdan shaxsiy tavsiyalar.
+                    Maosh belgilashda inobatga olish kerak bo'lgan omillar
+                    <br />
+                    Lavozim qiymatini belgilash tizimi
+                    <br />
+                    Imtiyozlar tizimini to'g'ri joriy qilish
+                    <br />
+                    Grading (lavozim toifalari) tizimini joriy qilish
+                  </div>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion
+              className="KouchAccor__accordion"
+              expanded={expanded === "panel10"}
+              onChange={handleChange("panel10")}
+            >
+              <AccordionSummary
+                aria-controls="panel10d-content"
+                id="panel10d-header"
+              >
+                <Typography
+                  className="accordion__title kouchAccTitleBl "
+                  component={"div"}
+                >
+                  10 — KPI tizimini joriy qilish
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails className="accordionInner">
+                <Typography className="innerAcc__text" component={"div"}>
+                  <div className="accTextPart">
+                    Kompaniyaning asosiy muvaffaqiyat omillarini aniqlash
+                    <br />
+                    Xodimlarga to'g'ri maqsad va rejalar qo'yish <br />
+                    Ish faoliyati va natijaga bog'liq bo'lgan bonus tizimini
+                    yaratish (Pay for Performance)
+                    <br />
+                    KPI tizimdagi salbiy oqibatlarni oldini olish
+                    <br />
+                    Biznesni tizimli boshqarishda biznes egasi bilishi kerak
+                    bo'lgan metrikalar
+                  </div>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion
+              className="KouchAccor__accordion"
+              expanded={expanded === "panel11"}
+              onChange={handleChange("panel11")}
+            >
+              <AccordionSummary
+                aria-controls="panel11d-content"
+                id="panel11d-header"
+              >
+                <Typography
+                  className="accordion__title kouchAccTitleBl "
+                  component={"div"}
+                >
+                  11 — Xodimlarning kasbiy va shaxsiy rivojlanishi
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails className="accordionInner">
+                <Typography className="innerAcc__text" component={"div"}>
+                  <div className="accTextPart">
+                    Kompaniyadagi ta'lim ehtiyojlarini aniqlash
+                    <br />
+                    Xodimlarni rivojlantirish ehtiyojlariga ko'ra o'quv
+                    dasturlarini ishlab chiqish <br />
+                    Korporativ trening tashkil qilish inobatga olinishi kerak
+                    bo'lgan omillar
+                  </div>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion
+              className="KouchAccor__accordion"
+              expanded={expanded === "panel12"}
+              onChange={handleChange("panel12")}
+            >
+              <AccordionSummary
+                aria-controls="panel12d-content"
+                id="panel12d-header"
+              >
+                <Typography
+                  className="accordion__title kouchAccTitleBl "
+                  component={"div"}
+                >
+                  12 — Real hayotda ishlaydigan motivasiya dasturlari
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails className="accordionInner">
+                <Typography className="innerAcc__text" component={"div"}>
+                  <div className="accTextPart">
+                    Qanday turdagi motivasiya dasturlari mavjud?
+                    <br />
+                    Xodimlarni rag'batlantirish uchun kompaniyada obyektiv
+                    baholash mezonlarini qanday yaratish kerak
+                    <br />
+                    Motivasiya dasturlarini qo'llagan xolda xodimlarni
+                    samaradorligini oshirish va kompaniya da olib qolish
+                    rejasini tuzib chiqish
+                    <br />
+                    Xodimlarni tizimli boshqarishda ularning mamnunlilik
+                    darajalarini bilish va tahlil qilish yo'llari
+                  </div>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion
+              className="KouchAccor__accordion"
+              expanded={expanded === "panel13"}
+              onChange={handleChange("panel13")}
+            >
+              <AccordionSummary
+                aria-controls="panel13d-content"
+                id="panel13d-header"
+              >
+                <Typography
+                  className="accordion__title kouchAccTitleBl "
+                  component={"div"}
+                >
+                  13 — Kompaniyada o'zgarishlarni samarali boshqarish (Change
+                  Managment)
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails className="accordionInner">
+                <Typography className="innerAcc__text" component={"div"}>
+                  <div className="accTextPart">
+                    Kompaniyadagi yangi tizimlarni joriy qilishda bo'ladigan
+                    qarshiliklarni samarali hal etish <br />
+                    Xodimlarni komfort zonalaridan chiqib o'zgarishlarga tez
+                    moslashishlarini ta'minlash usullari
+                    <br />
+                    O'zgarishlarni samarali tadbiq qilish yo'llari
+                  </div>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion
+              className="KouchAccor__accordion"
+              expanded={expanded === "panel14"}
+              onChange={handleChange("panel14")}
+            >
+              <AccordionSummary
+                aria-controls="panel14d-content"
+                id="panel14d-header"
+              >
+                <Typography
+                  className="accordion__title kouchAccTitleBl "
+                  component={"div"}
+                >
+                  14 — Yaponiyaning KAIZEN tizimi.
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails className="accordionInner">
+                <Typography className="innerAcc__text" component={"div"}>
+                  <div className="accTextPart">
+                    Davomiy o'sish va rivojlanish uchun KAIZEN tizimini joriy
+                    qilish
+                    <br />
+                    Kundalik hayotda va ish jarayonida qo'llaniladigan KAIZEN
+                    misollar
+                    <br />
+                    Ish joyini tartibga soluvchi 5S tizimi
+                    <br />
+                    Vizual boshqaruv orqali samaradorlikni oshirish
+                  </div>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion
+              className="KouchAccor__accordion"
+              expanded={expanded === "panel15"}
+              onChange={handleChange("panel15")}
+            >
+              <AccordionSummary
+                aria-controls="panel15d-content"
+                id="panel15d-header"
+              >
+                <Typography
+                  className="accordion__title kouchAccTitleBl "
+                  component={"div"}
+                >
+                  15 — Muzokara olib borish sanati
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails className="accordionInner">
+                <Typography className="innerAcc__text" component={"div"}>
+                  <div className="accTextPart">
+                    Xodimlar bilan samarali kelishuv qilish yo'llari <br />
+                    Samarali muzokara olib borishda inobatga olinadigan muxim
+                    omillar <br />
+                    Biznesda Win/Win qoidasidan samarali foydalanish usullari
+                  </div>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion
+              className="KouchAccor__accordion"
+              expanded={expanded === "panel16"}
+              onChange={handleChange("panel16")}
+            >
+              <AccordionSummary
+                aria-controls="panel16d-content"
+                id="panel16d-header"
+              >
+                <Typography
+                  className="accordion__title kouchAccTitleBl "
+                  component={"div"}
+                >
+                  16 — Yaponiya tajribasi asosida sifatli xizmat ko'rsatish
+                  tizimini joriy qilish
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails className="accordionInner">
+                <Typography className="innerAcc__text" component={"div"}>
+                  <div className="accTextPart">
+                    Xizmat ko'rsatishdagi oltin qoidalar <br />
+                    Xizmat ko'rsatishdagi ta'qiqlangan amallar <br />
+                    Yaponiyaning xizmat ko'rsatish tizimi va undan olish mumkin
+                    bo'lgan insaytlar <br />
+                    Mijozlarni qaytib kelishini ta'minlovchi xizmat ko'rsatish
+                    tizimi
                   </div>
                 </Typography>
               </AccordionDetails>
@@ -382,7 +627,8 @@ function KouchAccor() {
                       color="text.secondary"
                       gutterBottom
                     >
-                      O'z biznesingizdagi muammolarni mutaxasis bilan hal qiling.
+                      O'z biznesingizdagi muammolarni mutaxasis bilan hal
+                      qiling.
                     </Typography>
                   </CardContent>
                   <CardActions>

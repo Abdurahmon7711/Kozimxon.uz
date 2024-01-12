@@ -121,7 +121,9 @@
 .accordion__title {
     width: 80% !important;
 }
-
+#panel1d-header{
+    height: 70px !important; 
+}
 @media screen and (min-width:1200px) {
     .container{
         max-width: 1200px;

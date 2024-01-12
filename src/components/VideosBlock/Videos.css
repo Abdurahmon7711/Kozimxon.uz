@@ -25,7 +25,7 @@
 .NavVideos{
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: flex-start;
 }
 .videosName{

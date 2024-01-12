@@ -1,11 +1,11 @@
-import React from 'react'
-import './MainTop.css'
-import CarouselTop from '../CarouselTop/CarouselTop'
+import React from "react";
+import "./MainTop.css";
+import CarouselTop from "../CarouselTop/CarouselTop";
 
 // images
-import imgCarousel from '../../assets/images/ImgCarous1.png'
-import kursHaqida from '../../assets/images/kursHaqida.svg'
-import CarouselMain from '../CarouselMain/CarouselMain'
+import imgCarousel from "../../assets/images/ImgCarous1.png";
+import kursHaqida from "../../assets/images/kursHaqida.svg";
+import CarouselMain from "../CarouselMain/CarouselMain";
 // images
 
 // setInterval(function(){
@@ -36,33 +36,41 @@ import CarouselMain from '../CarouselMain/CarouselMain'
 //     setInterval(NewsRotator, 2200)
 // });
 
-
-
-
 function MainTop() {
   return (
-    <div className='MainTopBlock'>
-        <div className='TopTextBlock'>
-            <h2 className='MainBlockText MainBlockText1 ' id='MainBlockText'>Qadriyatlarga asoslangan biznesni <br /> boshqarish kursi <span className="bir"> bir oylik dastur</span></h2>
+    <div className="MainTopBlock">
+      <div className="TopTextBlock">
+        <h2 className="MainBlockText MainBlockText1 " id="MainBlockText">
+          Korporativ boshqaruv <br /> va <span className="bir">HR</span>
+        </h2>
 
-            <div className='TopBtn'>
-                <a href="#Footer"><button className='btnRoyhat'>Ro‘yxatdan o‘tish →</button></a>
-                <div className='tochka'></div>
-                <a href='#BigVideoTab'><img className="kursHaqida" src={kursHaqida}/></a>
-            </div>
-            
+        <div className="TopBtn">
+          <a href="#Footer">
+            <button className="btnRoyhat">Ro‘yxatdan o‘tish →</button>
+          </a>
+          <div className="tochka"></div>
+          <a href="#BigVideoTab">
+            <img className="kursHaqida" src={kursHaqida} />
+          </a>
         </div>
-        <div className='TopCarouselBlock'>
-            {/* <CarouselMain/> */}
-            <CarouselTop/>
-            <div className='CarouselLow'>
-                <h3 className='CarouselLowText'>Kozimxon To‘rayevning treninglaridan <br className='lavhalar'/>lavhalar</h3>
-                <h4 className='firstCarousel'><span id="span01">01</span><span id='span02'>02</span><span className='allCarousel'>/02</span></h4>
-            </div>
-           
+      </div>
+      <div className="TopCarouselBlock">
+        {/* <CarouselMain/> */}
+        <CarouselTop />
+        <div className="CarouselLow">
+          <h3 className="CarouselLowText">
+            Kozimxon To‘rayevning treninglaridan <br className="lavhalar" />
+            lavhalar
+          </h3>
+          <h4 className="firstCarousel">
+            <span id="span01">01</span>
+            <span id="span02">02</span>
+            <span className="allCarousel">/02</span>
+          </h4>
         </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default MainTop
+export default MainTop;
