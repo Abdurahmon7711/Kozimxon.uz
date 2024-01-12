@@ -169,7 +169,7 @@ function Footer() {
                     value={headers.number}
                     className="msgInput"
                     type="phone"
-                    placeholder="Raqamingiz ..."
+                    placeholder="Raqamingiz...."
                     required
                     onKeyDown={(e) => {
                       // console.log(e.key);
@@ -258,7 +258,7 @@ function Footer() {
 
               <div className="NumberNav" id="footerNumber">
                 <a className="telPhone" href="tel:+998910080509">
-                  <h2>+998 91 001 05 09</h2>
+                  <h2>+998 91 002 05 09</h2>
                   <h2>+998 91 008 05 09</h2>
                 </a>
                 <p className="kursgaYozilish">KURSGA YOZILISH UCHUN</p>
