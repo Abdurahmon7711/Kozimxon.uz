@@ -16,15 +16,10 @@ function VideosBlock() {
           "Content-Type": "x-www-form-urlencoded",
           "X-CSRFToken": "{{csrf_token}}",
         });
-<<<<<<< HEAD
 
             const res = fetch("https://kozimhon.uz/videos");
 
-=======
-    
-            const res = fetch("https://kozimhon.uz/videos");
-            
->>>>>>> babceed42118c552d4239ca62eb96451e6c1b710
+
             return res.json().data;
             // return [
             //         {
