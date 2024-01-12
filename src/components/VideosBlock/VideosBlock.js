@@ -16,9 +16,9 @@ function VideosBlock() {
           "Content-Type": "x-www-form-urlencoded",
           "X-CSRFToken": "{{csrf_token}}",
         });
-    
-            const res = fetch("/videos");
-            
+
+            const res = fetch("https://kozimhon.uz/videos");
+
             return res.json().data;
             // return [
             //         {
@@ -28,7 +28,7 @@ function VideosBlock() {
             //         {
             //             name: 'HR meneger kim?',
             //             url: 'https://www.youtube.com/embed/Zra33_gCgxQ'
-                        
+
             //         },
             //         {
             //             name: 'Yaponiyaning KAIZEN sistemasi',
@@ -43,7 +43,7 @@ function VideosBlock() {
             //             url: 'https://www.youtube.com/embed/0nZnBncSkZE'
             //         }
             //     ]
-            
+
     }
 
     function createDataAcc(icon, name, ssilka) {
@@ -128,7 +128,7 @@ function VideosBlock() {
 
                                 </iframe>
                             </div>
-                            
+
 
                         </div>
                     </div>
@@ -136,10 +136,10 @@ function VideosBlock() {
 
 
 
-                    {/* 
+                    {/*
                     <button className="videosName">
-                        
-                      
+
+
                     </button>
                     <button className="videosName2">
                         <img src={stop} />
@@ -158,7 +158,7 @@ function VideosBlock() {
                         <p className="VideosText">Ko‘p yillik tajribaga ega ustoz</p>
                     </button>
                     </div>
-                    
+
                  */}
                 </div>
             </div>
