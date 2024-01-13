@@ -122,7 +122,7 @@ function VideosBlock() {
                                 </a>
                             </div>
                             <div className='player' id='myplayer'  >
-                                <iframe className='firstVideo'  if='videoiframe' src='https://www.youtube.com/embed/XsBil1zbVOc' frameBorder="0" allowFullScreen>
+                                <iframe className='firstVideo'  if='videoiframe' src='https://www.youtube.com/embed/Sz7qa6RJhGA' frameBorder="0" allowFullScreen>
 
                                 </iframe>
                             </div>
