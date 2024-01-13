@@ -10,39 +10,40 @@ function VideosBlock() {
    * @return {Array}
    */
 
-  function getVideos() {
-    const headers = new Headers({
-      "Content-Type": "x-www-form-urlencoded",
-      "X-CSRFToken": "{{csrf_token}}",
-    });
-
-    const res = fetch("https://kozimhon.uz/videos");
-
-    return res.json().data;
-    // return [
-    //         {
-    //             name: 'Qadriyatlarga asoslangan biznesni boshqarish kursi',
-    //             url: 'https://www.youtube.com/embed/XsBil1zbVOc'
-    //         },
-    //         {
-    //             name: 'HR meneger kim?',
-    //             url: 'https://www.youtube.com/embed/Zra33_gCgxQ'
-
-    //         },
-    //         {
-    //             name: 'Yaponiyaning KAIZEN sistemasi',
-    //             url: 'https://www.youtube.com/embed/tk_2n-mZGNc'
-    //         },
-    //         {
-    //             name: 'Moliya boshqaruvi',
-    //             url: 'https://www.youtube.com/embed/Evfj7JMjR1Q'
-    //         },
-    //         {
-    //             name: 'Ko‘p yillik tajribaga ega ustoz',
-    //             url: 'https://www.youtube.com/embed/0nZnBncSkZE'
-    //         }
-    //     ]
-  }
+    function getVideos() {
+        const headers = new Headers({
+          "Content-Type": "x-www-form-urlencoded",
+          "X-CSRFToken": "{{csrf_token}}",
+        });
+    
+            const res = fetch("https://kozimhon.uz/videos");
+            
+            return res.json().data;
+            // return [
+            //         {
+            //             name: 'Qadriyatlarga asoslangan biznesni boshqarish kursi',
+            //             url: 'https://www.youtube.com/embed/XsBil1zbVOc'
+            //         },
+            //         {
+            //             name: 'HR meneger kim?',
+            //             url: 'https://www.youtube.com/embed/Zra33_gCgxQ'
+                        
+            //         },
+            //         {
+            //             name: 'Yaponiyaning KAIZEN sistemasi',
+            //             url: 'https://www.youtube.com/embed/tk_2n-mZGNc'
+            //         },
+            //         {
+            //             name: 'Moliya boshqaruvi',
+            //             url: 'https://www.youtube.com/embed/Evfj7JMjR1Q'
+            //         },
+            //         {
+            //             name: 'Ko‘p yillik tajribaga ega ustoz',
+            //             url: 'https://www.youtube.com/embed/0nZnBncSkZE'
+            //         }
+            //     ]
+            
+    }
 
   function createDataAcc(icon, name, ssilka) {
     return { icon, name, ssilka };
@@ -71,71 +72,72 @@ function VideosBlock() {
 
   let last;
 
-  return (
-    <div className="BigVideoTab" id="BigVideoTab">
-      <div className="FonVideos">
-        <div className="VideosBlock">
-          <div className="VideoTabs">
-            <div className="KouchLavhalar">
-              <h2 className="VideoLavhalar">
-                Kouching dasturidan video lavhalar
-              </h2>
-              <a className="LinkRoyhat" href="#Footer">
-                Ro‘yxatdan o‘tish →
-              </a>
-            </div>
-            <div className="Videoss">
-              <div className="NavVideos">
-                {videos.map((cont, i) => {
-                  return (
-                    <div className="Tabmeuvd">
-                      <button
-                        className="videosName"
-                        onClick={(e, element) => {
-                          if (e.currentTarget.className == "videosName") {
-                            if (last) {
-                              last.className = "videosName";
-                              last.querySelector("img").src = stop;
-                            }
-                            last = e.currentTarget;
-                            e.currentTarget.className = "videosName2";
-                            e.currentTarget.querySelector("img").src = play;
-                            document.getElementById(
-                              "myplayer"
-                            ).innerHTML = `<iframe class='firstVideo' if='videoiframe' src=${cont.url} frameBorder="0" allowFullScreen></iframe>`;
-                          } else {
-                            // e.currentTarget.className = 'videosName';
-                            // e.currentTarget.querySelector('img').src = stop;
-                            // document.getElementById('myplayer').innerHTML = "";
-                          }
-                        }}
-                      >
-                        <img src={stop} />
-                        <p className="VideosText">{cont.name}</p>
-                      </button>
-                    </div>
-                  );
-                })}
-                <a className="LinkRoyhat" id="LinkRoyhat" href="#Footer">
-                  Ro‘yxatdan o‘tish →
-                </a>
-              </div>
-              <div className="player" id="myplayer">
-                <iframe
-                  className="firstVideo"
-                  if="videoiframe"
-                  src="https://www.youtube.com/embed/Sz7qa6RJhGA"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
+    return (
+        <div className="BigVideoTab" id="BigVideoTab">
+            <div className="FonVideos">
+                <div className="VideosBlock">
+                    <div className="VideoTabs">
+                        <div className="KouchLavhalar">
+                            <h2 className="VideoLavhalar">
+                                Kouching dasturidan video lavhalar
+                            </h2>
+                            <a className="LinkRoyhat" href="#Footer">
+                                Ro‘yxatdan o‘tish →
+                            </a>
+                        </div>
+                        <div className="Videoss">
+                            <div className="NavVideos">
 
-          {/* 
+                                {videos.map((cont, i) => {
+                                    return (
+                                        <div className="Tabmeuvd" >
+                                            <button className='videosName' onClick={(e, element) => {
+
+                                                if( e.currentTarget.className == 'videosName'){
+                                                    if(last){
+                                                        last.className = 'videosName';
+                                                        last.querySelector('img').src = stop;
+                                                    }
+                                                    last = e.currentTarget;
+                                                    e.currentTarget.className = 'videosName2';
+                                                    e.currentTarget.querySelector('img').src = play;
+                                                    document.getElementById('myplayer').innerHTML = `<iframe class='firstVideo' if='videoiframe' src=${cont.url} frameBorder="0" allowFullScreen></iframe>`;
+
+                                                }
+                                                else {
+                                                    // e.currentTarget.className = 'videosName';
+                                                    // e.currentTarget.querySelector('img').src = stop;
+                                                    // document.getElementById('myplayer').innerHTML = "";
+                                                }
+                                            }}>
+                                                <img src={stop} />
+                                                <p className="VideosText">{cont.name}</p>
+                                            </button>
+                                        </div>
+                                    )
+                                })
+                                }
+                                  <a className="LinkRoyhat" id="LinkRoyhat" href="#Footer">
+                                    Ro‘yxatdan o‘tish →
+                                </a>
+                            </div>
+                            <div className='player' id='myplayer'  >
+                                <iframe className='firstVideo'  if='videoiframe' src='https://www.youtube.com/embed/XsBil1zbVOc' frameBorder="0" allowFullScreen>
+
+                                </iframe>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+
+
+
+
+                    {/* 
                     <button className="videosName">
-                        
-                      
+
+
                     </button>
                     <button className="videosName2">
                         <img src={stop} />
@@ -154,7 +156,7 @@ function VideosBlock() {
                         <p className="VideosText">Ko‘p yillik tajribaga ega ustoz</p>
                     </button>
                     </div>
-                    
+
                  */}
         </div>
       </div>
