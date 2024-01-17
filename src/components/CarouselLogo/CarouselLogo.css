@@ -186,9 +186,7 @@
     width: 100% !important;
 }
 #LogoSecItemImg{
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover;
+    width: 85% !important;
 }
 @media screen and (max-width: 1200px) {
     .react-multi-carousel-item{

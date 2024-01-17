@@ -1,230 +1,188 @@
-import React from 'react'
+import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Box from '@mui/material/Box';
-import CardContent from '@mui/material/CardContent';
-import { experimentalStyled as styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
-import "./CarouselLogo.css"
-import vidBlock from '../../assets/images/vidBlock.png'
+import Box from "@mui/material/Box";
+import { experimentalStyled as styled } from "@mui/material/styles";
+import Paper from "@mui/material/Paper";
+import "./CarouselLogo.css";
 
 // import Logos
-import artelBl from '../../assets/logos/1artel.png';
-import mavisBl from '../../assets/logos/2mavis.png';
-import korzinkaBl from '../../assets/logos/3korzinka.png';
-import xalqBl from '../../assets/logos/4xalq.png';
-import OFbl from '../../assets/logos/5OFb.png';
-import ipotekaBl from '../../assets/logos/6ipoteka.png';
-import bigdBl from '../../assets/logos/7bigd.png';
-import ermakBl from '../../assets/logos/8ermak.png';
-import turonBl from '../../assets/logos/9turon.png';
-import loookBl from '../../assets/logos/10loook.png';
-import kapitalBl from '../../assets/logos/11kapital.png';
-import mfaktorBl from '../../assets/logos/12mfaktor.png';
-import xclubBl from '../../assets/logos/club1000x13.png';
-import summitBl from '../../assets/logos/14summit.png';
-import uniredBl from '../../assets/logos/15unired.png'
-
-
-import artel from '../../assets/logos/artel01.png';
-import mavis from '../../assets/logos/mavis02.png';
-import korzinka from '../../assets/logos/korzinka03.png';
-import xalq from '../../assets/logos/xalq04.png';
-import OFb from '../../assets/logos/OFb05.png';
-import ipoteka from '../../assets/logos/ipoteka06.png';
-import bigd from '../../assets/logos/bigd07.png';
-import ermak from '../../assets/logos/ermak08.png';
-import turon from '../../assets/logos/turon09.png';
-import loook from '../../assets/logos/loook010.jpg';
-import kapital from '../../assets/logos/kapital011.png';
-import mfaktor from '../../assets/logos/mfaktor012.jpg';
-import xclub from '../../assets/logos/13club1000x.png';
-import summit from '../../assets/logos/summit14.png';
-import unired from '../../assets/logos/unired15.png'
-
+import artel from "../../assets/Screenshots/artel.png";
+import karzinka from "../../assets/Screenshots/karzinka.png";
+import abba from "../../assets/Screenshots/abba.png";
+import bahmall from "../../assets/Screenshots/bahmall.png";
+import biolife from "../../assets/Screenshots/biolife.png";
+import bosch from "../../assets/Screenshots/bosch.png";
+import china from "../../assets/Screenshots/china.png";
+import dusell from "../../assets/Screenshots/dusell.png";
+import elmakon from "../../assets/Screenshots/elmakon.png";
+import eone from "../../assets/Screenshots/e-one.png";
+import erizon from "../../assets/Screenshots/erizon.png";
+import ermak from "../../assets/Screenshots/ermak.png";
+import favvora from "../../assets/Screenshots/favvora.png";
+import fayzgo from "../../assets/Screenshots/fayzgo.png";
+import honor from "../../assets/Screenshots/honor.png";
+import look from "../../assets/Screenshots/look.png";
+import markab from "../../assets/Screenshots/markab.png";
+import mediapark from "../../assets/Screenshots/mediapark.png";
+import Namuna from "../../assets/Screenshots/Namuna.png";
+import pepsi from "../../assets/Screenshots/pepsi.png";
+import unical from "../../assets/Screenshots/unical.png";
+import vero from "../../assets/Screenshots/vero.png";
+import webster from "../../assets/Screenshots/webster.png";
+import yalpiz from "../../assets/Screenshots/yalpiz.png";
+import Yumecs from "../../assets/Screenshots/Yumecs.png";
+import probox from "../../assets/Screenshots/probox.png";
 
 const responsive = {
-    superLargeDesktop: {
-        // the naming can be any, depends on you.
-        breakpoint: { max: 4000, min: 3000 },
-        items: 5
-    },
-    desktop: {
-        breakpoint: { max: 3000, min: 947 },
-        items: 4
-    },
-    tablet: {
-        breakpoint: { max: 1024, min: 768 },
-        items: 2
-    },
-    mobile: {
-        breakpoint: { max: 768, min: 0 },
-        items: 1
-    }
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 947 },
+    items: 4,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 768 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 768, min: 0 },
+    items: 1,
+  },
 };
 
 const images1 = [
-    {
-        "black": korzinkaBl,
-        "light": korzinka
-    },
-    {
-        "black": artelBl,
-        "light": artel
-    },
-    {
-        "black": mavisBl,
-        "light": mavis
-    },
-    {
-        "black": xalqBl,
-        "light": xalq
-    },
-    {
-        "black": OFbl,
-        "light": OFb
-    }
-]
+  {
+    light: karzinka,
+  },
+  {
+    light: artel,
+  },
+  {
+    light: abba,
+  },
+  {
+    light: probox,
+  },
 
-const images2 = [
+  {
+    light: biolife,
+  },
+  {
+    light: bosch,
+  },
+  {
+    light: china,
+  },
+  {
+    light: dusell,
+  },
+  {
+    light: elmakon,
+  },
+  {
+    light: eone,
+  },
+  {
+    light: erizon,
+  },
+  {
+    light: pepsi,
+  },
+  {
+    light: favvora,
+  },
+  {
+    light: fayzgo,
+  },
+  {
+    light: honor,
+  },
+  {
+    light: look,
+  },
+  {
+    light: markab,
+  },
+  {
+    light: mediapark,
+  },
+  {
+    light: Namuna,
+  },
 
-    {
-        "black": ipotekaBl,
-        "light": ipoteka
-    },
-    {
-        "black": bigdBl,
-        "light": bigd
-    },
-    {
-        "black": ermakBl,
-        "light": ermak
-    },
-    {
-        "black": turonBl,
-        "light": turon
-    },
-    {
-        "black": xclubBl,
-        "light": xclubBl
-    },
+  {
+    light: ermak,
+  },
+  {
+    light: unical,
+  },
+  {
+    light: vero,
+  },
+  {
+    light: bahmall,
+  },
+  {
+    light: webster,
+  },
+  {
+    light: yalpiz,
+  },
+  {
+    light: Yumecs,
+  },
+];
 
-]
-const images3 = [
-    {
-        "black": loookBl,
-        "light": loook
-    },
-    {
-        "black": kapitalBl,
-        "light": kapital
-    },
-    {
-        "black": mfaktorBl,
-        "light": mfaktor
-    },
-    {
-        "black": summitBl,
-        "light": summit
-    },
-    {
-        "black": uniredBl,
-        "light": unired
-    }
-
-]
 const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: "center",
+  color: theme.palette.text.secondary,
 }));
 
 function CaroselLogo() {
-    return (
-        <div className='container LogoSection' >
-            <div className='partTitle'>
-                <h3>Bizning mijozlar</h3>
+  return (
+    <div className="container LogoSection">
+      <div className="partTitle">
+        <h3>Bizning mijozlar</h3>
+      </div>
+
+      <Carousel responsive={responsive}>
+        {images1.map(({ light }, index) => {
+          return (
+            <div>
+              <Box sx={{ flexGrow: 1 }} className="FaqsLogoRow">
+                <div className="ustkidiv" id="ustkidiv">
+                  <Item
+                    component="span"
+                    className="LogoSecItem"
+                    id="LogosecItem"
+                    onMouseEnter={(e) => {
+                      e.target.src = light;
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.src = light;
+                    }}
+                  >
+                    <img
+                      className="LogoSecItemImg"
+                      id="LogoSecItemImg"
+                      src={light}
+                    />
+                  </Item>
+                </div>
+              </Box>
             </div>
-
-            <Carousel responsive={responsive}>
-
-                {images1.map(({ black, light }, index) => {
-                    return (
-                        <div>
-
-                            <Box sx={{ flexGrow: 1 }} className="FaqsLogoRow" >
-                                <div className='ustkidiv' id="ustkidiv">
-
-                                    <Item component="span" className='LogoSecItem' id="LogosecItem"
-                                        onMouseEnter={(e) => {
-                                            e.target.src = light;
-                                        }}
-                                        onMouseLeave={(e) => {
-                                            e.target.src = light;
-                                        }}><img className='LogoSecItemImg' id="LogoSecItemImg" src={light} />
-                                    </Item>
-
-                                </div>
-                            </Box>
-
-                        </div>
-                    )
-                })}
-
-
-                {images2.map(({ black, light }, index) => {
-                    return (
-                        <div>
-                            <Box sx={{ flexGrow: 1 }} className="FaqsLogoRow" >
-                                <div className='ustkidiv' id="ustkidiv">
-
-                                    <Item component="span" className='LogoSecItem' id="LogosecItem"
-                                        onMouseEnter={(e) => {
-                                            e.target.src = light;
-                                        }}
-                                        onMouseLeave={(e) => {
-                                            e.target.src = light;
-                                        }}><img className='LogoSecItemImg' id="LogoSecItemImg" src={light} />
-                                    </Item>
-
-                                </div>
-                            </Box>
-                        </div>
-                    )
-                })}
-
-
-                {images3.map(({ black, light }, index) => {
-                    return (
-                        <div>
-
-                            <Box sx={{ flexGrow: 1 }} className="FaqsLogoRow" >
-                                <div className='ustkidiv' id="ustkidiv">
-
-                                    <Item component="span" className='LogoSecItem' id="LogosecItem"
-                                        onMouseEnter={(e) => {
-                                            e.target.src = light;
-                                        }}
-                                        onMouseLeave={(e) => {
-                                            e.target.src = light;
-                                        }}><img className='LogoSecItemImg' id="LogoSecItemImg" src={light} />
-                                    </Item>
-
-                                </div>
-                            </Box>
-                        </div>
-                    )
-                })}
-
-
-
-            </Carousel>
-
-        </div>
-    )
+          );
+        })}
+      </Carousel>
+    </div>
+  );
 }
 
-export default CaroselLogo
+export default CaroselLogo;
